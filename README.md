@@ -1,4 +1,4 @@
-# Laravel 5 學習足跡
+# Laravel 5 學習筆記
 
 作者 : KeJyun
 
