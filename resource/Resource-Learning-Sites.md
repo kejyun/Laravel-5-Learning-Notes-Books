@@ -4,6 +4,7 @@
 * [Web development, design, and other nerdy topics! | Dayle Rees](http://daylerees.com/codebright)
 * [Laravel Book](http://laravelbook.com/)
 * [Laravel Recipes](http://laravel-recipes.com/)
+* [Browsing Most Recent Laravel Tricks | Laravel-Tricks.com](http://laravel-tricks.com/)
 * [PHP: The Right Way](http://www.phptherightway.com/)
 
 # 中文
