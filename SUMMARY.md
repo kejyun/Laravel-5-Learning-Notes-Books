@@ -7,6 +7,7 @@
   * [官方](resource/Resource-Official.md)
   * [社群](resource/Resource-Community.md)
   * [文件](resource/Resource-Document.md)
+  * [文章](resource/Resource-Article.md)
   * [服務工具](resource/Resource-Laravel-Service.md)
   * [教學影片](resource/Resource-Learning-Video.md)
   * [教學網站](resource/Resource-Learning-Sites.md)
