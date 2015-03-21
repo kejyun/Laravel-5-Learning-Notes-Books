@@ -70,3 +70,7 @@ DB_PASSWORD=secret
 CACHE_DRIVER=file
 SESSION_DRIVER=file
 ```
+
+
+## 參考資料
+* [Environments and Configuration - Laravel 5 Fundamentals](https://laracasts.com/series/laravel-5-fundamentals/episodes/6)
