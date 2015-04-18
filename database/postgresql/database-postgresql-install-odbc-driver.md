@@ -21,9 +21,9 @@ $
 
 ```shell
 $ brew list
-autoconf	git			libpng		mhash		php56			readline	zlib
-freetype	icu4c		libtool		nvm			php56-mcrypt	unixodbc
-gettext		jpeg		mcrypt		openssl		postgresql		wget
+autoconf  git       libpng      mhash      php56          readline   zlib
+freetype  icu4c     libtool     nvm        php56-mcrypt   unixodbc
+gettext   jpeg      mcrypt      openssl    postgresql     wget
 ```
 
 然後搜尋現在 brew 支援的 PostgreSQL 驅動程式
