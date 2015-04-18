@@ -55,6 +55,41 @@ class CreateArticleRequest extends Request {
 }
 ```
 
+在驗證請求的 CreateArticleRequest 中的 rules() 函式，除了僅回傳驗證規則外，你也可以判斷不同的狀況去加入不同的規則再回傳，像是：
+
+```php
+<?php namespace App\Http\Requests;
+
+// app\Http\Requests\CreateArticleRequest.php
+use App\Http\Requests\Request;
+
+class CreateArticleRequest extends Request {
+    public function rules()
+    {
+        $rules = [
+          // 使用 | 設定驗證規則
+          'title'         => 'required|min:3',
+          'body'          => 'required|min:30',
+
+          // 使用陣列設定驗證規則
+          'published_at'  => [
+            'require',
+            'date',
+          ],
+        ];
+
+        // 其他條件判斷
+        if ($condition) {
+            $rules['something_else'] = 'require';
+        }
+
+        return $rules;
+    }
+
+}
+```
+
+
 ## 指定 Controller 函式處理指定的請求驗證
 
 在我們使用 Controller 去處理請求時，我們可以再傳入變數內設定要怎麼處理請求：

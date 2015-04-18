@@ -10,6 +10,7 @@
     * [安裝 PostgreSQL ODBC driver](database/postgresql/database-postgresql-install-odbc-driver.md)
 * [HTTP](http/http-README.md)
   * [請求](http/request/http-request-README.md)
+* [視圖 (View)](view/view-README.md)
 * [學習資源](resource/Resource-README.md)
   * [官方](resource/Resource-Official.md)
   * [社群](resource/Resource-Community.md)
