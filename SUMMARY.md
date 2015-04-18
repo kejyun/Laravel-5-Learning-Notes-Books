@@ -6,6 +6,8 @@
 * [資料庫](database/database-README.md)
   * [Migration (遷移)](database/migration/database-migration-README.md)
   * [Eloquent Model (模型)](database/model/database-model-README.md)
+    * [設定](database/model/database-model-eloquent-config.md)
+    * [魔術函式](database/model/database-model-eloquent-magic-function.md)
   * [PostgreSQL](database/postgresql/database-postgresql-README.md)
     * [安裝 PostgreSQL ODBC driver](database/postgresql/database-postgresql-install-odbc-driver.md)
 * [HTTP](http/http-README.md)
