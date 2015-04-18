@@ -8,7 +8,7 @@ Laravel 的視圖是放在 `resource/views` 目錄內
 
 我們網頁常常會出現 header 跟 footer 在不同的視圖中為相同的狀況，唯一有變的只有中間的內容隨著不同的請求而有變動，如果有這樣的設計需求，我們可以替所有視圖建立共用的視圖，假設我們把這個共用的視圖放在 `resource/view/app.blade.php` 下，其內容可能是：
 
-```blade
+```html
 <!-- resource/view/app.blade.php -->
 <!doctype html>
 <html lang="zh-TW">
@@ -31,7 +31,7 @@ Laravel 的視圖是放在 `resource/views` 目錄內
 如果我們要顯示文章的資訊在 `content` 中，文章的說明在 `other_info` 中，我們可以在 blade 中這樣設定：
 
 
-```blade
+```html
 <!-- resource/view/article.blade.php -->
 @extend('app')
 
@@ -75,7 +75,7 @@ Laravel 的視圖是放在 `resource/views` 目錄內
 
 然後在文章視圖當中我們就可以這樣去引入 [Facebook 留言板](https://developers.facebook.com/docs/plugins/comments)：
 
-```blade
+```html
 <!-- resource/view/article.blade.php -->
 @extend('app')
 
@@ -102,7 +102,7 @@ Laravel 的視圖是放在 `resource/views` 目錄內
 但我們還是希望兩個視圖能夠一起被引用，把其他不同的地方當作變數傳入，就可以達到視圖重構的效果，避免類似的視圖重複出現在不同地方，像是：
 
 
-```blade
+```html
 <!-- resource/view/partials/articles/_form.blade.php -->
 {!! Form::label('title','標題') !!}
 {!! Form::text('title', null) !!}
@@ -116,7 +116,7 @@ Laravel 的視圖是放在 `resource/views` 目錄內
 當我們要引用表單的視圖，則必須把按鈕的文字傳送給表單，像是：
 
 
-```blade
+```html
 <!-- resource/view/article.blade.php -->
 @extend('app')
 
@@ -140,7 +140,7 @@ Laravel 的視圖是放在 `resource/views` 目錄內
 
 所以如果你的視圖是放在 `resource/views/partials/other.blade.php` 中，你要引用或載入的話則可以用 `.` 或 `/` 去指定相對的視圖位置，像是：
 
-```blade
+```html
 <!-- 引用 -->
 @extend('partials._other')
 @extend('partials/_other')
