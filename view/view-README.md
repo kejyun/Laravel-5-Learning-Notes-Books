@@ -154,7 +154,7 @@ Laravel 的視圖是放在 `resource/views` 目錄內
 
 #### 樣板檔案名稱
 
-通常若不是完整的視圖，僅是部分的視圖，通常會將檔案名稱最前面加上底線 `_`，用來告知團隊程式設計師這個 blade 樣板不是完整的樣板
+通常若不是完整的視圖，僅是部分的視圖，通常會將檔案名稱最前面加上底線 `_`，用來告知團隊程式設計師這個 blade 視圖不是完整的視圖
 
 ## 參考資訊
 * [View Partials and Form Reuse - Laracasts](https://laracasts.com/series/laravel-5-fundamentals/episodes/13)
