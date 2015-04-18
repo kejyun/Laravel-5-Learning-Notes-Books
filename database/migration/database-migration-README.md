@@ -80,7 +80,7 @@ class AddEmailToUsersTable extends Migration {
     {
         Schema::table('users', function(Blueprint $table)
         {
-            //
+          $table->string('email', 180);
         });
     }
 
@@ -93,7 +93,7 @@ class AddEmailToUsersTable extends Migration {
     {
         Schema::table('users', function(Blueprint $table)
         {
-            //
+          $table->dropColumn('email');
         });
     }
 
@@ -102,6 +102,7 @@ class AddEmailToUsersTable extends Migration {
 ```
 
 > 原先的建立資料表會用 `Schema::create()`，而異動資料表則會用 `Schema::table()` 去做異動
+
 
 ### 列出目前所有 Migration 狀態
 
@@ -135,9 +136,21 @@ $ php artisan migrate:refresh
 
 ## 備註
 
+### 欄位異動
+
+若做欄位異動 Migration 後需要 rollback，若丟出例外錯誤時，則使用 composer 安裝 `doctrine/dbal` 後即可解決 rollback 的問題
+
+```shell
+$ composer require doctrine/dbal
+```
+
+### 安全性
+
 在剛開始開發產品的時候，有時候資料表有做小小的修改或異動，為了圖方便，我們常常會使用 `migrate:reset` 或 `migrate:refresh` 去清空我們的資料，重建資料表。
 
 但如果產品已經上線了，這個指令就會是一個非常危險的指令，企業產品最重要的資產就是`資料`，這個指令會導致所有的資料都被清除，所以請上線後小心謹慎去使用。
+
+
 
 ## 參考資料
 * [遷移和資料填充 - Laravel.tw](http://laravel.tw/docs/5.0/migrations)
