@@ -5,6 +5,7 @@
   * [.env 檔案](environment/Environment-Dot-Env-File.md)
 * [資料庫](database/database-README.md)
   * [Migration (遷移)](database/migration/database-migration-README.md)
+  * [Eloquent Model (模型)](database/model/database-model-README.md)
   * [PostgreSQL](database/postgresql/database-postgresql-README.md)
     * [安裝 PostgreSQL ODBC driver](database/postgresql/database-postgresql-install-odbc-driver.md)
 * [學習資源](resource/Resource-README.md)
