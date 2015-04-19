@@ -15,6 +15,8 @@
   * [請求](http/request/http-request-README.md)
   * [中介層 (Middleware)](http/middleware/http-middleware-README.md)
 * [視圖 (View)](view/view-README.md)
+* [設計模式](design-pattern/design-pattern-README.md)
+  * [服務容器](design-pattern/design-pattern-service-container.md)
 * [學習資源](resource/Resource-README.md)
   * [官方](resource/Resource-Official.md)
   * [社群](resource/Resource-Community.md)
