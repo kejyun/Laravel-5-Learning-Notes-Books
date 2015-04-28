@@ -22,6 +22,8 @@
 * [套件](package/package-README.md)
   * [Debug](package/debug/package-debug-README.md)
     * [Artisan tail](package/debug/package-debug-artisan-tail.md)
+  * [工具](package/tool/package-tool-README.md)
+    * [Carbon](package/tool/package-tool-carbon.md)
 * [學習資源](resource/Resource-README.md)
   * [官方](resource/Resource-Official.md)
   * [社群](resource/Resource-Community.md)
