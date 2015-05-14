@@ -6,4 +6,6 @@
 
 ## 文件
 * [Awesome Laravel](https://github.com/chiraggude/awesome-laravel)
-  
+
+## 除錯
+* [Debugging Queries in Laravel](https://scotch.io/tutorials/debugging-queries-in-laravel)
