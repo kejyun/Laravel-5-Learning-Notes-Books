@@ -6,4 +6,6 @@
 
 ## 文件
 * [Awesome Laravel](https://github.com/chiraggude/awesome-laravel)
-  
+
+# IoC
+* [神奇的服务容器](https://phphub.org/topics/789)
