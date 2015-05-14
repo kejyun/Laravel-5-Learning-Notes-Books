@@ -9,3 +9,6 @@
 
 ## 除錯
 * [Debugging Queries in Laravel](https://scotch.io/tutorials/debugging-queries-in-laravel)
+
+# IoC
+* [神奇的服务容器](https://phphub.org/topics/789)
