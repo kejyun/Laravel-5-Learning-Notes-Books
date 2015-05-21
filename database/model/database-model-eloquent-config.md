@@ -97,6 +97,18 @@ class Article extends Model {
 }
 ```
 
+## 設定資料庫的連線
+
+我們也可以使用 `$connection` 指定模型需要用哪個資料庫連線去做查詢
+
+```php
+class User extends Model {
+
+    protected $connection = 'custom_connection_name';
+
+}
+```
+
 
 ## 參考資料
 * [Eloquent 101 - Laracast](https://laracasts.com/series/laravel-5-fundamentals/episodes/8)
