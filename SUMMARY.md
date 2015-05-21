@@ -9,6 +9,8 @@
     * [設定](database/model/database-model-eloquent-config.md)
     * [關聯](database/model/database-model-eloquent-relationships.md)
     * [魔術函式](database/model/database-model-eloquent-magic-function.md)
+  * [常見問題](database/qa/database-qa-README.md)
+    * [無法取得查詢 Log](database/qa/database-qa-cannot-get-querylog.md)
   * [PostgreSQL](database/postgresql/database-postgresql-README.md)
     * [安裝 PostgreSQL ODBC driver](database/postgresql/database-postgresql-install-odbc-driver.md)
 * [HTTP](http/http-README.md)
