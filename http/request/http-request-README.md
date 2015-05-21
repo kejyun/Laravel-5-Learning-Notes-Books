@@ -46,7 +46,7 @@ class CreateArticleRequest extends Request {
 
           // 使用陣列設定驗證規則
           'published_at'  => [
-            'require',
+            'required',
             'date',
           ],
         ];
@@ -73,14 +73,14 @@ class CreateArticleRequest extends Request {
 
           // 使用陣列設定驗證規則
           'published_at'  => [
-            'require',
+            'required',
             'date',
           ],
         ];
 
         // 其他條件判斷
         if ($condition) {
-            $rules['something_else'] = 'require';
+            $rules['something_else'] = 'required';
         }
 
         return $rules;
@@ -148,7 +148,7 @@ class ArticleController extends Controller {
             $this->validate($request, [
               'title'         => 'required|min:3',
               'body'          => 'required|min:30',
-              'published_at'  => 'require|date',
+              'published_at'  => 'required|date',
             ]);
         } catch (Exception $e) {
             // 自己處理例外狀況
