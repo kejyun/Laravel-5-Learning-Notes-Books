@@ -20,6 +20,8 @@
     * [自定義輔助方法](services/helpers/services-custom-helpers-README.md)
   * [單元測試 (Unit Test)](services/unit-test/services-unit-test-README.md)
     * [Post CSRF 錯誤](services/unit-test/services-unit-test-post-csrf.md)
+  * [錯誤與日誌](services/errors/services-errors-README.md)
+    * [在單元測試顯示例外](services/errors/services-errors-show-exception-in-cli.md)
 * [設計模式](design-pattern/design-pattern-README.md)
   * [服務容器](design-pattern/design-pattern-service-container.md)
 * [套件](package/package-README.md)
