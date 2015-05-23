@@ -1,28 +1,11 @@
 {
-  "plugins": ["disqus","ga", "share"],
+  "plugins": ["disqus","ga"],
   "pluginsConfig": {
     "disqus": {
       "shortName": "kejyun-laravel5-book"
     },
     "ga": {
       "token": "UA-31063691-12"
-    },
-    "share": {
-      "twitter": {
-
-      },
-      "reddit": {
-
-      },
-      "facebook": {
-
-      },
-      "googleplus": {
-
-      },
-      "linkedin": {
-
-      }
     }
   }
 }
