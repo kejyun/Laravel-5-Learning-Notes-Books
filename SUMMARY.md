@@ -12,6 +12,7 @@
   * [常見問題](database/qa/database-qa-README.md)
     * [無法取得查詢 Log](database/qa/database-qa-cannot-get-querylog.md)
     * [使用大量資料的方式新增時無法新增](database/qa/database-qa-cannot-mass-insert.md)
+    * [使用中繼模型繼承 Eloquent 模型造成無法使用大量資料新增](database/qa/database-qa-cannot-mass-insert-with-extend-model.md)
   * [PostgreSQL](database/postgresql/database-postgresql-README.md)
     * [安裝 PostgreSQL ODBC driver](database/postgresql/database-postgresql-install-odbc-driver.md)
 * [HTTP](http/http-README.md)
