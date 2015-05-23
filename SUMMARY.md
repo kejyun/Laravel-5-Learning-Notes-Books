@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [介紹](README.md)
 * [環境](environment/Environment-README.md)
   * [.env 檔案](environment/Environment-Dot-Env-File.md)
 * [資料庫](database/database-README.md)

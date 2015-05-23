@@ -109,6 +109,31 @@ class User extends Model {
 }
 ```
 
+## 設定主鍵不要自動新增
+
+使用 Eloquent 去建立模型（Model）時，預設主鍵會使用自動新增（Auto-increment）的方式去新增，若要自行定義主鍵時，則要設定 `$incrementing` 為 `false`，將自動新增的功能關閉～
+
+
+```php
+class User extends Model {
+
+  public $incrementing = false;
+
+}
+```
+
+## 設定主鍵欄位名稱
+
+使用 Eloquent 去建立模型（Model）時，預設會將主鍵欄位名稱設為 `id`，若有需要異動主鍵欄位名稱的話，則要設定 `$primaryKey` 變數，設為自行定義的欄位名稱
+
+```php
+class User extends Model {
+
+  protected $primaryKey = 'my_primary_column_name';
+
+}
+```
+
 
 ## 參考資料
 * [Eloquent 101 - Laracast](https://laracasts.com/series/laravel-5-fundamentals/episodes/8)
