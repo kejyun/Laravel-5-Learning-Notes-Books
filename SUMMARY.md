@@ -34,6 +34,8 @@
     * [Artisan tail](package/debug/package-debug-artisan-tail.md)
   * [工具](package/tool/package-tool-README.md)
     * [Carbon](package/tool/package-tool-carbon.md)
+* [其他常見問題](qa/qa-README.md)
+  * [Call to undefined method getCachedCompilePath()](qa/qa-call-undefined-method-getCachedCompilePath.md)
 * [學習資源](resource/Resource-README.md)
   * [官方](resource/Resource-Official.md)
   * [社群](resource/Resource-Community.md)
