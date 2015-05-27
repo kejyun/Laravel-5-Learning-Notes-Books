@@ -22,6 +22,7 @@
 * [視圖 (View)](view/view-README.md)
 * [服務](services/services-README.md)
   * [郵件](services/mail/services-mail-README.md)
+    * [使用 Gmail 寄信](services/mail/services-mail-gmail.md)
     * [使用 Mailgun 寄信](services/mail/services-mail-mailgun.md)
   * [輔助方法 (Helpers)](services/helpers/services-helpers-README.md)
     * [自定義輔助方法](services/helpers/services-custom-helpers-README.md)
