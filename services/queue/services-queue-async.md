@@ -1,10 +1,34 @@
-# 原生隊列（Native Queue）
+# 非同步資料庫隊列（Async Database Queue）
 
-我們可以使用 `database` 的隊列設定，在自己的資料庫建立隊列資料表
+在我們使用 Laravel 提供的資料庫隊列（Database Queue）時，我們需要在命令列執行 `php artisan queue:listen` 指令，持續的去監聽是否有需要執行的 Queue。
+
+`[barryvdh/laravel-async-queue](https://packagist.org/packages/barryvdh/laravel-async-queue)` 隊列套件，可以讓我們不用持續的監聽隊列資料，並在使用隊列時，立即的使用 shell 在背景執行隊列的工作。
+
+目前（2015-06-01） 套件 0.4.x 版本有支援 Laravel 5
+
+## 安裝
+
+```shell
+$ composer require 'barryvdh/laravel-async-queue:0.4.*@dev'
+```
+
+## 加入 Service Provider
+
+在 `config/app.php` 檔案中加入 `'Barryvdh\Queue\AsyncServiceProvider'`
+
+```php
+// config/app.php
+return [
+  'providers' => [
+    'Barryvdh\Queue\AsyncServiceProvider',
+  ]
+];
+```
+
 
 ## 產生隊列資料表
 
-我們可以使用 `php artisan queue:table` 指令去產生隊列的 Migration
+`[barryvdh/laravel-async-queue](https://packagist.org/packages/barryvdh/laravel-async-queue)` 隊列套件使用原生的資料庫隊列資料表（Database Queue）去時做的，所以我們可以使用 `php artisan queue:table` 指令去產生隊列的 Migration
 
 ```shell
 $ php artisan queue:table
@@ -63,6 +87,26 @@ class CreateQueueJobsTable extends Migration {
 
 執行 `php artisan migrate` 將隊列資料表新增至資料庫
 
+## 設定隊列驅動
+
+在 `config/queue.php` 檔案中設定非同步資料庫隊列（Async Database Queue）驅動設定，設定如下：
+
+```php
+// config/queue.php
+return [
+    'default' => 'async',
+    'connections' => [
+        'async' => [
+            'driver' => 'database',
+            'table' => 'jobs',
+            'queue' => 'default',
+            'expire' => 60,
+            'connection_name'=>'',
+        ],
+    ],
+];
+```
+
 ## 建立隊列工作
 
 我們可以使用 `\Queue::push('App\Commands\SendEmail@fire', $queue_data);` 的方法去新增要執行的隊列
@@ -103,32 +147,19 @@ class SendEmail {
         // 寄送 Email
         \Mail::send('emails.welcome', [], function($message) use ($data)
         {
-            $message->to($data['email'], $data['name'])->subject('歡迎使用 Laravel 5 原生隊列寄送 Email!!!');
+            $message->to($data['email'], $data['name'])->subject('歡迎使用 Laravel 5 資料庫隊列寄送 Email!!!');
         });
-
-        // 執行成功，刪除隊列
-        $job->delete();
     }
 }
 ```
 
-`fire` 方法中的 `$job` 變數會接受該隊列的實例，`$data` 變數會接收建立隊列時傳入的資料
-
-像我要使用隊列寄送 Email，則會將使用者的相關資訊傳送到這個隊列來，讓隊列能正確的發送正確的 Email 資訊給使用者！
-
-在隊列執行完成無誤後，我們必須要使用 `$job->delete();` 將隊列資料刪除，若沒有刪除 Laravel 下次再出理到該資料時，則會視為隊列處理失敗，進而嘗試重新處理
-
-
-## 監聽隊列工作
-
-我們會在 shell 中執行 `php artisan queue:listen` 去持續的監聽隊列資料的狀況，若有新增隊列到資料表時，Laravel 則會開始處理隊列的資料
-
-```shell
-$ php artisan queue:listen
-```
-
 這樣我們就可以正常的使用隊列去幫我們寄信摟！！
+
+> 目前 `[barryvdh/laravel-async-queue](https://packagist.org/packages/barryvdh/laravel-async-queue)` 在執行完隊列時，無法直接刪除隊列資料，待作者修復這個 bug
+
 
 ## 參考資料
 * [隊列 - Laravel.tw](http://laravel.tw/docs/5.0/queues)
 * [Queues in Laravel with Redis](https://www.youtube.com/watch?v=dsp_l65W8ck)
+* [barryvdh/laravel-async-queue - packagist](https://packagist.org/packages/barryvdh/laravel-async-queue)
+* [Laravel 5 Async Queue Driver - Github](https://github.com/barryvdh/laravel-async-queue/tree/0.4)
