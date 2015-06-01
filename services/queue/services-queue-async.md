@@ -2,7 +2,7 @@
 
 在我們使用 Laravel 提供的資料庫隊列（Database Queue）時，我們需要在命令列執行 `php artisan queue:listen` 指令，持續的去監聽是否有需要執行的 Queue。
 
-`[barryvdh/laravel-async-queue](https://packagist.org/packages/barryvdh/laravel-async-queue)` 隊列套件，可以讓我們不用持續的監聽隊列資料，並在使用隊列時，立即的使用 shell 在背景執行隊列的工作。
+[barryvdh/laravel-async-queue](https://packagist.org/packages/barryvdh/laravel-async-queue) 隊列套件，可以讓我們不用持續的監聽隊列資料，並在使用隊列時，立即的使用 shell 在背景執行隊列的工作。
 
 目前（2015-06-01） 套件 0.4.x 版本有支援 Laravel 5
 
@@ -28,7 +28,7 @@ return [
 
 ## 產生隊列資料表
 
-`[barryvdh/laravel-async-queue](https://packagist.org/packages/barryvdh/laravel-async-queue)` 隊列套件使用原生的資料庫隊列資料表（Database Queue）去時做的，所以我們可以使用 `php artisan queue:table` 指令去產生隊列的 Migration
+[barryvdh/laravel-async-queue](https://packagist.org/packages/barryvdh/laravel-async-queue) 隊列套件使用原生的資料庫隊列資料表（Database Queue）去時做的，所以我們可以使用 `php artisan queue:table` 指令去產生隊列的 Migration
 
 ```shell
 $ php artisan queue:table
@@ -155,7 +155,7 @@ class SendEmail {
 
 這樣我們就可以正常的使用隊列去幫我們寄信摟！！
 
-> 目前 `[barryvdh/laravel-async-queue](https://packagist.org/packages/barryvdh/laravel-async-queue)` 在執行完隊列時，無法直接刪除隊列資料，待作者修復這個 bug
+> 目前（2015-06-01） [barryvdh/laravel-async-queue](https://packagist.org/packages/barryvdh/laravel-async-queue) 在執行完隊列時，無法直接刪除隊列資料，待作者修復這個 bug
 
 
 ## 參考資料
