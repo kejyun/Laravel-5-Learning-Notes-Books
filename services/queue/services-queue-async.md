@@ -97,7 +97,7 @@ return [
     'default' => 'async',
     'connections' => [
         'async' => [
-            'driver' => 'database',
+            'driver' => 'async',
             'table' => 'jobs',
             'queue' => 'default',
             'expire' => 60,
