@@ -33,6 +33,7 @@
     * [Post CSRF 錯誤](services/unit-test/services-unit-test-post-csrf.md)
   * [錯誤與日誌](services/errors/services-errors-README.md)
     * [在單元測試顯示例外](services/errors/services-errors-show-exception-in-cli.md)
+    * [日誌記錄層級](services/errors/services-errors-log-level.md)
 * [設計模式](design-pattern/design-pattern-README.md)
   * [服務容器](design-pattern/design-pattern-service-container.md)
 * [套件](package/package-README.md)
