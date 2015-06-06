@@ -74,7 +74,7 @@ class ResponseServiceProvider extends ServiceProvider {
          *  @param      Array|Object|String     $log_data           紀錄的資料
          *  @param      String                  $log_level          紀錄資料的等級（預設為 info）
          *
-         *  @return     null
+         *  @return     Response                $response           回應的 json 資料
          *
          *  @access     public
          *  @author     KeJyun      kejyun@gmail.com
