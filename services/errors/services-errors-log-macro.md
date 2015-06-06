@@ -159,8 +159,8 @@ try{
   // 商業邏輯處理
 } catch (Exception $exception) {
     $response_data = [
-        'status'=>'failure'
-        'error_code'=>5566
+        'status'=>'failure',
+        'error_code'=>5566,
     ];
     return response()->jsonLog($response_data, $exception, 'alert');
 }
