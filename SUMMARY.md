@@ -9,7 +9,7 @@
     * [設定](database/model/database-model-eloquent-config.md)
     * [關聯](database/model/database-model-eloquent-relationships.md)
     * [魔術函式](database/model/database-model-eloquent-magic-function.md)
-    * [使用](database/model/database-model-eloquent-apply.md)
+    * [使用 Eloquent](database/model/database-model-eloquent-apply.md)
   * [常見問題](database/qa/database-qa-README.md)
     * [無法取得查詢 Log](database/qa/database-qa-cannot-get-querylog.md)
     * [使用大量資料的方式新增時無法新增](database/qa/database-qa-cannot-mass-insert.md)
