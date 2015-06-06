@@ -5,7 +5,7 @@
 
 # API
 
-* [Laravel 4 API Documentation](http://laravel.com/api/)
+* [Laravel 5 API Documentation](http://laravel.com/api/5.0/)
 
 # 套件 (Package)
 
