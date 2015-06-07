@@ -48,6 +48,7 @@
   * [官方](resource/Resource-Official.md)
   * [社群](resource/Resource-Community.md)
   * [會議議程](resource/Resource-Conference.md)
+  * [工作](resource/Resource-Jobs.md)
   * [文件](resource/Resource-Document.md)
   * [文章](resource/Resource-Article.md)
   * [套件](resource/Resource-Packages.md)
