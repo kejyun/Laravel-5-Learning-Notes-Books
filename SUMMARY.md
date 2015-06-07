@@ -47,6 +47,7 @@
 * [學習資源](resource/Resource-README.md)
   * [官方](resource/Resource-Official.md)
   * [社群](resource/Resource-Community.md)
+  * [會議議程](resource/Resource-Conference.md)
   * [文件](resource/Resource-Document.md)
   * [文章](resource/Resource-Article.md)
   * [套件](resource/Resource-Packages.md)
@@ -54,4 +55,5 @@
   * [教學影片](resource/Resource-Learning-Video.md)
   * [教學網站](resource/Resource-Learning-Sites.md)
   * [編輯開發](resource/Resource-Editor-Tool.md)
+  * [主機](resource/Resource-Hosting.md)
   * [成功案例](resource/Resource-Laravel-Case.md)
