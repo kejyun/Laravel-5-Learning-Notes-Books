@@ -38,6 +38,7 @@
 * [設計模式](design-pattern/design-pattern-README.md)
   * [服務容器](design-pattern/design-pattern-service-container.md)
   * [PSR](design-pattern/design-pattern-psr.md)
+  * [學習資源](design-pattern/design-pattern-learning-resource.md)
 * [套件](package/package-README.md)
   * [Debug](package/debug/package-debug-README.md)
     * [Artisan tail](package/debug/package-debug-artisan-tail.md)
