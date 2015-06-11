@@ -44,6 +44,7 @@
     * [Carbon](package/tool/package-tool-carbon.md)
 * [其他常見問題](qa/qa-README.md)
   * [Call to undefined method getCachedCompilePath()](qa/qa-call-undefined-method-getCachedCompilePath.md)
+  * [變更專案目錄名稱導致 View 無法讀取](qa/qa-change-app-directory-name-cause-view-can-not-readable.md)
 * [學習資源](resource/Resource-README.md)
   * [官方](resource/Resource-Official.md)
   * [社群](resource/Resource-Community.md)
