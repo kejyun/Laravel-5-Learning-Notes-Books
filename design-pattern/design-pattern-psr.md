@@ -54,6 +54,15 @@ $ php-cs-fixer fix /path/to/project --level=symfony
 
 將新的指令檔案名稱取為 `php-cs-fixer.sublime-bulid`，這樣我們回到 Sublime 去開啟任一 PHP 檔案，只要按下 `Command（⌘）`+`B`，Sublime 就會自動幫我們執行 php-cs-fixer 的 shell script 指令，去修正我們的 PHP 檔案了！！
 
+### php-cs-fixer 使用小技巧
+
+我們可以將修改 `~/.bash_profile` 檔案，將使用 php-cs-fixer 修正 Terminal 目前目錄的 PHP 指令加入，這樣我們只要用 Terminal 瀏覽到我們想要做 php-cs-fixer 的目錄下，我們每次只需要下 `phpCSFixerThisFolder` 指令就可以了，這樣就不用記住也不用打那麼落落長的 php-cs-fixer 指令了！
+
+```shell
+alias phpCSFixerThisFolder="php-cs-fixer fix ./ --level=psr2"
+```
+
+
 ## PSR 中文文件
 * [PSR-1 - Basic Coding Standard](https://github.com/laravel-taiwan/fig-standards/blob/master/accepted/zh-TW/PSR-1-basic-coding-standard.md)
 * [PSR-2 - Coding Style Guide](https://github.com/laravel-taiwan/fig-standards/blob/master/accepted/zh-TW/PSR-2-coding-style-guide.md)
