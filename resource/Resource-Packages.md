@@ -17,7 +17,9 @@
 * [Laravel Flysystem](https://github.com/GrahamCampbell/Laravel-Flysystem)
 
 ## 除錯
+* [The missing tail command for Laravel 5](https://github.com/freekmurze/laravel-tail)
 * [Laravel Exceptions](https://github.com/GrahamCampbell/Laravel-Exceptions)
+* [Laravel Debugbar](https://github.com/barryvdh/laravel-debugbar)
 
 ## 條碼
 * [Simple QrCode](https://github.com/SimpleSoftwareIO/simple-qrcode)
