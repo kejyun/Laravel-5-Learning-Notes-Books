@@ -4,6 +4,8 @@
 
 Blog : http://blog.kejyun.com
 
+Github: https://github.com/kejyun
+
 Facebook : http://fb.me/kejyunTaiwan
 
 GitBook : http://kejyuntw.gitbooks.io/laravel-5-learning-notes/
