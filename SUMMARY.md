@@ -35,6 +35,8 @@
     * [在單元測試顯示例外](services/errors/services-errors-show-exception-in-cli.md)
     * [日誌記錄層級](services/errors/services-errors-log-level.md)
     * [日誌巨集](services/errors/services-errors-log-macro.md)
+  * [Elixir](services/elixir/services-elixir-README.md)
+    * [使用 Elixir 合併 CSS 與 JS](services/elixir/services-elixir-combine-css-and-js.md)
 * [設計模式](design-pattern/design-pattern-README.md)
   * [服務容器](design-pattern/design-pattern-service-container.md)
   * [PSR](design-pattern/design-pattern-psr.md)

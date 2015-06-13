@@ -3,6 +3,7 @@
 ## English
 
 * [Laravel 5 Fundamentals](https://laracasts.com/series/laravel-5-fundamentals)
+* [What's New in Laravel 5.1](https://laracasts.com/series/whats-new-in-laravel-5-1)
 * [The Best Laravel and PHP Screencasts](https://laracasts.com/)
 * [PHP Academy](https://www.youtube.com/user/phpacademy/playlists)
 * [Laravel Basics Course](http://teamtreehouse.com/library/laravel-basics)
