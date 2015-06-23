@@ -46,6 +46,7 @@
     * [Artisan tail](package/debug/package-debug-artisan-tail.md)
   * [工具](package/tool/package-tool-README.md)
     * [Carbon](package/tool/package-tool-carbon.md)
+  * [設計模式](package/design-pattern/package-design-pattern-README.md)
 * [其他常見問題](qa/qa-README.md)
   * [Call to undefined method getCachedCompilePath()](qa/qa-call-undefined-method-getCachedCompilePath.md)
   * [變更專案目錄名稱導致 View 無法讀取](qa/qa-change-app-directory-name-cause-view-can-not-readable.md)
