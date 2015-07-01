@@ -236,7 +236,67 @@ class UserPrivacyService extends AnotherClass
 
 ## ARCA 架構檔案結構
 
-> to be continued...
+我會將 Model 的檔案結構依照 Domain 去區分，檔案結構大概會像這樣
+
+```
+/app
+  /KeJyunApp
+    /User
+      /Entities
+        User.php
+        UserPrivacy.php
+      /Repositories
+        UserRepository.php
+        UserPrivacyRepository.php
+      /Service
+        UserAuthService.php
+        UserPrivacyService.php
+      /Form
+        UserForm.php
+        UserPrivacyForm.php
+      /Presenter
+        UserPresenter.php
+        UserPrivacyPresenter.php
+    /Post
+      /Entities
+        Post.php
+      /Repositories
+      /Service
+      /Form
+      /Presenter
+```
+
+這樣區分的好處是，類似功能的程式可以方便集中管理，當我們在撰寫某一功能的程式，我們可以很快地在同一個資料夾中找到這些檔案，若要找其他功能的程式時，也可以在同一個資料夾很快地去找到
+
+如果我們將程式檔案依照功能去放置，可能會像這樣
+
+```
+/app
+  /SomeApp
+    /Entities
+      User.php
+      Post.php
+      Tags.php
+      News.php
+      Event.php
+      ...
+    /Repositories
+    /Service
+      UserAuthService.php
+      UserPrivacyService.php
+      UserStatisticService.php
+      PostManageService.php
+      PostRankService.php
+      PostStatisticService.php
+      TagsService.php
+      NewsService.php
+      EventService.php
+      ...
+    /Form
+    /Presenter
+```
+
+當專案還小，只有少數幾個模型資料需要管理時，還沒有什麼大的問題，但是當我們撰寫很多複雜功能時，這樣檔案管理的方式會是個很大的夢靨，像是服務（Service）與資源庫（Repository）的關係是「多 對 1」的關係，所以服務（Services）資料夾的檔案可能有 40~50 個以上，在我們要找相關的檔案時，就很考驗我們的眼力了（工程師的眼睛是很珍貴的，我們要好好的珍惜～）
 
 ## 參考資料
 * [在 Laravel 4 使用資源庫 (Repositories) 及服務 (Services) 去降低程式的耦合性](http://laravel4-book.kejyun.com/laravel-design-pattern/model/decoupling-your-code-in-laravel-using-repositiories-and-services.html)
