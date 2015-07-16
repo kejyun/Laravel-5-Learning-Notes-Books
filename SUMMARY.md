@@ -36,7 +36,7 @@
     * [日誌記錄層級](services/errors/services-errors-log-level.md)
     * [日誌巨集](services/errors/services-errors-log-macro.md)
   * [加密](services/encryption/services-encryption-README.md)
-  * [雜湊](services/hhashing/services-hhashing-README.md)
+  * [雜湊](services/hashing/services-hashing-README.md)
   * [Elixir](services/elixir/services-elixir-README.md)
     * [使用 Elixir 合併 CSS 與 JS](services/elixir/services-elixir-combine-css-and-js.md)
 * [設計模式](design-pattern/design-pattern-README.md)
