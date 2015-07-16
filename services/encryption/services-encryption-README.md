@@ -19,5 +19,35 @@ $encrypt_data = Crypt::encrypt($original_data);
 $decrypted = Crypt::decrypt($encrypt_data);
 ```
 
+## 備註
+
+重複加密相同的資料得到的密文不會一樣，所以不要使用像 md5 的方式去比對密文資料是否相同
+
+### 使用 md5 比較密文
+
+```php
+$original_data = '需要加密的資料';
+// 第 1 次使用 md5 加密的資料
+$first_md5_encrypt_data = md5($original_data);
+// 第 2 次使用 md5 加密的資料
+$second_md5_encrypt_data = md5($original_data);
+// 資料相同
+// true
+var_dump($first_md5_encrypt_data === $second_md5_encrypt_data);
+```
+
+### 使用加密演算法比較密文
+
+```php
+$original_data = '需要加密的資料';
+// 第 1 次使用加密演算法加密的資料
+$first_encrypt_data = Crypt::encrypt($original_data);
+// 第 2 次使用加密演算法加密的資料
+$second_encrypt_data = Crypt::encrypt($original_data);
+// 資料不相同
+// false
+var_dump($first_encrypt_data === $second_encrypt_data);
+```
+
 ## 參考資料
 * [加密 - Laravel.tw](http://laravel.tw/docs/5.1/encryption)
