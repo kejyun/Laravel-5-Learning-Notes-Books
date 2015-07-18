@@ -21,6 +21,7 @@
   * [中介層 (Middleware)](http/middleware/http-middleware-README.md)
 * [視圖 (View)](view/view-README.md)
 * [服務](services/services-README.md)
+  * [認證登入（Auth）](services/auth/services-auth-README.md)
   * [郵件（Mail）](services/mail/services-mail-README.md)
     * [使用 Gmail 寄信](services/mail/services-mail-gmail.md)
     * [使用 Mailgun 寄信](services/mail/services-mail-mailgun.md)
