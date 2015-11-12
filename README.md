@@ -1,17 +1,23 @@
 # Laravel 5 學習筆記
 
-作者 : KeJyun
+## 作者 : KeJyun
 
-Blog : http://blog.kejyun.com
+### 書籍網址
 
-Github: https://github.com/kejyun
+| 項目  | 網址 |
+|---|---|
+|  Github Page | http://kejyun.github.io/Laravel-5-Learning-Notes-Books/  |
+|  GitBook | http://kejyuntw.gitbooks.io/laravel-5-learning-notes/  |
 
-Facebook : http://fb.me/kejyunTaiwan
+### 聯絡資訊
 
-GitBook : http://kejyuntw.gitbooks.io/laravel-5-learning-notes/
-
-Email : kejyun@gmail.com
-
+| 項目  | 網址 |
+|---|---|
+|  Email | kejyun@gmail.com  |
+|  LinkedIn | https://tw.linkedin.com/in/kejyun  |
+|  Github | https://github.com/kejyun  |
+|  Facebook | http://fb.me/kejyunTaiwan  |
+|  Blog | http://blog.kejyun.com  |
 
 ## 所有 KeJyun 著作
 * [High Scaling Websites Structure Learning Notes 大型網站架構學習筆記](http://kejyuntw.gitbooks.io/high-scaling-websites-structure-learning-notes/)
