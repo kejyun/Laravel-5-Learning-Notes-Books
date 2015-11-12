@@ -1,0 +1,1735 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>Carbon | Laravel 5 學習筆記</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="../../package/design-pattern/package-design-pattern-README.html" />
+    
+    
+    <link rel="prev" href="../../package/tool/package-tool-README.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="7.2.1" data-basepath="../.." data-revision="Thu Nov 12 2015 22:12:46 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        介紹
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="environment/Environment-README.html">
+            
+                
+                    <a href="../../environment/Environment-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        環境
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="environment/Environment-Dot-Env-File.html">
+            
+                
+                    <a href="../../environment/Environment-Dot-Env-File.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        .env 檔案
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="database/database-README.html">
+            
+                
+                    <a href="../../database/database-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        資料庫
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="database/migration/database-migration-README.html">
+            
+                
+                    <a href="../../database/migration/database-migration-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Migration (遷移)
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="database/model/database-model-README.html">
+            
+                
+                    <a href="../../database/model/database-model-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Eloquent Model (模型)
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="database/model/database-model-eloquent-config.html">
+            
+                
+                    <a href="../../database/model/database-model-eloquent-config.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.1.</b>
+                        
+                        設定
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="database/model/database-model-eloquent-relationships.html">
+            
+                
+                    <a href="../../database/model/database-model-eloquent-relationships.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.2.</b>
+                        
+                        關聯
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="database/model/database-model-eloquent-magic-function.html">
+            
+                
+                    <a href="../../database/model/database-model-eloquent-magic-function.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.3.</b>
+                        
+                        魔術函式
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="database/model/database-model-eloquent-apply.html">
+            
+                
+                    <a href="../../database/model/database-model-eloquent-apply.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.4.</b>
+                        
+                        使用 Eloquent
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="database/qa/database-qa-README.html">
+            
+                
+                    <a href="../../database/qa/database-qa-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        常見問題
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="database/qa/database-qa-cannot-get-querylog.html">
+            
+                
+                    <a href="../../database/qa/database-qa-cannot-get-querylog.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.1.</b>
+                        
+                        無法取得查詢 Log
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="database/qa/database-qa-cannot-mass-insert.html">
+            
+                
+                    <a href="../../database/qa/database-qa-cannot-mass-insert.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.2.</b>
+                        
+                        使用大量資料的方式新增時無法新增
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="database/qa/database-qa-cannot-mass-insert-with-extend-model.html">
+            
+                
+                    <a href="../../database/qa/database-qa-cannot-mass-insert-with-extend-model.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.3.</b>
+                        
+                        使用中繼模型繼承 Eloquent 模型造成無法使用大量資料新增
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="database/postgresql/database-postgresql-README.html">
+            
+                
+                    <a href="../../database/postgresql/database-postgresql-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        PostgreSQL
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="database/postgresql/database-postgresql-install-odbc-driver.html">
+            
+                
+                    <a href="../../database/postgresql/database-postgresql-install-odbc-driver.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.1.</b>
+                        
+                        安裝 PostgreSQL ODBC driver
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="http/http-README.html">
+            
+                
+                    <a href="../../http/http-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        HTTP
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="http/request/http-request-README.html">
+            
+                
+                    <a href="../../http/request/http-request-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        請求
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="http/middleware/http-middleware-README.html">
+            
+                
+                    <a href="../../http/middleware/http-middleware-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        中介層 (Middleware)
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="view/view-README.html">
+            
+                
+                    <a href="../../view/view-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        視圖 (View)
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="services/services-README.html">
+            
+                
+                    <a href="../../services/services-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        服務
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="services/auth/services-auth-README.html">
+            
+                
+                    <a href="../../services/auth/services-auth-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        認證登入（Auth）
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="services/mail/services-mail-README.html">
+            
+                
+                    <a href="../../services/mail/services-mail-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        郵件（Mail）
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="services/mail/services-mail-gmail.html">
+            
+                
+                    <a href="../../services/mail/services-mail-gmail.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.1.</b>
+                        
+                        使用 Gmail 寄信
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="services/mail/services-mail-mailgun.html">
+            
+                
+                    <a href="../../services/mail/services-mail-mailgun.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.2.</b>
+                        
+                        使用 Mailgun 寄信
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="services/queue/services-queue-README.html">
+            
+                
+                    <a href="../../services/queue/services-queue-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        隊列（Queue）
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.1" data-path="services/queue/services-queue-database.html">
+            
+                
+                    <a href="../../services/queue/services-queue-database.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.1.</b>
+                        
+                        database
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.2" data-path="services/queue/services-queue-async.html">
+            
+                
+                    <a href="../../services/queue/services-queue-async.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.2.</b>
+                        
+                        非同步（async）
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="services/helpers/services-helpers-README.html">
+            
+                
+                    <a href="../../services/helpers/services-helpers-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        輔助方法 (Helpers)
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.4.1" data-path="services/helpers/services-custom-helpers-README.html">
+            
+                
+                    <a href="../../services/helpers/services-custom-helpers-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.1.</b>
+                        
+                        自定義輔助方法
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="services/unit-test/services-unit-test-README.html">
+            
+                
+                    <a href="../../services/unit-test/services-unit-test-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        單元測試 (Unit Test)
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.5.1" data-path="services/unit-test/services-unit-test-post-csrf.html">
+            
+                
+                    <a href="../../services/unit-test/services-unit-test-post-csrf.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.1.</b>
+                        
+                        Post CSRF 錯誤
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="services/errors/services-errors-README.html">
+            
+                
+                    <a href="../../services/errors/services-errors-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        錯誤與日誌
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.6.1" data-path="services/errors/services-errors-show-exception-in-cli.html">
+            
+                
+                    <a href="../../services/errors/services-errors-show-exception-in-cli.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.1.</b>
+                        
+                        在單元測試顯示例外
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6.2" data-path="services/errors/services-errors-log-level.html">
+            
+                
+                    <a href="../../services/errors/services-errors-log-level.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.2.</b>
+                        
+                        日誌記錄層級
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6.3" data-path="services/errors/services-errors-log-macro.html">
+            
+                
+                    <a href="../../services/errors/services-errors-log-macro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.3.</b>
+                        
+                        日誌巨集
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="services/encryption/services-encryption-README.html">
+            
+                
+                    <a href="../../services/encryption/services-encryption-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        加密
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="services/hashing/services-hashing-README.html">
+            
+                
+                    <a href="../../services/hashing/services-hashing-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        雜湊
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="services/elixir/services-elixir-README.html">
+            
+                
+                    <a href="../../services/elixir/services-elixir-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.9.</b>
+                        
+                        Elixir
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.9.1" data-path="services/elixir/services-elixir-combine-css-and-js.html">
+            
+                
+                    <a href="../../services/elixir/services-elixir-combine-css-and-js.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.9.1.</b>
+                        
+                        使用 Elixir 合併 CSS 與 JS
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="design-pattern/design-pattern-README.html">
+            
+                
+                    <a href="../../design-pattern/design-pattern-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        設計模式
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="design-pattern/design-pattern-service-container.html">
+            
+                
+                    <a href="../../design-pattern/design-pattern-service-container.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        服務容器
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="design-pattern/design-pattern-psr.html">
+            
+                
+                    <a href="../../design-pattern/design-pattern-psr.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        PSR
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="design-pattern/design-pattern-model.html">
+            
+                
+                    <a href="../../design-pattern/design-pattern-model.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Model 模型
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="design-pattern/design-pattern-learning-resource.html">
+            
+                
+                    <a href="../../design-pattern/design-pattern-learning-resource.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        學習資源
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="package/package-README.html">
+            
+                
+                    <a href="../../package/package-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        套件
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="package/debug/package-debug-README.html">
+            
+                
+                    <a href="../../package/debug/package-debug-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Debug
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1.1" data-path="package/debug/package-debug-artisan-tail.html">
+            
+                
+                    <a href="../../package/debug/package-debug-artisan-tail.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.1.</b>
+                        
+                        Artisan tail
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="package/tool/package-tool-README.html">
+            
+                
+                    <a href="../../package/tool/package-tool-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        工具
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="7.2.1" data-path="package/tool/package-tool-carbon.html">
+            
+                
+                    <a href="../../package/tool/package-tool-carbon.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.1.</b>
+                        
+                        Carbon
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="package/design-pattern/package-design-pattern-README.html">
+            
+                
+                    <a href="../../package/design-pattern/package-design-pattern-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        設計模式
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="qa/qa-README.html">
+            
+                
+                    <a href="../../qa/qa-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        其他常見問題
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="qa/qa-call-undefined-method-getCachedCompilePath.html">
+            
+                
+                    <a href="../../qa/qa-call-undefined-method-getCachedCompilePath.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        Call to undefined method getCachedCompilePath()
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="qa/qa-change-app-directory-name-cause-view-can-not-readable.html">
+            
+                
+                    <a href="../../qa/qa-change-app-directory-name-cause-view-can-not-readable.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        變更專案目錄名稱導致 View 無法讀取
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="qa/qa-laravel-5.1-folder-structure.html">
+            
+                
+                    <a href="../../qa/qa-laravel-5.1-folder-structure.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                        Laravel 5.1 目錄結構異動
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="resource/Resource-README.html">
+            
+                
+                    <a href="../../resource/Resource-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        學習資源
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1" data-path="resource/Resource-Official.html">
+            
+                
+                    <a href="../../resource/Resource-Official.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                        官方
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="resource/Resource-Community.html">
+            
+                
+                    <a href="../../resource/Resource-Community.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                        社群
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="resource/Resource-Conference.html">
+            
+                
+                    <a href="../../resource/Resource-Conference.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.3.</b>
+                        
+                        會議議程
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="resource/Resource-Jobs.html">
+            
+                
+                    <a href="../../resource/Resource-Jobs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.4.</b>
+                        
+                        工作
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.5" data-path="resource/Resource-Document.html">
+            
+                
+                    <a href="../../resource/Resource-Document.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.5.</b>
+                        
+                        文件
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.6" data-path="resource/Resource-Article.html">
+            
+                
+                    <a href="../../resource/Resource-Article.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.6.</b>
+                        
+                        文章
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7" data-path="resource/Resource-Packages.html">
+            
+                
+                    <a href="../../resource/Resource-Packages.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.7.</b>
+                        
+                        套件
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8" data-path="resource/Resource-Laravel-Service.html">
+            
+                
+                    <a href="../../resource/Resource-Laravel-Service.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.8.</b>
+                        
+                        服務工具
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.9" data-path="resource/Resource-Learning-Video.html">
+            
+                
+                    <a href="../../resource/Resource-Learning-Video.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.9.</b>
+                        
+                        教學影片
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.10" data-path="resource/Resource-Learning-Sites.html">
+            
+                
+                    <a href="../../resource/Resource-Learning-Sites.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.10.</b>
+                        
+                        教學網站
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.11" data-path="resource/Resource-Editor-Tool.html">
+            
+                
+                    <a href="../../resource/Resource-Editor-Tool.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.11.</b>
+                        
+                        編輯開發
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.12" data-path="resource/Resource-Hosting.html">
+            
+                
+                    <a href="../../resource/Resource-Hosting.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.12.</b>
+                        
+                        主機
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.13" data-path="resource/Resource-Laravel-Case.html">
+            
+                
+                    <a href="../../resource/Resource-Laravel-Case.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.13.</b>
+                        
+                        成功案例
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >Laravel 5 學習筆記</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="carbon-%E6%99%82%E9%96%93%E5%A5%97%E4%BB%B6">Carbon &#x6642;&#x9593;&#x5957;&#x4EF6;</h1>
+<p>Carbon &#x662F;&#x4E00;&#x500B;&#x5F88;&#x65B9;&#x4FBF;&#x7684;&#x8F49;&#x63DB;&#x6642;&#x9593;&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x53EF;&#x4EE5;&#x5F88;&#x65B9;&#x4FBF;&#x5730;&#x5C07;&#x6642;&#x9593;&#x9032;&#x884C;&#x8F49;&#x63DB;&#xFF0C;&#x53D6;&#x5F97;&#x6211;&#x5011;&#x60F3;&#x8981;&#x7684;&#x7279;&#x5B9A;&#x65E5;&#x671F;&#x6216;&#x683C;&#x5F0F;</p>
+<h2 id="%E5%AE%89%E8%A3%9D">&#x5B89;&#x88DD;</h2>
+<p>Laravel 5 &#x9810;&#x8A2D;&#x5C31;&#x6703;&#x5B89;&#x88DD; Carbon &#x5957;&#x4EF6;&#xFF0C;&#x82E5;&#x6C92;&#x6709;&#x5B89;&#x88DD;&#x7684;&#x8A71;&#x53EF;&#x4EE5;&#x900F;&#x904E;&#x4E0B;&#x5217;&#x7684;&#x65B9;&#x5F0F;&#x9032;&#x884C;&#x5B89;&#x88DD;&#xFF1A;</p>
+<pre><code class="lang-shell"># &#x4F7F;&#x7528; Composer &#x4E0B;&#x8F09; Carbon
+$ composer require nesbot/carbon
+</code></pre>
+<pre><code class="lang-php"><span class="hljs-preprocessor">&lt;?php</span>
+<span class="hljs-comment">// &#x8F09;&#x5165; composer autoload &#x6A94;&#x6848;</span>
+<span class="hljs-keyword">require</span> <span class="hljs-string">&apos;vendor/autoload.php&apos;</span>;
+
+<span class="hljs-comment">// &#x4F7F;&#x7528; Carbon &#x985E;&#x5225;</span>
+<span class="hljs-keyword">use</span> <span class="hljs-title">Carbon</span>\<span class="hljs-title">Carbon</span>;
+
+printf(<span class="hljs-string">&quot;Now: %s&quot;</span>, Carbon::now());
+</code></pre>
+<h2 id="%E5%BF%AB%E9%80%9F%E5%88%87%E6%8F%9B%E5%89%8D%E5%BE%8C%E6%97%A5%E6%9C%9F">&#x5FEB;&#x901F;&#x5207;&#x63DB;&#x524D;&#x5F8C;&#x65E5;&#x671F;</h2>
+<pre><code class="lang-php"><span class="hljs-preprocessor">&lt;?php</span>
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Carbon</span>\<span class="hljs-title">Carbon</span>;
+
+<span class="hljs-variable">$now</span> = Carbon::now();
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$now</span>;                               <span class="hljs-comment">// 2015-03-26 00:36:47</span>
+<span class="hljs-variable">$today</span> = Carbon::today();
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$today</span>;                             <span class="hljs-comment">// 2015-03-26 00:00:00</span>
+<span class="hljs-variable">$tomorrow</span> = Carbon::tomorrow(<span class="hljs-string">&apos;Europe/London&apos;</span>);
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$tomorrow</span>;                          <span class="hljs-comment">// 2015-03-27 00:00:00</span>
+<span class="hljs-variable">$yesterday</span> = Carbon::yesterday();
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$yesterday</span>;                         <span class="hljs-comment">// 2015-03-25 00:00:00</span>
+</code></pre>
+<h2 id="%E5%BB%BA%E7%AB%8B%E7%89%B9%E5%AE%9A%E6%97%A5%E6%9C%9F%E7%9A%84%E6%99%82%E9%96%93">&#x5EFA;&#x7ACB;&#x7279;&#x5B9A;&#x65E5;&#x671F;&#x7684;&#x6642;&#x9593;</h2>
+<pre><code class="lang-php"><span class="hljs-preprocessor">&lt;?php</span>
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Carbon</span>\<span class="hljs-title">Carbon</span>;
+
+<span class="hljs-variable">$timezone</span> = <span class="hljs-string">&apos;Asia/Taipei&apos;</span>;
+
+<span class="hljs-comment">// &#x5F9E;&#x300C;&#x5E74;&#x6708;&#x65E5;&#x300D;&#x5EFA;&#x7ACB;</span>
+Carbon::createFromDate(<span class="hljs-variable">$year</span>, <span class="hljs-variable">$month</span>, <span class="hljs-variable">$day</span>, <span class="hljs-variable">$timezone</span>);
+
+<span class="hljs-comment">// &#x5F9E;&#x300C;&#x6642;&#x5206;&#x79D2;&#x300D;&#x5EFA;&#x7ACB;</span>
+Carbon::createFromTime(<span class="hljs-variable">$hour</span>, <span class="hljs-variable">$minute</span>, <span class="hljs-variable">$second</span>, <span class="hljs-variable">$timezone</span>);
+
+<span class="hljs-comment">// &#x5F9E;&#x5B8C;&#x6574;&#x7684;&#x300C;&#x5E74;&#x6708;&#x65E5;&#x6642;&#x5206;&#x79D2;&#x300D;&#x5EFA;&#x7ACB;</span>
+Carbon::create(<span class="hljs-variable">$year</span>, <span class="hljs-variable">$month</span>, <span class="hljs-variable">$day</span>, <span class="hljs-variable">$hour</span>, <span class="hljs-variable">$minute</span>, <span class="hljs-variable">$second</span>, <span class="hljs-variable">$timezone</span>);
+
+<span class="hljs-comment">// &#x5F9E;&#x6307;&#x5B9A;&#x7684;&#x683C;&#x5F0F;&#x5EFA;&#x7ACB;</span>
+Carbon::createFromFormat(<span class="hljs-variable">$format</span>, <span class="hljs-variable">$time</span>, <span class="hljs-variable">$tz</span>);
+<span class="hljs-keyword">echo</span> Carbon::createFromFormat(<span class="hljs-string">&apos;Y-m-d H&apos;</span>, <span class="hljs-string">&apos;1975-05-21 22&apos;</span>)-&gt;toDateTimeString(); <span class="hljs-comment">// 1975-05-21 22:00:00</span>
+
+<span class="hljs-comment">// &#x5F9E;&#x6642;&#x9593;&#x6233;&#x8A18;&#x5EFA;&#x7ACB;</span>
+<span class="hljs-keyword">echo</span> Carbon::createFromTimeStamp(-<span class="hljs-number">1</span>)-&gt;toDateTimeString();                        <span class="hljs-comment">// 1969-12-31 18:59:59</span>
+<span class="hljs-keyword">echo</span> Carbon::createFromTimeStamp(-<span class="hljs-number">1</span>, <span class="hljs-string">&apos;Europe/London&apos;</span>)-&gt;toDateTimeString();       <span class="hljs-comment">// 1970-01-01 00:59:59</span>
+<span class="hljs-keyword">echo</span> Carbon::createFromTimeStampUTC(-<span class="hljs-number">1</span>)-&gt;toDateTimeString();                     <span class="hljs-comment">// 1969-12-31 23:59:59</span>
+</code></pre>
+<h2 id="%E8%BD%89%E6%8F%9B%E6%97%A5%E6%9C%9F">&#x8F49;&#x63DB;&#x65E5;&#x671F;</h2>
+<pre><code class="lang-php"><span class="hljs-preprocessor">&lt;?php</span>
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Carbon</span>\<span class="hljs-title">Carbon</span>;
+
+<span class="hljs-comment">// &#x900F;&#x904E;&#x6587;&#x5B57;&#x79FB;&#x52D5;&#x65E5;&#x671F;</span>
+<span class="hljs-variable">$knownDate</span> = Carbon::create(<span class="hljs-number">2001</span>, <span class="hljs-number">5</span>, <span class="hljs-number">21</span>, <span class="hljs-number">12</span>);          <span class="hljs-comment">// create testing date</span>
+Carbon::setTestNow(<span class="hljs-variable">$knownDate</span>);                        <span class="hljs-comment">// set the mock</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-keyword">new</span> Carbon(<span class="hljs-string">&apos;tomorrow&apos;</span>);                           <span class="hljs-comment">// 2001-05-22 00:00:00  ... notice the time !</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-keyword">new</span> Carbon(<span class="hljs-string">&apos;yesterday&apos;</span>);                          <span class="hljs-comment">// 2001-05-20 00:00:00</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-keyword">new</span> Carbon(<span class="hljs-string">&apos;next wednesday&apos;</span>);                     <span class="hljs-comment">// 2001-05-23 00:00:00</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-keyword">new</span> Carbon(<span class="hljs-string">&apos;last friday&apos;</span>);                        <span class="hljs-comment">// 2001-05-18 00:00:00</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-keyword">new</span> Carbon(<span class="hljs-string">&apos;this thursday&apos;</span>);                      <span class="hljs-comment">// 2001-05-24 00:00:00</span>
+</code></pre>
+<h2 id="%E5%8F%96%E5%BE%97%E6%97%A5%E6%9C%9F%E8%B3%87%E6%96%99">&#x53D6;&#x5F97;&#x65E5;&#x671F;&#x8CC7;&#x6599;</h2>
+<pre><code class="lang-php"><span class="hljs-preprocessor">&lt;?php</span>
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Carbon</span>\<span class="hljs-title">Carbon</span>;
+
+<span class="hljs-variable">$dt</span> = Carbon::parse(<span class="hljs-string">&apos;2012-9-5 23:26:11.123789&apos;</span>);
+
+<span class="hljs-comment">// &#x53D6;&#x7684;&#x6307;&#x5B9A;&#x6642;&#x9593;&#x8CC7;&#x6599;&#x7684;&#x8CC7;&#x8A0A;&#xFF08;&#x6574;&#x6578;&#xFF09;</span>
+var_dump(<span class="hljs-variable">$dt</span>-&gt;year);                                         <span class="hljs-comment">// int(2012)</span>
+var_dump(<span class="hljs-variable">$dt</span>-&gt;month);                                        <span class="hljs-comment">// int(9)</span>
+var_dump(<span class="hljs-variable">$dt</span>-&gt;day);                                          <span class="hljs-comment">// int(5)</span>
+var_dump(<span class="hljs-variable">$dt</span>-&gt;hour);                                         <span class="hljs-comment">// int(23)</span>
+var_dump(<span class="hljs-variable">$dt</span>-&gt;minute);                                       <span class="hljs-comment">// int(26)</span>
+var_dump(<span class="hljs-variable">$dt</span>-&gt;second);                                       <span class="hljs-comment">// int(11)</span>
+var_dump(<span class="hljs-variable">$dt</span>-&gt;micro);                                        <span class="hljs-comment">// int(123789)</span>
+var_dump(<span class="hljs-variable">$dt</span>-&gt;dayOfWeek);                                    <span class="hljs-comment">// int(3)</span>
+var_dump(<span class="hljs-variable">$dt</span>-&gt;dayOfYear);                                    <span class="hljs-comment">// int(248)</span>
+var_dump(<span class="hljs-variable">$dt</span>-&gt;weekOfMonth);                                  <span class="hljs-comment">// int(1)</span>
+var_dump(<span class="hljs-variable">$dt</span>-&gt;weekOfYear);                                   <span class="hljs-comment">// int(36)</span>
+var_dump(<span class="hljs-variable">$dt</span>-&gt;daysInMonth);                                  <span class="hljs-comment">// int(30)</span>
+var_dump(<span class="hljs-variable">$dt</span>-&gt;timestamp);                                    <span class="hljs-comment">// int(1346901971)</span>
+var_dump(Carbon::createFromDate(<span class="hljs-number">1975</span>, <span class="hljs-number">5</span>, <span class="hljs-number">21</span>)-&gt;age);          <span class="hljs-comment">// int(39) calculated vs now in the same tz</span>
+var_dump(<span class="hljs-variable">$dt</span>-&gt;quarter);                                      <span class="hljs-comment">// int(3)</span>
+
+
+<span class="hljs-comment">// &#x56DE;&#x50B3;&#x8207; UTC &#x5DEE;&#x7570;&#x7684;&#x79D2;&#x6578;</span>
+var_dump(Carbon::createFromTimestampUTC(<span class="hljs-number">0</span>)-&gt;offset);         <span class="hljs-comment">// int(0)</span>
+var_dump(Carbon::createFromTimestamp(<span class="hljs-number">0</span>)-&gt;offset);            <span class="hljs-comment">// int(-18000)</span>
+
+<span class="hljs-comment">// &#x56DE;&#x50B3;&#x8207; UTC &#x5DEE;&#x7570;&#x7684;&#x6642;&#x6578;</span>
+var_dump(Carbon::createFromTimestamp(<span class="hljs-number">0</span>)-&gt;offsetHours);       <span class="hljs-comment">// int(-5)</span>
+
+<span class="hljs-comment">// &#x627E;&#x51FA;&#x7576;&#x5929;&#x65E5;&#x5426;&#x6709;&#x65E5;&#x5149;&#x7BC0;&#x7D04;&#x6642;&#x9593;</span>
+var_dump(Carbon::createFromDate(<span class="hljs-number">2012</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>)-&gt;dst);           <span class="hljs-comment">// bool(false)</span>
+var_dump(Carbon::createFromDate(<span class="hljs-number">2012</span>, <span class="hljs-number">9</span>, <span class="hljs-number">1</span>)-&gt;dst);           <span class="hljs-comment">// bool(true)</span>
+
+<span class="hljs-comment">// &#x5224;&#x65B7;&#x6307;&#x5B9A;&#x7684;&#x7684;&#x6642;&#x5340;&#x662F;&#x5426;&#x8207;&#x9810;&#x8A2D;&#x7684;&#x6642;&#x5340;&#x76F8;&#x540C;</span>
+var_dump(Carbon::now()-&gt;local);                              <span class="hljs-comment">// bool(true)</span>
+var_dump(Carbon::now(<span class="hljs-string">&apos;America/Vancouver&apos;</span>)-&gt;local);           <span class="hljs-comment">// bool(false)</span>
+
+<span class="hljs-comment">// &#x5224;&#x65B7;&#x662F;&#x5426;&#x70BA; UTC &#x7684;&#x6642;&#x5340;&#x6642;&#x9593;</span>
+var_dump(Carbon::now()-&gt;utc);                                <span class="hljs-comment">// bool(false)</span>
+var_dump(Carbon::now(<span class="hljs-string">&apos;Europe/London&apos;</span>)-&gt;utc);                 <span class="hljs-comment">// bool(true)</span>
+var_dump(Carbon::createFromTimestampUTC(<span class="hljs-number">0</span>)-&gt;utc);            <span class="hljs-comment">// bool(true)</span>
+
+<span class="hljs-comment">// &#x53D6;&#x5F97;&#x6642;&#x5340;&#x5BE6;&#x4F8B;</span>
+<span class="hljs-keyword">echo</span> get_class(Carbon::now()-&gt;timezone);                     <span class="hljs-comment">// DateTimeZone</span>
+<span class="hljs-keyword">echo</span> get_class(Carbon::now()-&gt;tz);                           <span class="hljs-comment">// DateTimeZone</span>
+
+<span class="hljs-comment">// &#x53D6;&#x5F97;&#x6642;&#x5340;&#x5BE6;&#x4F8B;&#x7684;&#x540D;&#x7A31;</span>
+<span class="hljs-keyword">echo</span> Carbon::now()-&gt;timezoneName;                            <span class="hljs-comment">// America/Toronto</span>
+<span class="hljs-keyword">echo</span> Carbon::now()-&gt;tzName;                                  <span class="hljs-comment">// America/Toronto</span>
+</code></pre>
+<h2 id="%E8%A8%AD%E5%AE%9A%E6%99%82%E9%96%93%E8%B3%87%E6%96%99">&#x8A2D;&#x5B9A;&#x6642;&#x9593;&#x8CC7;&#x6599;</h2>
+<pre><code class="lang-php"><span class="hljs-preprocessor">&lt;?php</span>
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Carbon</span>\<span class="hljs-title">Carbon</span>;
+
+<span class="hljs-variable">$dt</span> = Carbon::now();
+
+<span class="hljs-variable">$dt</span>-&gt;year = <span class="hljs-number">1975</span>;
+<span class="hljs-variable">$dt</span>-&gt;month = <span class="hljs-number">13</span>;             <span class="hljs-comment">// &#x5E74;&#x4EFD;&#x6703;&#x5F37;&#x5236; +1&#xFF0C;&#x4E14;&#x6708;&#x4EFD;&#x8B8A;&#x70BA; 1 &#x6708;</span>
+<span class="hljs-variable">$dt</span>-&gt;month = <span class="hljs-number">5</span>;
+<span class="hljs-variable">$dt</span>-&gt;day = <span class="hljs-number">21</span>;
+<span class="hljs-variable">$dt</span>-&gt;hour = <span class="hljs-number">22</span>;
+<span class="hljs-variable">$dt</span>-&gt;minute = <span class="hljs-number">32</span>;
+<span class="hljs-variable">$dt</span>-&gt;second = <span class="hljs-number">5</span>;
+
+<span class="hljs-variable">$dt</span>-&gt;timestamp = <span class="hljs-number">169957925</span>;  <span class="hljs-comment">// &#x9019;&#x500B;&#x8A2D;&#x5B9A;&#x4E0D;&#x6703;&#x8B8A;&#x66F4;&#x6642;&#x5340;</span>
+
+<span class="hljs-comment">// &#x900F;&#x904E;&#x5B57;&#x4E32;&#x6216;&#x662F; DateTimeZone &#x5BE6;&#x4F8B;&#x53BB;&#x8A2D;&#x5B9A;&#x6642;&#x5340;</span>
+<span class="hljs-variable">$dt</span>-&gt;timezone = <span class="hljs-keyword">new</span> DateTimeZone(<span class="hljs-string">&apos;Europe/London&apos;</span>);
+<span class="hljs-variable">$dt</span>-&gt;timezone = <span class="hljs-string">&apos;Europe/London&apos;</span>;
+<span class="hljs-variable">$dt</span>-&gt;tz = <span class="hljs-string">&apos;Europe/London&apos;</span>;
+
+
+
+<span class="hljs-comment">// &#x93C8;&#x7D50;&#x8A2D;&#x5B9A;&#x65B9;&#x5F0F;</span>
+<span class="hljs-variable">$dt</span>-&gt;year(<span class="hljs-number">1975</span>)-&gt;month(<span class="hljs-number">5</span>)-&gt;day(<span class="hljs-number">21</span>)-&gt;hour(<span class="hljs-number">22</span>)-&gt;minute(<span class="hljs-number">32</span>)-&gt;second(<span class="hljs-number">5</span>)-&gt;toDateTimeString();
+<span class="hljs-variable">$dt</span>-&gt;setDate(<span class="hljs-number">1975</span>, <span class="hljs-number">5</span>, <span class="hljs-number">21</span>)-&gt;setTime(<span class="hljs-number">22</span>, <span class="hljs-number">32</span>, <span class="hljs-number">5</span>)-&gt;toDateTimeString();
+<span class="hljs-variable">$dt</span>-&gt;setDateTime(<span class="hljs-number">1975</span>, <span class="hljs-number">5</span>, <span class="hljs-number">21</span>, <span class="hljs-number">22</span>, <span class="hljs-number">32</span>, <span class="hljs-number">5</span>)-&gt;toDateTimeString();
+
+<span class="hljs-variable">$dt</span>-&gt;timestamp(<span class="hljs-number">169957925</span>)-&gt;timezone(<span class="hljs-string">&apos;Europe/London&apos;</span>);
+
+<span class="hljs-variable">$dt</span>-&gt;tz(<span class="hljs-string">&apos;America/Toronto&apos;</span>)-&gt;setTimezone(<span class="hljs-string">&apos;America/Vancouver&apos;</span>);
+</code></pre>
+<h2 id="%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%99%82%E9%96%93%E8%B3%87%E6%96%99">&#x683C;&#x5F0F;&#x5316;&#x6642;&#x9593;&#x8CC7;&#x6599;</h2>
+<pre><code class="lang-php"><span class="hljs-preprocessor">&lt;?php</span>
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Carbon</span>\<span class="hljs-title">Carbon</span>;
+
+<span class="hljs-variable">$dt</span> = Carbon::create(<span class="hljs-number">1975</span>, <span class="hljs-number">12</span>, <span class="hljs-number">25</span>, <span class="hljs-number">14</span>, <span class="hljs-number">15</span>, <span class="hljs-number">16</span>);
+
+var_dump(<span class="hljs-variable">$dt</span>-&gt;toDateTimeString() == <span class="hljs-variable">$dt</span>);          <span class="hljs-comment">// bool(true) =&gt; uses __toString()</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;toDateString();                          <span class="hljs-comment">// 1975-12-25</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;toFormattedDateString();                 <span class="hljs-comment">// Dec 25, 1975</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;toTimeString();                          <span class="hljs-comment">// 14:15:16</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;toDateTimeString();                      <span class="hljs-comment">// 1975-12-25 14:15:16</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;toDayDateTimeString();                   <span class="hljs-comment">// Thu, Dec 25, 1975 2:15 PM</span>
+
+<span class="hljs-comment">// &#x4ECD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; format() &#x51FD;&#x5F0F;</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;format(<span class="hljs-string">&apos;l jS \\of F Y h:i:s A&apos;</span>);         <span class="hljs-comment">// Thursday 25th of December 1975 02:15:16 PM</span>
+
+<span class="hljs-comment">// &#x5E38;&#x7528;&#x7684;&#x6642;&#x9593;&#x683C;&#x5F0F;</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;toAtomString();      <span class="hljs-comment">// in 1 Jahr</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;toCookieString();    <span class="hljs-comment">// Thursday, 25-Dec-1975 14:15:16 EST</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;toIso8601String();   <span class="hljs-comment">// 1975-12-25T14:15:16-0500</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;toRfc822String();    <span class="hljs-comment">// Thu, 25 Dec 75 14:15:16 -0500</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;toRfc850String();    <span class="hljs-comment">// Thursday, 25-Dec-75 14:15:16 EST</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;toRfc1036String();   <span class="hljs-comment">// Thu, 25 Dec 75 14:15:16 -0500</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;toRfc1123String();   <span class="hljs-comment">// Thu, 25 Dec 1975 14:15:16 -0500</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;toRfc2822String();   <span class="hljs-comment">// Thu, 25 Dec 1975 14:15:16 -0500</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;toRfc3339String();   <span class="hljs-comment">// 1975-12-25T14:15:16-05:00</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;toRssString();       <span class="hljs-comment">// Thu, 25 Dec 1975 14:15:16 -0500</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;toW3cString();       <span class="hljs-comment">// 1975-12-25T14:15:16-05:00</span>
+</code></pre>
+<h2 id="%E6%AF%94%E8%BC%83%E6%99%82%E9%96%93%E5%B7%AE%E7%95%B0">&#x6BD4;&#x8F03;&#x6642;&#x9593;&#x5DEE;&#x7570;</h2>
+<pre><code class="lang-php"><span class="hljs-preprocessor">&lt;?php</span>
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Carbon</span>\<span class="hljs-title">Carbon</span>;
+
+<span class="hljs-keyword">echo</span> Carbon::now()-&gt;tzName;                        <span class="hljs-comment">// America/Toronto</span>
+<span class="hljs-variable">$first</span> = Carbon::create(<span class="hljs-number">2012</span>, <span class="hljs-number">9</span>, <span class="hljs-number">5</span>, <span class="hljs-number">23</span>, <span class="hljs-number">26</span>, <span class="hljs-number">11</span>);
+<span class="hljs-variable">$second</span> = Carbon::create(<span class="hljs-number">2012</span>, <span class="hljs-number">9</span>, <span class="hljs-number">5</span>, <span class="hljs-number">20</span>, <span class="hljs-number">26</span>, <span class="hljs-number">11</span>, <span class="hljs-string">&apos;America/Vancouver&apos;</span>);
+
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$first</span>-&gt;toDateTimeString();                   <span class="hljs-comment">// 2012-09-05 23:26:11</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$first</span>-&gt;tzName;                               <span class="hljs-comment">// America/Toronto</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$second</span>-&gt;toDateTimeString();                  <span class="hljs-comment">// 2012-09-05 20:26:11</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$second</span>-&gt;tzName;                              <span class="hljs-comment">// America/Vancouver</span>
+
+<span class="hljs-comment">// &#x5927;&#x65BC;&#x3001;&#x7B49;&#x65BC;&#x3001;&#x5C0F;&#x65BC;</span>
+var_dump(<span class="hljs-variable">$first</span>-&gt;eq(<span class="hljs-variable">$second</span>));                     <span class="hljs-comment">// bool(true)</span>
+var_dump(<span class="hljs-variable">$first</span>-&gt;ne(<span class="hljs-variable">$second</span>));                     <span class="hljs-comment">// bool(false)</span>
+var_dump(<span class="hljs-variable">$first</span>-&gt;gt(<span class="hljs-variable">$second</span>));                     <span class="hljs-comment">// bool(false)</span>
+var_dump(<span class="hljs-variable">$first</span>-&gt;gte(<span class="hljs-variable">$second</span>));                    <span class="hljs-comment">// bool(true)</span>
+var_dump(<span class="hljs-variable">$first</span>-&gt;lt(<span class="hljs-variable">$second</span>));                     <span class="hljs-comment">// bool(false)</span>
+var_dump(<span class="hljs-variable">$first</span>-&gt;lte(<span class="hljs-variable">$second</span>));                    <span class="hljs-comment">// bool(true)</span>
+
+<span class="hljs-variable">$first</span>-&gt;setDateTime(<span class="hljs-number">2012</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+<span class="hljs-variable">$second</span>-&gt;setDateTime(<span class="hljs-number">2012</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);         <span class="hljs-comment">// Remember tz is &apos;America/Vancouver&apos;</span>
+
+var_dump(<span class="hljs-variable">$first</span>-&gt;eq(<span class="hljs-variable">$second</span>));                     <span class="hljs-comment">// bool(false)</span>
+var_dump(<span class="hljs-variable">$first</span>-&gt;ne(<span class="hljs-variable">$second</span>));                     <span class="hljs-comment">// bool(true)</span>
+var_dump(<span class="hljs-variable">$first</span>-&gt;gt(<span class="hljs-variable">$second</span>));                     <span class="hljs-comment">// bool(false)</span>
+var_dump(<span class="hljs-variable">$first</span>-&gt;gte(<span class="hljs-variable">$second</span>));                    <span class="hljs-comment">// bool(false)</span>
+var_dump(<span class="hljs-variable">$first</span>-&gt;lt(<span class="hljs-variable">$second</span>));                     <span class="hljs-comment">// bool(true)</span>
+var_dump(<span class="hljs-variable">$first</span>-&gt;lte(<span class="hljs-variable">$second</span>));                    <span class="hljs-comment">// bool(true)</span>
+
+
+
+<span class="hljs-comment">// &#x6642;&#x9593;&#x5340;&#x9593;&#x6BD4;&#x8F03;</span>
+<span class="hljs-variable">$first</span> = Carbon::create(<span class="hljs-number">2012</span>, <span class="hljs-number">9</span>, <span class="hljs-number">5</span>, <span class="hljs-number">1</span>);
+<span class="hljs-variable">$second</span> = Carbon::create(<span class="hljs-number">2012</span>, <span class="hljs-number">9</span>, <span class="hljs-number">5</span>, <span class="hljs-number">5</span>);
+var_dump(Carbon::create(<span class="hljs-number">2012</span>, <span class="hljs-number">9</span>, <span class="hljs-number">5</span>, <span class="hljs-number">3</span>)-&gt;between(<span class="hljs-variable">$first</span>, <span class="hljs-variable">$second</span>));          <span class="hljs-comment">// bool(true)</span>
+var_dump(Carbon::create(<span class="hljs-number">2012</span>, <span class="hljs-number">9</span>, <span class="hljs-number">5</span>, <span class="hljs-number">5</span>)-&gt;between(<span class="hljs-variable">$first</span>, <span class="hljs-variable">$second</span>));          <span class="hljs-comment">// bool(true)</span>
+var_dump(Carbon::create(<span class="hljs-number">2012</span>, <span class="hljs-number">9</span>, <span class="hljs-number">5</span>, <span class="hljs-number">5</span>)-&gt;between(<span class="hljs-variable">$first</span>, <span class="hljs-variable">$second</span>, <span class="hljs-keyword">false</span>));   <span class="hljs-comment">// bool(false)</span>
+
+
+<span class="hljs-comment">// &#x6642;&#x9593;&#x5927;&#x5C0F;&#x6BD4;&#x8F03;</span>
+<span class="hljs-variable">$dt1</span> = Carbon::create(<span class="hljs-number">2012</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+<span class="hljs-variable">$dt2</span> = Carbon::create(<span class="hljs-number">2014</span>, <span class="hljs-number">1</span>, <span class="hljs-number">30</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt1</span>-&gt;min(<span class="hljs-variable">$dt2</span>);                              <span class="hljs-comment">// 2012-01-01 00:00:00</span>
+
+<span class="hljs-variable">$dt1</span> = Carbon::create(<span class="hljs-number">2012</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+<span class="hljs-variable">$dt2</span> = Carbon::create(<span class="hljs-number">2014</span>, <span class="hljs-number">1</span>, <span class="hljs-number">30</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt1</span>-&gt;max(<span class="hljs-variable">$dt2</span>);                              <span class="hljs-comment">// 2014-01-30 00:00:00</span>
+
+<span class="hljs-comment">// now is the default param</span>
+<span class="hljs-variable">$dt1</span> = Carbon::create(<span class="hljs-number">2000</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt1</span>-&gt;max();
+
+
+<span class="hljs-comment">// &#x6642;&#x9593;&#x5DEE;&#x7570;&#x904B;&#x7B97;</span>
+<span class="hljs-keyword">echo</span> Carbon::now(<span class="hljs-string">&apos;America/Vancouver&apos;</span>)-&gt;diffInSeconds(Carbon::now(<span class="hljs-string">&apos;Europe/London&apos;</span>)); <span class="hljs-comment">// 0</span>
+
+<span class="hljs-variable">$dtOttawa</span> = Carbon::createFromDate(<span class="hljs-number">2000</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-string">&apos;America/Toronto&apos;</span>);
+<span class="hljs-variable">$dtVancouver</span> = Carbon::createFromDate(<span class="hljs-number">2000</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-string">&apos;America/Vancouver&apos;</span>);
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dtOttawa</span>-&gt;diffInHours(<span class="hljs-variable">$dtVancouver</span>);                             <span class="hljs-comment">// 3</span>
+
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dtOttawa</span>-&gt;diffInHours(<span class="hljs-variable">$dtVancouver</span>, <span class="hljs-keyword">false</span>);                      <span class="hljs-comment">// 3</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dtVancouver</span>-&gt;diffInHours(<span class="hljs-variable">$dtOttawa</span>, <span class="hljs-keyword">false</span>);                      <span class="hljs-comment">// -3</span>
+
+<span class="hljs-variable">$dt</span> = Carbon::create(<span class="hljs-number">2012</span>, <span class="hljs-number">1</span>, <span class="hljs-number">31</span>, <span class="hljs-number">0</span>);
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;diffInDays(<span class="hljs-variable">$dt</span>-&gt;copy()-&gt;addMonth());                         <span class="hljs-comment">// 31</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;diffInDays(<span class="hljs-variable">$dt</span>-&gt;copy()-&gt;subMonth(), <span class="hljs-keyword">false</span>);                  <span class="hljs-comment">// -31</span>
+
+<span class="hljs-variable">$dt</span> = Carbon::create(<span class="hljs-number">2012</span>, <span class="hljs-number">4</span>, <span class="hljs-number">30</span>, <span class="hljs-number">0</span>);
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;diffInDays(<span class="hljs-variable">$dt</span>-&gt;copy()-&gt;addMonth());                         <span class="hljs-comment">// 30</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;diffInDays(<span class="hljs-variable">$dt</span>-&gt;copy()-&gt;addWeek());                          <span class="hljs-comment">// 7</span>
+
+<span class="hljs-variable">$dt</span> = Carbon::create(<span class="hljs-number">2012</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>);
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;diffInMinutes(<span class="hljs-variable">$dt</span>-&gt;copy()-&gt;addSeconds(<span class="hljs-number">59</span>));                  <span class="hljs-comment">// 0</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;diffInMinutes(<span class="hljs-variable">$dt</span>-&gt;copy()-&gt;addSeconds(<span class="hljs-number">60</span>));                  <span class="hljs-comment">// 1</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;diffInMinutes(<span class="hljs-variable">$dt</span>-&gt;copy()-&gt;addSeconds(<span class="hljs-number">119</span>));                 <span class="hljs-comment">// 1</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;diffInMinutes(<span class="hljs-variable">$dt</span>-&gt;copy()-&gt;addSeconds(<span class="hljs-number">120</span>));                 <span class="hljs-comment">// 2</span>
+
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;addSeconds(<span class="hljs-number">120</span>)-&gt;secondsSinceMidnight();                     <span class="hljs-comment">// 120</span>
+</code></pre>
+<h2 id="%E6%99%82%E9%96%93%E7%8B%80%E6%85%8B">&#x6642;&#x9593;&#x72C0;&#x614B;</h2>
+<pre><code class="lang-php"><span class="hljs-preprocessor">&lt;?php</span>
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Carbon</span>\<span class="hljs-title">Carbon</span>;
+
+<span class="hljs-variable">$dt</span> = Carbon::now();
+
+<span class="hljs-variable">$dt</span>-&gt;isWeekday();
+<span class="hljs-variable">$dt</span>-&gt;isWeekend();
+<span class="hljs-variable">$dt</span>-&gt;isYesterday();
+<span class="hljs-variable">$dt</span>-&gt;isToday();
+<span class="hljs-variable">$dt</span>-&gt;isTomorrow();
+<span class="hljs-variable">$dt</span>-&gt;isFuture();
+<span class="hljs-variable">$dt</span>-&gt;isPast();
+<span class="hljs-variable">$dt</span>-&gt;isLeapYear();
+<span class="hljs-variable">$dt</span>-&gt;isSameDay(Carbon::now());
+<span class="hljs-variable">$born</span> = Carbon::createFromDate(<span class="hljs-number">1987</span>, <span class="hljs-number">4</span>, <span class="hljs-number">23</span>);
+<span class="hljs-variable">$noCake</span> = Carbon::createFromDate(<span class="hljs-number">2014</span>, <span class="hljs-number">9</span>, <span class="hljs-number">26</span>);
+<span class="hljs-variable">$yesCake</span> = Carbon::createFromDate(<span class="hljs-number">2014</span>, <span class="hljs-number">4</span>, <span class="hljs-number">23</span>);
+var_dump(<span class="hljs-variable">$born</span>-&gt;isBirthday(<span class="hljs-variable">$noCake</span>));              <span class="hljs-comment">// bool(false)  </span>
+var_dump(<span class="hljs-variable">$born</span>-&gt;isBirthday(<span class="hljs-variable">$yesCake</span>));             <span class="hljs-comment">// bool(true)</span>
+</code></pre>
+<h2 id="%E6%99%82%E9%96%93%E9%81%8B%E7%AE%97">&#x6642;&#x9593;&#x904B;&#x7B97;</h2>
+<pre><code class="lang-php"><span class="hljs-preprocessor">&lt;?php</span>
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Carbon</span>\<span class="hljs-title">Carbon</span>;
+
+<span class="hljs-variable">$dt</span> = Carbon::create(<span class="hljs-number">2012</span>, <span class="hljs-number">1</span>, <span class="hljs-number">31</span>, <span class="hljs-number">0</span>);
+
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;toDateTimeString();            <span class="hljs-comment">// 2012-01-31 00:00:00</span>
+
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;addYears(<span class="hljs-number">5</span>);                   <span class="hljs-comment">// 2017-01-31 00:00:00</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;addYear();                     <span class="hljs-comment">// 2018-01-31 00:00:00</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;subYear();                     <span class="hljs-comment">// 2017-01-31 00:00:00</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;subYears(<span class="hljs-number">5</span>);                   <span class="hljs-comment">// 2012-01-31 00:00:00</span>
+
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;addMonths(<span class="hljs-number">60</span>);                 <span class="hljs-comment">// 2017-01-31 00:00:00</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;addMonth();                    <span class="hljs-comment">// 2017-03-03 00:00:00 equivalent of $dt-&gt;month($dt-&gt;month + 1); so it wraps</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;subMonth();                    <span class="hljs-comment">// 2017-02-03 00:00:00</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;subMonths(<span class="hljs-number">60</span>);                 <span class="hljs-comment">// 2012-02-03 00:00:00</span>
+
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;addDays(<span class="hljs-number">29</span>);                   <span class="hljs-comment">// 2012-03-03 00:00:00</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;addDay();                      <span class="hljs-comment">// 2012-03-04 00:00:00</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;subDay();                      <span class="hljs-comment">// 2012-03-03 00:00:00</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;subDays(<span class="hljs-number">29</span>);                   <span class="hljs-comment">// 2012-02-03 00:00:00</span>
+
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;addWeekdays(<span class="hljs-number">4</span>);                <span class="hljs-comment">// 2012-02-09 00:00:00</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;addWeekday();                  <span class="hljs-comment">// 2012-02-10 00:00:00</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;subWeekday();                  <span class="hljs-comment">// 2012-02-09 00:00:00</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;subWeekdays(<span class="hljs-number">4</span>);                <span class="hljs-comment">// 2012-02-03 00:00:00</span>
+
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;addWeeks(<span class="hljs-number">3</span>);                   <span class="hljs-comment">// 2012-02-24 00:00:00</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;addWeek();                     <span class="hljs-comment">// 2012-03-02 00:00:00</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;subWeek();                     <span class="hljs-comment">// 2012-02-24 00:00:00</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;subWeeks(<span class="hljs-number">3</span>);                   <span class="hljs-comment">// 2012-02-03 00:00:00</span>
+
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;addHours(<span class="hljs-number">24</span>);                  <span class="hljs-comment">// 2012-02-04 00:00:00</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;addHour();                     <span class="hljs-comment">// 2012-02-04 01:00:00</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;subHour();                     <span class="hljs-comment">// 2012-02-04 00:00:00</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;subHours(<span class="hljs-number">24</span>);                  <span class="hljs-comment">// 2012-02-03 00:00:00</span>
+
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;addMinutes(<span class="hljs-number">61</span>);                <span class="hljs-comment">// 2012-02-03 01:01:00</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;addMinute();                   <span class="hljs-comment">// 2012-02-03 01:02:00</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;subMinute();                   <span class="hljs-comment">// 2012-02-03 01:01:00</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;subMinutes(<span class="hljs-number">61</span>);                <span class="hljs-comment">// 2012-02-03 00:00:00</span>
+
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;addSeconds(<span class="hljs-number">61</span>);                <span class="hljs-comment">// 2012-02-03 00:01:01</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;addSecond();                   <span class="hljs-comment">// 2012-02-03 00:01:02</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;subSecond();                   <span class="hljs-comment">// 2012-02-03 00:01:01</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;subSeconds(<span class="hljs-number">61</span>);                <span class="hljs-comment">// 2012-02-03 00:00:00</span>
+</code></pre>
+<h2 id="%E4%BA%BA%E9%A1%9E%E9%96%B1%E8%AE%80%E6%99%82%E9%96%93%E6%A0%BC%E5%BC%8F">&#x4EBA;&#x985E;&#x95B1;&#x8B80;&#x6642;&#x9593;&#x683C;&#x5F0F;</h2>
+<pre><code class="lang-php"><span class="hljs-preprocessor">&lt;?php</span>
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Carbon</span>\<span class="hljs-title">Carbon</span>;
+
+<span class="hljs-comment">// &#x901A;&#x5E38;&#x6703;&#x7528;&#x5728;&#x7559;&#x8A00;&#x7684;&#x6642;&#x9593;&#x986F;&#x793A;</span>
+<span class="hljs-comment">// &#x8A72;&#x6642;&#x9593;&#x6703;&#x6BD4;&#x8F03;&#x8207;&#x73FE;&#x5728;&#x7684;&#x6642;&#x9593;&#x7684;&#x5DEE;&#x7570;</span>
+<span class="hljs-keyword">echo</span> Carbon::now()-&gt;subDays(<span class="hljs-number">5</span>)-&gt;diffForHumans();               <span class="hljs-comment">// 5 days ago</span>
+
+<span class="hljs-keyword">echo</span> Carbon::now()-&gt;diffForHumans(Carbon::now()-&gt;subYear());   <span class="hljs-comment">// 1 year after</span>
+
+<span class="hljs-variable">$dt</span> = Carbon::createFromDate(<span class="hljs-number">2011</span>, <span class="hljs-number">8</span>, <span class="hljs-number">1</span>);
+
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;diffForHumans(<span class="hljs-variable">$dt</span>-&gt;copy()-&gt;addMonth());              <span class="hljs-comment">// 1 month before</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$dt</span>-&gt;diffForHumans(<span class="hljs-variable">$dt</span>-&gt;copy()-&gt;subMonth());              <span class="hljs-comment">// 1 month after</span>
+
+<span class="hljs-keyword">echo</span> Carbon::now()-&gt;addSeconds(<span class="hljs-number">5</span>)-&gt;diffForHumans();            <span class="hljs-comment">// 5 seconds from now</span>
+
+<span class="hljs-keyword">echo</span> Carbon::now()-&gt;subDays(<span class="hljs-number">24</span>)-&gt;diffForHumans();              <span class="hljs-comment">// 3 weeks ago</span>
+<span class="hljs-keyword">echo</span> Carbon::now()-&gt;subDays(<span class="hljs-number">24</span>)-&gt;diffForHumans(<span class="hljs-keyword">null</span>, <span class="hljs-keyword">true</span>);    <span class="hljs-comment">// 3 weeks</span>
+</code></pre>
+<h2 id="%E6%99%82%E9%96%93%E5%B8%B8%E6%95%B8">&#x6642;&#x9593;&#x5E38;&#x6578;</h2>
+<pre><code class="lang-php"><span class="hljs-preprocessor">&lt;?php</span>
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Carbon</span>\<span class="hljs-title">Carbon</span>;
+
+var_dump(Carbon::SUNDAY);                          <span class="hljs-comment">// int(0)</span>
+var_dump(Carbon::MONDAY);                          <span class="hljs-comment">// int(1)</span>
+var_dump(Carbon::TUESDAY);                         <span class="hljs-comment">// int(2)</span>
+var_dump(Carbon::WEDNESDAY);                       <span class="hljs-comment">// int(3)</span>
+var_dump(Carbon::THURSDAY);                        <span class="hljs-comment">// int(4)</span>
+var_dump(Carbon::FRIDAY);                          <span class="hljs-comment">// int(5)</span>
+var_dump(Carbon::SATURDAY);                        <span class="hljs-comment">// int(6)</span>
+
+var_dump(Carbon::YEARS_PER_CENTURY);               <span class="hljs-comment">// int(100)</span>
+var_dump(Carbon::YEARS_PER_DECADE);                <span class="hljs-comment">// int(10)</span>
+var_dump(Carbon::MONTHS_PER_YEAR);                 <span class="hljs-comment">// int(12)</span>
+var_dump(Carbon::WEEKS_PER_YEAR);                  <span class="hljs-comment">// int(52)</span>
+var_dump(Carbon::DAYS_PER_WEEK);                   <span class="hljs-comment">// int(7)</span>
+var_dump(Carbon::HOURS_PER_DAY);                   <span class="hljs-comment">// int(24)</span>
+var_dump(Carbon::MINUTES_PER_HOUR);                <span class="hljs-comment">// int(60)</span>
+var_dump(Carbon::SECONDS_PER_MINUTE);              <span class="hljs-comment">// int(60)</span>
+</code></pre>
+<h2 id="%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99">&#x53C3;&#x8003;&#x8CC7;&#x6599;</h2>
+<ul>
+<li><a href="http://carbon.nesbot.com/" target="_blank">Carbon - A simple PHP API extension for DateTime.</a></li>
+<li><a href="http://carbon.nesbot.com/docs/" target="_blank">Carbon - docs</a></li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../package/tool/package-tool-README.html" class="navigation navigation-prev " aria-label="Previous page: 工具"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../package/design-pattern/package-design-pattern-README.html" class="navigation navigation-next " aria-label="Next page: 設計模式"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-disqus/plugin.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2},"disqus":{"shortName":"kejyun-laravel5-book"},"ga":{"token":"UA-31063691-12","configuration":"auto"}};
+    gitbook.start(config);
+});
+</script>
+
+        <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-31063691-12', 'auto');ga('send', 'pageview');</script>
+    </body>
+    
+</html>

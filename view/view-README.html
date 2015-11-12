@@ -1,0 +1,1471 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>視圖 (View) | Laravel 5 學習筆記</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="../services/services-README.html" />
+    
+    
+    <link rel="prev" href="../http/middleware/http-middleware-README.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="4" data-basepath=".." data-revision="Thu Nov 12 2015 22:12:46 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        介紹
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="environment/Environment-README.html">
+            
+                
+                    <a href="../environment/Environment-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        環境
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="environment/Environment-Dot-Env-File.html">
+            
+                
+                    <a href="../environment/Environment-Dot-Env-File.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        .env 檔案
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="database/database-README.html">
+            
+                
+                    <a href="../database/database-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        資料庫
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="database/migration/database-migration-README.html">
+            
+                
+                    <a href="../database/migration/database-migration-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Migration (遷移)
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="database/model/database-model-README.html">
+            
+                
+                    <a href="../database/model/database-model-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Eloquent Model (模型)
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="database/model/database-model-eloquent-config.html">
+            
+                
+                    <a href="../database/model/database-model-eloquent-config.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.1.</b>
+                        
+                        設定
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="database/model/database-model-eloquent-relationships.html">
+            
+                
+                    <a href="../database/model/database-model-eloquent-relationships.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.2.</b>
+                        
+                        關聯
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="database/model/database-model-eloquent-magic-function.html">
+            
+                
+                    <a href="../database/model/database-model-eloquent-magic-function.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.3.</b>
+                        
+                        魔術函式
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="database/model/database-model-eloquent-apply.html">
+            
+                
+                    <a href="../database/model/database-model-eloquent-apply.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.4.</b>
+                        
+                        使用 Eloquent
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="database/qa/database-qa-README.html">
+            
+                
+                    <a href="../database/qa/database-qa-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        常見問題
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="database/qa/database-qa-cannot-get-querylog.html">
+            
+                
+                    <a href="../database/qa/database-qa-cannot-get-querylog.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.1.</b>
+                        
+                        無法取得查詢 Log
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="database/qa/database-qa-cannot-mass-insert.html">
+            
+                
+                    <a href="../database/qa/database-qa-cannot-mass-insert.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.2.</b>
+                        
+                        使用大量資料的方式新增時無法新增
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="database/qa/database-qa-cannot-mass-insert-with-extend-model.html">
+            
+                
+                    <a href="../database/qa/database-qa-cannot-mass-insert-with-extend-model.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.3.</b>
+                        
+                        使用中繼模型繼承 Eloquent 模型造成無法使用大量資料新增
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="database/postgresql/database-postgresql-README.html">
+            
+                
+                    <a href="../database/postgresql/database-postgresql-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        PostgreSQL
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="database/postgresql/database-postgresql-install-odbc-driver.html">
+            
+                
+                    <a href="../database/postgresql/database-postgresql-install-odbc-driver.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.1.</b>
+                        
+                        安裝 PostgreSQL ODBC driver
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="http/http-README.html">
+            
+                
+                    <a href="../http/http-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        HTTP
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="http/request/http-request-README.html">
+            
+                
+                    <a href="../http/request/http-request-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        請求
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="http/middleware/http-middleware-README.html">
+            
+                
+                    <a href="../http/middleware/http-middleware-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        中介層 (Middleware)
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="4" data-path="view/view-README.html">
+            
+                
+                    <a href="../view/view-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        視圖 (View)
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="services/services-README.html">
+            
+                
+                    <a href="../services/services-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        服務
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="services/auth/services-auth-README.html">
+            
+                
+                    <a href="../services/auth/services-auth-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        認證登入（Auth）
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="services/mail/services-mail-README.html">
+            
+                
+                    <a href="../services/mail/services-mail-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        郵件（Mail）
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="services/mail/services-mail-gmail.html">
+            
+                
+                    <a href="../services/mail/services-mail-gmail.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.1.</b>
+                        
+                        使用 Gmail 寄信
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="services/mail/services-mail-mailgun.html">
+            
+                
+                    <a href="../services/mail/services-mail-mailgun.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.2.</b>
+                        
+                        使用 Mailgun 寄信
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="services/queue/services-queue-README.html">
+            
+                
+                    <a href="../services/queue/services-queue-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        隊列（Queue）
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.1" data-path="services/queue/services-queue-database.html">
+            
+                
+                    <a href="../services/queue/services-queue-database.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.1.</b>
+                        
+                        database
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.2" data-path="services/queue/services-queue-async.html">
+            
+                
+                    <a href="../services/queue/services-queue-async.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.2.</b>
+                        
+                        非同步（async）
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="services/helpers/services-helpers-README.html">
+            
+                
+                    <a href="../services/helpers/services-helpers-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        輔助方法 (Helpers)
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.4.1" data-path="services/helpers/services-custom-helpers-README.html">
+            
+                
+                    <a href="../services/helpers/services-custom-helpers-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.1.</b>
+                        
+                        自定義輔助方法
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="services/unit-test/services-unit-test-README.html">
+            
+                
+                    <a href="../services/unit-test/services-unit-test-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        單元測試 (Unit Test)
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.5.1" data-path="services/unit-test/services-unit-test-post-csrf.html">
+            
+                
+                    <a href="../services/unit-test/services-unit-test-post-csrf.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.1.</b>
+                        
+                        Post CSRF 錯誤
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="services/errors/services-errors-README.html">
+            
+                
+                    <a href="../services/errors/services-errors-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        錯誤與日誌
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.6.1" data-path="services/errors/services-errors-show-exception-in-cli.html">
+            
+                
+                    <a href="../services/errors/services-errors-show-exception-in-cli.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.1.</b>
+                        
+                        在單元測試顯示例外
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6.2" data-path="services/errors/services-errors-log-level.html">
+            
+                
+                    <a href="../services/errors/services-errors-log-level.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.2.</b>
+                        
+                        日誌記錄層級
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6.3" data-path="services/errors/services-errors-log-macro.html">
+            
+                
+                    <a href="../services/errors/services-errors-log-macro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.3.</b>
+                        
+                        日誌巨集
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="services/encryption/services-encryption-README.html">
+            
+                
+                    <a href="../services/encryption/services-encryption-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        加密
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="services/hashing/services-hashing-README.html">
+            
+                
+                    <a href="../services/hashing/services-hashing-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        雜湊
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="services/elixir/services-elixir-README.html">
+            
+                
+                    <a href="../services/elixir/services-elixir-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.9.</b>
+                        
+                        Elixir
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.9.1" data-path="services/elixir/services-elixir-combine-css-and-js.html">
+            
+                
+                    <a href="../services/elixir/services-elixir-combine-css-and-js.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.9.1.</b>
+                        
+                        使用 Elixir 合併 CSS 與 JS
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="design-pattern/design-pattern-README.html">
+            
+                
+                    <a href="../design-pattern/design-pattern-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        設計模式
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="design-pattern/design-pattern-service-container.html">
+            
+                
+                    <a href="../design-pattern/design-pattern-service-container.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        服務容器
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="design-pattern/design-pattern-psr.html">
+            
+                
+                    <a href="../design-pattern/design-pattern-psr.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        PSR
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="design-pattern/design-pattern-model.html">
+            
+                
+                    <a href="../design-pattern/design-pattern-model.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Model 模型
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="design-pattern/design-pattern-learning-resource.html">
+            
+                
+                    <a href="../design-pattern/design-pattern-learning-resource.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        學習資源
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="package/package-README.html">
+            
+                
+                    <a href="../package/package-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        套件
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="package/debug/package-debug-README.html">
+            
+                
+                    <a href="../package/debug/package-debug-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Debug
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1.1" data-path="package/debug/package-debug-artisan-tail.html">
+            
+                
+                    <a href="../package/debug/package-debug-artisan-tail.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.1.</b>
+                        
+                        Artisan tail
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="package/tool/package-tool-README.html">
+            
+                
+                    <a href="../package/tool/package-tool-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        工具
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.2.1" data-path="package/tool/package-tool-carbon.html">
+            
+                
+                    <a href="../package/tool/package-tool-carbon.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.1.</b>
+                        
+                        Carbon
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="package/design-pattern/package-design-pattern-README.html">
+            
+                
+                    <a href="../package/design-pattern/package-design-pattern-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        設計模式
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="qa/qa-README.html">
+            
+                
+                    <a href="../qa/qa-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        其他常見問題
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="qa/qa-call-undefined-method-getCachedCompilePath.html">
+            
+                
+                    <a href="../qa/qa-call-undefined-method-getCachedCompilePath.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        Call to undefined method getCachedCompilePath()
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="qa/qa-change-app-directory-name-cause-view-can-not-readable.html">
+            
+                
+                    <a href="../qa/qa-change-app-directory-name-cause-view-can-not-readable.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        變更專案目錄名稱導致 View 無法讀取
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="qa/qa-laravel-5.1-folder-structure.html">
+            
+                
+                    <a href="../qa/qa-laravel-5.1-folder-structure.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                        Laravel 5.1 目錄結構異動
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="resource/Resource-README.html">
+            
+                
+                    <a href="../resource/Resource-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        學習資源
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1" data-path="resource/Resource-Official.html">
+            
+                
+                    <a href="../resource/Resource-Official.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                        官方
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="resource/Resource-Community.html">
+            
+                
+                    <a href="../resource/Resource-Community.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                        社群
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="resource/Resource-Conference.html">
+            
+                
+                    <a href="../resource/Resource-Conference.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.3.</b>
+                        
+                        會議議程
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="resource/Resource-Jobs.html">
+            
+                
+                    <a href="../resource/Resource-Jobs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.4.</b>
+                        
+                        工作
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.5" data-path="resource/Resource-Document.html">
+            
+                
+                    <a href="../resource/Resource-Document.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.5.</b>
+                        
+                        文件
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.6" data-path="resource/Resource-Article.html">
+            
+                
+                    <a href="../resource/Resource-Article.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.6.</b>
+                        
+                        文章
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7" data-path="resource/Resource-Packages.html">
+            
+                
+                    <a href="../resource/Resource-Packages.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.7.</b>
+                        
+                        套件
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8" data-path="resource/Resource-Laravel-Service.html">
+            
+                
+                    <a href="../resource/Resource-Laravel-Service.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.8.</b>
+                        
+                        服務工具
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.9" data-path="resource/Resource-Learning-Video.html">
+            
+                
+                    <a href="../resource/Resource-Learning-Video.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.9.</b>
+                        
+                        教學影片
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.10" data-path="resource/Resource-Learning-Sites.html">
+            
+                
+                    <a href="../resource/Resource-Learning-Sites.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.10.</b>
+                        
+                        教學網站
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.11" data-path="resource/Resource-Editor-Tool.html">
+            
+                
+                    <a href="../resource/Resource-Editor-Tool.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.11.</b>
+                        
+                        編輯開發
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.12" data-path="resource/Resource-Hosting.html">
+            
+                
+                    <a href="../resource/Resource-Hosting.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.12.</b>
+                        
+                        主機
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.13" data-path="resource/Resource-Laravel-Case.html">
+            
+                
+                    <a href="../resource/Resource-Laravel-Case.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.13.</b>
+                        
+                        成功案例
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Laravel 5 學習筆記</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="%E8%A6%96%E5%9C%96">&#x8996;&#x5716;</h1>
+<p>&#x9019;&#x88CF;&#x6703;&#x4ECB;&#x7D39;&#x5982;&#x4F55;&#x5728; Laravel 5 &#x8655;&#x7406;&#x8996;&#x5716;&#xFF08;View&#xFF09;</p>
+<p>Laravel &#x7684;&#x8996;&#x5716;&#x662F;&#x653E;&#x5728; <code>resource/views</code> &#x76EE;&#x9304;&#x5167;</p>
+<h2 id="%E5%BB%BA%E7%AB%8B%E5%85%B1%E7%94%A8%E7%9A%84%E8%A6%96%E5%9C%96">&#x5EFA;&#x7ACB;&#x5171;&#x7528;&#x7684;&#x8996;&#x5716;</h2>
+<p>&#x6211;&#x5011;&#x7DB2;&#x9801;&#x5E38;&#x5E38;&#x6703;&#x51FA;&#x73FE; header &#x8DDF; footer &#x5728;&#x4E0D;&#x540C;&#x7684;&#x8996;&#x5716;&#x4E2D;&#x70BA;&#x76F8;&#x540C;&#x7684;&#x72C0;&#x6CC1;&#xFF0C;&#x552F;&#x4E00;&#x6709;&#x8B8A;&#x7684;&#x53EA;&#x6709;&#x4E2D;&#x9593;&#x7684;&#x5167;&#x5BB9;&#x96A8;&#x8457;&#x4E0D;&#x540C;&#x7684;&#x8ACB;&#x6C42;&#x800C;&#x6709;&#x8B8A;&#x52D5;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x9019;&#x6A23;&#x7684;&#x8A2D;&#x8A08;&#x9700;&#x6C42;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x66FF;&#x6240;&#x6709;&#x8996;&#x5716;&#x5EFA;&#x7ACB;&#x5171;&#x7528;&#x7684;&#x8996;&#x5716;&#xFF0C;&#x5047;&#x8A2D;&#x6211;&#x5011;&#x628A;&#x9019;&#x500B;&#x5171;&#x7528;&#x7684;&#x8996;&#x5716;&#x653E;&#x5728; <code>resource/view/app.blade.php</code> &#x4E0B;&#xFF0C;&#x5176;&#x5167;&#x5BB9;&#x53EF;&#x80FD;&#x662F;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- resource/view/app.blade.php --&gt;</span>
+<span class="hljs-doctype">&lt;!doctype html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span> <span class="hljs-attribute">lang</span>=<span class="hljs-value">&quot;zh-TW&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">&quot;UTF-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>&#x6211;&#x7684;&#x7DB2;&#x7AD9;<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;container&quot;</span>&gt;</span>
+        @yield(&apos;content&apos;)
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+    @yield(&apos;other_info&apos;)
+<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x6211;&#x5011;&#x8981;&#x986F;&#x793A;&#x6587;&#x7AE0;&#x7684;&#x8CC7;&#x8A0A;&#x5728; <code>content</code> &#x4E2D;&#xFF0C;&#x6587;&#x7AE0;&#x7684;&#x8AAA;&#x660E;&#x5728; <code>other_info</code> &#x4E2D;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x5728; blade &#x4E2D;&#x9019;&#x6A23;&#x8A2D;&#x5B9A;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- resource/view/article.blade.php --&gt;</span>
+@extend(&apos;app&apos;)
+
+@section(&apos;content&apos;)
+    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>&#x6587;&#x7AE0;&#x6A19;&#x984C;<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+    <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+@stop
+
+
+@section(&apos;other_info&apos;)
+    &#x5176;&#x4ED6;&#x8CC7;&#x8A0A;
+@stop
+</code></pre>
+<p>&#x9019;&#x6A23; Laravel &#x5C31;&#x6703;&#x5E6B;&#x6211;&#x5011;&#x628A;&#x76F8;&#x5C0D;&#x61C9;&#x7684;&#x8CC7;&#x8A0A;&#x585E;&#x5230; <code>app.blade.php</code> &#x7576;&#x4E2D;&#x76F8;&#x5C0D;&#x61C9;&#x7684;&#x4F4D;&#x7F6E;</p>
+<h2 id="%E5%BC%95%E5%85%A5%E5%85%B1%E7%94%A8%E7%9A%84%E8%A6%96%E5%9C%96">&#x5F15;&#x5165;&#x5171;&#x7528;&#x7684;&#x8996;&#x5716;</h2>
+<p>&#x5047;&#x5982;&#x6211;&#x5011;&#x8981;&#x5728;&#x7279;&#x5B9A;&#x7684;&#x67D0;&#x5E7E;&#x9801;&#x4F7F;&#x7528; <a href="https://developers.facebook.com/docs/plugins/comments" target="_blank">Facebook &#x7559;&#x8A00;&#x677F;</a>&#xFF0C;&#x50CF;&#x662F;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;fb-root&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(d, s, id)</span> </span>{
+  <span class="hljs-keyword">var</span> js, fjs = d.getElementsByTagName(s)[<span class="hljs-number">0</span>];
+  <span class="hljs-keyword">if</span> (d.getElementById(id)) <span class="hljs-keyword">return</span>;
+  js = d.createElement(s); js.id = id;
+  js.src = <span class="hljs-string">&quot;//connect.facebook.net/zh_TW/sdk.js#xfbml=1&amp;version=v2.3&amp;appId=12345566&quot;</span>;
+  fjs.parentNode.insertBefore(js, fjs);
+}(<span class="hljs-built_in">document</span>, <span class="hljs-string">&apos;script&apos;</span>, <span class="hljs-string">&apos;facebook-jssdk&apos;</span>));</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;fb-comments&quot;</span> <span class="hljs-attribute">data-href</span>=<span class="hljs-value">&quot;http://laravel5-book.kejyun.com/&quot;</span> <span class="hljs-attribute">data-numposts</span>=<span class="hljs-value">&quot;5&quot;</span> <span class="hljs-attribute">data-colorscheme</span>=<span class="hljs-value">&quot;light&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<p>&#x4F46;&#x6211;&#x5011;&#x4E0D;&#x60F3;&#x8981;&#x9019;&#x4E9B;&#x76F8;&#x540C;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#x7247;&#x6BB5;&#x6563;&#x843D;&#x5728;&#x5404;&#x500B;&#x4E0D;&#x540C;&#x7684;&#x8996;&#x5716;&#x4E2D;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x628A;&#x5B83;&#x6574;&#x7406;&#x5728; <code>resource/views/vendor/_fbcomment.blade.php</code> &#x7576;&#x4E2D;</p>
+<p>&#x7136;&#x5F8C;&#x5728;&#x6587;&#x7AE0;&#x8996;&#x5716;&#x7576;&#x4E2D;&#x6211;&#x5011;&#x5C31;&#x53EF;&#x4EE5;&#x9019;&#x6A23;&#x53BB;&#x5F15;&#x5165; <a href="https://developers.facebook.com/docs/plugins/comments" target="_blank">Facebook &#x7559;&#x8A00;&#x677F;</a>&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- resource/view/article.blade.php --&gt;</span>
+@extend(&apos;app&apos;)
+
+@section(&apos;content&apos;)
+    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>&#x6587;&#x7AE0;&#x6A19;&#x984C;<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
+        Lorem ipsum dolor sit amet
+    <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+    @include(&apos;vendor/_fbcomment&apos;)
+    @include(&apos;vendor._fbcomment&apos;)
+@stop
+
+
+@section(&apos;other_info&apos;)
+    &#x5176;&#x4ED6;&#x8CC7;&#x8A0A;
+@stop
+</code></pre>
+<h2 id="%E5%82%B3%E5%85%A5%E8%AE%8A%E6%95%B8%E5%88%B0%E5%BC%95%E7%94%A8%E7%9A%84%E8%A6%96%E5%9C%96%E7%95%B6%E4%B8%AD">&#x50B3;&#x5165;&#x8B8A;&#x6578;&#x5230;&#x5F15;&#x7528;&#x7684;&#x8996;&#x5716;&#x7576;&#x4E2D;</h2>
+<p>&#x5728;&#x6211;&#x5011;&#x65B0;&#x589E;&#x8207;&#x7DE8;&#x8F2F;&#x6587;&#x7AE0;&#x7684;&#x8996;&#x5716;&#x7576;&#x4E2D;&#xFF0C;&#x5E7E;&#x4E4E;&#x6240;&#x6709;&#x7684;&#x8996;&#x5716;&#x90FD;&#x662F;&#x4E00;&#x6A23;&#x7684;&#xFF0C;&#x4E0D;&#x4E00;&#x6A23;&#x7684;&#x5730;&#x65B9;&#x53EF;&#x80FD;&#x53EA;&#x6709;&#x300C;&#x8868;&#x55AE;&#x8655;&#x7406;&#x7684; action &#x4E0D;&#x540C;&#xFF08;create &amp; edit&#xFF09;&#x300D;&#x3001;&#x300C;&#x9001;&#x51FA;&#x7684;&#x6309;&#x9215;&#x6587;&#x5B57;&#x4E0D;&#x540C;&#xFF08;&#x65B0;&#x589E;&#x9055;&#x7AE0; &amp; &#x7DE8;&#x8F2F;&#x6587;&#x7AE0;&#xFF09;&#x300D;</p>
+<p>&#x4F46;&#x6211;&#x5011;&#x9084;&#x662F;&#x5E0C;&#x671B;&#x5169;&#x500B;&#x8996;&#x5716;&#x80FD;&#x5920;&#x4E00;&#x8D77;&#x88AB;&#x5F15;&#x7528;&#xFF0C;&#x628A;&#x5176;&#x4ED6;&#x4E0D;&#x540C;&#x7684;&#x5730;&#x65B9;&#x7576;&#x4F5C;&#x8B8A;&#x6578;&#x50B3;&#x5165;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x9054;&#x5230;&#x8996;&#x5716;&#x91CD;&#x69CB;&#x7684;&#x6548;&#x679C;&#xFF0C;&#x907F;&#x514D;&#x985E;&#x4F3C;&#x7684;&#x8996;&#x5716;&#x91CD;&#x8907;&#x51FA;&#x73FE;&#x5728;&#x4E0D;&#x540C;&#x5730;&#x65B9;&#xFF0C;&#x50CF;&#x662F;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- resource/view/partials/articles/_form.blade.php --&gt;</span>
+{!! Form::label(&apos;title&apos;,&apos;&#x6A19;&#x984C;&apos;) !!}
+{!! Form::text(&apos;title&apos;, null) !!}
+
+{!! Form::label(&apos;content&apos;,&apos;&#x5167;&#x6587;&apos;) !!}
+{!! Form::text(&apos;content&apos;, null) !!}
+
+{!! Form::submit($submitButtonText) !!}
+</code></pre>
+<p>&#x7576;&#x6211;&#x5011;&#x8981;&#x5F15;&#x7528;&#x8868;&#x55AE;&#x7684;&#x8996;&#x5716;&#xFF0C;&#x5247;&#x5FC5;&#x9808;&#x628A;&#x6309;&#x9215;&#x7684;&#x6587;&#x5B57;&#x50B3;&#x9001;&#x7D66;&#x8868;&#x55AE;&#xFF0C;&#x50CF;&#x662F;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- resource/view/article.blade.php --&gt;</span>
+@extend(&apos;app&apos;)
+
+@section(&apos;content&apos;)
+  @include(&apos;partials/articles/_form&apos;, [&apos;submitButtonText&apos; =&gt; &apos;&#x65B0;&#x589E;&#x6587;&#x7AE0;&apos;])
+
+  @include(&apos;partials/articles/_form&apos;, [&apos;submitButtonText&apos; =&gt; &apos;&#x7DE8;&#x8F2F;&#x6587;&#x7AE0;&apos;])
+@stop
+
+
+@section(&apos;other_info&apos;)
+    &#x5176;&#x4ED6;&#x8CC7;&#x8A0A;
+@stop
+</code></pre>
+<h2 id="%E5%82%99%E8%A8%BB">&#x5099;&#x8A3B;</h2>
+<h3 id="%E5%BC%95%E7%94%A8%E6%88%96%E8%BC%89%E5%85%A5%E8%A6%96%E5%9C%96%E8%B7%AF%E5%BE%91">&#x5F15;&#x7528;&#x6216;&#x8F09;&#x5165;&#x8996;&#x5716;&#x8DEF;&#x5F91;</h3>
+<p>&#x5728;&#x4F7F;&#x7528; blade &#x4E2D;&#x7684; <code>@extend()</code> &#x6216; <code>@include()</code> &#x51FD;&#x6578;&#xFF0C;&#x4ED6;&#x6240;&#x53C3;&#x7167;&#x7684;&#x8996;&#x5716;&#x76F8;&#x5C0D;&#x4F4D;&#x7F6E;&#x662F;&#x5F9E; <code>resource/views/</code> &#x958B;&#x59CB;&#x7684;</p>
+<p>&#x6240;&#x4EE5;&#x5982;&#x679C;&#x4F60;&#x7684;&#x8996;&#x5716;&#x662F;&#x653E;&#x5728; <code>resource/views/partials/other.blade.php</code> &#x4E2D;&#xFF0C;&#x4F60;&#x8981;&#x5F15;&#x7528;&#x6216;&#x8F09;&#x5165;&#x7684;&#x8A71;&#x5247;&#x53EF;&#x4EE5;&#x7528; <code>.</code> &#x6216; <code>/</code> &#x53BB;&#x6307;&#x5B9A;&#x76F8;&#x5C0D;&#x7684;&#x8996;&#x5716;&#x4F4D;&#x7F6E;&#xFF0C;&#x50CF;&#x662F;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- &#x5F15;&#x7528; --&gt;</span>
+@extend(&apos;partials._other&apos;)
+@extend(&apos;partials/_other&apos;)
+
+<span class="hljs-comment">&lt;!-- &#x8F09;&#x5165; --&gt;</span>
+@include(&apos;partials._other&apos;)
+@include(&apos;partials/_other&apos;)
+</code></pre>
+<h3 id="%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F">&#x8A2D;&#x8A08;&#x6A21;&#x5F0F;</h3>
+<h4 id="%E6%A8%A3%E6%9D%BF%E6%AA%94%E6%A1%88%E5%90%8D%E7%A8%B1">&#x6A23;&#x677F;&#x6A94;&#x6848;&#x540D;&#x7A31;</h4>
+<p>&#x901A;&#x5E38;&#x82E5;&#x4E0D;&#x662F;&#x5B8C;&#x6574;&#x7684;&#x8996;&#x5716;&#xFF0C;&#x50C5;&#x662F;&#x90E8;&#x5206;&#x7684;&#x8996;&#x5716;&#xFF0C;&#x901A;&#x5E38;&#x6703;&#x5C07;&#x6A94;&#x6848;&#x540D;&#x7A31;&#x6700;&#x524D;&#x9762;&#x52A0;&#x4E0A;&#x5E95;&#x7DDA; <code>_</code>&#xFF0C;&#x7528;&#x4F86;&#x544A;&#x77E5;&#x5718;&#x968A;&#x7A0B;&#x5F0F;&#x8A2D;&#x8A08;&#x5E2B;&#x9019;&#x500B; blade &#x8996;&#x5716;&#x4E0D;&#x662F;&#x5B8C;&#x6574;&#x7684;&#x8996;&#x5716;</p>
+<h2 id="%E5%8F%83%E8%80%83%E8%B3%87%E8%A8%8A">&#x53C3;&#x8003;&#x8CC7;&#x8A0A;</h2>
+<ul>
+<li><a href="https://laracasts.com/series/laravel-5-fundamentals/episodes/13" target="_blank">View Partials and Form Reuse - Laracasts</a></li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../http/middleware/http-middleware-README.html" class="navigation navigation-prev " aria-label="Previous page: 中介層 (Middleware)"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../services/services-README.html" class="navigation navigation-next " aria-label="Next page: 服務"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-disqus/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2},"disqus":{"shortName":"kejyun-laravel5-book"},"ga":{"token":"UA-31063691-12","configuration":"auto"}};
+    gitbook.start(config);
+});
+</script>
+
+        <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-31063691-12', 'auto');ga('send', 'pageview');</script>
+    </body>
+    
+</html>
