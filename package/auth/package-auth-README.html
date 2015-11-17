@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>Elixir | Laravel 5 學習筆記</title>
+        <title>認證 | Laravel 5 學習筆記</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../../services/elixir/services-elixir-combine-css-and-js.html" />
+    <link rel="next" href="../../package/auth/oauth2/package-auth-oauth2-README.html" />
     
     
-    <link rel="prev" href="../../services/hashing/services-hashing-README.html" />
+    <link rel="prev" href="../../package/design-pattern/package-design-pattern-README.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="5.9" data-basepath="../.." data-revision="Tue Nov 17 2015 22:53:20 GMT+0800 (CST)">
+    <div class="book" data-level="7.4" data-basepath="../.." data-revision="Tue Nov 17 2015 22:53:20 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -688,7 +688,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="5.9" data-path="services/elixir/services-elixir-README.html">
+        <li class="chapter " data-level="5.9" data-path="services/elixir/services-elixir-README.html">
             
                 
                     <a href="../../services/elixir/services-elixir-README.html">
@@ -913,7 +913,7 @@
             
         </li>
     
-        <li class="chapter " data-level="7.4" data-path="package/auth/package-auth-README.html">
+        <li class="chapter active" data-level="7.4" data-path="package/auth/package-auth-README.html">
             
                 
                     <a href="../../package/auth/package-auth-README.html">
@@ -1339,43 +1339,8 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="elixir">Elixir</h1>
-<p>&#x9019;&#x88CF;&#x6703;&#x4ECB;&#x7D39; Laravel 5 &#x4F7F;&#x7528; NPM &#x5957;&#x4EF6; Elixir &#x7BA1;&#x7406;&#x8CC7;&#x6E90;&#x7684;&#x76F8;&#x95DC;&#x8AAA;&#x660E;</p>
-<h2 id="%E4%BD%BF%E7%94%A8%E9%9C%80%E6%B1%82">&#x4F7F;&#x7528;&#x9700;&#x6C42;</h2>
-<p>&#x56E0;&#x70BA; Laravel &#x7684; Elixir &#x662F;&#x900F;&#x904E; Node.js &#x7684;&#x5957;&#x4EF6;&#xFF0C;&#x53BB;&#x5C07; Laravel &#x76EE;&#x9304;&#x7D50;&#x69CB;&#x4E0B;&#x7684;&#x8CC7;&#x6E90;&#x505A;&#x6574;&#x5408;&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x5011;&#x9700;&#x8981;&#x5B89;&#x88DD; Node.js &#x7684;&#x76F8;&#x95DC;&#x5957;&#x4EF6;&#xFF0C;&#x9700;&#x8981;&#x5B89;&#x88DD;&#x7684;&#x6709;&#x4E0B;&#x5217;&#xFF1A;</p>
-<ul>
-<li>NPM (Node Package Manager)</li>
-<li>NPM gulp &#x5957;&#x4EF6;</li>
-<li>NPM laravel-elixir &#x5957;&#x4EF6;</li>
-</ul>
-<h3 id="%E5%AE%89%E8%A3%9D-npm">&#x5B89;&#x88DD; NPM</h3>
-<p>NPM &#x662F; Node.js &#x7684;&#x5957;&#x4EF6;&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#xFF0C;Node.js &#x5728; 0.6.3 &#x7248;&#x672C;&#x958B;&#x59CB;&#x5167;&#x5EFA; npm&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x900F;&#x904E;&#x5B89;&#x88DD; Node.js &#x7684;&#x65B9;&#x5F0F;&#x53BB;&#x5B89;&#x88DD; NPM&#xFF0C;&#x6216;&#x662F;&#x900F;&#x904E; NPM &#x5B98;&#x65B9;&#x7DB2;&#x7AD9;&#x63D0;&#x4F9B;&#x7684;&#x5B89;&#x88DD;&#x6307;&#x4EE4;&#x53BB;&#x5B89;&#x88DD; NPM</p>
-<pre><code class="lang-shell">$ curl http://npmjs.org/install.sh | sh
-</code></pre>
-<p>&#x5B89;&#x88DD;&#x5B8C; NPM &#x5F8C;&#xFF0C;&#x6211;&#x5011;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; NPM &#x53BB;&#x5B89;&#x88DD;&#x76F8;&#x95DC;&#x7684;&#x5957;&#x4EF6;&#x4E86;&#xFF01;</p>
-<h3 id="%E5%AE%89%E8%A3%9D-npm-gulp-%E5%A5%97%E4%BB%B6">&#x5B89;&#x88DD; NPM gulp &#x5957;&#x4EF6;</h3>
-<blockquote>
-<p>gulp &#x662F; Node.js &#x7684;&#x81EA;&#x52D5;&#x5EFA;&#x69CB;&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x53EF;&#x4EE5;&#x900F;&#x904E;&#x5B83;&#x6574;&#x5408;&#x4E26;&#x5EFA;&#x7ACB;&#x8CC7;&#x6E90;</p>
-</blockquote>
-<p>&#x6211;&#x5011;&#x8981;&#x5230;&#x6211;&#x5011; Laravel &#x5C08;&#x6848;&#x7684;&#x6839;&#x76EE;&#x9304;&#xFF0C;&#x7136;&#x5F8C;&#x57F7;&#x884C; <code>npm install gulp</code> &#x53BB;&#x5B89;&#x88DD; gulp</p>
-<pre><code class="lang-shell">kejyun@KeJyundeMBP:~/Code/KeJyunLaravel5Proj$ npm install gulp
-</code></pre>
-<blockquote>
-<p>&#x6240;&#x6709; NPM &#x5B89;&#x88DD;&#x7684;&#x5957;&#x4EF6;&#x6703;&#x5728;&#x5C08;&#x6848;&#x8DDF;&#x76EE;&#x9304;&#x4E0B;&#x7684; <code>node_modules</code> &#x76EE;&#x9304;&#x4E0B;&#xFF0C;&#x6CE8;&#x610F;&#xFF01;&#x9019;&#x500B;&#x76EE;&#x9304;&#x4E0D;&#x61C9;&#x8A72;&#x5728;&#x5C08;&#x6848;&#x7684;&#x7248;&#x672C;&#x63A7;&#x5236;&#x7576;&#x4E2D;&#xFF5E;</p>
-</blockquote>
-<h3 id="%E5%AE%89%E8%A3%9D-npm-laravel-elixir-%E5%A5%97%E4%BB%B6">&#x5B89;&#x88DD; NPM laravel-elixir &#x5957;&#x4EF6;</h3>
-<p>&#x4E00;&#x6A23;&#x5728;&#x6211;&#x5011; Laravel &#x5C08;&#x6848;&#x7684;&#x6839;&#x76EE;&#x9304;&#xFF0C;&#x7136;&#x5F8C;&#x57F7;&#x884C; <code>npm install laravel-elixir</code> &#x53BB;&#x5B89;&#x88DD; laravel-elixir</p>
-<pre><code class="lang-shell">$ npm install laravel-elixir
-</code></pre>
-<p>&#x9019;&#x4E9B;&#x5957;&#x4EF6;&#x5B89;&#x88DD;&#x5B8C;&#x5F8C;&#xFF0C;&#x6211;&#x5011;&#x5C31;&#x53EF;&#x4EE5;&#x958B;&#x59CB;&#x4F7F;&#x7528; Elixir &#x7684;&#x958B;&#x767C;&#x597D;&#x8655;&#x4E86;&#xFF01;&#xFF01;</p>
-<h2 id="%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99">&#x53C3;&#x8003;&#x8CC7;&#x6599;</h2>
-<ul>
-<li><a href="https://nodejs.org/" target="_blank">Node.js</a></li>
-<li><a href="https://www.npmjs.com/" target="_blank">npm</a></li>
-<li><a href="https://github.com/nodejs-tw/nodejs-wiki-book/blob/master/zh-tw/node_npm.rst" target="_blank">NPM &#x5957;&#x4EF6;&#x7BA1;&#x7406;&#x5DE5;&#x5177;</a></li>
-<li><a href="http://gulpjs.com/" target="_blank">gulp.js - the streaming build system</a></li>
-<li><a href="http://laravel.tw/docs/5.1/elixir" target="_blank">Laravel Elixir - laravel.tw</a></li>
-</ul>
+                        <h1 id="%E8%AA%8D%E8%AD%89%E5%A5%97%E4%BB%B6">&#x8A8D;&#x8B49;&#x5957;&#x4EF6;</h1>
+<p>&#x9019;&#x88CF;&#x6703;&#x4ECB;&#x7D39;&#x4E00;&#x4E9B;&#x5728; Laravel 5 &#x6703;&#x7528;&#x5230;&#x7684;&#x8A8D;&#x8B49;&#x5957;&#x4EF6;</p>
 
                     
                     </section>
@@ -1386,10 +1351,10 @@
         </div>
 
         
-        <a href="../../services/hashing/services-hashing-README.html" class="navigation navigation-prev " aria-label="Previous page: 雜湊"><i class="fa fa-angle-left"></i></a>
+        <a href="../../package/design-pattern/package-design-pattern-README.html" class="navigation navigation-prev " aria-label="Previous page: 設計模式"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../../services/elixir/services-elixir-combine-css-and-js.html" class="navigation navigation-next " aria-label="Next page: 使用 Elixir 合併 CSS 與 JS"><i class="fa fa-angle-right"></i></a>
+        <a href="../../package/auth/oauth2/package-auth-oauth2-README.html" class="navigation navigation-next " aria-label="Next page: OAuth2"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
