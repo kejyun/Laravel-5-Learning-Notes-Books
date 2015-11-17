@@ -15,7 +15,7 @@
 
 ## API
 
-* [Laravel 5 API Documentation](http://laravel.com/api/5.0/)
+* [Laravel 5 API Documentation](http://laravel.com/api/5.1/)
 
 ## 套件清單
 * [Packalyst :: Packages for Laravel](http://packalyst.com/)
