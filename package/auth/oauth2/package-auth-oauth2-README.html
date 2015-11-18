@@ -20,7 +20,7 @@
         
     
     
-    <link rel="next" href="../../../qa/qa-README.html" />
+    <link rel="next" href="../../../package/auth/oauth2/package-auth-oauth2-client-credentials.html" />
     
     
     <link rel="prev" href="../../../package/auth/package-auth-README.html" />
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="7.4.1" data-basepath="../../.." data-revision="Tue Nov 17 2015 22:53:20 GMT+0800 (CST)">
+    <div class="book" data-level="7.4.1" data-basepath="../../.." data-revision="Wed Nov 18 2015 23:19:02 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -942,6 +942,27 @@
                 
             
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.4.1.1" data-path="package/auth/oauth2/package-auth-oauth2-client-credentials.html">
+            
+                
+                    <a href="../../../package/auth/oauth2/package-auth-oauth2-client-credentials.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.1.1.</b>
+                        
+                        Client Credentials
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
 
@@ -1397,7 +1418,7 @@
 </code></pre>
 <pre><code class="lang-shell">$ composer update
 </code></pre>
-<h2 id="%E8%A8%AD%E5%AE%9A%E5%A5%97%E4%BB%B6">&#x8A2D;&#x5B9A;&#x5957;&#x4EF6;</h2>
+<h3 id="%E8%A8%AD%E5%AE%9A%E5%A5%97%E4%BB%B6">&#x8A2D;&#x5B9A;&#x5957;&#x4EF6;</h3>
 <p>&#x958B;&#x555F;<code>config/app.php</code>&#x6A94;&#x6848;&#xFF0C;&#x4E26;&#x5C07;&#x7CFB;&#x5217;&#x5957;&#x4EF6;&#x8CC7;&#x8A0A;&#x52A0;&#x5165; <code>providers</code> &#x8207; <code>aliases</code></p>
 <pre><code class="lang-php">&apos;providers&apos; =&gt; [
     LucaDegasperi\OAuth2Server\Storage\FluentStorageServiceProvider::class,
@@ -1516,6 +1537,57 @@ $ php artisan migrate
 </tr>
 </tbody>
 </table>
+<h3 id="oauth2-access-token-%E5%8F%96%E5%BE%97%E7%9A%84%E6%96%B9%E5%BC%8F">OAuth2 Access token &#x53D6;&#x5F97;&#x7684;&#x65B9;&#x5F0F;</h3>
+<p>OAuth2 &#x7E3D;&#x5171;&#x6709;&#x4E0B;&#x5217; 4 &#x7A2E; Access token &#x53D6;&#x5F97;&#x7684;&#x65B9;&#x5F0F;</p>
+<table>
+<thead>
+<tr>
+<th>Access token &#x53D6;&#x5F97;&#x65B9;&#x5F0F;</th>
+<th>&#x8AAA;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/lucadegasperi/oauth2-server-laravel/wiki/Implementing-an-Authorization-Server-With-the-Client-Credentials-Grant" target="_blank">Client Credentials</a></td>
+<td>&#x7D14; Client &#x8CC7;&#x6599;&#x8EAB;&#x4EFD;&#x9A57;&#x8B49;&#xFF0C;&#x50C5;&#x9700;&#x8981; client_id &#x8207; client_secret &#x6B63;&#x78BA;&#x5373;&#x53EF;&#x53D6;&#x5F97; Access token</td>
+</tr>
+<tr>
+<td><a href="https://github.com/lucadegasperi/oauth2-server-laravel/wiki/Implementing-an-Authorization-Server-with-the-Password-Grant" target="_blank">Password</a></td>
+<td>&#x8CC7;&#x6E90;&#x64C1;&#x6709;&#x8005;&#x9808;&#x767B;&#x5165;&#x5E33;&#x865F;&#x5BC6;&#x78BC;&#xFF0C;&#x78BA;&#x8A8D;&#x53EF;&#x4EE5;&#x8B93; Client &#x53D6;&#x5F97; Access token</td>
+</tr>
+<tr>
+<td><a href="https://github.com/lucadegasperi/oauth2-server-laravel/wiki/Implementing-an-Authorization-Server-with-the-Auth-Code-Grant" target="_blank">Auth Code Grant</a></td>
+<td>&#x8CC7;&#x6E90;&#x64C1;&#x6709;&#x8005;&#x6388;&#x6B0A; Client &#x53EF;&#x4EE5;&#x5B58;&#x53D6;&#x6307;&#x5B9A; Scope &#x7684;&#x8CC7;&#x6E90;&#x4E26;&#x7D66;&#x4E88;&#x6388;&#x6B0A;&#x78BC;&#xFF0C;Client &#x900F;&#x904E;&#x6B64;&#x6388;&#x6B0A;&#x78BC;&#x53D6;&#x5F97;&#x8A72; Scope &#x7684; Access token</td>
+</tr>
+<tr>
+<td><a href="https://github.com/lucadegasperi/oauth2-server-laravel/wiki/Implementing-an-Authorization-Server-with-the-Refresh-Token-Grant" target="_blank">Refresh Token Grant</a></td>
+<td>&#x6388;&#x6B0A; Client &#x5728;&#x53D6;&#x5F97; Access token &#x6642;&#x4E5F;&#x4E00;&#x4F75;&#x53D6;&#x5F97; Refresh token&#xFF0C;&#x5728; Access token &#x904E;&#x671F;&#x6642;&#xFF0C;Client &#x53EF;&#x4EE5;&#x7528;&#x6B64; Refresh token &#x53D6;&#x5F97;&#x65B0;&#x7684;&#x76F8;&#x540C;&#x6B0A;&#x9650;&#x7684; Access token</td>
+</tr>
+</tbody>
+</table>
+<h3 id="%E8%A8%AD%E5%AE%9A%E5%AD%98%E5%8F%96-access-token-%E8%B7%AF%E7%94%B1">&#x8A2D;&#x5B9A;&#x5B58;&#x53D6; Access token &#x8DEF;&#x7531;</h3>
+<p>&#x4E0D;&#x7BA1;&#x662F;&#x4F55;&#x7A2E; OAuth2 Access token &#x53D6;&#x5F97;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x90FD;&#x9808;&#x900F;&#x904E;<code>&#x76F8;&#x540C;&#x7684;&#x8DEF;&#x7531;</code>&#x53BB;&#x53D6;&#x5F97; Access token&#xFF0C;OAuth2 &#x6703;&#x6839;&#x64DA;&#x6BCF;&#x500B;&#x53D6;&#x5F97;&#x65B9;&#x5F0F;&#x53C3;&#x6578;&#x7684;&#x4E0D;&#x540C;&#x505A;&#x4E0D;&#x4E00;&#x6A23;&#x7684;&#x9A57;&#x8B49;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x5011;&#x53EA;&#x6709;&#x8A2D;&#x5B9A;&#x4E0B;&#x5217;&#x8DEF;&#x7531;&#x5373;&#x53EF;</p>
+<pre><code class="lang-php">Route::post(<span class="hljs-string">&apos;oauth/access_token&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> Response::json(Authorizer::issueAccessToken());
+});
+</code></pre>
+<h3 id="%E8%A8%AD%E5%AE%9A-client-id-%E8%88%87-client-secret">&#x8A2D;&#x5B9A; client_id &#x8207; client_secret</h3>
+<p>&#x6BCF;&#x4E00;&#x500B; Client &#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#x90FD;&#x6703;&#x6709;&#x81EA;&#x5DF1;&#x7684; <code>client_id</code> &#x8207; <code>client_secret</code>&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x8A2D;&#x5B9A;&#x4F60;&#x8981;&#x6838;&#x767C;&#x7D66; Client &#x6388;&#x6B0A; client_id &#x8207; client_secret &#x7684;&#x9801;&#x9762;&#xFF0C;&#x4E26;&#x5C07;&#x8CC7;&#x6599;&#x5206;&#x5225;&#x5B58;&#x653E;&#x5728; <code>oauth_clients</code> &#x8CC7;&#x6599;&#x8868;&#x7684; id &#x8207; secret &#x6B04;&#x4F4D;&#x4E2D;</p>
+<pre><code class="lang-php">Schema::create(<span class="hljs-string">&apos;oauth_clients&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(BluePrint <span class="hljs-variable">$table</span>)</span> </span>{
+    <span class="hljs-variable">$table</span>-&gt;string(<span class="hljs-string">&apos;id&apos;</span>, <span class="hljs-number">40</span>)-&gt;primary();    <span class="hljs-comment">// client_id</span>
+    <span class="hljs-variable">$table</span>-&gt;string(<span class="hljs-string">&apos;secret&apos;</span>, <span class="hljs-number">40</span>);           <span class="hljs-comment">// client_secret</span>
+    <span class="hljs-variable">$table</span>-&gt;string(<span class="hljs-string">&apos;name&apos;</span>);                 <span class="hljs-comment">// Client &#x540D;&#x7A31;</span>
+    <span class="hljs-variable">$table</span>-&gt;timestamps();
+    <span class="hljs-variable">$table</span>-&gt;unique([<span class="hljs-string">&apos;id&apos;</span>, <span class="hljs-string">&apos;secret&apos;</span>]);
+});
+</code></pre>
+<p>Client &#x8CC7;&#x6599;&#x65B0;&#x589E;&#x5B8C;&#x6210;&#x4E4B;&#x5F8C;&#xFF0C;&#x4E4B;&#x5F8C; Client &#x53EF;&#x4EE5;&#x900F;&#x904E;&#x9019;&#x500B; client_id &#x8207; client_secret &#x53BB;&#x8981;&#x6C42;&#x53D6;&#x5F97; Access token&#xFF0C;&#x6211;&#x5011;&#x9019;&#x88E1;&#x4EE5;&#x65B0;&#x589E; id &#x70BA; <code>KeKyun</code> &#x53CA; secret &#x70BA; <code>KeJyunSecret</code> &#x4F5C;&#x70BA;&#x4E4B;&#x5F8C;&#x7684;&#x7BC4;&#x4F8B;</p>
+<pre><code class="lang-sql"><span class="hljs-operator"><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> <span class="hljs-string">&quot;oauth_clients&quot;</span> (<span class="hljs-string">&quot;id&quot;</span>, <span class="hljs-string">&quot;secret&quot;</span>, <span class="hljs-string">&quot;name&quot;</span>, <span class="hljs-string">&quot;created_at&quot;</span>, <span class="hljs-string">&quot;updated_at&quot;</span>)
+<span class="hljs-keyword">VALUES</span> (<span class="hljs-string">&apos;KeJyun&apos;</span>, <span class="hljs-string">&apos;KeJyunSecret&apos;</span>, <span class="hljs-string">&apos;KeJyun Client&apos;</span>, <span class="hljs-keyword">now</span>(), <span class="hljs-keyword">now</span>());</span>
+</code></pre>
+<blockquote>
+<p>client_id &#x8207; client_secret &#x6B04;&#x4F4D;&#x9577;&#x5EA6;&#x7686;&#x70BA; 40&#xFF0C;&#x5728;&#x7522;&#x751F;&#x8CC7;&#x6599;&#x6642;&#x8ACB;&#x81EA;&#x884C;&#x7522;&#x751F;&#x9577;&#x5EA6; 40 &#x7684;&#x4E82;&#x6578;&#x5B57;&#x4E32;&#xFF0C;&#x9019;&#x88E1;&#x50C5;&#x7528;&#x65BC;&#x793A;&#x7BC4;&#x4F7F;&#x7528;&#x975E;&#x4E82;&#x6578;&#x7684; client_id &#x8207; client_secret</p>
+</blockquote>
 <h2 id="%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99">&#x53C3;&#x8003;&#x8CC7;&#x6599;</h2>
 <ul>
 <li><a href="https://github.com/lucadegasperi/oauth2-server-laravel" target="_blank">lucadegasperi/oauth2-server-laravel</a></li>
@@ -1547,7 +1619,7 @@ $ php artisan migrate
         <a href="../../../package/auth/package-auth-README.html" class="navigation navigation-prev " aria-label="Previous page: 認證"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../../../qa/qa-README.html" class="navigation navigation-next " aria-label="Next page: 其他常見問題"><i class="fa fa-angle-right"></i></a>
+        <a href="../../../package/auth/oauth2/package-auth-oauth2-client-credentials.html" class="navigation navigation-next " aria-label="Next page: Client Credentials"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
