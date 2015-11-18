@@ -37,7 +37,7 @@
 $ composer update
 ```
 
-## 設定套件
+### 設定套件
 
 開啟`config/app.php`檔案，並將系列套件資訊加入 `providers` 與 `aliases`
 
@@ -105,6 +105,51 @@ $ php artisan migrate
 |  limit_clients_to_scopes | 限制 Client 允許的 Scope，可以在 `oauth_client_scopes` 資料表設定  | Boolean  | false  |
 |  limit_scopes_to_grants | 限制 Scope 允許在哪個 Grant Type 存取，可以在 `oauth_grant_scopes` 資料表設定  | Boolean  | false  |
 |  http_headers_only |  是否只使用 Header 做 Access token 的檢查 | Boolean  |  false  |
+
+### OAuth2 Access token 取得的方式
+
+OAuth2 總共有下列 4 種 Access token 取得的方式
+
+| Access token 取得方式 | 說明 |
+|---|---|---|
+| [Client Credentials](https://github.com/lucadegasperi/oauth2-server-laravel/wiki/Implementing-an-Authorization-Server-With-the-Client-Credentials-Grant)  | 純 Client 資料身份驗證，僅需要 client_id 與 client_secret 正確即可取得 Access token |
+| [Password](https://github.com/lucadegasperi/oauth2-server-laravel/wiki/Implementing-an-Authorization-Server-with-the-Password-Grant) | 資源擁有者須登入帳號密碼，確認可以讓 Client 取得 Access token |
+| [Auth Code Grant](https://github.com/lucadegasperi/oauth2-server-laravel/wiki/Implementing-an-Authorization-Server-with-the-Auth-Code-Grant) | 資源擁有者授權 Client 可以存取指定 Scope 的資源並給予授權碼，Client 透過此授權碼取得該 Scope 的 Access token |
+| [Refresh Token Grant](https://github.com/lucadegasperi/oauth2-server-laravel/wiki/Implementing-an-Authorization-Server-with-the-Refresh-Token-Grant) | 授權 Client 在取得 Access token 時也一併取得 Refresh token，在 Access token 過期時，Client 可以用此 Refresh token 取得新的相同權限的 Access token |
+
+
+### 設定存取 Access token 路由
+
+不管是何種 OAuth2 Access token 取得的方式，都須透過`相同的路由`去取得 Access token，OAuth2 會根據每個取得方式參數的不同做不一樣的驗證，所以我們只有設定下列路由即可
+
+```php
+Route::post('oauth/access_token', function() {
+    return Response::json(Authorizer::issueAccessToken());
+});
+```
+
+### 設定 client_id 與 client_secret
+
+每一個 Client 應用程式都會有自己的 `client_id` 與 `client_secret`，你可以自己設定你要核發給 Client 授權 client_id 與 client_secret 的頁面，並將資料分別存放在 `oauth_clients` 資料表的 id 與 secret 欄位中
+
+```php
+Schema::create('oauth_clients', function (BluePrint $table) {
+    $table->string('id', 40)->primary();    // client_id
+    $table->string('secret', 40);           // client_secret
+    $table->string('name');                 // Client 名稱
+    $table->timestamps();
+    $table->unique(['id', 'secret']);
+});
+```
+
+Client 資料新增完成之後，之後 Client 可以透過這個 client_id 與 client_secret 去要求取得 Access token，我們這裡以新增 id 為 `KeKyun` 及 secret 為 `KeJyunSecret` 作為之後的範例
+
+```sql
+INSERT INTO "oauth_clients" ("id", "secret", "name", "created_at", "updated_at")
+VALUES ('KeJyun', 'KeJyunSecret', 'KeJyun Client', now(), now());
+```
+
+> client_id 與 client_secret 欄位長度皆為 40，在產生資料時請自行產生長度 40 的亂數字串，這裡僅用於示範使用非亂數的 client_id 與 client_secret
 
 ## 參考資料
 * [lucadegasperi/oauth2-server-laravel](https://github.com/lucadegasperi/oauth2-server-laravel)
