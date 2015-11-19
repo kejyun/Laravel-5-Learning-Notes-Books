@@ -7,12 +7,10 @@
 ```php
 return [
     'grant_types' => [
-        'grant_types' => [
-            'client_credentials' => [
-                'class' => '\League\OAuth2\Server\Grant\ClientCredentialsGrant',
-                'access_token_ttl' => 3600
-            ]
-        ]
+          'client_credentials' => [
+              'class' => '\League\OAuth2\Server\Grant\ClientCredentialsGrant',
+              'access_token_ttl' => 3600
+          ]
     ]
 ];
 ```
@@ -34,6 +32,10 @@ return [
 ![使用 Postman 取得 Client Credentials Access token](./images/oauth2-client-credentials-get-access-token.png)
 
 送出到我們設定的 `/oauth/access_token` 路由後，我們就可以直接取得 `access_token`，並回傳此 token 失效的時間 `expires_in` 為我們設定的 `access_token_ttl`
+
+## 相關資料表
+
+OAuth2 會將 token 記錄在 `oauth_access_tokens` 資料表，並將關聯的使用者記錄在 `oauth_sessions` 資料表，在 `oauth_sessions` 中的 `owner_id` 則為 `oauth_clients` 資料表中 Client 的 `id`
 
 ## 參考資料
 * [Client Credentials](https://github.com/lucadegasperi/oauth2-server-laravel/wiki/Implementing-an-Authorization-Server-With-the-Client-Credentials-Grant)

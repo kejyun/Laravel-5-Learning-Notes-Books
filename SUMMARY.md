@@ -54,6 +54,7 @@
   * [認證](package/auth/package-auth-README.md)
     * [OAuth2](package/auth/oauth2/package-auth-oauth2-README.md)
       * [Client Credentials](package/auth/oauth2/package-auth-oauth2-client-credentials.md)
+      * [Password](package/auth/oauth2/package-auth-oauth2-password.md)
 * [其他常見問題](qa/qa-README.md)
   * [Call to undefined method getCachedCompilePath()](qa/qa-call-undefined-method-getCachedCompilePath.md)
   * [變更專案目錄名稱導致 View 無法讀取](qa/qa-change-app-directory-name-cause-view-can-not-readable.md)
