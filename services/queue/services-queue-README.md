@@ -28,4 +28,4 @@ $php artisan queue:listen [--queue[="..."]] [--delay[="..."]] [--memory[="..."]]
 | memory  | 執行工作最多能夠使用的記憶體上限（單位：MB），預設 128 MB  | `php artisan queue:listen --memory=1024`  |
 | timeout  | 執行的工作做長執行的時間是多長（單位：秒），預設 60 秒  |  `php artisan queue:listen --timeout=3600`  |
 | sleep  | 在沒有找到可以做的工作時，需要間隔多少秒再去檢查有無新的工作（單位：秒），預設 3 秒 | `php artisan queue:listen --sleep=10`  |
-| tries  | 工作執行失敗時，最多重新嘗試執行幾次（單位：次數），預設 0，無限制次數  | `php artisan queue:listen --tries=3`  |
+| tries  | 工作執行失敗時，最多重新嘗試執行幾次（單位：次數），預設 0，不重新嘗試  | `php artisan queue:listen --tries=3`  |
