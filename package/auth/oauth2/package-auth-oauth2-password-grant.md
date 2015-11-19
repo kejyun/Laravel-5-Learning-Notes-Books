@@ -1,4 +1,4 @@
-# OAuth2 Password
+# OAuth2 Password Grant
 
 
 ## 設定 config
@@ -62,7 +62,7 @@ class PasswordGrantVerifier
 > `username` 與 `password` 是你專案的使用者驗證資料，端看你驗證的 `callback` 如何定義這兩個欄位的資料，驗證成功後回傳使用者的編號給 OAuth2 記錄即可
 
 
-![使用 Postman 取得 Password Access token](./images/oauth2-password-get-access-token.png)
+![使用 Postman 取得 Password Access token](./images/oauth2-password-grant-get-access-token.png)
 
 送出到我們設定的 `/oauth/access_token` 路由後，我們就可以直接取得 `access_token`，並回傳此 token 失效的時間 `expires_in` 為我們設定的 `access_token_ttl`
 
@@ -71,4 +71,4 @@ class PasswordGrantVerifier
 OAuth2 會將 token 記錄在 `oauth_access_tokens` 資料表，並將關聯的使用者記錄在 `oauth_sessions` 資料表，在 `oauth_sessions` 中的 `owner_id` 則為我們剛剛回傳的使用者編號
 
 ## 參考資料
-* [Client Credentials](https://github.com/lucadegasperi/oauth2-server-laravel/wiki/Implementing-an-Authorization-Server-With-the-Client-Credentials-Grant)
+* [Password Grant](https://github.com/lucadegasperi/oauth2-server-laravel/wiki/Implementing-an-Authorization-Server-with-the-Password-Grant)
