@@ -39,4 +39,4 @@ VALUES ('user_likes', 'likes', now(), now());
 OAuth2 會將 token 記錄在 `oauth_access_tokens` 資料表，並將關聯的使用者記錄在 `oauth_sessions` 資料表，而 `oauth_access_token_scopes` 資料表則存放 Access Token 相關的 Scope 資訊
 
 ## 參考資料
-* [Password Grant](https://github.com/lucadegasperi/oauth2-server-laravel/wiki/Implementing-an-Authorization-Server-with-the-Password-Grant)
+* [Securing your API endpoints](https://github.com/lucadegasperi/oauth2-server-laravel/wiki/Securing-your-API-endpoints#defining-scopes)
