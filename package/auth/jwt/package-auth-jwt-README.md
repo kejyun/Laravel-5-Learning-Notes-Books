@@ -33,8 +33,8 @@ $ composer update
     Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
 ],
 'aliases'=>[
-    'JWTAuth' => 'Tymon\JWTAuth\Facades\JWTAuth',
-    'JWTFactory' => 'Tymon\JWTAuth\Facades\JWTFactory'
+    'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
+    'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
 ]
 ```
 
