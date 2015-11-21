@@ -85,3 +85,4 @@ $ php artisan jwt:generate
 ## 參考資料
 * [tymondesigns/jwt-auth - Installation](https://github.com/tymondesigns/jwt-auth/wiki/Installation)
 * [tymondesigns/jwt-auth - Configuration](https://github.com/tymondesigns/jwt-auth/wiki/Configuration)
+* [使用json web token](http://haomou.net/2014/08/13/2014_web_token/)
