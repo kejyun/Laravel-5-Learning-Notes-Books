@@ -15,7 +15,7 @@ require([
         if (typeof DISQUS !== "undefined") {
             DISQUS.reset({
                 reload: true,
-                config: function () {  
+                config: function () {
                     this.language = $('html').attr('lang') || "en";
                     this.page.url = window.location.href;
 
@@ -25,6 +25,25 @@ require([
                 }
             });
         }
+    };
+
+    var resetAdsense = function() {
+        var $adsenseDiv =
+          '<br><br>'+
+          '<h3 style="text-align:center">贊助</h3>' +
+          '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>' +
+          '<ins class="adsbygoogle"' +
+               'style="display:block"' +
+               'data-ad-client="ca-pub-1990193713845546"' +
+               'data-ad-slot="2858259611"' +
+               'data-ad-format="auto"></ins>' +
+          '<br><br>'+
+          '<script>' +
+          '(adsbygoogle = window.adsbygoogle || []).push({});' +
+          '</script>';
+
+        $(".book-body .page-inner").append($adsenseDiv);
+
     };
 
     var currentUrl = function() {
@@ -62,8 +81,10 @@ require([
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
 
+        // resetAdsense();
         resetDisqus();
     });
 
+    gitbook.events.bind("page.change", resetAdsense);
     gitbook.events.bind("page.change", resetDisqus);
 });
