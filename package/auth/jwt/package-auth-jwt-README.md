@@ -86,3 +86,5 @@ $ php artisan jwt:generate
 * [tymondesigns/jwt-auth - Installation](https://github.com/tymondesigns/jwt-auth/wiki/Installation)
 * [tymondesigns/jwt-auth - Configuration](https://github.com/tymondesigns/jwt-auth/wiki/Configuration)
 * [使用json web token](http://haomou.net/2014/08/13/2014_web_token/)
+* [Json Web Tokens: Introduction](http://angular-tips.com/blog/2014/05/json-web-tokens-introduction/)
+* [Where to Store Your JWTs - Cookies vs HTML5 Web Storage](https://stormpath.com/blog/where-to-store-your-jwts-cookies-vs-html5-web-storage/)
