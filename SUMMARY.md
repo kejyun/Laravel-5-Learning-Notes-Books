@@ -1,10 +1,8 @@
-# Summary
+# 摘要
 
 * [介紹](README.md)
 * [環境](environment/Environment-README.md)
   * [.env 檔案](environment/Environment-Dot-Env-File.md)
-  * [Node.js](environment/nodejs/Environment-nodejs-README.md)
-    * [NVM](environment/nodejs/Environment-nodejs-nvm.md)
 * [資料庫](database/database-README.md)
   * [Migration (遷移)](database/migration/database-migration-README.md)
   * [Eloquent Model (模型)](database/model/database-model-README.md)
