@@ -16,7 +16,7 @@
 NPM 是 Node.js 的套件管理工具，Node.js 在 0.6.3 版本開始內建 npm，你可以透過安裝 Node.js 的方式去安裝 NPM，或是透過 NPM 官方網站提供的安裝指令去安裝 NPM
 
 ```shell
-$ curl http://npmjs.org/install.sh | sh
+$ curl -L https://www.npmjs.com/install.sh | sh
 ```
 
 安裝完 NPM 後，我們就可以使用 NPM 去安裝相關的套件了！
