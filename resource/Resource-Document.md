@@ -34,5 +34,4 @@
 
 ## 指令函式
 * [Laravel Cheat Sheet](http://cheats.jesse-obrien.ca/)
-* [LaravelSnippets.com](http://laravelsnippets.com/)
 * [Laravel-Tricks.com](http://laravel-tricks.com/)
