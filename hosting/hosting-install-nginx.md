@@ -132,3 +132,9 @@ sudo ln -s /etc/nginx/sites-available/kejyun.dev /etc/nginx/sites-enabled/kejyun
 sudo service nginx restart
 ```
 
+這樣我們就完成了 Nginx Server 的設定了！！
+
+
+## 參考資料
+* [How To Set Up nginx Virtual Hosts (Server Blocks) on Ubuntu 12.04 LTS](https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-virtual-hosts-server-blocks-on-ubuntu-12-04-lts--3)
+* [php - How do I change the NGINX user? - Server Fault](http://serverfault.com/questions/433265/how-do-i-change-the-nginx-user)
