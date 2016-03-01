@@ -16,10 +16,14 @@ sudo mv composer.phar /usr/bin/composer
 
 ## 安裝所有 Laravel 專案套件
 
+在我們將程式使用 git 推送到主機時，vendor 下所有的套件都不會被推送到主機，所以程式碼上去主機後，需要自己作安裝套件的動作
+
 ```shell
 cd /home/kejyun/laravel52
 composer install -vvv
 ```
+
+這樣我們就完成了 composer 的安裝跟安裝 Laravel 專案套件了
 
 ## 參考資料
 * [Composer Download](https://getcomposer.org/download/)
