@@ -20,7 +20,7 @@ sudo mv composer.phar /usr/bin/composer
 
 ```shell
 cd /home/kejyun/laravel52
-composer install -vvv
+composer install
 ```
 
 這樣我們就完成了 composer 的安裝跟安裝 Laravel 專案套件了
