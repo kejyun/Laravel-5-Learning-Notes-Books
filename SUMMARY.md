@@ -68,6 +68,7 @@
   * [安裝 composer](hosting/hosting-install-composer.md)
   * [安裝 MySQL 5.7](hosting/hosting-install-mysql57.md)
   * [安裝 Memcached](hosting/hosting-install-memcached.md)
+  * [安裝 Redis](hosting/hosting-install-redis.md)
 * [其他常見問題](qa/qa-README.md)
   * [Call to undefined method getCachedCompilePath()](qa/qa-call-undefined-method-getCachedCompilePath.md)
   * [變更專案目錄名稱導致 View 無法讀取](qa/qa-change-app-directory-name-cause-view-can-not-readable.md)
