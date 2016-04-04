@@ -130,13 +130,13 @@ $ sudo vim /etc/hosts
 若要關閉Homestead虛擬機器，則可以使用下列指令關閉
 
 ```shell
-$ vagrant halt
+vagrant halt
 ```
 
 若設定檔有修改要重新讀取，則可以使用下列指令重新讀取設定
 
 ```shell
-$ vagrant provision
+vagrant provision
 ```
 
 ## 參考資料
