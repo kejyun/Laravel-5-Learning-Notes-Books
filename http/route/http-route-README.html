@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>Password Grant with Scope | Laravel 5 學習筆記</title>
+        <title>路由 (Route) | Laravel 5 學習筆記</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -15,15 +15,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
-        <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
         
     
     
-    <link rel="next" href="../../../package/auth/oauth2/package-auth-oauth2-access-token-authentication.html" />
+    <link rel="next" href="../../http/route/http-sub-domain-route.html" />
     
     
-    <link rel="prev" href="../../../package/auth/oauth2/package-auth-oauth2-refresh-token.html" />
+    <link rel="prev" href="../../http/request/http-request-README.html" />
     
 
         
@@ -31,12 +31,12 @@
     <body>
         
         
-    <link rel="stylesheet" href="../../../gitbook/style.css">
+    <link rel="stylesheet" href="../../gitbook/style.css">
     
     
 
         
-    <div class="book" data-level="7.5.1.4" data-basepath="../../.." data-revision="Mon Apr 04 2016 19:32:42 GMT+0800 (CST)">
+    <div class="book" data-level="3.2" data-basepath="../.." data-revision="Mon Apr 04 2016 19:32:42 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -56,7 +56,7 @@
         <li class="chapter " data-level="0" data-path="index.html">
             
                 
-                    <a href="../../../index.html">
+                    <a href="../../index.html">
                         <i class="fa fa-check"></i>
                         
                         介紹
@@ -69,7 +69,7 @@
         <li class="chapter " data-level="1" data-path="environment/Environment-README.html">
             
                 
-                    <a href="../../../environment/Environment-README.html">
+                    <a href="../../environment/Environment-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>1.</b>
@@ -85,7 +85,7 @@
         <li class="chapter " data-level="1.1" data-path="environment/Environment-Dot-Env-File.html">
             
                 
-                    <a href="../../../environment/Environment-Dot-Env-File.html">
+                    <a href="../../environment/Environment-Dot-Env-File.html">
                         <i class="fa fa-check"></i>
                         
                             <b>1.1.</b>
@@ -100,7 +100,7 @@
         <li class="chapter " data-level="1.2" data-path="environment/Environment-Homestead-README.html">
             
                 
-                    <a href="../../../environment/Environment-Homestead-README.html">
+                    <a href="../../environment/Environment-Homestead-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>1.2.</b>
@@ -120,7 +120,7 @@
         <li class="chapter " data-level="2" data-path="database/database-README.html">
             
                 
-                    <a href="../../../database/database-README.html">
+                    <a href="../../database/database-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>2.</b>
@@ -136,7 +136,7 @@
         <li class="chapter " data-level="2.1" data-path="database/migration/database-migration-README.html">
             
                 
-                    <a href="../../../database/migration/database-migration-README.html">
+                    <a href="../../database/migration/database-migration-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>2.1.</b>
@@ -151,7 +151,7 @@
         <li class="chapter " data-level="2.2" data-path="database/model/database-model-README.html">
             
                 
-                    <a href="../../../database/model/database-model-README.html">
+                    <a href="../../database/model/database-model-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>2.2.</b>
@@ -167,7 +167,7 @@
         <li class="chapter " data-level="2.2.1" data-path="database/model/database-model-eloquent-config.html">
             
                 
-                    <a href="../../../database/model/database-model-eloquent-config.html">
+                    <a href="../../database/model/database-model-eloquent-config.html">
                         <i class="fa fa-check"></i>
                         
                             <b>2.2.1.</b>
@@ -182,7 +182,7 @@
         <li class="chapter " data-level="2.2.2" data-path="database/model/database-model-eloquent-relationships.html">
             
                 
-                    <a href="../../../database/model/database-model-eloquent-relationships.html">
+                    <a href="../../database/model/database-model-eloquent-relationships.html">
                         <i class="fa fa-check"></i>
                         
                             <b>2.2.2.</b>
@@ -197,7 +197,7 @@
         <li class="chapter " data-level="2.2.3" data-path="database/model/database-model-eloquent-magic-function.html">
             
                 
-                    <a href="../../../database/model/database-model-eloquent-magic-function.html">
+                    <a href="../../database/model/database-model-eloquent-magic-function.html">
                         <i class="fa fa-check"></i>
                         
                             <b>2.2.3.</b>
@@ -212,7 +212,7 @@
         <li class="chapter " data-level="2.2.4" data-path="database/model/database-model-eloquent-apply.html">
             
                 
-                    <a href="../../../database/model/database-model-eloquent-apply.html">
+                    <a href="../../database/model/database-model-eloquent-apply.html">
                         <i class="fa fa-check"></i>
                         
                             <b>2.2.4.</b>
@@ -232,7 +232,7 @@
         <li class="chapter " data-level="2.3" data-path="database/qa/database-qa-README.html">
             
                 
-                    <a href="../../../database/qa/database-qa-README.html">
+                    <a href="../../database/qa/database-qa-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>2.3.</b>
@@ -248,7 +248,7 @@
         <li class="chapter " data-level="2.3.1" data-path="database/qa/database-qa-cannot-get-querylog.html">
             
                 
-                    <a href="../../../database/qa/database-qa-cannot-get-querylog.html">
+                    <a href="../../database/qa/database-qa-cannot-get-querylog.html">
                         <i class="fa fa-check"></i>
                         
                             <b>2.3.1.</b>
@@ -263,7 +263,7 @@
         <li class="chapter " data-level="2.3.2" data-path="database/qa/database-qa-cannot-mass-insert.html">
             
                 
-                    <a href="../../../database/qa/database-qa-cannot-mass-insert.html">
+                    <a href="../../database/qa/database-qa-cannot-mass-insert.html">
                         <i class="fa fa-check"></i>
                         
                             <b>2.3.2.</b>
@@ -278,7 +278,7 @@
         <li class="chapter " data-level="2.3.3" data-path="database/qa/database-qa-cannot-mass-insert-with-extend-model.html">
             
                 
-                    <a href="../../../database/qa/database-qa-cannot-mass-insert-with-extend-model.html">
+                    <a href="../../database/qa/database-qa-cannot-mass-insert-with-extend-model.html">
                         <i class="fa fa-check"></i>
                         
                             <b>2.3.3.</b>
@@ -298,7 +298,7 @@
         <li class="chapter " data-level="2.4" data-path="database/postgresql/database-postgresql-README.html">
             
                 
-                    <a href="../../../database/postgresql/database-postgresql-README.html">
+                    <a href="../../database/postgresql/database-postgresql-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>2.4.</b>
@@ -314,7 +314,7 @@
         <li class="chapter " data-level="2.4.1" data-path="database/postgresql/database-postgresql-install-odbc-driver.html">
             
                 
-                    <a href="../../../database/postgresql/database-postgresql-install-odbc-driver.html">
+                    <a href="../../database/postgresql/database-postgresql-install-odbc-driver.html">
                         <i class="fa fa-check"></i>
                         
                             <b>2.4.1.</b>
@@ -339,7 +339,7 @@
         <li class="chapter " data-level="3" data-path="http/http-README.html">
             
                 
-                    <a href="../../../http/http-README.html">
+                    <a href="../../http/http-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>3.</b>
@@ -355,7 +355,7 @@
         <li class="chapter " data-level="3.1" data-path="http/request/http-request-README.html">
             
                 
-                    <a href="../../../http/request/http-request-README.html">
+                    <a href="../../http/request/http-request-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>3.1.</b>
@@ -367,10 +367,10 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="http/route/http-route-README.html">
+        <li class="chapter active" data-level="3.2" data-path="http/route/http-route-README.html">
             
                 
-                    <a href="../../../http/route/http-route-README.html">
+                    <a href="../../http/route/http-route-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>3.2.</b>
@@ -386,7 +386,7 @@
         <li class="chapter " data-level="3.2.1" data-path="http/route/http-sub-domain-route.html">
             
                 
-                    <a href="../../../http/route/http-sub-domain-route.html">
+                    <a href="../../http/route/http-sub-domain-route.html">
                         <i class="fa fa-check"></i>
                         
                             <b>3.2.1.</b>
@@ -406,7 +406,7 @@
         <li class="chapter " data-level="3.3" data-path="http/middleware/http-middleware-README.html">
             
                 
-                    <a href="../../../http/middleware/http-middleware-README.html">
+                    <a href="../../http/middleware/http-middleware-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>3.3.</b>
@@ -426,7 +426,7 @@
         <li class="chapter " data-level="4" data-path="view/view-README.html">
             
                 
-                    <a href="../../../view/view-README.html">
+                    <a href="../../view/view-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>4.</b>
@@ -441,7 +441,7 @@
         <li class="chapter " data-level="5" data-path="services/services-README.html">
             
                 
-                    <a href="../../../services/services-README.html">
+                    <a href="../../services/services-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>5.</b>
@@ -457,7 +457,7 @@
         <li class="chapter " data-level="5.1" data-path="services/auth/services-auth-README.html">
             
                 
-                    <a href="../../../services/auth/services-auth-README.html">
+                    <a href="../../services/auth/services-auth-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>5.1.</b>
@@ -472,7 +472,7 @@
         <li class="chapter " data-level="5.2" data-path="services/mail/services-mail-README.html">
             
                 
-                    <a href="../../../services/mail/services-mail-README.html">
+                    <a href="../../services/mail/services-mail-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>5.2.</b>
@@ -488,7 +488,7 @@
         <li class="chapter " data-level="5.2.1" data-path="services/mail/services-mail-gmail.html">
             
                 
-                    <a href="../../../services/mail/services-mail-gmail.html">
+                    <a href="../../services/mail/services-mail-gmail.html">
                         <i class="fa fa-check"></i>
                         
                             <b>5.2.1.</b>
@@ -503,7 +503,7 @@
         <li class="chapter " data-level="5.2.2" data-path="services/mail/services-mail-mailgun.html">
             
                 
-                    <a href="../../../services/mail/services-mail-mailgun.html">
+                    <a href="../../services/mail/services-mail-mailgun.html">
                         <i class="fa fa-check"></i>
                         
                             <b>5.2.2.</b>
@@ -523,7 +523,7 @@
         <li class="chapter " data-level="5.3" data-path="services/queue/services-queue-README.html">
             
                 
-                    <a href="../../../services/queue/services-queue-README.html">
+                    <a href="../../services/queue/services-queue-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>5.3.</b>
@@ -539,7 +539,7 @@
         <li class="chapter " data-level="5.3.1" data-path="services/queue/services-queue-database.html">
             
                 
-                    <a href="../../../services/queue/services-queue-database.html">
+                    <a href="../../services/queue/services-queue-database.html">
                         <i class="fa fa-check"></i>
                         
                             <b>5.3.1.</b>
@@ -554,7 +554,7 @@
         <li class="chapter " data-level="5.3.2" data-path="services/queue/services-queue-async.html">
             
                 
-                    <a href="../../../services/queue/services-queue-async.html">
+                    <a href="../../services/queue/services-queue-async.html">
                         <i class="fa fa-check"></i>
                         
                             <b>5.3.2.</b>
@@ -574,7 +574,7 @@
         <li class="chapter " data-level="5.4" data-path="services/helpers/services-helpers-README.html">
             
                 
-                    <a href="../../../services/helpers/services-helpers-README.html">
+                    <a href="../../services/helpers/services-helpers-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>5.4.</b>
@@ -590,7 +590,7 @@
         <li class="chapter " data-level="5.4.1" data-path="services/helpers/services-custom-helpers-README.html">
             
                 
-                    <a href="../../../services/helpers/services-custom-helpers-README.html">
+                    <a href="../../services/helpers/services-custom-helpers-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>5.4.1.</b>
@@ -610,7 +610,7 @@
         <li class="chapter " data-level="5.5" data-path="services/unit-test/services-unit-test-README.html">
             
                 
-                    <a href="../../../services/unit-test/services-unit-test-README.html">
+                    <a href="../../services/unit-test/services-unit-test-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>5.5.</b>
@@ -626,7 +626,7 @@
         <li class="chapter " data-level="5.5.1" data-path="services/unit-test/services-unit-test-post-csrf.html">
             
                 
-                    <a href="../../../services/unit-test/services-unit-test-post-csrf.html">
+                    <a href="../../services/unit-test/services-unit-test-post-csrf.html">
                         <i class="fa fa-check"></i>
                         
                             <b>5.5.1.</b>
@@ -646,7 +646,7 @@
         <li class="chapter " data-level="5.6" data-path="services/errors/services-errors-README.html">
             
                 
-                    <a href="../../../services/errors/services-errors-README.html">
+                    <a href="../../services/errors/services-errors-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>5.6.</b>
@@ -662,7 +662,7 @@
         <li class="chapter " data-level="5.6.1" data-path="services/errors/services-errors-show-exception-in-cli.html">
             
                 
-                    <a href="../../../services/errors/services-errors-show-exception-in-cli.html">
+                    <a href="../../services/errors/services-errors-show-exception-in-cli.html">
                         <i class="fa fa-check"></i>
                         
                             <b>5.6.1.</b>
@@ -677,7 +677,7 @@
         <li class="chapter " data-level="5.6.2" data-path="services/errors/services-errors-log-level.html">
             
                 
-                    <a href="../../../services/errors/services-errors-log-level.html">
+                    <a href="../../services/errors/services-errors-log-level.html">
                         <i class="fa fa-check"></i>
                         
                             <b>5.6.2.</b>
@@ -692,7 +692,7 @@
         <li class="chapter " data-level="5.6.3" data-path="services/errors/services-errors-log-macro.html">
             
                 
-                    <a href="../../../services/errors/services-errors-log-macro.html">
+                    <a href="../../services/errors/services-errors-log-macro.html">
                         <i class="fa fa-check"></i>
                         
                             <b>5.6.3.</b>
@@ -712,7 +712,7 @@
         <li class="chapter " data-level="5.7" data-path="services/encryption/services-encryption-README.html">
             
                 
-                    <a href="../../../services/encryption/services-encryption-README.html">
+                    <a href="../../services/encryption/services-encryption-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>5.7.</b>
@@ -727,7 +727,7 @@
         <li class="chapter " data-level="5.8" data-path="services/hashing/services-hashing-README.html">
             
                 
-                    <a href="../../../services/hashing/services-hashing-README.html">
+                    <a href="../../services/hashing/services-hashing-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>5.8.</b>
@@ -742,7 +742,7 @@
         <li class="chapter " data-level="5.9" data-path="services/scheduling/services-scheduling-README.html">
             
                 
-                    <a href="../../../services/scheduling/services-scheduling-README.html">
+                    <a href="../../services/scheduling/services-scheduling-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>5.9.</b>
@@ -757,7 +757,7 @@
         <li class="chapter " data-level="5.10" data-path="services/elixir/services-elixir-README.html">
             
                 
-                    <a href="../../../services/elixir/services-elixir-README.html">
+                    <a href="../../services/elixir/services-elixir-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>5.10.</b>
@@ -773,7 +773,7 @@
         <li class="chapter " data-level="5.10.1" data-path="services/elixir/services-elixir-combine-css-and-js.html">
             
                 
-                    <a href="../../../services/elixir/services-elixir-combine-css-and-js.html">
+                    <a href="../../services/elixir/services-elixir-combine-css-and-js.html">
                         <i class="fa fa-check"></i>
                         
                             <b>5.10.1.</b>
@@ -798,7 +798,7 @@
         <li class="chapter " data-level="6" data-path="design-pattern/design-pattern-README.html">
             
                 
-                    <a href="../../../design-pattern/design-pattern-README.html">
+                    <a href="../../design-pattern/design-pattern-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>6.</b>
@@ -814,7 +814,7 @@
         <li class="chapter " data-level="6.1" data-path="design-pattern/design-pattern-service-container.html">
             
                 
-                    <a href="../../../design-pattern/design-pattern-service-container.html">
+                    <a href="../../design-pattern/design-pattern-service-container.html">
                         <i class="fa fa-check"></i>
                         
                             <b>6.1.</b>
@@ -829,7 +829,7 @@
         <li class="chapter " data-level="6.2" data-path="design-pattern/design-pattern-psr.html">
             
                 
-                    <a href="../../../design-pattern/design-pattern-psr.html">
+                    <a href="../../design-pattern/design-pattern-psr.html">
                         <i class="fa fa-check"></i>
                         
                             <b>6.2.</b>
@@ -844,7 +844,7 @@
         <li class="chapter " data-level="6.3" data-path="design-pattern/design-pattern-model.html">
             
                 
-                    <a href="../../../design-pattern/design-pattern-model.html">
+                    <a href="../../design-pattern/design-pattern-model.html">
                         <i class="fa fa-check"></i>
                         
                             <b>6.3.</b>
@@ -859,7 +859,7 @@
         <li class="chapter " data-level="6.4" data-path="design-pattern/design-pattern-learning-resource.html">
             
                 
-                    <a href="../../../design-pattern/design-pattern-learning-resource.html">
+                    <a href="../../design-pattern/design-pattern-learning-resource.html">
                         <i class="fa fa-check"></i>
                         
                             <b>6.4.</b>
@@ -879,7 +879,7 @@
         <li class="chapter " data-level="7" data-path="package/package-README.html">
             
                 
-                    <a href="../../../package/package-README.html">
+                    <a href="../../package/package-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>7.</b>
@@ -895,7 +895,7 @@
         <li class="chapter " data-level="7.1" data-path="package/debug/package-debug-README.html">
             
                 
-                    <a href="../../../package/debug/package-debug-README.html">
+                    <a href="../../package/debug/package-debug-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>7.1.</b>
@@ -911,7 +911,7 @@
         <li class="chapter " data-level="7.1.1" data-path="package/debug/package-debug-artisan-tail.html">
             
                 
-                    <a href="../../../package/debug/package-debug-artisan-tail.html">
+                    <a href="../../package/debug/package-debug-artisan-tail.html">
                         <i class="fa fa-check"></i>
                         
                             <b>7.1.1.</b>
@@ -931,7 +931,7 @@
         <li class="chapter " data-level="7.2" data-path="package/tool/package-tool-README.html">
             
                 
-                    <a href="../../../package/tool/package-tool-README.html">
+                    <a href="../../package/tool/package-tool-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>7.2.</b>
@@ -947,7 +947,7 @@
         <li class="chapter " data-level="7.2.1" data-path="package/tool/package-tool-carbon.html">
             
                 
-                    <a href="../../../package/tool/package-tool-carbon.html">
+                    <a href="../../package/tool/package-tool-carbon.html">
                         <i class="fa fa-check"></i>
                         
                             <b>7.2.1.</b>
@@ -967,7 +967,7 @@
         <li class="chapter " data-level="7.3" data-path="package/design-pattern/package-design-pattern-README.html">
             
                 
-                    <a href="../../../package/design-pattern/package-design-pattern-README.html">
+                    <a href="../../package/design-pattern/package-design-pattern-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>7.3.</b>
@@ -982,7 +982,7 @@
         <li class="chapter " data-level="7.4" data-path="package/text/package-text-README.html">
             
                 
-                    <a href="../../../package/text/package-text-README.html">
+                    <a href="../../package/text/package-text-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>7.4.</b>
@@ -997,7 +997,7 @@
         <li class="chapter " data-level="7.5" data-path="package/auth/package-auth-README.html">
             
                 
-                    <a href="../../../package/auth/package-auth-README.html">
+                    <a href="../../package/auth/package-auth-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>7.5.</b>
@@ -1013,7 +1013,7 @@
         <li class="chapter " data-level="7.5.1" data-path="package/auth/oauth2/package-auth-oauth2-README.html">
             
                 
-                    <a href="../../../package/auth/oauth2/package-auth-oauth2-README.html">
+                    <a href="../../package/auth/oauth2/package-auth-oauth2-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>7.5.1.</b>
@@ -1029,7 +1029,7 @@
         <li class="chapter " data-level="7.5.1.1" data-path="package/auth/oauth2/package-auth-oauth2-client-credentials.html">
             
                 
-                    <a href="../../../package/auth/oauth2/package-auth-oauth2-client-credentials.html">
+                    <a href="../../package/auth/oauth2/package-auth-oauth2-client-credentials.html">
                         <i class="fa fa-check"></i>
                         
                             <b>7.5.1.1.</b>
@@ -1044,7 +1044,7 @@
         <li class="chapter " data-level="7.5.1.2" data-path="package/auth/oauth2/package-auth-oauth2-password-grant.html">
             
                 
-                    <a href="../../../package/auth/oauth2/package-auth-oauth2-password-grant.html">
+                    <a href="../../package/auth/oauth2/package-auth-oauth2-password-grant.html">
                         <i class="fa fa-check"></i>
                         
                             <b>7.5.1.2.</b>
@@ -1059,7 +1059,7 @@
         <li class="chapter " data-level="7.5.1.3" data-path="package/auth/oauth2/package-auth-oauth2-refresh-token.html">
             
                 
-                    <a href="../../../package/auth/oauth2/package-auth-oauth2-refresh-token.html">
+                    <a href="../../package/auth/oauth2/package-auth-oauth2-refresh-token.html">
                         <i class="fa fa-check"></i>
                         
                             <b>7.5.1.3.</b>
@@ -1071,10 +1071,10 @@
             
         </li>
     
-        <li class="chapter active" data-level="7.5.1.4" data-path="package/auth/oauth2/package-auth-oauth2-password-grant-with-scope.html">
+        <li class="chapter " data-level="7.5.1.4" data-path="package/auth/oauth2/package-auth-oauth2-password-grant-with-scope.html">
             
                 
-                    <a href="../../../package/auth/oauth2/package-auth-oauth2-password-grant-with-scope.html">
+                    <a href="../../package/auth/oauth2/package-auth-oauth2-password-grant-with-scope.html">
                         <i class="fa fa-check"></i>
                         
                             <b>7.5.1.4.</b>
@@ -1089,7 +1089,7 @@
         <li class="chapter " data-level="7.5.1.5" data-path="package/auth/oauth2/package-auth-oauth2-access-token-authentication.html">
             
                 
-                    <a href="../../../package/auth/oauth2/package-auth-oauth2-access-token-authentication.html">
+                    <a href="../../package/auth/oauth2/package-auth-oauth2-access-token-authentication.html">
                         <i class="fa fa-check"></i>
                         
                             <b>7.5.1.5.</b>
@@ -1109,7 +1109,7 @@
         <li class="chapter " data-level="7.5.2" data-path="package/auth/jwt/package-auth-jwt-README.html">
             
                 
-                    <a href="../../../package/auth/jwt/package-auth-jwt-README.html">
+                    <a href="../../package/auth/jwt/package-auth-jwt-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>7.5.2.</b>
@@ -1134,7 +1134,7 @@
         <li class="chapter " data-level="8" data-path="hosting/Hosting-README.html">
             
                 
-                    <a href="../../../hosting/Hosting-README.html">
+                    <a href="../../hosting/Hosting-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>8.</b>
@@ -1150,7 +1150,7 @@
         <li class="chapter " data-level="8.1" data-path="hosting/hosting-install-nginx.html">
             
                 
-                    <a href="../../../hosting/hosting-install-nginx.html">
+                    <a href="../../hosting/hosting-install-nginx.html">
                         <i class="fa fa-check"></i>
                         
                             <b>8.1.</b>
@@ -1165,7 +1165,7 @@
         <li class="chapter " data-level="8.2" data-path="hosting/hosting-install-php7.html">
             
                 
-                    <a href="../../../hosting/hosting-install-php7.html">
+                    <a href="../../hosting/hosting-install-php7.html">
                         <i class="fa fa-check"></i>
                         
                             <b>8.2.</b>
@@ -1180,7 +1180,7 @@
         <li class="chapter " data-level="8.3" data-path="hosting/hosting-install-composer.html">
             
                 
-                    <a href="../../../hosting/hosting-install-composer.html">
+                    <a href="../../hosting/hosting-install-composer.html">
                         <i class="fa fa-check"></i>
                         
                             <b>8.3.</b>
@@ -1195,7 +1195,7 @@
         <li class="chapter " data-level="8.4" data-path="hosting/hosting-install-mysql57.html">
             
                 
-                    <a href="../../../hosting/hosting-install-mysql57.html">
+                    <a href="../../hosting/hosting-install-mysql57.html">
                         <i class="fa fa-check"></i>
                         
                             <b>8.4.</b>
@@ -1210,7 +1210,7 @@
         <li class="chapter " data-level="8.5" data-path="hosting/hosting-install-memcached.html">
             
                 
-                    <a href="../../../hosting/hosting-install-memcached.html">
+                    <a href="../../hosting/hosting-install-memcached.html">
                         <i class="fa fa-check"></i>
                         
                             <b>8.5.</b>
@@ -1225,7 +1225,7 @@
         <li class="chapter " data-level="8.6" data-path="hosting/hosting-install-redis.html">
             
                 
-                    <a href="../../../hosting/hosting-install-redis.html">
+                    <a href="../../hosting/hosting-install-redis.html">
                         <i class="fa fa-check"></i>
                         
                             <b>8.6.</b>
@@ -1240,7 +1240,7 @@
         <li class="chapter " data-level="8.7" data-path="hosting/hosting-install-lets-encrypt.html">
             
                 
-                    <a href="../../../hosting/hosting-install-lets-encrypt.html">
+                    <a href="../../hosting/hosting-install-lets-encrypt.html">
                         <i class="fa fa-check"></i>
                         
                             <b>8.7.</b>
@@ -1260,7 +1260,7 @@
         <li class="chapter " data-level="9" data-path="qa/qa-README.html">
             
                 
-                    <a href="../../../qa/qa-README.html">
+                    <a href="../../qa/qa-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>9.</b>
@@ -1276,7 +1276,7 @@
         <li class="chapter " data-level="9.1" data-path="qa/qa-call-undefined-method-getCachedCompilePath.html">
             
                 
-                    <a href="../../../qa/qa-call-undefined-method-getCachedCompilePath.html">
+                    <a href="../../qa/qa-call-undefined-method-getCachedCompilePath.html">
                         <i class="fa fa-check"></i>
                         
                             <b>9.1.</b>
@@ -1291,7 +1291,7 @@
         <li class="chapter " data-level="9.2" data-path="qa/qa-change-app-directory-name-cause-view-can-not-readable.html">
             
                 
-                    <a href="../../../qa/qa-change-app-directory-name-cause-view-can-not-readable.html">
+                    <a href="../../qa/qa-change-app-directory-name-cause-view-can-not-readable.html">
                         <i class="fa fa-check"></i>
                         
                             <b>9.2.</b>
@@ -1306,7 +1306,7 @@
         <li class="chapter " data-level="9.3" data-path="qa/qa-laravel-5.1-folder-structure.html">
             
                 
-                    <a href="../../../qa/qa-laravel-5.1-folder-structure.html">
+                    <a href="../../qa/qa-laravel-5.1-folder-structure.html">
                         <i class="fa fa-check"></i>
                         
                             <b>9.3.</b>
@@ -1326,7 +1326,7 @@
         <li class="chapter " data-level="10" data-path="resource/Resource-README.html">
             
                 
-                    <a href="../../../resource/Resource-README.html">
+                    <a href="../../resource/Resource-README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>10.</b>
@@ -1342,7 +1342,7 @@
         <li class="chapter " data-level="10.1" data-path="resource/Resource-Official.html">
             
                 
-                    <a href="../../../resource/Resource-Official.html">
+                    <a href="../../resource/Resource-Official.html">
                         <i class="fa fa-check"></i>
                         
                             <b>10.1.</b>
@@ -1357,7 +1357,7 @@
         <li class="chapter " data-level="10.2" data-path="resource/Resource-Community.html">
             
                 
-                    <a href="../../../resource/Resource-Community.html">
+                    <a href="../../resource/Resource-Community.html">
                         <i class="fa fa-check"></i>
                         
                             <b>10.2.</b>
@@ -1372,7 +1372,7 @@
         <li class="chapter " data-level="10.3" data-path="resource/Resource-Conference.html">
             
                 
-                    <a href="../../../resource/Resource-Conference.html">
+                    <a href="../../resource/Resource-Conference.html">
                         <i class="fa fa-check"></i>
                         
                             <b>10.3.</b>
@@ -1387,7 +1387,7 @@
         <li class="chapter " data-level="10.4" data-path="resource/Resource-Jobs.html">
             
                 
-                    <a href="../../../resource/Resource-Jobs.html">
+                    <a href="../../resource/Resource-Jobs.html">
                         <i class="fa fa-check"></i>
                         
                             <b>10.4.</b>
@@ -1402,7 +1402,7 @@
         <li class="chapter " data-level="10.5" data-path="resource/Resource-Document.html">
             
                 
-                    <a href="../../../resource/Resource-Document.html">
+                    <a href="../../resource/Resource-Document.html">
                         <i class="fa fa-check"></i>
                         
                             <b>10.5.</b>
@@ -1417,7 +1417,7 @@
         <li class="chapter " data-level="10.6" data-path="resource/Resource-Article.html">
             
                 
-                    <a href="../../../resource/Resource-Article.html">
+                    <a href="../../resource/Resource-Article.html">
                         <i class="fa fa-check"></i>
                         
                             <b>10.6.</b>
@@ -1432,7 +1432,7 @@
         <li class="chapter " data-level="10.7" data-path="resource/Resource-Packages.html">
             
                 
-                    <a href="../../../resource/Resource-Packages.html">
+                    <a href="../../resource/Resource-Packages.html">
                         <i class="fa fa-check"></i>
                         
                             <b>10.7.</b>
@@ -1447,7 +1447,7 @@
         <li class="chapter " data-level="10.8" data-path="resource/Resource-Laravel-Service.html">
             
                 
-                    <a href="../../../resource/Resource-Laravel-Service.html">
+                    <a href="../../resource/Resource-Laravel-Service.html">
                         <i class="fa fa-check"></i>
                         
                             <b>10.8.</b>
@@ -1462,7 +1462,7 @@
         <li class="chapter " data-level="10.9" data-path="resource/Resource-Learning-Video.html">
             
                 
-                    <a href="../../../resource/Resource-Learning-Video.html">
+                    <a href="../../resource/Resource-Learning-Video.html">
                         <i class="fa fa-check"></i>
                         
                             <b>10.9.</b>
@@ -1477,7 +1477,7 @@
         <li class="chapter " data-level="10.10" data-path="resource/Resource-Learning-Sites.html">
             
                 
-                    <a href="../../../resource/Resource-Learning-Sites.html">
+                    <a href="../../resource/Resource-Learning-Sites.html">
                         <i class="fa fa-check"></i>
                         
                             <b>10.10.</b>
@@ -1492,7 +1492,7 @@
         <li class="chapter " data-level="10.11" data-path="resource/Resource-Editor-Tool.html">
             
                 
-                    <a href="../../../resource/Resource-Editor-Tool.html">
+                    <a href="../../resource/Resource-Editor-Tool.html">
                         <i class="fa fa-check"></i>
                         
                             <b>10.11.</b>
@@ -1507,7 +1507,7 @@
         <li class="chapter " data-level="10.12" data-path="resource/Resource-Hosting.html">
             
                 
-                    <a href="../../../resource/Resource-Hosting.html">
+                    <a href="../../resource/Resource-Hosting.html">
                         <i class="fa fa-check"></i>
                         
                             <b>10.12.</b>
@@ -1522,7 +1522,7 @@
         <li class="chapter " data-level="10.13" data-path="resource/Resource-Laravel-Case.html">
             
                 
-                    <a href="../../../resource/Resource-Laravel-Case.html">
+                    <a href="../../resource/Resource-Laravel-Case.html">
                         <i class="fa fa-check"></i>
                         
                             <b>10.13.</b>
@@ -1632,7 +1632,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../../../" >Laravel 5 學習筆記</a>
+        <a href="../../" >Laravel 5 學習筆記</a>
     </h1>
 </div>
 
@@ -1642,63 +1642,8 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="oauth2-password-grant-with-scope">OAuth2 Password Grant With Scope</h1>
-<p>&#x5EF6;&#x7E8C; <a href="package-auth-oauth2-password-grant.html">Password Grant</a> &#x7684; OAuth2 &#x8A2D;&#x5B9A;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x5728;&#x53C3;&#x6578;&#x4E2D;&#x52A0;&#x5165;&#x6211;&#x5011;&#x8981;&#x53D6;&#x5F97;&#x7684; <code>&#x8CC7;&#x6E90;&#x5B58;&#x53D6;&#x7BC4;&#x570D;&#xFF08;Scope&#xFF09;</code>&#xFF0C;&#x8B93;&#x9019;&#x500B; Access Token &#x50C5;&#x80FD;&#x6709;&#x7279;&#x5B9A;&#x8CC7;&#x6E90;&#x7684;&#x5B58;&#x53D6;&#x6B0A;&#x9650;</p>
-<h2 id="%E6%96%B0%E5%A2%9E%E8%B3%87%E6%BA%90%E5%AD%98%E5%8F%96%E7%AF%84%E5%9C%8D%EF%BC%88scope%EF%BC%89%E8%B3%87%E6%96%99">&#x65B0;&#x589E;&#x8CC7;&#x6E90;&#x5B58;&#x53D6;&#x7BC4;&#x570D;&#xFF08;Scope&#xFF09;&#x8CC7;&#x6599;</h2>
-<p>OAuth2 &#x5B9A;&#x7FA9;&#x7684; Scope &#x7686;&#x5B58;&#x5728; <code>oauth_scopes</code> &#x8CC7;&#x6599;&#x8868;&#x4E2D;&#xFF0C;&#x6211;&#x5011;&#x5728;&#x8CC7;&#x6599;&#x8868;&#x4E2D;&#x65B0;&#x589E; <code>user_profile</code> &#x53CA; <code>user_likes</code> &#x9019;&#x5169;&#x500B; Scope</p>
-<pre><code class="lang-sql"><span class="hljs-operator"><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> <span class="hljs-string">&quot;oauth_scopes&quot;</span> (<span class="hljs-string">&quot;id&quot;</span>, <span class="hljs-string">&quot;description&quot;</span>, <span class="hljs-string">&quot;created_at&quot;</span>, <span class="hljs-string">&quot;updated_at&quot;</span>)
-<span class="hljs-keyword">VALUES</span> (<span class="hljs-string">&apos;user_profile&apos;</span>, <span class="hljs-string">&apos;profile&apos;</span>, <span class="hljs-keyword">now</span>(), <span class="hljs-keyword">now</span>());</span>
-
-<span class="hljs-operator"><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> <span class="hljs-string">&quot;oauth_scopes&quot;</span> (<span class="hljs-string">&quot;id&quot;</span>, <span class="hljs-string">&quot;description&quot;</span>, <span class="hljs-string">&quot;created_at&quot;</span>, <span class="hljs-string">&quot;updated_at&quot;</span>)
-<span class="hljs-keyword">VALUES</span> (<span class="hljs-string">&apos;user_likes&apos;</span>, <span class="hljs-string">&apos;likes&apos;</span>, <span class="hljs-keyword">now</span>(), <span class="hljs-keyword">now</span>());</span>
-</code></pre>
-<h2 id="%E5%8F%96%E5%BE%97-access-token">&#x53D6;&#x5F97; Access token</h2>
-<p>&#x5728;&#x6211;&#x5011;&#x53D6;&#x5F97; Access token &#x7684;&#x8CC7;&#x6599;&#x6B04;&#x4F4D;&#x4E2D;&#x586B;&#x5165;&#x4E0B;&#x5217;&#x6B04;&#x4F4D;</p>
-<table>
-<thead>
-<tr>
-<th>&#x6B04;&#x4F4D;&#x540D;&#x7A31;</th>
-<th>&#x8CC7;&#x6599;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>grant_types</td>
-<td>password</td>
-</tr>
-<tr>
-<td>username</td>
-<td>kejyun@gmail.com</td>
-</tr>
-<tr>
-<td>password</td>
-<td>123456</td>
-</tr>
-<tr>
-<td>client_id</td>
-<td>KeJyun</td>
-</tr>
-<tr>
-<td>client_secret</td>
-<td>KeJyunSecret</td>
-</tr>
-<tr>
-<td>scope</td>
-<td>user_profile,user_likes</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>&#x6211;&#x5011;&#x7684; Scope &#x4E5F;&#x53EF;&#x4EE5;&#x6307;&#x586B;&#x5165;&#x4E00;&#x500B;&#xFF0C;&#x82E5;&#x8981;&#x586B;&#x5165;&#x591A;&#x500B; Scope &#x7684;&#x8A71;&#xFF0C;&#x53EF;&#x4EE5;&#x770B; <code>config/oauth2.php</code>  &#x8A2D;&#x5B9A;&#x6A94;&#x4E2D;&#x7684; <code>scope_delimiter</code> &#x8981;&#x600E;&#x9EBC;&#x5340;&#x5225;&#x4E0D;&#x540C;&#x7684; Scope &#x8CC7;&#x6E90;&#xFF0C;&#x9810;&#x8A2D;&#x662F;&#x7528;<code>&#x9017;&#x865F;&#x300C;,&#x300D;</code>&#x53BB;&#x5340;&#x5225; Scope</p>
-</blockquote>
-<p><img src="images/oauth2-password-grant-get-access-token-and-refresh-token-with-scope.png" alt="&#x4F7F;&#x7528; Postman &#x53D6;&#x5F97; Password Access token &#x53CA; Refresh Token&#xFF0C;&#x4E26;&#x5305;&#x542B; Scope &#x7BC4;&#x570D;"></p>
-<p>&#x9001;&#x51FA;&#x5230;&#x6211;&#x5011;&#x8A2D;&#x5B9A;&#x7684; <code>/oauth/access_token</code> &#x8DEF;&#x7531;&#x5F8C;&#xFF0C;&#x6211;&#x5011;&#x5C31;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x53D6;&#x5F97; <code>access_token</code>&#xFF0C;&#x4E26;&#x56DE;&#x50B3;&#x6B64; token &#x5931;&#x6548;&#x7684;&#x6642;&#x9593; <code>expires_in</code> &#x70BA;&#x6211;&#x5011;&#x8A2D;&#x5B9A;&#x7684; <code>access_token_ttl</code></p>
-<h2 id="%E7%9B%B8%E9%97%9C%E8%B3%87%E6%96%99%E8%A1%A8">&#x76F8;&#x95DC;&#x8CC7;&#x6599;&#x8868;</h2>
-<p>OAuth2 &#x6703;&#x5C07; token &#x8A18;&#x9304;&#x5728; <code>oauth_access_tokens</code> &#x8CC7;&#x6599;&#x8868;&#xFF0C;&#x4E26;&#x5C07;&#x95DC;&#x806F;&#x7684;&#x4F7F;&#x7528;&#x8005;&#x8A18;&#x9304;&#x5728; <code>oauth_sessions</code> &#x8CC7;&#x6599;&#x8868;&#xFF0C;&#x800C; <code>oauth_access_token_scopes</code> &#x8CC7;&#x6599;&#x8868;&#x5247;&#x5B58;&#x653E; Access Token &#x76F8;&#x95DC;&#x7684; Scope &#x8CC7;&#x8A0A;</p>
-<h2 id="%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99">&#x53C3;&#x8003;&#x8CC7;&#x6599;</h2>
-<ul>
-<li><a href="https://github.com/lucadegasperi/oauth2-server-laravel/wiki/Securing-your-API-endpoints#defining-scopes" target="_blank">Securing your API endpoints</a></li>
-</ul>
+                        <h1 id="%E8%B7%AF%E7%94%B1%EF%BC%88route%EF%BC%89">&#x8DEF;&#x7531;&#xFF08;Route&#xFF09;</h1>
+<p>&#x9019;&#x88E1;&#x6703;&#x4ECB;&#x7D39;&#x4E00;&#x4E9B;&#x8DEF;&#x7531;&#x7684;&#x76F8;&#x95DC;&#x6280;&#x5DE7;</p>
 
                     
                     </section>
@@ -1709,27 +1654,27 @@
         </div>
 
         
-        <a href="../../../package/auth/oauth2/package-auth-oauth2-refresh-token.html" class="navigation navigation-prev " aria-label="Previous page: Refresh Token"><i class="fa fa-angle-left"></i></a>
+        <a href="../../http/request/http-request-README.html" class="navigation navigation-prev " aria-label="Previous page: 請求"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../../../package/auth/oauth2/package-auth-oauth2-access-token-authentication.html" class="navigation navigation-next " aria-label="Next page: 驗證 Access Token"><i class="fa fa-angle-right"></i></a>
+        <a href="../../http/route/http-sub-domain-route.html" class="navigation navigation-next " aria-label="Next page: 子網域路由"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
 
         
-<script src="../../../gitbook/app.js"></script>
+<script src="../../gitbook/app.js"></script>
 
     
-    <script src="../../../gitbook/plugins/gitbook-plugin-disqus/plugin.js"></script>
-    
-
-    
-    <script src="../../../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
+    <script src="../../gitbook/plugins/gitbook-plugin-disqus/plugin.js"></script>
     
 
     
-    <script src="../../../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    <script src="../../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
     
 
 <script>
