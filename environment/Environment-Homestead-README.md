@@ -200,3 +200,4 @@ $ vagrant up
 * [Vagrant](http://www.vagrantup.com/downloads.html)
 * [Vagrant 常用指令](http://blog.kejyun.com/2014/10/vagrant-command.html)
 * [SSL read: error · Issue #401 · Varying-Vagrant-Vagrants/VVV](https://github.com/Varying-Vagrant-Vagrants/VVV/issues/401)
+* [Vagrant: Fix for error 60 / SSL read - Slick](http://slick.pl/kb/software/vagrant-fix-for-error-60-ssl-read/)
