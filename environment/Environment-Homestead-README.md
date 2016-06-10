@@ -112,7 +112,7 @@ $ sudo vim /etc/hosts
 
 ## 啟動 Vagrant
 
-```shell
+```sh
 ~/Homestead $ vagrant up
 ```
 
@@ -129,15 +129,69 @@ $ sudo vim /etc/hosts
 
 若要關閉Homestead虛擬機器，則可以使用下列指令關閉
 
-```shell
+```sh
 vagrant halt
 ```
 
 若設定檔有修改要重新讀取，則可以使用下列指令重新讀取設定
 
-```shell
+```sh
 vagrant provision
 ```
+
+
+## SSL read: error:00000000:lib(0):func(0):reason(0), errno 60
+
+若在啟動 homestead 時出現 SSL read 的錯誤訊息的話，可以重新加入新的 homestead vagrand box
+
+```sh
+$ vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'laravel/homestead' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0.4.0
+==> default: Loading metadata for box 'laravel/homestead'
+    default: URL: https://atlas.hashicorp.com/laravel/homestead
+==> default: Adding box 'laravel/homestead' (v0.4.4) for provider: virtualbox
+    default: Downloading: https://atlas.hashicorp.com/laravel/boxes/homestead/versions/0.4.4/providers/virtualbox.box
+An error occurred while downloading the remote file. The error
+message, if any, is reproduced below. Please fix this error and try
+again.
+
+SSL read: error:00000000:lib(0):func(0):reason(0), errno 60
+```
+
+![Homestead ssl read error](./images/homestead-ssl-read-error.png)
+
+### 加入新的 homestead vagrand box
+
+```sh
+vagrant box add --insecure -c laravel/homestead http://atlas.hashicorp.com/laravel/boxes/homestead
+```
+
+```sh
+$ vagrant box add --insecure -c laravel/homestead http://atlas.hashicorp.com/laravel/boxes/homestead
+==> box: Loading metadata for box 'http://atlas.hashicorp.com/laravel/boxes/homestead'
+This box can work with multiple providers! The providers that it
+can work with are listed below. Please review the list and choose
+the provider you will be working with.
+
+1) virtualbox
+2) vmware_desktop
+
+Enter your choice: 1
+==> box: Adding box 'laravel/homestead' (v0.4.4) for provider: virtualbox
+    box: Downloading: https://atlas.hashicorp.com/laravel/boxes/homestead/versions/0.4.4/providers/virtualbox.box
+==> box: Successfully added box 'laravel/homestead' (v0.4.4) for 'virtualbox'!
+```
+
+加入完成後，再重新啟動 homestead 即可
+
+
+```sh
+$ vagrant up
+```
+
 
 ## 參考資料
 * [Say Hello to Laravel Homestead 2.0](https://laracasts.com/lessons/say-hello-to-laravel-homestead-two)
@@ -145,3 +199,4 @@ vagrant provision
 * [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
 * [Vagrant](http://www.vagrantup.com/downloads.html)
 * [Vagrant 常用指令](http://blog.kejyun.com/2014/10/vagrant-command.html)
+* [SSL read: error · Issue #401 · Varying-Vagrant-Vagrants/VVV](https://github.com/Varying-Vagrant-Vagrants/VVV/issues/401)
