@@ -22,6 +22,7 @@
   * [路由 (Route)](http/route/http-route-README.md)
     * [子網域路由](http/route/http-sub-domain-route.md)
   * [中介層 (Middleware)](http/middleware/http-middleware-README.md)
+    * [ETag Middleware](http/middleware/http-middleware-etag-middleware.md)
 * [視圖 (View)](view/view-README.md)
 * [服務](services/services-README.md)
   * [認證登入（Auth）](services/auth/services-auth-README.md)
