@@ -56,6 +56,7 @@
     * [Carbon](package/tool/package-tool-carbon.md)
   * [設計模式](package/design-pattern/package-design-pattern-README.md)
   * [文字](package/text/package-text-README.md)
+  * [視圖](package/view/package-view-README.md)
   * [認證](package/auth/package-auth-README.md)
     * [OAuth2](package/auth/oauth2/package-auth-oauth2-README.md)
       * [Client Credentials](package/auth/oauth2/package-auth-oauth2-client-credentials.md)
