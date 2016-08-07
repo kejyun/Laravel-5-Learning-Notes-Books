@@ -32,6 +32,5 @@
 ## Blog
 * [MattStauffer.co](https://mattstauffer.co/tags/laravel)
 * [CodeHeaps](http://www.codeheaps.com/)
-* [intolaravel.com](http://www.intolaravel.com/)
 * [Vluzrmos](http://blog.vluzrmos.com.br/category/laravel/)
 * [Graham Campbell](https://gjcampbell.co.uk/)
