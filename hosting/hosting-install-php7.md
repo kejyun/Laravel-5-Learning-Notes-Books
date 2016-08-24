@@ -5,7 +5,7 @@
 目前（2016/03） php7 沒有在 Ubuntu 的預設套件庫中，所以若要使用 php7 的話，則必須要自行加入此套件庫，這樣我們才能在 Ubuntu 安裝 php7
 
 ```shell
-sudo add-apt-repository ppa:ondrej/php-7.0
+sudo add-apt-repository ppa:ondrej/php
 ```
 
 ## 更新套件資源庫
