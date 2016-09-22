@@ -167,7 +167,7 @@ PostService 存取 UserService，UserService 存取 PostsService 造成無窮迴
 | Service (服務) | Repository、Validator | Controller、Concrete |
 | Validator (驗證器) | - | Service |
 | Repository (資源庫)  | 自己的 Model、自己的 Cache | Service |
-| Cache (服務)  | - | Repository、Service |
+| Cache (服務)  | - | Repository |
 | Model (模型) | 自己的 Presenter | Repository |
 | Presenter (資料呈現)  | - | Model |
 
@@ -176,6 +176,8 @@ PostService 存取 UserService，UserService 存取 PostsService 造成無窮迴
 ### Controller (控制器)
 
 > 可以存取結構：`Concrete`、`Service`、`DB trancsction`
+
+> 可以被存取結構：無
 
 處理 HTTP 請求的入口，依照需求呼叫 Concrete 或 Service 去做資料的存取，大部分情況呼叫 Service 去組合需要的資料就好，若相同的組合邏輯在不同的 Controller 都有用到，那就使用 Concrete 去組合不同的 Service
 
@@ -228,7 +230,9 @@ class PostController extends Controller
 
 > 可以存取結構：`Service`
 
-使用不同 Service 撈取資料，將不同資料組合成商業邏輯
+> 可以被存取結構：`Controller`
+
+使用不同 Service 撈取資料，將不同資料組合成商業邏輯，供 Controller 做存取
 
 ```php
 class PostConcrete {
@@ -262,22 +266,22 @@ class PostConcrete {
 
 > 可以存取結構：`Validator`、`Repository`
 
+> 可以被存取結構：`Controller`、`Concrete`
+
 透過 Validator 驗證傳入的資料，並使用不同的 Repository 撈取資料，將不同資料組合成商業邏輯
-使用 Cache 清除 Service 中撈取資料的快取
+使用 Repository 的 Cache 清除 Service 中撈取資料的快取
 
 ```php
 class PostService {
     public function __construct(
         PostRepository $PostRepository,
         PostTagRepository $PostTagRepository,
-        PostValidator $PostValidator,
-        PostCache $PostCache
+        PostValidator $PostValidator
     )
     {
         $this->PostRepository = $PostRepository;
         $this->PostTagRepository = $PostTagRepository;
         $this->PostValidator = $PostValidator;
-        $this->PostCache = $PostCache;
     }
 
     // 撈取文章
@@ -287,7 +291,7 @@ class PostService {
             $input = [
                 'post_id' => $post_id
             ];
-            $this->PostValidator->validatefindPost($input);
+            $this->PostValidator->validateFindPost($input);
             // 撈取文章
             $Post = $this->PostRepository->find($post_id);
             // 撈取文章標籤
@@ -301,9 +305,14 @@ class PostService {
 
     public function clearPostCache($post_id) {
         try {
+            // 驗證傳入資料是否正確
+            $input = [
+                'post_id' => $post_id
+            ];
+            $this->PostValidator->validateClearPostCache($input);
             $Post = $this->findPost($post_id);
             // 清除文章快取
-            $this->PostCache->clearPostCache($Post);
+            $this->PostRepository->cache()->clearPostCache($Post);
             // 清除文章標籤快取
             $this->PostTagCache->clearPostTagCache($Post->tag);
         } catch (Exception $exception) {
@@ -317,12 +326,18 @@ class PostService {
 
 > 可以存取結構：無
 
-協助 Service 驗證資料的正確性
+> 可以被存取結構：`Service`
+
+協助 Service 驗證資料的正確性，若驗證錯誤則丟處例外，Controller 根據例外代碼去做處理
 
 ```php
 class PostValidator {
     public function validatefindPost($input){
         // 驗證找尋文章資料是否正確
+        throw new Exception(
+            '文章編號格式錯誤',
+            PostExceptionCode::POST_ID_FORMAT_ERROR
+        );
     }
 }
 ```
@@ -330,6 +345,8 @@ class PostValidator {
 ### Repository (資源庫)
 
 > 可以存取結構：自己的 Model、自己的 Cache
+
+> 可以被存取結構：`Service`
 
 僅能撈取屬於自己的 Model 資料，像 `PostRepository` 僅能存取 `Post` Model (模型) 的資料，並使用不同條件撈取 Model 的資料，供 Service 做存取
 
@@ -344,9 +361,13 @@ class PostRepository {
         $this->PostCache = $PostCache;
     }
 
+    public function cache() {
+        return $this->PostCache;
+    }
+
     public function find($post_id) {
         try {
-            $cache_key = $this->PostCache->getPostCacheKey($post_id);
+            $cache_key = $this->cache()->getPostCacheKey($post_id);
             if (Cache::has($cache_key)) {
                 // 有快取資料
                 $Post = Cache::get($cache_key);
@@ -358,7 +379,7 @@ class PostRepository {
 
             if(!is_null($Post)) {
                 // 紀錄快取
-                $this->PostCache->putPost($Post);
+                $this->cache()->putPost($Post);
             }
 
             return $Post;
@@ -369,7 +390,7 @@ class PostRepository {
 
     public function findLatestPost() {
         try {
-            $cache_key = $this->PostCache->getLatestPostCacheKey($post_id);
+            $cache_key = $this->cache()->getLatestPostCacheKey($post_id);
             if (Cache::has($cache_key)) {
                 // 有快取資料
                 $$Posts = Cache::get($cache_key);
@@ -383,7 +404,7 @@ class PostRepository {
 
             if(!is_null($Post)) {
                 // 紀錄快取
-                $Post->PostCache->putLatestPost($Post);
+                $this->cache()->putLatestPost($Post);
             }
 
             return $Post;
@@ -397,6 +418,8 @@ class PostRepository {
 ### Cache (快取)
 
 > 可以存取結構：無
+
+> 可以被存取結構：`Repository`
 
 協助 Repository 做快取資料的控制，快取鍵值的管理、資料讀取及清除
 
@@ -421,6 +444,8 @@ class PostCache {
 
 > 可以存取結構：無
 
+> 可以被存取結構：`Repository`
+
 Eloquent 存取資料表相關設定，使用 Eloquent 直接存取資料表資料
 
 ```php
@@ -433,12 +458,34 @@ class Post extends Model
     protected $primaryKey = 'id';
 
     protected $dates = ['created_at', 'updated_at'];
+
+    protected $presenter = 'PostPresenter';
+}
+```
+
+### Presenter (資料呈現)
+
+> 可以存取結構：無
+
+> 可以被存取結構：`Model`
+
+提供 Model 的資料用其他方式呈現
+
+```php
+class PostPresenter extends Presenter
+{
+    public function created_at_human_time()
+    {
+        return $this->created_at->diffForHumans();
+    }
 }
 ```
 
 ### Constant (常數)
 
 > 可以存取結構：無
+
+> 可以被存取結構：無限制
 
 資料皆為靜態變數，可以供所有資料層級 (e.g. Controller、Service、Repository) 做存取
 
@@ -452,6 +499,8 @@ class PostConstant {
 ### Support (支援)
 
 > 可以存取結構：無
+
+> 可以被存取結構：無限制
 
 方法皆為靜態變數，可以供所有資料層級 (e.g. Controller、Service、Repository) 做存取
 
@@ -474,11 +523,14 @@ class PostSupport {
 
 > 可以存取結構：無
 
+> 可以被存取結構：無限制
+
 資料皆為靜態變數，可以供所有資料層級 (e.g. Controller、Service、Repository) 做存取
 
 ```php
 class PostExceptionCode {
-    const POST_NOT_FOUND = 10000001;
-    const POST_TAG_NOT_FOUND = 10000002;
+    const POST_ID_FORMAT_ERROR = 10000001;
+    const POST_NOT_FOUND = 10000002;
+    const POST_TAG_NOT_FOUND = 10000003;
 }
 ```
