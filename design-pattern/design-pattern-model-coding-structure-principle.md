@@ -143,7 +143,7 @@
 * Controller 不能存取 Repository
 * Service 不能存取 Model
 
-***高階層的不能存取低階層的資料***
+***低階層的不能存取高階層的資料***
 
 * Model 不能存取 Repository
 * Repository 不能存取 Service
@@ -171,6 +171,19 @@ PostService 存取 UserService，UserService 存取 PostsService 造成無窮迴
 | Model (模型) | 自己的 Presenter | Repository |
 | Presenter (資料呈現)  | - | Model |
 
+### View (視圖) 使用限制
+
+`View` 的職責是負責顯示資料，所有的資料應由 `Controller` 準備好再傳給 `View`，所以`不要`在 `View` 內有複雜的程式判斷邏輯，在 `View` 裡面只有 `if`, `for`, `foreach` 跟 `echo 列印` 的程式，僅需要將資料呈現在對的 HTML 裡面，不要再對資料重複處理過。
+
+像是文章的網址可能會因為類型不同會有不同的網址，像是一般文章網址可能為 `http://kejyun.com/post/1`，而影音文章網址可能為 `http://kejyun.com/video/2`，兩者的資料皆為 Post 資料表的資料，在 `View` 中要顯示網址應為 `echo $Post->post_url;` 將網址印出，`post_url` 則是在傳給 `View` 之前就經過邏輯判斷的資料，而不是在 `View` 中判斷不同文章類型（`PostConstant::POST_TYPE_NORMAL`, `PostConstant::POST_TYPE_VIDEO`）在 View 中顯示不同的網址資料。
+
+之後若文章網址邏輯需要修改，則需要到各個 View 中去修改，很容易漏改道造成系統程式出錯
+
+```php
+<a href="{{ $Post->post_url }}"> {{ $Post->Title }}</a>
+```
+
+
 ## 結構範例說明
 
 ### Controller (控制器)
@@ -181,7 +194,7 @@ PostService 存取 UserService，UserService 存取 PostsService 造成無窮迴
 
 處理 HTTP 請求的入口，依照需求呼叫 Concrete 或 Service 去做資料的存取，大部分情況呼叫 Service 去組合需要的資料就好，若相同的組合邏輯在不同的 Controller 都有用到，那就使用 Concrete 去組合不同的 Service
 
-使用 Controller 當作資料交易（Transaction）的控制點
+要確保所有 Service 商業邏輯都正確跑完才允許對資料做異動，並避免 Transaction 在 Controller 及 Service 被重複呼叫，導致無法正確鎖定資料狀態，所以使用 Controller 當作資料交易（Transaction）的控制點
 
 ```php
 class PostController extends Controller
