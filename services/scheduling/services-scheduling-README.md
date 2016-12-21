@@ -252,5 +252,6 @@ $schedule->command('emails:send')
 
 
 ## 參考資料
+* [crontab.guru - the cron schedule expression editor](https://crontab.guru/)
 * [A visual crontab editor](http://www.corntab.com/pages/crontab-gui)
 * [Task Scheduling - Laravel 5.2](https://laravel.com/docs/5.2/scheduling)
