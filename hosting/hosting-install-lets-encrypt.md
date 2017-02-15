@@ -4,24 +4,36 @@
 
 但是 Let's Encrypt 提供的憑證有效期限每次只有 `90 天`的效期，若過期之後需要重新更新憑證方可繼續使用
 
-## 複製 letsencrypt 套件
+## 下載
 
 ```sh
-user@webserver:~$ git clone https://github.com/letsencrypt/letsencrypt
-user@webserver:~$ cd letsencrypt
-user@webserver:~/letsencrypt$ ./letsencrypt-auto --help
+wget https://dl.eff.org/certbot-auto
+chmod a+x certbot-auto
 ```
 
 ## 安裝 SSL 憑證
 
-在第一次安裝 SSL 憑證時需要將您的 Nginx 主機服務關閉，才能進行憑證驗證
+在安裝 SSL 憑證時需要將您的 Nginx 主機服務關閉，才能進行憑證驗證
 
 ```sh
-./letsencrypt-auto certonly --standalone --email kejyun@gmail.com -d kejyun.dev -d www.kejyun.dev
+How would you like to authenticate with the ACME CA?
+-------------------------------------------------------------------------------
+1: Place files in webroot directory (webroot)
+2: Spin up a temporary webserver (standalone)
+-------------------------------------------------------------------------------
+Select the appropriate number [1-2] then [enter] (press 'c' to cancel):
 ```
 
-* `--email` 設定您的 Email
-* `-d` 設定您要申請憑證的網域，加入多個 `-d` 可以同時設定同主機多組的憑證
+用 nginx 選擇 `standalone`，若是 apache 則選擇用 `webroot`
+
+
+## 輸入驗證 SSL 的網址
+
+
+```sh
+Please enter in your domain name(s) (comma and/or space separated)  (Enter 'c'
+to cancel): kejyun.dev
+```
 
 
 ## 憑證檔案
@@ -76,114 +88,13 @@ sudo service nginx restart
 
 ## 自動更新 Let's Encrypt 憑證
 
-### 設定 nginx 設定檔
-
-在原有的伺服器設定檔中加入 `.well-known` 設定
-
-```
-server {
-    # ...
-
-    location ~ /.well-known {
-        allow all;
-    }
-
-    # ...
-}
-```
-
-### 建立 Let's Encrypt 設定檔
-
-複製在原本 letsencrypt 目錄下的範例設定檔 `examples/cli.ini`
+## 自動更新憑證
 
 ```sh
-user@webserver:~$ cd letsencrypt
-user@webserver:~/letsencrypt$ sudo cp examples/cli.ini /usr/local/etc/le-renew-webroot.ini
+./path/to/certbot renew --pre-hook "service nginx stop" --post-hook "service nginx start"
 ```
 
-### 編輯自訂設定檔
-
-```sh
-sudo vim /usr/local/etc/le-renew-webroot.ini
-```
-
-`le-renew-webroot.ini` 設定
-
-```
-rsa-key-size = 4096
-
-email = kejyun@gmail.com
-
-domains = kejyun.dev, www.kejyun.dev
-
-webroot-path = /home/kejyun/laravel52/public
-```
-
-### 測試自動更新憑證
-
-```
-user@webserver:~$ cd letsencrypt
-user@webserver:~/letsencrypt$ ./letsencrypt-auto certonly -a webroot --renew-by-default --config /usr/local/etc/le-renew-webroot.ini
-```
-
-### 使用 Script 自動更新憑證
-
-下載憑證更新 shell script，並將 Script 設定為可執行檔案
-
-```
-sudo curl -L -o /usr/local/sbin/le-renew-webroot https://gist.githubusercontent.com/thisismitch/e1b603165523df66d5cc/raw/fbffbf358e96110d5566f13677d9bd5f4f65794c/le-renew-webroot
-sudo chmod +x /usr/local/sbin/le-renew-webroot
-```
-
-`le-renew-webroot` Script 內容如下，他會自動去抓取 `/usr/local/etc/le-renew-webroot.ini` 設定資料並進行憑證更新，若憑證還有 30 天以上才過期，則不更新憑證
-
-```sh
-#!/bin/bash
-
-web_service='nginx'
-config_file="/usr/local/etc/le-renew-webroot.ini"
-
-le_path='/opt/letsencrypt'
-exp_limit=30;
-
-if [ ! -f $config_file ]; then
-        echo "[ERROR] config file does not exist: $config_file"
-        exit 1;
-fi
-
-domain=`grep "^\s*domains" $config_file | sed "s/^\s*domains\s*=\s*//" | sed 's/(\s*)\|,.*$//'`
-cert_file="/etc/letsencrypt/live/$domain/fullchain.pem"
-
-if [ ! -f $cert_file ]; then
-	echo "[ERROR] certificate file not found for domain $domain."
-fi
-
-exp=$(date -d "`openssl x509 -in $cert_file -text -noout|grep "Not After"|cut -c 25-`" +%s)
-datenow=$(date -d "now" +%s)
-days_exp=$(echo \( $exp - $datenow \) / 86400 |bc)
-
-echo "Checking expiration date for $domain..."
-
-if [ "$days_exp" -gt "$exp_limit" ] ; then
-	echo "The certificate is up to date, no need for renewal ($days_exp days left)."
-	exit 0;
-else
-	echo "The certificate for $domain is about to expire soon. Starting webroot renewal script..."
-        $le_path/letsencrypt-auto certonly -a webroot --agree-tos --renew-by-default --config $config_file
-	echo "Reloading $web_service"
-	/usr/sbin/service $web_service reload
-	echo "Renewal process finished for domain $domain"
-	exit 0;
-fi
-```
-
-### 測試使用 shell script 更新憑證
-
-```sh
-sudo le-renew-webroot
-Checking expiration date for kejyun.dev...
-The certificate is up to date, no need for renewal (89 days left).
-```
+在更新憑證的時候，還是需要把 web server 停掉，所以可以在 `--pre-hook` 更新前關掉 nginx，在 `--post-hook` 更新後啟動 nginx
 
 ### 加入 Cronjob 排程執行憑證更新
 
@@ -196,7 +107,7 @@ sudo crontab -e
 設定每個禮拜一的凌晨 2:30 進行一次憑證的檢查及更新
 
 ```c
-30 2 * * 1 /usr/local/sbin/le-renew-webroot >> /var/log/le-renewal.log
+30 2 * * 1 ./path/to/certbot renew --pre-hook "service nginx stop" --post-hook "service nginx start" >> /var/log/letsencrypt-renewal.log
 ```
 
 這樣我們就有了一個半永久的 SSL 憑證了！！
