@@ -20,7 +20,7 @@ $user->articles();
 class Users extends Model {
 
     // 設定使用者擁有許多文章
-    public funciton articles() {
+    public function articles() {
         return $this->hasMany('App\Article');
     }
 
@@ -41,15 +41,15 @@ $user = $article->user();
 class Article extends Model {
 
     // 設定文章屬於某一的使用者
-    public funciton user() {
+    public function user() {
         return $this->belongsTo('App\User');
     }
 
-    public funciton owner() {
+    public function owner() {
         return $this->belongsTo('App\User');
     }
 
-    public funciton writer() {
+    public function writer() {
         return $this->belongsTo('App\User');
     }
 
