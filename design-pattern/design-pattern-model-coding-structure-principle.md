@@ -44,13 +44,22 @@
 
 而我們需要對 `資料快取的設定、清除` 及 `快取鍵值` 去做管理，快取像是協助 `Repository` 做資料的存取，所以我會分出一層 `Cache (快取) ` 去輔助 `Repository` 做快取的處理
 
+***Checker (檢查器)***
+
+而每個商業邏輯需要驗證的資料不同，有些欄位在不同商業邏輯會有必填與非必填不同的差異，像是在做使用者身份驗證時，若有 Email 驗證及手機驗證，在 Email 驗證時，手機欄位為非必填欄位，在做手機驗證時， Email 為非必填欄位，但兩者皆為使用者的資料，無法強制使用者兩個欄位資料皆為必填，但在某些商業頁邏輯是必要的，但基本的資料驗證規則還是一樣，像是資料最長長度、email 格式...等等。
+
+所以為了能夠重複使用共用的驗證器規則，所以建構了一個 `Checker（檢查器）` 的結構，去呼叫不同的 `Validator` 去檢查資料，像是同一個 Controller 處理的資料可能含有「會員」、「商品」資料，所以同時需要呼叫 `會員驗證器（UserValidator）` 及 `商品驗證器（GoodsValidator）` 的驗證規則去驗證資料，所以就透過 `Checker（檢查器）` 去呼叫不同的驗證器，來達到驗證不同資料的功能，輔助 Controller 做資料驗證。
+
+
 ***Validator (驗證器)***
 
-為了讓資料驗證方法能夠重複使用，不需要在不同的 Controller 去驗證相同的東西，這樣會造成驗證邏輯重複出現，若有需要異動驗證規則時，會難以維護。
+為了讓資料驗證方法能夠重複使用，不需要在不同的地方去驗證相同的東西，這樣會造成驗證邏輯重複出現，若有需要異動驗證規則時，會難以維護。
 
-而每個商業邏輯需要驗證的資料不同，有些欄位在不同商業邏輯會有必填與非必填不同的差異，像是在做使用者身份驗證時，若有 Email 驗證及手機驗證，在 Email 驗證時，手機欄位為非必填欄位，在做手機驗證時， Email 為非必填欄位，但兩者皆為使用者的資料，無法強制使用者兩個欄位資料皆為必填，但在某些商業頁邏輯是必要的，所以我沒有選擇將這些驗證的邏輯寫在 `Repository` 或 `Model` 中。
+所以我沒有選擇將這些驗證的邏輯寫在 `Services`、`Repository` 或 `Model` 中。
 
-所以我會分出一層 `Validator (驗證器)` 輔助 `Service` 做資料驗證。
+所以我會分出一層 `Validator (驗證器)` 輔助 `Checker（檢查器）` 做資料驗證。
+
+
 
 ***Concrete (服務組合)***
 
@@ -95,6 +104,7 @@
                 * Model (模型)
                 * Presenter (資料呈現)
             * Cache (快取)
+    * Checker (檢查器)
         * Validator (驗證器)
 
 ### ***獨立結構***
@@ -113,13 +123,14 @@
 
 | 結構名稱 | 說明 |
 |---|---|
-| Controller (控制器) | 控制要使用哪些 Service 或 Concrete 的商業邏輯，去組合出使用者請求需要的資料，並做資料的資料交易控制 (transaction)  |
+| Controller (控制器) | 控制要使用哪些 Service 或 Concrete 的商業邏輯，去組合出使用者請求需要的資料，並做資料的資料交易控制 (transaction) ，並使用 Checker 去檢查任何使用者傳進來的資料，確保資料的正確性 |
 | Service (服務)  |  做資料的驗證，並組合不同的 Repository 資料成商業邏輯，供 Controller 或 Concrete 存取 |
 | Repository (資源庫)  |  撈取屬於自己 Model 不同條件下的資料，並做快取控制，供 Service 存取 |
 | Model (模型)  | 資料表存取相關設定 |
 | Presenter (資料呈現)  | 協助 Model 做資料呈現處理 |
 | Cache (快取)  | 協助 Repository 做快取資料的控制 |
-| Validator (驗證器) | 協助 Service 做資料驗證 |
+| Checker (檢查器) | 協助 Controller 做資料驗證 |
+| Validator (驗證器) | 協助 Checker 做資料驗證 |
 | Concrete (服務組合) | 協助 Controller 組合不同 Service 的資料成商業邏輯 |
 
 ***獨立結構***
@@ -141,12 +152,14 @@
 ***不能跨 2 階層以上存取***
 
 * Controller 不能存取 Repository
+* Controller 不能存取 Validator
 * Service 不能存取 Model
 
 ***低階層的不能存取高階層的資料***
 
 * Model 不能存取 Repository
 * Repository 不能存取 Service
+* Validator 不能存取 Checker
 
 ***同一個資料類型，不能互相呼叫***
 
@@ -156,16 +169,18 @@ PostService 存取 UserService，UserService 存取 PostsService 造成無窮迴
 
 * Concrete 不能呼叫 Concrete
 * Service 不能呼叫 Service
+* Checker 不能呼叫 Checker
 * Validator 不能呼叫 Validator
 * Repository 不能呼叫 Repository
 * Cache 不能呼叫 Cache
 
 | 結構名稱 | 可存取 | 可被存取 |
 |---|---|---|
-| Controller (控制器) | Concrete、Service、DB trancsction | - |
+| Controller (控制器) | Checker、Concrete、Service、DB transaction | - |
 | Concrete (服務組合) | Service | Controller |
 | Service (服務) | Repository、Validator | Controller、Concrete |
-| Validator (驗證器) | - | Service |
+| Checker (檢查器) | Validator | Controller |
+| Validator (驗證器) | - | Checker |
 | Repository (資源庫)  | 自己的 Model、自己的 Cache | Service |
 | Cache (服務)  | - | Repository |
 | Model (模型) | 自己的 Presenter | Repository |
@@ -188,7 +203,7 @@ PostService 存取 UserService，UserService 存取 PostsService 造成無窮迴
 
 ### Controller (控制器)
 
-> 可以存取結構：`Concrete`、`Service`、`DB trancsction`
+> 可以存取結構：`Checker`、`Concrete`、`Service`、`DB transaction`
 
 > 可以被存取結構：無
 
@@ -201,19 +216,29 @@ class PostController extends Controller
 {
     public function __construct(
         PostConcrete $PostConcrete,
-        CommentService $CommentService
+        PostService $PostService,
+        CommentService $CommentService,
+        PostChecker $PostChecker
     )
     {
         $this->PostConcrete = $PostConcrete;
         $this->PostService = $PostService;
         $this->CommentService = $CommentService;
+        $this->PostChecker = $PostChecker;
     }
 
     // 顯示文章
     public function show($post_id) {
         try {
+            // 驗證資料
+            $input = [
+                'post_id' => $post_id
+            ];
+            $this->PostChecker->checkShow($input);
+
             // 撈取文章
             $Post = $this->PostConcrete->findPost($post_id);
+
             // 撈取文章留言
             $Comment = $this->CommentService->getCommentByPostId(post_id);
         } catch (Exception $exception) {
@@ -224,10 +249,17 @@ class PostController extends Controller
     // 更新文章
     public function update($post_id) {
         try {
+            // 驗證資料
+            $input = request()->all();
+            $input['post_id'] = $post_id;
+            $this->PostChecker->checkUpdate($input);
+
             // 交易開始
             DB::beginTransaction();
+
             // 更新文章
-            $Post = $this->PostService->update($post_id, $update_data);
+            $Post = $this->PostService->update($post_id, $input);
+
             // 交易結束
             DB::commit();
         } catch (Exception $exception) {
@@ -277,7 +309,7 @@ class PostConcrete {
 
 ### Service (服務)
 
-> 可以存取結構：`Validator`、`Repository`
+> 可以存取結構：`Repository`
 
 > 可以被存取結構：`Controller`、`Concrete`
 
@@ -288,23 +320,16 @@ class PostConcrete {
 class PostService {
     public function __construct(
         PostRepository $PostRepository,
-        PostTagRepository $PostTagRepository,
-        PostValidator $PostValidator
+        PostTagRepository $PostTagRepository
     )
     {
         $this->PostRepository = $PostRepository;
         $this->PostTagRepository = $PostTagRepository;
-        $this->PostValidator = $PostValidator;
     }
 
     // 撈取文章
     public function findPost($post_id) {
         try {
-            // 驗證傳入資料是否正確
-            $input = [
-                'post_id' => $post_id
-            ];
-            $this->PostValidator->validateFindPost($input);
             // 撈取文章
             $Post = $this->PostRepository->find($post_id);
             // 撈取文章標籤
@@ -318,11 +343,6 @@ class PostService {
 
     public function clearPostCache($post_id) {
         try {
-            // 驗證傳入資料是否正確
-            $input = [
-                'post_id' => $post_id
-            ];
-            $this->PostValidator->validateClearPostCache($input);
             $Post = $this->findPost($post_id);
             // 清除文章快取
             $this->PostRepository->cache()->clearPostCache($Post);
@@ -335,22 +355,55 @@ class PostService {
 }
 ```
 
+### Checker (檢查器)
+
+> 可以存取結構：`Validator`
+
+> 可以被存取結構：`Controller`
+
+協助 Controller 驗證資料的正確性，若驗證錯誤則丟處例外，Controller 根據例外代碼去做處理
+
+```php
+class PostValidator {
+    public function checkFindPost($input){
+        // 驗證文章資料
+        $this->PostValidator->validatePostId($input);
+        $this->PostValidator->validatePostContent($input);
+
+        // 驗證會員資料
+        $this->MemberValidator->validateMemberId($input);
+    }
+}
+```
+
 ### Validator (驗證器)
 
 > 可以存取結構：無
 
-> 可以被存取結構：`Service`
+> 可以被存取結構：`Checker`
 
-協助 Service 驗證資料的正確性，若驗證錯誤則丟處例外，Controller 根據例外代碼去做處理
+協助 Checker 驗證資料的正確性，若驗證錯誤則丟處例外，Checker 根據例外代碼去做處理
 
 ```php
 class PostValidator {
-    public function validatefindPost($input){
-        // 驗證找尋文章資料是否正確
-        throw new Exception(
-            '文章編號格式錯誤',
-            PostExceptionCode::POST_ID_FORMAT_ERROR
-        );
+    public function validatePostId($input){
+        // 設定驗證規則
+        $rules = [
+            'post_id' => [
+                'required',
+                'max:20',
+            ],
+        ];
+
+        // 開始驗證
+        $this->validator = Validator::make($input, $rules);
+
+        if ($this->validator->fails()) {
+            throw new Exception(
+                '文章編號格式錯誤',
+                PostExceptionCode::POST_ID_FORMAT_ERROR
+            );
+        }
     }
 }
 ```

@@ -33,7 +33,7 @@ $article = \App\Article::latest('published_at')
     ->get();
 ```
 
-我們可以簡化這個 query，把它寫在 Model 用函式的方式做處理，這樣我們就可以用這樣去取得以發表的文章：
+我們可以簡化這個 query，把它寫在 Model 用函式的方式做處理，這樣我們就可以用這樣去取得已發表的文章：
 
 ```php
 // 取得已經發表的文章，依照發表時間降冪（Desc）排序
