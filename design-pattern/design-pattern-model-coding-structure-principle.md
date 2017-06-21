@@ -136,7 +136,7 @@
 ***獨立結構***
 
 | 結構名稱 | 說明 |
-|---|---|---|
+|---|---|
 | Constant (常數)  | 共用變數名稱設定 |
 | Support (支援)  | 共用方法 |
 | ExceptionCode (例外代碼)  | 共用例外代碼設定 |
@@ -212,6 +212,8 @@ PostService 存取 UserService，UserService 存取 PostsService 造成無窮迴
 要確保所有 Service 商業邏輯都正確跑完才允許對資料做異動，並避免 Transaction 在 Controller 及 Service 被重複呼叫，導致無法正確鎖定資料狀態，所以使用 Controller 當作資料交易（Transaction）的控制點
 
 ```php
+<?php
+
 class PostController extends Controller
 {
     public function __construct(
@@ -280,6 +282,8 @@ class PostController extends Controller
 使用不同 Service 撈取資料，將不同資料組合成商業邏輯，供 Controller 做存取
 
 ```php
+<?php
+
 class PostConcrete {
     public function __construct(
         PostService $PostService,
@@ -317,6 +321,8 @@ class PostConcrete {
 使用 Repository 的 Cache 清除 Service 中撈取資料的快取
 
 ```php
+<?php
+
 class PostService {
     public function __construct(
         PostRepository $PostRepository,
@@ -364,6 +370,8 @@ class PostService {
 協助 Controller 驗證資料的正確性，若驗證錯誤則丟處例外，Controller 根據例外代碼去做處理
 
 ```php
+<?php
+
 class PostValidator {
     public function checkFindPost($input){
         // 驗證文章資料
@@ -385,6 +393,8 @@ class PostValidator {
 協助 Checker 驗證資料的正確性，若驗證錯誤則丟處例外，Checker 根據例外代碼去做處理
 
 ```php
+<?php
+
 class PostValidator {
     public function validatePostId($input){
         // 設定驗證規則
@@ -417,6 +427,8 @@ class PostValidator {
 僅能撈取屬於自己的 Model 資料，像 `PostRepository` 僅能存取 `Post` Model (模型) 的資料，並使用不同條件撈取 Model 的資料，供 Service 做存取
 
 ```php
+<?php
+
 class PostRepository {
     public function __construct(
         Post $Post,
@@ -490,6 +502,8 @@ class PostRepository {
 協助 Repository 做快取資料的控制，快取鍵值的管理、資料讀取及清除
 
 ```php
+<?php
+
 class PostCache {
 
     public function getPostCacheKey($post_id) {
@@ -515,6 +529,8 @@ class PostCache {
 Eloquent 存取資料表相關設定，使用 Eloquent 直接存取資料表資料
 
 ```php
+<?php
+
 class Post extends Model
 {
     protected $table = 'post';
@@ -538,6 +554,8 @@ class Post extends Model
 提供 Model 的資料用其他方式呈現
 
 ```php
+<?php
+
 class PostPresenter extends Presenter
 {
     public function created_at_human_time()
@@ -556,6 +574,8 @@ class PostPresenter extends Presenter
 資料皆為靜態變數，可以供所有資料層級 (e.g. Controller、Service、Repository) 做存取
 
 ```php
+<?php
+
 class PostConstant {
     const POST_TYPE_PUBLIC = 'P';
     const POST_TYPE_DELETE = 'D';
@@ -573,6 +593,8 @@ class PostConstant {
 若有其他可供全域共用的方法皆寫在 Support 靜態方法供大家存取
 
 ```php
+<?php
+
 class PostSupport {
     // 撈取所有文章類型
     public static function getAllPostType() {
@@ -594,6 +616,8 @@ class PostSupport {
 資料皆為靜態變數，可以供所有資料層級 (e.g. Controller、Service、Repository) 做存取
 
 ```php
+<?php
+
 class PostExceptionCode {
     const POST_ID_FORMAT_ERROR = 10000001;
     const POST_NOT_FOUND = 10000002;

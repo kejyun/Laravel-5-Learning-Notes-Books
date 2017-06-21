@@ -9,3 +9,6 @@
 
 ## 影片
 * [PHP 也有 Day #16 - 胖胖 Model 減重的五個方法 by 尤川豪](https://www.youtube.com/watch?v=e0qVLniXbHw)
+
+## Repository
+* [recca0120/laravel-repository: Repository Design Pattern for Laravel 5 with Eloquent or Collection](https://github.com/recca0120/laravel-repository)
