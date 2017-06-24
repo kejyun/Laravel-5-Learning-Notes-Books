@@ -192,6 +192,21 @@ Enter your choice: 1
 $ vagrant up
 ```
 
+## 變更 Homestead 主機 ip
+
+當我們想要有多台 Homestead 主機時，會因為 Homestead 預設的主機 ip 都為 `192.168.10.11` 而導致 ip 之間有衝突，所以我們也可以透過置換 ip 去達到同時開不同的 Homestead 主機。
+
+```yaml
+---
+ip: "192.168.99.10"
+```
+
+我們僅需要將 ip 直接換成我們想要的 ip，這裡我將 ip 換成 `192.168.99.10`，換完 ip 之後，僅需要打 `vagrant reload` 這樣就可以成功將 ip 置換掉了！
+
+```shell
+vagrant reload
+```
+
 
 ## 參考資料
 * [Say Hello to Laravel Homestead 2.0](https://laracasts.com/lessons/say-hello-to-laravel-homestead-two)
@@ -201,3 +216,4 @@ $ vagrant up
 * [Vagrant 常用指令](http://blog.kejyun.com/2014/10/vagrant-command.html)
 * [SSL read: error · Issue #401 · Varying-Vagrant-Vagrants/VVV](https://github.com/Varying-Vagrant-Vagrants/VVV/issues/401)
 * [Vagrant: Fix for error 60 / SSL read - Slick](http://slick.pl/kb/software/vagrant-fix-for-error-60-ssl-read/)
+* [Change ip homestead](https://laracasts.com/discuss/channels/servers/change-ip-homestead)
