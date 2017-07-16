@@ -1,6 +1,6 @@
 # Eloquent 小技巧
 
-## 取得主鍵名稱
+## 取得主鍵名稱 - getKeyName()
 
 User Eloquent 物件
 
