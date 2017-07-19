@@ -81,6 +81,7 @@
   * [Call to undefined method getCachedCompilePath()](qa/qa-call-undefined-method-getCachedCompilePath.md)
   * [變更專案目錄名稱導致 View 無法讀取](qa/qa-change-app-directory-name-cause-view-can-not-readable.md)
   * [Laravel 5.1 目錄結構異動](qa/qa-laravel-5.1-folder-structure.md)
+  * [Laravel 5.1 目錄結構異動](qa/qa-segmentation-fault-11-when-seeding.md)
 * [學習資源](resource/Resource-README.md)
   * [官方](resource/Resource-Official.md)
   * [社群](resource/Resource-Community.md)
