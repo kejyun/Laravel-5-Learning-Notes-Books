@@ -1,11 +1,18 @@
 {
-  "plugins": ["disqus","ga"],
+  "plugins": ["disqus","ga", "adsense"],
   "pluginsConfig": {
     "disqus": {
       "shortName": "kejyun-laravel5-book"
     },
     "ga": {
       "token": "UA-31063691-12"
+    },
+    "adsense": {
+        "client": "ca-pub-1990193713845546",
+        "slot": "8019552255",
+        "format": "auto",
+        "element": ".page-inner section",
+        "position": "top"
     }
   }
 }
