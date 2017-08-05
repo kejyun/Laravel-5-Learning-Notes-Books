@@ -1,12 +1,10 @@
 require([
     "gitbook",
-    "jQuery",
-    "URIjs/URI",
-    "utils/url",
-], function(gitbook, $, URI, URL) {
+    "jQuery"
+], function(gitbook, $) {
     var use_identifier = false;
 
-    var resetDisqus = function() {
+    function resetDisqus() {
         var $disqusDiv = $("<div>", {
             "id": "disqus_thread"
         });
@@ -25,33 +23,22 @@ require([
                 }
             });
         }
-    };
+    }
 
-    var resetAdsense = function() {
-        var $adsenseDiv =
-          '<br><br>'+
-          '<h3 style="text-align:center">贊助</h3>' +
-          '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>' +
-          '<ins class="adsbygoogle"' +
-               'style="display:block"' +
-               'data-ad-client="ca-pub-1990193713845546"' +
-               'data-ad-slot="2858259611"' +
-               'data-ad-format="auto"></ins>' +
-          '<br><br>'+
-          '<script>' +
-          '(adsbygoogle = window.adsbygoogle || []).push({});' +
-          '</script>';
+    function joinURL(baseUrl, url) {
+        var theUrl = new URI(url);
+        if (theUrl.is("relative")) {
+            theUrl = theUrl.absoluteTo(baseUrl);
+        }
+        return theUrl.toString();
+    }
 
-        $(".book-body .page-inner").append($adsenseDiv);
-
-    };
-
-    var currentUrl = function() {
+    function currentUrl() {
         var location = new URI(window.location.href),
-            base     = URL.join(window.location.href, gitbook.state.basePath),
+            base     = joinURL(window.location.href, gitbook.state.basePath),
             current  = location.relativeTo(base).toString(),
             language = $('html').attr('lang'),
-            parent   = URL.dirname(base),
+            parent   = joinURL(base, '..'),
             folder   = new URI(base).relativeTo(parent).toString();
 
         // If parent folder is the same as language, we assume translated books
@@ -60,7 +47,7 @@ require([
         }
 
         return current;
-    };
+    }
 
     gitbook.events.bind("start", function(e, config) {
         config.disqus = config.disqus || {};
@@ -81,10 +68,8 @@ require([
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
 
-        // resetAdsense();
         resetDisqus();
     });
 
-    gitbook.events.bind("page.change", resetAdsense);
     gitbook.events.bind("page.change", resetDisqus);
 });
