@@ -148,6 +148,14 @@ class SendEmail {
 $ php artisan queue:listen
 ```
 
+也可以針對 queue 去設定相關參數及優先權
+
+```shell
+$ php artisan artisan queue:work --queue=instant,high,medium,default,low --delay=1 --memory=512 --sleep=15 --tries=1 --env=dev --daemon
+```
+
+
+
 這樣我們就可以正常的使用隊列去幫我們寄信摟！！
 
 ## 參考資料
