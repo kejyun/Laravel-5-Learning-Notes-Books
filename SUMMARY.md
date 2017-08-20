@@ -34,6 +34,7 @@
   * [隊列（Queue）](services/queue/services-queue-README.md)
     * [database](services/queue/services-queue-database.md)
     * [非同步（async）](services/queue/services-queue-async.md)
+    * [Supervisor 啟動 queue](services/queue/services-queue-supervisor.md)
   * [輔助方法 (Helpers)](services/helpers/services-helpers-README.md)
     * [自定義輔助方法](services/helpers/services-custom-helpers-README.md)
   * [單元測試 (Unit Test)](services/unit-test/services-unit-test-README.md)
