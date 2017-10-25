@@ -27,6 +27,8 @@ return [
 
 #### 存取透過 javascript 設定的 cookie
 
+##### 移除 EncryptCookies Middleware
+
 所有透過 Laravel 設定的 Cooke 都會透過 `APP_KEY` 去進行加密，但是 JavaScript 在設定 Cookie 時，並沒有經過加密的程序，所以若 Laravel 要取得 JavaScript 設定的 Cookie，經過解密後會無法正確解析。
 
 可以在 `app/Http/Kernel.php` 檔案中，將 `\App\Http\Middleware\EncryptCookies::class` 的 Middleware 註解，這樣就可以讓 Laravel 的 Cookie 資料不需要加解密，這樣就可以正常的取的透過 JavaScript 設定的 Cookie 了。
@@ -50,6 +52,25 @@ class Kernel extends HttpKernel
             // \App\Http\Middleware\EncryptCookies::class,
             // *** 以下省略 ***
         ],
+    ];
+}
+```
+
+##### 排除 Cookie 加密鍵值
+
+在 `\App\Http\Middleware\EncryptCookies::class` 檔案中，有 `$except` 變數，可以指定哪些鍵值不要加密，設定完後，就可以順利地讀取到未加密的 Cookie 資料了！
+
+
+```php
+class EncryptCookies extends BaseEncrypter
+{
+    /**
+     * The names of the cookies that should not be encrypted.
+     *
+     * @var array
+     */
+    protected $except = [
+        'js_cookie_key',
     ];
 }
 ```
