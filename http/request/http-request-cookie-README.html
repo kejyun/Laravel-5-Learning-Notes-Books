@@ -1588,6 +1588,7 @@
 ];
 </code></pre>
 <h4 id="&#x5B58;&#x53D6;&#x900F;&#x904E;-javascript-&#x8A2D;&#x5B9A;&#x7684;-cookie">&#x5B58;&#x53D6;&#x900F;&#x904E; javascript &#x8A2D;&#x5B9A;&#x7684; cookie</h4>
+<h5 id="&#x79FB;&#x9664;-encryptcookies-middleware">&#x79FB;&#x9664; EncryptCookies Middleware</h5>
 <p>&#x6240;&#x6709;&#x900F;&#x904E; Laravel &#x8A2D;&#x5B9A;&#x7684; Cooke &#x90FD;&#x6703;&#x900F;&#x904E; <code>APP_KEY</code> &#x53BB;&#x9032;&#x884C;&#x52A0;&#x5BC6;&#xFF0C;&#x4F46;&#x662F; JavaScript &#x5728;&#x8A2D;&#x5B9A; Cookie &#x6642;&#xFF0C;&#x4E26;&#x6C92;&#x6709;&#x7D93;&#x904E;&#x52A0;&#x5BC6;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x6240;&#x4EE5;&#x82E5; Laravel &#x8981;&#x53D6;&#x5F97; JavaScript &#x8A2D;&#x5B9A;&#x7684; Cookie&#xFF0C;&#x7D93;&#x904E;&#x89E3;&#x5BC6;&#x5F8C;&#x6703;&#x7121;&#x6CD5;&#x6B63;&#x78BA;&#x89E3;&#x6790;&#x3002;</p>
 <p>&#x53EF;&#x4EE5;&#x5728; <code>app/Http/Kernel.php</code> &#x6A94;&#x6848;&#x4E2D;&#xFF0C;&#x5C07; <code>\App\Http\Middleware\EncryptCookies::class</code> &#x7684; Middleware &#x8A3B;&#x89E3;&#xFF0C;&#x9019;&#x6A23;&#x5C31;&#x53EF;&#x4EE5;&#x8B93; Laravel &#x7684; Cookie &#x8CC7;&#x6599;&#x4E0D;&#x9700;&#x8981;&#x52A0;&#x89E3;&#x5BC6;&#xFF0C;&#x9019;&#x6A23;&#x5C31;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x7684;&#x53D6;&#x7684;&#x900F;&#x904E; JavaScript &#x8A2D;&#x5B9A;&#x7684; Cookie &#x4E86;&#x3002;</p>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
@@ -1608,6 +1609,20 @@
             <span class="hljs-comment">// \App\Http\Middleware\EncryptCookies::class,</span>
             <span class="hljs-comment">// *** &#x4EE5;&#x4E0B;&#x7701;&#x7565; ***</span>
         ],
+    ];
+}
+</code></pre>
+<h5 id="&#x6392;&#x9664;-cookie-&#x52A0;&#x5BC6;&#x9375;&#x503C;">&#x6392;&#x9664; Cookie &#x52A0;&#x5BC6;&#x9375;&#x503C;</h5>
+<p>&#x5728; <code>\App\Http\Middleware\EncryptCookies::class</code> &#x6A94;&#x6848;&#x4E2D;&#xFF0C;&#x6709; <code>$except</code> &#x8B8A;&#x6578;&#xFF0C;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x54EA;&#x4E9B;&#x9375;&#x503C;&#x4E0D;&#x8981;&#x52A0;&#x5BC6;&#xFF0C;&#x8A2D;&#x5B9A;&#x5B8C;&#x5F8C;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x9806;&#x5229;&#x5730;&#x8B80;&#x53D6;&#x5230;&#x672A;&#x52A0;&#x5BC6;&#x7684; Cookie &#x8CC7;&#x6599;&#x4E86;&#xFF01;</p>
+<pre><code class="lang-php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EncryptCookies</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">BaseEncrypter</span>
+</span>{
+    <span class="hljs-comment">/**
+     * The names of the cookies that should not be encrypted.
+     *
+     * <span class="hljs-doctag">@var</span> array
+     */</span>
+    <span class="hljs-keyword">protected</span> $except = [
+        <span class="hljs-string">&apos;js_cookie_key&apos;</span>,
     ];
 }
 </code></pre>
@@ -1654,7 +1669,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Cookie","level":"1.4.1.1","depth":3,"next":{"title":"路由 (Route)","level":"1.4.2","depth":2,"path":"http/route/http-route-README.md","ref":"http/route/http-route-README.md","articles":[{"title":"子網域路由","level":"1.4.2.1","depth":3,"path":"http/route/http-sub-domain-route.md","ref":"http/route/http-sub-domain-route.md","articles":[]}]},"previous":{"title":"請求","level":"1.4.1","depth":2,"path":"http/request/http-request-README.md","ref":"http/request/http-request-README.md","articles":[{"title":"Cookie","level":"1.4.1.1","depth":3,"path":"http/request/http-request-cookie-README.md","ref":"http/request/http-request-cookie-README.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["disqus","ga","adsense","livereload"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"kejyun-laravel5-book"},"livereload":{},"search":{},"adsense":{"client":"ca-pub-1990193713845546","slot":"8019552255","format":"auto","element":".page-inner section","position":"top"},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-31063691-12"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"http/request/http-request-cookie-README.md","mtime":"2017-10-25T04:24:24.000Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2017-10-25T04:25:28.868Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Cookie","level":"1.4.1.1","depth":3,"next":{"title":"路由 (Route)","level":"1.4.2","depth":2,"path":"http/route/http-route-README.md","ref":"http/route/http-route-README.md","articles":[{"title":"子網域路由","level":"1.4.2.1","depth":3,"path":"http/route/http-sub-domain-route.md","ref":"http/route/http-sub-domain-route.md","articles":[]}]},"previous":{"title":"請求","level":"1.4.1","depth":2,"path":"http/request/http-request-README.md","ref":"http/request/http-request-README.md","articles":[{"title":"Cookie","level":"1.4.1.1","depth":3,"path":"http/request/http-request-cookie-README.md","ref":"http/request/http-request-cookie-README.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["disqus","ga","adsense","livereload"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"kejyun-laravel5-book"},"livereload":{},"search":{},"adsense":{"client":"ca-pub-1990193713845546","slot":"8019552255","format":"auto","element":".page-inner section","position":"top"},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-31063691-12"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"http/request/http-request-cookie-README.md","mtime":"2017-10-25T06:24:00.000Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2017-10-25T06:24:19.997Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
