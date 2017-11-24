@@ -1,5 +1,5 @@
 {
-  "plugins": ["disqus","ga", "adsense"],
+  "plugins": ["disqus","ga", "adsense", "include"],
   "pluginsConfig": {
     "disqus": {
       "shortName": "kejyun-laravel5-book"

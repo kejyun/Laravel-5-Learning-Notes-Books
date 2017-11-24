@@ -28,3 +28,6 @@
 * [Web Developer Learning Resource 網頁開發學習資源](http://kejyuntw.gitbooks.io/web-developer-learning-resource/)
 * [Mac OSX 新手入門](http://kejyuntw.gitbooks.io/mac-osx-for-newbie/)
 * [Ruby on Rails 學習筆記](http://kejyuntw.gitbooks.io/ruby-on-rails-learning-note/)
+
+
+<!-- !INCLUDE "kejyun/kejyun.md" -->
