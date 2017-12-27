@@ -18,3 +18,5 @@ $ php artisan view:clear
 ```
 
 執行清除這些快取資料後，我們就可以正常的的獨到新專案目錄下的 view 資料摟！
+
+!INCLUDE "../kejyun/book/laravel-5-for-beginner.md"

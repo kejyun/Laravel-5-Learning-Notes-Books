@@ -43,3 +43,5 @@ class User extends Model {
 * [Laravel Eloquent Save to DB Using Create - Unhelpful Error](http://stackoverflow.com/questions/22338149/laravel-eloquent-save-to-db-using-create-unhelpful-error)
 * [Eloquent Create Method - Always inserts blank entries.](https://laracasts.com/discuss/channels/general-discussion/eloquent-create-method-always-inserts-blank-entries)
 * [Unable to create a model with Eloquent create method. Error telling MassAssignMentException](http://stackoverflow.com/questions/18699866/unable-to-create-a-model-with-eloquent-create-method-error-telling-massassignme)
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

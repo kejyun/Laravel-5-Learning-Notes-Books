@@ -118,3 +118,6 @@ sudo crontab -e
 * [Certbot documentation - Renewing certificates](https://certbot.eff.org/docs/using.html#renewing-certificates)
 * [letsencrypt/letsencrypt](https://github.com/letsencrypt/letsencrypt)
 * [How To Secure Nginx with Let's Encrypt on Ubuntu 14.04 | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-14-04)
+
+
+!INCLUDE "../kejyun/book/laravel-5-for-beginner.md"

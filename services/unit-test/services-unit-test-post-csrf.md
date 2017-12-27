@@ -65,3 +65,6 @@ class UserTest extends TestCase {
 ## 參考資料
 * [HTTP 路由 - Laravel.tw](http://laravel.tw/docs/5.0/routing#csrf-protection)
 * [Testing Laravel 5 Routes with CSRF Protection Using PHPUnit](http://davejustdave.com/2015/02/08/laravel-5-unit-testing-with-csrf-protection/)
+
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

@@ -302,3 +302,6 @@ class UserPrivacyService extends AnotherClass
 * [在 Laravel 4 使用資源庫 (Repositories) 及服務 (Services) 去降低程式的耦合性](http://laravel4-book.kejyun.com/laravel-design-pattern/model/decoupling-your-code-in-laravel-using-repositiories-and-services.html)
 * [胖胖Model減重的五個方法 by howtomakeaturn](http://slides.com/howtomakeaturn/model#/)
 * [PHP 也有 Day #16 - 胖胖 Model 減重的五個方法 by 尤川豪](https://www.youtube.com/watch?v=e0qVLniXbHw)
+
+
+!INCLUDE "../kejyun/book/laravel-5-for-beginner.md"

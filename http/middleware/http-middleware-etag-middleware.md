@@ -71,3 +71,7 @@ class Kernel extends HttpKernel
 
 ## 參考資料
 * [Setting Etags in Laravel 5 - Matthew Daly's Blog](http://matthewdaly.co.uk/blog/2015/06/14/setting-etags-in-laravel-5/)
+
+
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

@@ -24,7 +24,7 @@ return [
   'driver'     => 'mailgun',
   'host'       => 'smtp.mailgun.org',
   'port'       => 587,
-  'from'       => ['address' => 'kejyun@gmail.com', 'name' => 'KeJyun'],
+  'from'       => ['address' => 'kejyun@example.com', 'name' => 'KeJyun'],
   'encryption' => 'tls',
   'username'   =>'postmaster@mailgun.kejyun.com',
   'password'   => 'abcdefghijklmnopqrstuvwxyz123456',
@@ -57,7 +57,7 @@ return [
 ```php
 Mail::raw('測試使用 Laravel 5 的 Mailgun 寄信服務', function($message)
 {
-    $message->to('kejyun@gmail.com');
+    $message->to('kejyun@example.com');
 });
 ```
 
@@ -68,3 +68,6 @@ Mail::raw('測試使用 Laravel 5 的 Mailgun 寄信服務', function($message)
 * [Mailgun](https://mailgun.com/)
 * [Setting up Mailgun with Laravel 5](http://jamie.sh/tutorials/7/setting-up-mailgun-with-laravel-5)
 * [郵件 - Laravel.tw](http://laravel.tw/docs/5.0/mail)
+
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

@@ -25,3 +25,5 @@ var_dump($queries);
 ## 參考資料
 * [資料庫使用基礎 查詢日誌記錄 - Laravel.tw](http://laravel.tw/docs/5.0/database#query-logging)
 * [How to get the query executed in Laravel 5 ? DB::getQueryLog returning empty array](http://stackoverflow.com/questions/27753868/how-to-get-the-query-executed-in-laravel-5-dbgetquerylog-returning-empty-arr)
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

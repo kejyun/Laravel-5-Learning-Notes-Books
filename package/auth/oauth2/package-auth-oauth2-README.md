@@ -167,3 +167,5 @@ VALUES ('KeJyun', 'KeJyunSecret', 'KeJyun Client', now(), now());
 * [Introduction to authentication with OAuth2](https://www.youtube.com/watch?v=rw_zSCbzRRA)
 * [Laravel 4 OAuth2](https://www.youtube.com/watch?v=viQY_s-M0fM)
 * [Testing OAuth2 in Laravel 5](https://www.youtube.com/watch?v=nITbqFwFMG8)
+
+!INCLUDE "../../../kejyun/book/laravel-5-for-beginner.md"

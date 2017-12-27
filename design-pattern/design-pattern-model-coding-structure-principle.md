@@ -624,3 +624,6 @@ class PostExceptionCode {
     const POST_TAG_NOT_FOUND = 10000003;
 }
 ```
+
+
+!INCLUDE "../kejyun/book/laravel-5-for-beginner.md"

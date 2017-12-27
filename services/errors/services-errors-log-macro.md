@@ -171,3 +171,6 @@ try{
 ## 參考資料
 * [HTTP 回應：回應巨集 - Laravel.tw](http://laravel.tw/docs/5.0/responses#response-macros)
 * [服務提供者 - Laravel.tw](http://laravel.tw/docs/5.0/providers)
+
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

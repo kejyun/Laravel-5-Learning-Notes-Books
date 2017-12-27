@@ -17,3 +17,6 @@
 ## 參考資料
 * [Directory Changes - Laracast](https://laracasts.com/series/whats-new-in-laravel-5-1/episodes/7)
 * [Release Notes - laravel.tw](http://laravel.tw/docs/5.1/releases)
+
+
+!INCLUDE "../kejyun/book/laravel-5-for-beginner.md"

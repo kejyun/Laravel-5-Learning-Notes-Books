@@ -158,3 +158,7 @@ Laravel 的視圖是放在 `resource/views` 目錄內
 
 ## 參考資訊
 * [View Partials and Form Reuse - Laracasts](https://laracasts.com/series/laravel-5-fundamentals/episodes/13)
+
+
+
+!INCLUDE "../kejyun/book/laravel-5-for-beginner.md"

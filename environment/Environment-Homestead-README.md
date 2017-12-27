@@ -217,3 +217,5 @@ vagrant reload
 * [SSL read: error · Issue #401 · Varying-Vagrant-Vagrants/VVV](https://github.com/Varying-Vagrant-Vagrants/VVV/issues/401)
 * [Vagrant: Fix for error 60 / SSL read - Slick](http://slick.pl/kb/software/vagrant-fix-for-error-60-ssl-read/)
 * [Change ip homestead](https://laracasts.com/discuss/channels/servers/change-ip-homestead)
+
+!INCLUDE "../kejyun/book/laravel-5-for-beginner.md"

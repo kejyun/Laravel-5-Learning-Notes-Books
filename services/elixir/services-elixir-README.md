@@ -51,3 +51,6 @@ $ npm install laravel-elixir
 * [NPM 套件管理工具](https://github.com/nodejs-tw/nodejs-wiki-book/blob/master/zh-tw/node_npm.rst)
 * [gulp.js - the streaming build system](http://gulpjs.com/)
 * [Laravel Elixir - laravel.tw](http://laravel.tw/docs/5.1/elixir)
+
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

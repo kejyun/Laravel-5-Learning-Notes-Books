@@ -31,3 +31,6 @@ Log::alert('=== Log 訊息 ===');
 
 ## 參考資料
 * [錯誤與日誌 - Laravel.tw](http://laravel.tw/docs/5.0/errors)
+
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

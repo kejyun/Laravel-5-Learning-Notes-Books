@@ -50,3 +50,6 @@ Generating autoload files
 這樣我們就可以自動的載入我們自定義的 Helper 函式了！！
 
 * [Best practices for custom helpers on Laravel 5](http://laravel.io/forum/02-03-2015-best-practices-for-custom-helpers-on-laravel-5)
+
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

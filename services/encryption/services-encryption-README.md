@@ -51,3 +51,6 @@ var_dump($first_encrypt_data === $second_encrypt_data);
 
 ## 參考資料
 * [加密 - Laravel.tw](http://laravel.tw/docs/5.1/encryption)
+
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

@@ -45,3 +45,6 @@ nvm alias default 5.4.0
 
 ## 參考資料
 * [creationix/nvm](https://github.com/creationix/nvm)
+
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

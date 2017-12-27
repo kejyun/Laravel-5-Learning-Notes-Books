@@ -37,3 +37,6 @@
 
 ## Open Source
 * [laravel-tricks](https://github.com/CodepadME/laravel-tricks)
+
+
+!INCLUDE "../kejyun/book/laravel-5-for-beginner.md"

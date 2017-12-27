@@ -46,3 +46,5 @@ $ php artisan tail production
 
 ## 參考資料
 * [The missing tail command for Laravel 5](https://github.com/freekmurze/laravel-tail)
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

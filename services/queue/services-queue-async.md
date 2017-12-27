@@ -163,3 +163,6 @@ class SendEmail {
 * [Queues in Laravel with Redis](https://www.youtube.com/watch?v=dsp_l65W8ck)
 * [barryvdh/laravel-async-queue - packagist](https://packagist.org/packages/barryvdh/laravel-async-queue)
 * [Laravel 5 Async Queue Driver - Github](https://github.com/barryvdh/laravel-async-queue/tree/0.4)
+
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

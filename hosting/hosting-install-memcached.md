@@ -127,3 +127,6 @@ Registered save handlers => files user memcached
 * [kasparsd/php-7-debian: Install PHP 7 on Debian/Ubuntu](https://github.com/kasparsd/php-7-debian)
 * [ServerPilot | How to Install the PHP Memcache Extension](https://serverpilot.io/community/articles/how-to-install-the-php-memcache-extension.html)
 * [Installing PHP-7 with Memcached - Servers for Hackers](https://serversforhackers.com/video/installing-php-7-with-memcached)
+
+
+!INCLUDE "../kejyun/book/laravel-5-for-beginner.md"

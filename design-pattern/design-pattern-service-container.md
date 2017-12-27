@@ -86,3 +86,6 @@ App::bind('Mail', function($app)
 * [服務容器 - Laravel.tw](http://laravel.tw/docs/5.0/container)
 * [IoC 容器](http://laravel.tw/docs/4.2/ioc)
 * [Dependency Injection with Laravel’s IoC](http://www.sitepoint.com/dependency-injection-laravels-ioc/)
+
+
+!INCLUDE "../kejyun/book/laravel-5-for-beginner.md"

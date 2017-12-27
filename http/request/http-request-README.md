@@ -171,3 +171,6 @@ class ArticleController extends Controller {
 
 ## 參考資料
 * [Form Requests and Controller Validation - Laracasts](https://laracasts.com/series/laravel-5-fundamentals/episodes/12)
+
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

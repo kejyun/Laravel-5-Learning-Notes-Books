@@ -105,3 +105,6 @@ class CreateArticleTable extends Migration {
 
 ## 參考資料
 * [Eloquent Relationships - Laracasts](https://laracasts.com/series/laravel-5-fundamentals/episodes/14)
+
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

@@ -15,3 +15,6 @@
 
 ## 事件
 * [Step by Step Guide to Installing Socket.io and Broadcasting Events with Laravel 5.1](https://laracasts.com/discuss/channels/general-discussion/step-by-step-guide-to-installing-socketio-and-broadcasting-events-with-laravel-51)
+
+
+!INCLUDE "../kejyun/book/laravel-5-for-beginner.md"

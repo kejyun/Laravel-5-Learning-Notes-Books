@@ -12,3 +12,6 @@
 
 ## Repository
 * [recca0120/laravel-repository: Repository Design Pattern for Laravel 5 with Eloquent or Collection](https://github.com/recca0120/laravel-repository)
+
+
+!INCLUDE "../kejyun/book/laravel-5-for-beginner.md"

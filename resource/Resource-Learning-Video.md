@@ -18,3 +18,6 @@
 
 ## 繁體中文
 * [Laravel 台灣 - Youtube](https://www.youtube.com/channel/UCWErrxDEyvS8-HXYhnJ_DtA/playlists)
+
+
+!INCLUDE "../kejyun/book/laravel-5-for-beginner.md"

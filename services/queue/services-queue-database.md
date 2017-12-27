@@ -161,3 +161,6 @@ $ php artisan artisan queue:work --queue=instant,high,medium,default,low --delay
 ## 參考資料
 * [隊列 - Laravel.tw](http://laravel.tw/docs/5.0/queues)
 * [Queues in Laravel with Redis](https://www.youtube.com/watch?v=dsp_l65W8ck)
+
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

@@ -100,3 +100,5 @@ SESSION_DRIVER=file
 
 ## 參考資料
 * [Environments and Configuration - Laravel 5 Fundamentals](https://laracasts.com/series/laravel-5-fundamentals/episodes/6)
+
+!INCLUDE "../kejyun/book/laravel-5-for-beginner.md"

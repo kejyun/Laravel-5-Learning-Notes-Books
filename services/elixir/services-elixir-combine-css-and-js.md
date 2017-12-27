@@ -166,3 +166,6 @@ laravel-elixir 還可以整合其他的資源，像是 Less、SCSS、SASS、Coff
 ## 參考資料
 * [Elixir Improvements](https://laracasts.com/series/whats-new-in-laravel-5-1/episodes/3)
 * [Laravel Elixir - laravel.tw](http://laravel.tw/docs/5.1/elixir)
+
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

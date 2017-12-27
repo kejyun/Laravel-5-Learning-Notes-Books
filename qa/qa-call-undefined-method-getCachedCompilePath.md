@@ -15,3 +15,5 @@
 
 ## 參考資料
 * [RuntimeException on fresh install](https://laracasts.com/discuss/channels/general-discussion/runtimeexception-on-fresh-install?page=1)
+
+!INCLUDE "../kejyun/book/laravel-5-for-beginner.md"

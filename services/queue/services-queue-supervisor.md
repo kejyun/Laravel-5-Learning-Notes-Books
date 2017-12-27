@@ -49,3 +49,6 @@ sudo supervisorctl stop laravel-worker:*
 
 ## 參考資料
 * [Queues - Laravel - The PHP Framework For Web Artisans](https://laravel.com/docs/5.4/queues#supervisor-configuration)
+
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

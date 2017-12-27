@@ -27,3 +27,6 @@
 ## 作者
 
 * [Taylor Otwell | Twitter](https://twitter.com/taylorotwell)
+
+
+!INCLUDE "../kejyun/book/laravel-5-for-beginner.md"

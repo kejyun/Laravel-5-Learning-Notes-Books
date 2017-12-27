@@ -43,3 +43,5 @@ $ brew install php56-pdo-pgsql
 
 ## 參考資料
 * [Laravel: Error [PDOException]: Could not Find Driver in PostgreSQL](http://stackoverflow.com/questions/25329302/laravel-error-pdoexception-could-not-find-driver-in-postgresql)
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

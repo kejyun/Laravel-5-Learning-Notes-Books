@@ -27,3 +27,6 @@
 * [安裝 Memcached](hosting-install-memcached.md)
 * [安裝 Redis](hosting-install-redis.md)
 * [安裝 Let's Encrypt](hosting-install-lets-encrypt.md)
+
+
+!INCLUDE "../kejyun/book/laravel-5-for-beginner.md"

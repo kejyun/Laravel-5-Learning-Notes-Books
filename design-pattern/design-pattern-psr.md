@@ -75,3 +75,6 @@ alias phpCSFixerThisFolder="php-cs-fixer fix ./ --level=psr2"
 * [PHP Coding Standards Fixer](http://cs.sensiolabs.org)
 * [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer)
 * [Adopting PSR-2 - laracasts](https://laracasts.com/series/whats-new-in-laravel-5-1/episodes/1)
+
+
+!INCLUDE "../kejyun/book/laravel-5-for-beginner.md"

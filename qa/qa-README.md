@@ -4,3 +4,6 @@
 
 
 * [Call to undefined method getCachedCompilePath()](qa-call-undefined-method-getCachedCompilePath.md)
+
+
+!INCLUDE "../kejyun/book/laravel-5-for-beginner.md"

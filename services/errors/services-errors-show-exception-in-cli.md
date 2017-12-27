@@ -72,3 +72,6 @@ class Handler extends ExceptionHandler {
 * [錯誤與日誌 - laravel.tw](http://laravel.tw/docs/5.0/errors)
 * [how do I create custom error page in laravel 5](http://stackoverflow.com/questions/28689629/how-do-i-create-custom-error-page-in-laravel-5)
 * [Laravel 5.0 - Custom Error Pages](https://mattstauffer.co/blog/laravel-5.0-custom-error-pages)
+
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

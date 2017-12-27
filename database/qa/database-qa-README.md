@@ -6,3 +6,6 @@
 * [無法取得查詢 Log](database-qa-cannot-get-querylog.md)
 * [使用大量資料的方式新增時無法新增](database-qa-cannot-mass-insert.md)
 * [使用中繼模型繼承 Eloquent 模型造成無法使用大量資料新增](database-qa-cannot-mass-insert-with-extend-model.md)
+
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

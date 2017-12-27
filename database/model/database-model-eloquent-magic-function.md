@@ -87,3 +87,5 @@ $article = \App\Article::latest('published_at')
 * [Eloquent 101 - Laracast](https://laracasts.com/series/laravel-5-fundamentals/episodes/8)
 * [Dates, Mutators, and Scopes - Laracast](https://laracasts.com/series/laravel-5-fundamentals/episodes/11)
 * [Eloquent ORM - Laravel.tw](http://laravel.tw/docs/5.0/eloquent)
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

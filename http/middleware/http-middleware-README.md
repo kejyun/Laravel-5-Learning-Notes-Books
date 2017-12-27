@@ -208,3 +208,5 @@ class Kernel extends HttpKernel {
 
 ## 參考資料
 * [Ogres Are Like Middleware - Laracasts](https://laracasts.com/series/laravel-5-fundamentals/episodes/16)
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

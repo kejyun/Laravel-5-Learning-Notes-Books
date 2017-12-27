@@ -31,3 +31,5 @@ $user->fill($user_info);
 // 儲存資料
 $user->save();
 ```
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

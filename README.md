@@ -2,6 +2,7 @@
 
 ## 作者 : KeJyun
 
+
 ### 書籍網址
 
 | 項目  | 網址 |
@@ -19,6 +20,8 @@
 |  Facebook | http://fb.me/kejyunTaiwan  |
 |  Blog | http://blog.kejyun.com  |
 
+!INCLUDE "kejyun/book/laravel-5-for-beginner.md"
+
 ## 所有 KeJyun 著作
 * [High Scaling Websites Structure Learning Notes 大型網站架構學習筆記](http://kejyuntw.gitbooks.io/high-scaling-websites-structure-learning-notes/)
 * [Laravel 4 學習筆記](http://kejyuntw.gitbooks.io/laravel-4-learning-notes/)
@@ -28,6 +31,3 @@
 * [Web Developer Learning Resource 網頁開發學習資源](http://kejyuntw.gitbooks.io/web-developer-learning-resource/)
 * [Mac OSX 新手入門](http://kejyuntw.gitbooks.io/mac-osx-for-newbie/)
 * [Ruby on Rails 學習筆記](http://kejyuntw.gitbooks.io/ruby-on-rails-learning-note/)
-
-
-<!-- !INCLUDE "kejyun/kejyun.md" -->

@@ -28,3 +28,5 @@ Publishing complete.
 ## 參考資料
 * [Database: Pagination](https://laravel.com/docs/5.4/pagination)
 * [Segmentation fault: 11 when seeding · Issue #3921 · laravel/framework](https://github.com/laravel/framework/issues/3921)
+
+!INCLUDE "../kejyun/book/laravel-5-for-beginner.md"

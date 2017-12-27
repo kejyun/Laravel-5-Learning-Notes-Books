@@ -57,3 +57,5 @@ Route::group(['domain' => 'book.kejyun.dev'], function()
 
 ## 參考資料
 * [Homestead and Subdomains](https://laracasts.com/discuss/channels/general-discussion/homestead-and-subdomains)
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

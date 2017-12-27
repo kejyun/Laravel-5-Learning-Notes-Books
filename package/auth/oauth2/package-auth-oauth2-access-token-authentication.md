@@ -47,3 +47,5 @@ Route::get('/user-private-resource', ['middleware'=>'oauth:user_profile+user_lik
 
 ## 參考資料
 * [Securing your API endpoints](https://github.com/lucadegasperi/oauth2-server-laravel/wiki/Securing-your-API-endpoints#defining-scopes)
+
+!INCLUDE "../../../kejyun/book/laravel-5-for-beginner.md"

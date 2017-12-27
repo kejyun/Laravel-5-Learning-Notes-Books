@@ -113,3 +113,6 @@ Auth::logout();
 
 ## 參考資料
 * [認證 - Laravel.tw](http://laravel.tw/docs/5.0/authentication)
+
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

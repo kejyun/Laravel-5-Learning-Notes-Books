@@ -74,3 +74,5 @@ class EncryptCookies extends BaseEncrypter
     ];
 }
 ```
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

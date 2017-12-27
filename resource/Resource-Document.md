@@ -35,3 +35,6 @@
 ## 指令函式
 * [Laravel Cheat Sheet](http://cheats.jesse-obrien.ca/)
 * [Laravel-Tricks.com](http://laravel-tricks.com/)
+
+
+!INCLUDE "../kejyun/book/laravel-5-for-beginner.md"

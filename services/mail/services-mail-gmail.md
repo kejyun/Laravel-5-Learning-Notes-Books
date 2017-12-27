@@ -27,7 +27,7 @@ return [
   'port'       => 587,
   'from'       => ['address' => 'kejyun@gmail.com', 'name' => 'KeJyun'],
   'encryption' => 'tls',
-  'username'   =>'kejyun@gmail.com',
+  'username'   =>'kejyun@example.com',
   'password'   => 'abcdefghijklmnopqrstuvwxyz123456',
   'sendmail'   => '/usr/sbin/sendmail -bs',
   'pretend'    => false,
@@ -39,7 +39,7 @@ return [
 ```php
 Mail::raw('測試使用 Laravel 5 的 Gmail 寄信服務', function($message)
 {
-    $message->to('kejyun@gmail.com');
+    $message->to('kejyun@example.com');
 });
 ```
 
@@ -49,3 +49,6 @@ Mail::raw('測試使用 Laravel 5 的 Gmail 寄信服務', function($message)
 ## 參考資料
 * [Attempting to get Email to work in Laravel 5](http://stackoverflow.com/questions/29083520/attempting-to-get-email-to-work-in-laravel-5)
 * [郵件 - Laravel.tw](http://laravel.tw/docs/5.0/mail)
+
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

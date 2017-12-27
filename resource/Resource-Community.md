@@ -34,3 +34,6 @@
 * [CodeHeaps](http://www.codeheaps.com/)
 * [Vluzrmos](http://blog.vluzrmos.com.br/category/laravel/)
 * [Graham Campbell](https://gjcampbell.co.uk/)
+
+
+!INCLUDE "../kejyun/book/laravel-5-for-beginner.md"

@@ -155,3 +155,6 @@ $ composer require doctrine/dbal
 ## 參考資料
 * [遷移和資料填充 - Laravel.tw](http://laravel.tw/docs/5.0/migrations)
 * [Migrations - Laracasts](https://laracasts.com/series/laravel-5-fundamentals/episodes/7)
+
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

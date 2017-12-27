@@ -27,3 +27,6 @@ composer install
 
 ## 參考資料
 * [Composer Download](https://getcomposer.org/download/)
+
+
+!INCLUDE "../kejyun/book/laravel-5-for-beginner.md"

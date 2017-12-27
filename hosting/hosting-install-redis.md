@@ -42,3 +42,7 @@ sudo service redis-server restart
 
 ## 參考資料
 * [How To Configure a Redis Cluster on Ubuntu 14.04 | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-configure-a-redis-cluster-on-ubuntu-14-04)
+
+
+
+!INCLUDE "../kejyun/book/laravel-5-for-beginner.md"

@@ -65,3 +65,5 @@ class CustomBaseModel extends Model
 ```
 
 我們的中繼類別，需要傳入資料表欄位的屬性值 `$attributes`，並執行母類別 Eloquent Model 的建構子，這樣我們的 Eloquent 模型就能夠正常運作了！
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

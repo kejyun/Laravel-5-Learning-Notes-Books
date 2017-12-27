@@ -4,3 +4,6 @@
 
 ## Entity 資料顯示
 * [laracasts/presenter](https://github.com/laracasts/Presenter)
+
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

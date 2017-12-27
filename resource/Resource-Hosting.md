@@ -13,3 +13,6 @@
 * [Run Laravel 5.1 on OpenShift](http://djordjekovacevic.com/articles/run-laravel-5.1-on-openshift)
 * [Installing a Laravel app on Heroku](https://mattstauffer.co/blog/installing-a-laravel-app-on-heroku)
 * [Laravel 5 - Pagoda Box Documentation](https://pagodabox.io/docs/framework_laravel)
+
+
+!INCLUDE "../kejyun/book/laravel-5-for-beginner.md"

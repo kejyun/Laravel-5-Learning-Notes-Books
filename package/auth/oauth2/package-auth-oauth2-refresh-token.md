@@ -65,3 +65,5 @@ OAuth2 會將 token 記錄在 `oauth_access_tokens` 資料表，並將關聯的�
 
 ## 參考資料
 * [Refresh Token](https://github.com/lucadegasperi/oauth2-server-laravel/wiki/Implementing-an-Authorization-Server-with-the-Refresh-Token-Grant)
+
+!INCLUDE "../../../kejyun/book/laravel-5-for-beginner.md"

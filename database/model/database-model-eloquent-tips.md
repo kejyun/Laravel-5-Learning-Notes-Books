@@ -24,3 +24,5 @@ $User = new User;
 
 $primary_key_name = $User->getKeyName(); // user_id
 ```
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

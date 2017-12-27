@@ -96,3 +96,7 @@ sudo service php7.0-fpm restart
 * [Install PHP 7 on Ubuntu 14.04 | Enrico Zimuel](http://www.zimuel.it/install-php-7/)
 * [kasparsd/php-7-debian: Install PHP 7 on Debian/Ubuntu](https://github.com/kasparsd/php-7-debian)
 * [Installing php7-fpm with phpredis extension on Ubuntu 14.04](https://gist.github.com/hollodotme/418e9b7c6ebc358e7fda)
+
+
+
+!INCLUDE "../kejyun/book/laravel-5-for-beginner.md"

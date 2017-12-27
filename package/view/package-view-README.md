@@ -5,4 +5,7 @@
 
 ## 最小化
 * [Laravel-HTMLMin](https://github.com/GrahamCampbell/Laravel-HTMLMin)
-    * [HTML Minifier in Laravel 5.*](https://www.youtube.com/watch?v=Ss0NGonNVvc)
+* [HTML Minifier in Laravel 5.*](https://www.youtube.com/watch?v=Ss0NGonNVvc)
+
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

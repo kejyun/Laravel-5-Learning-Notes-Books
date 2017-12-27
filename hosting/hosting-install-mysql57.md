@@ -39,3 +39,6 @@ sudo apt-get install mysql-server-5.7
 ## 參考資料
 * [MySQL :: A Quick Guide to Using the MySQL APT Repository](https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/)
 * [MySQL :: Download MySQL APT Repository](https://dev.mysql.com/downloads/repo/apt/)
+
+
+!INCLUDE "../kejyun/book/laravel-5-for-beginner.md"

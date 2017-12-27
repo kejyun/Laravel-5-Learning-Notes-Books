@@ -71,3 +71,6 @@ $second_check_result = Hash::check($original_password, $second_hash_password);
 
 ## 參考資料
 * [雜湊 - Laravel.tw](http://laravel.tw/docs/5.1/hashing)
+
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

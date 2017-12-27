@@ -426,3 +426,6 @@ var_dump(Carbon::SECONDS_PER_MINUTE);              // int(60)
 ## 參考資料
 * [Carbon - A simple PHP API extension for DateTime.](http://carbon.nesbot.com/)
 * [Carbon - docs](http://carbon.nesbot.com/docs/)
+
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"

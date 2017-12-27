@@ -11,3 +11,6 @@
 * [Laracon US 2014](http://userscape.com/laracon/2014/)
 * [Laracon EU 2013](http://laracon.eu/2013/talks/)
 * [Laracon US 2013](https://www.youtube.com/playlist?list=PLkwAlZpjHQbLcox_S_AgGU24QUfKgXayN)
+
+
+!INCLUDE "../kejyun/book/laravel-5-for-beginner.md"
