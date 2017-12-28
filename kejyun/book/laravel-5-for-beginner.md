@@ -20,28 +20,75 @@
                 </h3>
                 <ul>
                     <li>
-                        <a href="https://goo.gl/Juv97M" target="_blank">
+                        <a href="https://goo.gl/Juv97M"
+                            target="_blank"
+                            alt="博客來-Laravel 5 for beginner 新手道場：優雅運用框架快速開發 PHP 網站"
+                        >
                             博客來
                         </a>
                     </li>
                     <li>
-                        <a href="https://goo.gl/Ym73kH" target="_blank">
+                        <a href="https://goo.gl/Ym73kH"
+                            target="_blank"
+                            alt="Laravel 5 for beginner 新手道場：優雅運用框架快速開發 PHP 網站-金石堂網路書店"
+                        >
                             金石堂網路書店
                         </a>
                     </li>
                     <li>
-                        <a href="https://goo.gl/hMnBCs" target="_blank">
+                        <a href="https://goo.gl/hMnBCs"
+                            target="_blank"
+                            alt="Laravel 5 for beginner 新手道場：優雅運用框架快速開發 PHP 網站- TAAZE 讀冊生活"
+                        >
                             TAAZE 讀冊生活
                         </a>
                     </li>
                     <li>
-                        <a href="https://goo.gl/fa5dWf" target="_blank">
+                        <a href="https://goo.gl/fa5dWf"
+                            target="_blank"
+                            alt="天瓏網路書店-Laravel 5 for beginner 新手道場：優雅運用框架快速開發 PHP 網站"
+                        >
                             天瓏網路書店
                         </a>
                     </li>
                     <li>
-                        <a href="https://goo.gl/nGhPnU" target="_blank">
+                        <a href="https://goo.gl/nGhPnU"
+                            target="_blank"
+                            alt="Laravel 5 for beginner 新手道場－－優雅運用框架快速開發 PHP 網站"
+                        >
                             商務印書館網上書店
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://goo.gl/RptkyY"
+                            target="_blank"
+                            alt="Laravel 5 for beginner 新手道場：優雅運用框架快速開發 PHP 網站-洪可郡 - 三民網路書店"
+                        >
+                            三民網路書店
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://goo.gl/5dXGQ8"
+                            target="_blank"
+                            alt="Laravel 5 for beginner 新手道場：優雅運用框架快速開發 PHP 網站, 城邦阅读花园 - 马来西亚最大网路书店"
+                        >
+                            城邦阅读花园
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://goo.gl/6Zy8yK"
+                            target="_blank"
+                            alt="華文網網路書店：Laravel 5 for beginner 新手道場：優雅運用框架快速開發 PHP 網站．電腦與網路/程式語言◎知．識．服．務．新．思．路◎"
+                        >
+                            華文網網路書店
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://goo.gl/o9msPz"
+                            target="_blank"
+                            alt="新絲路網路書店-Laravel 5 for beginner 新手道場：優雅運用框架快速開發 PHP 網站．電腦與網路/程式語言"
+                        >
+                            新絲路網路書店
                         </a>
                     </li>
                 </ul>
