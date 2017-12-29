@@ -22,6 +22,7 @@
 
 !INCLUDE "kejyun/book/laravel-5-for-beginner.md"
 
+
 ## 所有 KeJyun 著作
 * [High Scaling Websites Structure Learning Notes 大型網站架構學習筆記](http://kejyuntw.gitbooks.io/high-scaling-websites-structure-learning-notes/)
 * [Laravel 4 學習筆記](http://kejyuntw.gitbooks.io/laravel-4-learning-notes/)

@@ -5,5 +5,4 @@
 * [Medis - GUI Manager for Redis](http://getmedis.com/)
 
 
-
 !INCLUDE "../kejyun/book/laravel-5-for-beginner.md"
