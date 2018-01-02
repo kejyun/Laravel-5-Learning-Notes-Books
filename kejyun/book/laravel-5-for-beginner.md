@@ -44,6 +44,14 @@
                         </a>
                     </li>
                     <li>
+                        <a href="https://goo.gl/QiRqXo"
+                            target="_blank"
+                            alt="Laravel 5 for beginner 新手道場：優雅運用框架快速開發 PHP 網站 - PChome 24h書店"
+                        >
+                            PCHome 24h書店
+                        </a>
+                    </li>
+                    <li>
                         <a href="https://goo.gl/fa5dWf"
                             target="_blank"
                             alt="天瓏網路書店-Laravel 5 for beginner 新手道場：優雅運用框架快速開發 PHP 網站"
