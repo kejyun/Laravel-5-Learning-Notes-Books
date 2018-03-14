@@ -19,6 +19,8 @@
     * [使用中繼模型繼承 Eloquent 模型造成無法使用大量資料新增](database/qa/database-qa-cannot-mass-insert-with-extend-model.md)
   * [PostgreSQL](database/postgresql/database-postgresql-README.md)
     * [安裝 PostgreSQL ODBC driver](database/postgresql/database-postgresql-install-odbc-driver.md)
+  * [Redis](database/redis/database-redis-README.md)
+    * [AWS Cluster](database/redis/database-redis-aws-cluster.md)
 * [HTTP](http/http-README.md)
   * [請求](http/request/http-request-README.md)
       * [Cookie](http/request/http-request-cookie-README.md)
