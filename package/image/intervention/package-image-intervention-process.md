@@ -66,6 +66,18 @@ $img->resize(null, 100, function ($constraint) {
 
 
 ```php
+// 固定寬 300px, 高 100px，寬度等比例縮放
+$img->resize(300, 100, function ($constraint) {
+    // 等比例縮放：若兩個寬高比例與原圖不符的話，會以最短邊去做等比例縮放
+    $constraint->aspectRatio();
+});
+```
+
+![resize to 300x100 aspectRatio](./images/resize-to-300x100-aspectRatio.jpg)
+
+**resize to 300x100 aspectRatio**
+
+```php
 $img->resize(null, 1000, function ($constraint) {
     // 等比例縮放
     $constraint->aspectRatio();
