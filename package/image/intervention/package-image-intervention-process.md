@@ -25,7 +25,7 @@ $img->resize(300, 100);
 $img->resize(300, null);
 ```
 
-![resize to 300xnull](./images/resize-to-300xnull.jpg)
+![resize to 300xnull](./images/resize-to-300xNull.jpg)
 
 **resize to 300xnull**
 
@@ -35,7 +35,7 @@ $img->resize(300, null);
 $img->resize(null, 100);
 ```
 
-![resize to nullx100](./images/resize-to-nullx100.jpg)
+![resize to nullx100](./images/resize-to-Nullx100.jpg)
 
 **resize to nullx100**
 
