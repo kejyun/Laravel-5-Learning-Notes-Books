@@ -58,3 +58,6 @@ DB::table('users')->where('votes', '>', 100)->lockForUpdate()->get();
 * [使用 Laravel sharedLock 与 lockForUpdate 进行数据表行锁 - Laravel - 大象笔记](https://www.sunzhongwei.com/using-laravel-sharedlock-and-lockforupdate-for-table-row-locks)
 * [transactions - MySQL InnoDB: Difference Between `FOR UPDATE` and `LOCK IN SHARE MODE` - Stack Overflow](https://stackoverflow.com/questions/32827650/mysql-innodb-difference-between-for-update-and-lock-in-share-mode)
 * [MySQL InnoDB Transaction – 交易指南 (SELECT … FOR UPDATE) – YIDAS Code](https://code.yidas.com/mysql-innodb-transaction/)
+
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"
