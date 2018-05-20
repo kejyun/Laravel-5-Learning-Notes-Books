@@ -4,13 +4,65 @@
 
 ## 在 Laravel 鎖定資料庫資料
 
+### 範例
+
+#### ***sharedLock***
+
 ```php
-DB::table('users')->where('votes', '>', 100)->sharedLock()->get();
+DB::table('users')
+    ->where('votes', '>', 100)
+    ->sharedLock()
+    ->get();
 ```
+
+```sql
+select * from `users`
+where `votes` > '100' lock in share mode
+```
+
+```php
+DB::table('tasks')
+    ->select('details', 'created_at')
+    ->whereDate('created_at', '=', '2011-11-11')
+    ->sharedLock()
+    ->get();
+```
+
+```sql
+select `details`, `created_at` from `tasks`
+where date(`created_at`) = '2011-11-11' lock in share mode
+```
+
+可以使用 `->sharedLock()` 或 `->lock(false)` 去做 sharedLock
+
+#### ***lockForUpdate***
+
 
 ```php
 DB::table('users')->where('votes', '>', 100)->lockForUpdate()->get();
 ```
+
+```sql
+select * from `users`
+where `votes` > '100' for update
+```
+
+
+```php
+DB::table('tasks')
+    ->select('details', 'created_at')
+    ->whereDate('created_at', '>', '2016-11-24')
+    ->lockForUpdate()
+    ->get();
+```
+
+
+```sql
+select `details`, `created_at` from `tasks`
+where date(`created_at`) = '2016-11-24' for update
+```
+
+可以使用 `->lockForUpdate()` 或 `->lock(true)` 去做 lockForUpdate
 
 ## 不同的地方
 
@@ -54,10 +106,13 @@ UPDATE child_codes SET counter_field = counter_field + 1;
 
 ## 參考資料
 * [Database: Query Builder - Laravel - The PHP Framework For Web Artisans](https://laravel.com/docs/5.2/queries#pessimistic-locking)
+* [Laravel 5: Query Builder Helpers – locks – Jeff's Reference](http://laravel.at.jeffsbox.eu/laravel-5-query-builder-locks)
+* [Pessimistic Locking in Laravel 5](http://bladephp.co/pessimistic-locking-laravel5)
 * [使用 Laravel sharedLock 与 lockForUpdate 进行数据表行锁 - Laravel - 大象笔记](https://www.sunzhongwei.com/using-laravel-sharedlock-and-lockforupdate-for-table-row-locks)
 * [MySQL :: MySQL 8.0 Reference Manual :: 15.5.2.4 Locking Reads](https://dev.mysql.com/doc/refman/8.0/en/innodb-locking-reads.html)
 * [transactions - MySQL InnoDB: Difference Between `FOR UPDATE` and `LOCK IN SHARE MODE` - Stack Overflow](https://stackoverflow.com/questions/32827650/mysql-innodb-difference-between-for-update-and-lock-in-share-mode)
 * [MySQL InnoDB Transaction – 交易指南 (SELECT … FOR UPDATE) – YIDAS Code](https://code.yidas.com/mysql-innodb-transaction/)
+* [Pessimistic vs Optimistic Locking in Laravel – Ali AslRousta – Medium](https://medium.com/@aslrousta/pessimistic-vs-optimistic-locking-in-laravel-264ec0b1ba2)
 
 
 !INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"
