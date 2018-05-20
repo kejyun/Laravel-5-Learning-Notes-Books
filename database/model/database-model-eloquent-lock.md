@@ -2,6 +2,16 @@
 
 鎖定資料有 `shared lock (sharedLock)` 與 `lock for update (lockForUpdate)`，兩者都可以避面同一行資料被其他的 transaction update
 
+## 在 Laravel 鎖定資料庫資料
+
+```php
+DB::table('users')->where('votes', '>', 100)->sharedLock()->get();
+```
+
+```php
+DB::table('users')->where('votes', '>', 100)->lockForUpdate()->get();
+```
+
 ## 不同的地方
 
 ## *定義*
@@ -37,16 +47,6 @@ SELECT * FROM parent WHERE NAME = 'Jones' FOR SHARE;
 ```sql
 SELECT counter_field FROM child_codes FOR UPDATE;
 UPDATE child_codes SET counter_field = counter_field + 1;
-```
-
-## 在 Laravel 鎖定資料庫資料
-
-```php
-DB::table('users')->where('votes', '>', 100)->sharedLock()->get();
-```
-
-```php
-DB::table('users')->where('votes', '>', 100)->lockForUpdate()->get();
 ```
 
 
