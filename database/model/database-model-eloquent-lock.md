@@ -53,9 +53,9 @@ UPDATE child_codes SET counter_field = counter_field + 1;
 
 
 ## 參考資料
-* [MySQL :: MySQL 8.0 Reference Manual :: 15.5.2.4 Locking Reads](https://dev.mysql.com/doc/refman/8.0/en/innodb-locking-reads.html)
 * [Database: Query Builder - Laravel - The PHP Framework For Web Artisans](https://laravel.com/docs/5.2/queries#pessimistic-locking)
 * [使用 Laravel sharedLock 与 lockForUpdate 进行数据表行锁 - Laravel - 大象笔记](https://www.sunzhongwei.com/using-laravel-sharedlock-and-lockforupdate-for-table-row-locks)
+* [MySQL :: MySQL 8.0 Reference Manual :: 15.5.2.4 Locking Reads](https://dev.mysql.com/doc/refman/8.0/en/innodb-locking-reads.html)
 * [transactions - MySQL InnoDB: Difference Between `FOR UPDATE` and `LOCK IN SHARE MODE` - Stack Overflow](https://stackoverflow.com/questions/32827650/mysql-innodb-difference-between-for-update-and-lock-in-share-mode)
 * [MySQL InnoDB Transaction – 交易指南 (SELECT … FOR UPDATE) – YIDAS Code](https://code.yidas.com/mysql-innodb-transaction/)
 
