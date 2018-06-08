@@ -166,6 +166,19 @@ class ArticleController extends Controller {
 ```
 
 
+## 使用者資料
+
+取得 User Agent、Referrer
+
+```php
+<?php
+// User Agent
+request()->server('HTTP_USER_AGENT');
+
+// Referrer
+request()->server('HTTP_REFERER')
+```
+
 
 
 
