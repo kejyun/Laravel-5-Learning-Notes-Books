@@ -69,3 +69,6 @@ LOG_SLACK_WEBHOOK_URL=https://hooks.slack.com/services/XXXXXXXXXX
 * [Laravel Slack - Laravel Tips 'N Tricks](http://laraveltnt.com/laravel-slack/)
 * [gpressutto5/laravel-slack: Slack notification for Laravel as it should be. Easy, fast, simple and highly testable.](https://github.com/gpressutto5/laravel-slack)
 * [Enviando logs para o Slack no Laravel - YouTube](https://www.youtube.com/watch?v=FuNZCdv8u-o)
+
+
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"
