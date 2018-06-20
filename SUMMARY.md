@@ -50,6 +50,7 @@
     * [日誌巨集](services/errors/services-errors-log-macro.md)
     * [日誌套件](services/errors/services-errors-log-packages.md)
       * [Log Viewer](services/errors/services-errors-log-packages-log-viewer.md)
+      * [Slack Log](services/errors/services-errors-log-packages-slack-log.md)
     * [日誌服務](services/errors/services-errors-log-service.md)
   * [加密](services/encryption/services-encryption-README.md)
   * [雜湊](services/hashing/services-hashing-README.md)
