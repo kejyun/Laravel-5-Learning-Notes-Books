@@ -56,6 +56,7 @@
             * [Understand.io](services/errors/services-errors-log-service-understand-io.md)
             * [Sentry.io](services/errors/services-errors-log-service-sentry-io.md)
             * [Bugsnag](services/errors/services-errors-log-service-bugsnag.md)
+            * [Rollbar](services/errors/services-errors-log-service-rollbar.md)
             * [CloudWatch Log](services/errors/services-errors-log-service-cloudwatch.md)
     * [加密](services/encryption/services-encryption-README.md)
     * [雜湊](services/hashing/services-hashing-README.md)

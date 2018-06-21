@@ -25,7 +25,7 @@ return [
 
 **3. 設定 API KEY**
 
-到 `.env` 檔案設定 Bugsnag API KEY，根據官方安裝引導可以取得此 API KEY
+到 `.env` 檔案設定 API KEY，根據官方安裝引導可以取得此 API KEY
 
 ```shell
 # .env
@@ -33,6 +33,7 @@ BUGSNAG_API_KEY=<API_KEY>
 ```
 
 ![Bugsnag API KEY](./images/bugsnag-api-key.png)
+
 
 **3. 設定檔**
 
