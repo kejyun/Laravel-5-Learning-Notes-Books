@@ -42,6 +42,7 @@
         * [Supervisor 啟動 queue](services/queue/services-queue-supervisor.md)
     * [輔助方法 (Helpers)](services/helpers/services-helpers-README.md)
         * [自定義輔助方法](services/helpers/services-custom-helpers-README.md)
+        * [請求資訊](services/helpers/services-request-helpers-README.md)
     * [單元測試 (Unit Test)](services/unit-test/services-unit-test-README.md)
         * [Post CSRF 錯誤](services/unit-test/services-unit-test-post-csrf.md)
         * [登入使用者上傳檔案](services/unit-test/services-unit-test-login-and-upload-file.md)
