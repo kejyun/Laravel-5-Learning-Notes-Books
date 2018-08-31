@@ -251,6 +251,7 @@ class PackageController extends Controller {
 * [Laravel 開發擴充套件包基本流程 - ITW01](https://itw01.com/GU2REOO.html)
 * [模組化 套件 開發自己的Package - Alvin Chen Club](http://www.alvinchen.club/2018/05/04/%E6%A8%A1%E7%B5%84%E5%8C%96-%E5%A5%97%E4%BB%B6-%E9%96%8B%E7%99%BC%E8%87%AA%E5%B7%B1%E7%9A%84package/)
 * [Laravel 5 套件開發設定](https://ronald.tw/laravel-5-package-development-setting/)
+* [Laravel 5.5 Package Development – Markus Tripp – Medium](https://medium.com/@markustripp/laravel-5-5-package-development-e72f3e7a8f38)
 
 
 !INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"
