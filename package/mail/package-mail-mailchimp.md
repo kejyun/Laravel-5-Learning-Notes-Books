@@ -428,4 +428,4 @@ $MemberActivity = [
 * [★ Easily integrate MailChimp in Laravel 5 - Freek Van der Herten's blog on PHP and Laravel](https://murze.be/easily-integrate-mailchimp-in-laravel-5)
 
 
-!INCLUDE "../../../kejyun/book/laravel-5-for-beginner.md"
+!INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"
