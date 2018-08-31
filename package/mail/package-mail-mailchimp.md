@@ -426,6 +426,7 @@ $MemberActivity = [
 * [spatie/laravel-newsletter: Manage newsletters in Laravel](https://github.com/spatie/laravel-newsletter)
 * [Laravel 5.1~5.4：spatie/laravel-newsletter: Manage newsletters in Laravel](https://github.com/spatie/laravel-newsletter/tree/3.7.0)
 * [★ Easily integrate MailChimp in Laravel 5 - Freek Van der Herten's blog on PHP and Laravel](https://murze.be/easily-integrate-mailchimp-in-laravel-5)
+* [Guide On Laravel 5 and Mailchimp Newsletter- Helpful In Laravel Services](https://medium.com/@AddWebSolution/guide-on-laravel-5-and-mailchimp-newsletter-helpful-in-laravel-services-f56a390ad9b9)
 
 
 !INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"
