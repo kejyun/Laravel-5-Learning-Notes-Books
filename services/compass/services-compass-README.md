@@ -52,3 +52,5 @@ gulp watch
 
 ## 參考資料
 * [RVM: Ruby Version Manager - Installing RVM](https://rvm.io/rvm/install)
+* [Install the Compass Stylesheet Authoring Framework | Compass Documentation](http://compass-style.org/install/)
+* [creationix/nvm: Node Version Manager - Simple bash script to manage multiple active node.js versions](https://github.com/creationix/nvm)
