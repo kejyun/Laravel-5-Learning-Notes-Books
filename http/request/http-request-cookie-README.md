@@ -75,4 +75,24 @@ class EncryptCookies extends BaseEncrypter
 }
 ```
 
+## 設定 Cookie
+
+```php
+cookie_minutes = 3;
+Cookie::queue('cookie_name', 'cookie_value', $cookie_minutes);
+```
+
+
+## 取得 Cookie
+
+```php
+Cookie::get('cookie_name');
+```
+
+
+## Cookie 讀取不到問題
+
+在設定完 Cookie 後，不可以預先在回傳 response 之前就使用 `echo`、`var_dump` 把資料印出來，因為這樣會預先送 header，導致 Cookie 無法正常設定。
+
+
 !INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"
