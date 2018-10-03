@@ -88,6 +88,7 @@ $ php artisan jwt:generate
 * [使用json web token](http://haomou.net/2014/08/13/2014_web_token/)
 * [Json Web Tokens: Introduction](http://angular-tips.com/blog/2014/05/json-web-tokens-introduction/)
 * [Where to Store Your JWTs - Cookies vs HTML5 Web Storage](https://stormpath.com/blog/where-to-store-your-jwts-cookies-vs-html5-web-storage/)
+* [UniSharp/laravel-jwt: Auth guard and middleware for jwt refesh in a concurrency use case, e.g. single page web applications.](https://github.com/UniSharp/laravel-jwt)
 
 
 !INCLUDE "../../../kejyun/book/laravel-5-for-beginner.md"
