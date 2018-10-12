@@ -3,7 +3,10 @@
 ## 下載 composer
 
 ```shell
-curl -sS https://getcomposer.org/installer | php
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('SHA384', 'composer-setup.php') === '93b54496392c062774670ac18b134c3b3a95e5a5e5c8f1a9f115f203b75bf9a129d5daa8ba6a13e2cc8a1da0806388a8') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
 ```
 
 ## 將 composer 執行檔移動到系統環境變數路徑
@@ -19,7 +22,7 @@ sudo mv composer.phar /usr/bin/composer
 在我們將程式使用 git 推送到主機時，vendor 下所有的套件都不會被推送到主機，所以程式碼上去主機後，需要自己作安裝套件的動作
 
 ```shell
-cd /home/kejyun/laravel52
+cd /home/kejyun/laravel55
 composer install
 ```
 
