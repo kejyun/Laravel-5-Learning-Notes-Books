@@ -82,10 +82,29 @@ $ php artisan jwt:generate
 | providers.auth | 取得受驗證使用者的類別物件 | Closure Function | Tymon\JWTAuth\Providers\ Auth\IlluminateAuthAdapter |
 | providers.storage | 儲存黑名單 token 的快取物件，token 將會儲存到它過期為止 | Closure Function | Tymon\JWTAuth\Providers\ Storage\IlluminateCacheAdapter |
 
+
+## JWT Claims
+
+***Registered Claims***
+
+| 參數名稱  | 說明  |
+|---|---|
+| iss | 發行 JWT token 的人 |
+| sub | 主題 JWT token |
+| iat | 發行 JWT token 的時間，可以判斷這個 token 產生出來多久了 |
+| exp | 有效期限，一定要大於現在時間 |
+| nbf | 生效時間，在這個時間以前，無法處理此 JWT token |
+| jti | JWT 唯一識別值，防止 JWT 被重複使用 |
+
+***Public Claims***
+
+我們公開放到 JWT token 的資訊
+
+
 ## 參考資料
 * [tymondesigns/jwt-auth - Installation](https://github.com/tymondesigns/jwt-auth/wiki/Installation)
 * [tymondesigns/jwt-auth - Configuration](https://github.com/tymondesigns/jwt-auth/wiki/Configuration)
-* [使用json web token](http://haomou.net/2014/08/13/2014_web_token/)
+* [Node 實作 jwt 驗證 API | DEVLOG of andyyou](https://andyyou.github.io/2016/06/09/implement-jwt-with-understanding/)
 * [Json Web Tokens: Introduction](http://angular-tips.com/blog/2014/05/json-web-tokens-introduction/)
 * [Where to Store Your JWTs - Cookies vs HTML5 Web Storage](https://stormpath.com/blog/where-to-store-your-jwts-cookies-vs-html5-web-storage/)
 * [UniSharp/laravel-jwt: Auth guard and middleware for jwt refesh in a concurrency use case, e.g. single page web applications.](https://github.com/UniSharp/laravel-jwt)

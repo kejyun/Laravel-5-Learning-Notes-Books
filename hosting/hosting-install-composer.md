@@ -25,8 +25,39 @@ composer install
 
 這樣我們就完成了 composer 的安裝跟安裝 Laravel 專案套件了
 
+
+## proc_open(): fork failed - Cannot allocate memory 無法配置記憶體安裝套件
+
+**1. 可以將 php.ini 的 memory_limit 提高**
+
+```
+vim /etc/php/7.1/fpm/php.ini
+vim /etc/php/7.1/cli/php.ini
+```
+
+```
+memory_limit = 1024M
+```
+
+**2. 使用 SWAP 增加系統虛擬記憶體**
+
+```
+sudo -s
+cd /var
+fallocate -l 4G swapfile.1
+chmod 600 swapfile.1
+
+mkswap /var/swapfile.1
+swapon /var/swapfile.1
+```
+
+* [虛擬記憶體（SWAP） · ubuntu 學習筆記](https://kejyuntw.gitbooks.io/ubuntu-learning-notes/system/system-virtual-memory.html)
+
+
 ## 參考資料
 * [Composer Download](https://getcomposer.org/download/)
+
+
 
 
 !INCLUDE "../kejyun/book/laravel-5-for-beginner.md"
