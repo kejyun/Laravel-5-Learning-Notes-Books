@@ -111,8 +111,17 @@ Auth::logout();
 ```
 
 
+## 登出其他裝置使用者
+
+> Laravel 5.6 or higher
+
+```php
+Auth::logoutOtherDevices($password);
+```
+
 ## 參考資料
 * [認證 - Laravel.tw](http://laravel.tw/docs/5.0/authentication)
+* [Authentication - Laravel - The PHP Framework For Web Artisans](https://laravel.com/docs/5.6/authentication#invalidating-sessions-on-other-devices)
 
 
 !INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"
