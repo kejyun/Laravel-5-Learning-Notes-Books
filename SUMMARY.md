@@ -47,6 +47,7 @@
     * [單元測試 (Unit Test)](services/unit-test/services-unit-test-README.md)
         * [Post CSRF 錯誤](services/unit-test/services-unit-test-post-csrf.md)
         * [Ajax Request & JSON Response](services/unit-test/services-unit-test-ajax-request-json-response.md)
+        * [Assert](services/unit-test/services-unit-test-assert.md)
         * [登入使用者上傳檔案](services/unit-test/services-unit-test-login-and-upload-file.md)
     * [錯誤與日誌 Log](services/errors/services-errors-README.md)
         * [在單元測試顯示例外](services/errors/services-errors-show-exception-in-cli.md)
