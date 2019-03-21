@@ -1,5 +1,4 @@
-# 架構設計準則（2017 年版本）
-
+# Service & Repository 架構設計準則（2017 年版本）
 
 傳統的 MVC（Model, View, Controller） 框架，當 Controller 收到請求之後，我們會在 Controller 內直接透過 Model 去撈取資料庫的資料，並在 Controller 做資料驗證、整合、快取、商業邏輯判斷...等等的工作。
 
