@@ -1,0 +1,2962 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Service & Repository · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="structure-combination-cache-manager-structure-principle.html" />
+    
+    
+    <link rel="prev" href="structure-README.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介紹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../environment/Environment-README.html">
+            
+                <a href="../environment/Environment-README.html">
+            
+                    
+                    環境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../environment/Environment-Dot-Env-File.html">
+            
+                <a href="../environment/Environment-Dot-Env-File.html">
+            
+                    
+                    .env 檔案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../environment/Environment-Homestead-README.html">
+            
+                <a href="../environment/Environment-Homestead-README.html">
+            
+                    
+                    Homestead
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../environment/Environment-Laradock-README.md">
+            
+                <span>
+            
+                    
+                    Laradock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../environment/Environment-Composer-README.md">
+            
+                <span>
+            
+                    
+                    Composer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../database/database-README.html">
+            
+                <a href="../database/database-README.html">
+            
+                    
+                    資料庫
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../database/migration/database-migration-README.html">
+            
+                <a href="../database/migration/database-migration-README.html">
+            
+                    
+                    Migration (遷移)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../database/model/database-model-README.html">
+            
+                <a href="../database/model/database-model-README.html">
+            
+                    
+                    Eloquent Model (模型)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../database/model/database-model-eloquent-config.html">
+            
+                <a href="../database/model/database-model-eloquent-config.html">
+            
+                    
+                    設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../database/model/database-model-eloquent-relationships.html">
+            
+                <a href="../database/model/database-model-eloquent-relationships.html">
+            
+                    
+                    關聯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../database/model/database-model-eloquent-magic-function.html">
+            
+                <a href="../database/model/database-model-eloquent-magic-function.html">
+            
+                    
+                    魔術函式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../database/model/database-model-eloquent-apply.html">
+            
+                <a href="../database/model/database-model-eloquent-apply.html">
+            
+                    
+                    使用 Eloquent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="../database/model/database-model-eloquent-lock.html">
+            
+                <a href="../database/model/database-model-eloquent-lock.html">
+            
+                    
+                    鎖定資料 Lock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.6" data-path="../database/model/database-model-eloquent-tips.html">
+            
+                <a href="../database/model/database-model-eloquent-tips.html">
+            
+                    
+                    小技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../database/qa/database-qa-README.html">
+            
+                <a href="../database/qa/database-qa-README.html">
+            
+                    
+                    常見問題
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../database/qa/database-qa-cannot-get-querylog.html">
+            
+                <a href="../database/qa/database-qa-cannot-get-querylog.html">
+            
+                    
+                    無法取得查詢 Log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../database/qa/database-qa-cannot-mass-insert.html">
+            
+                <a href="../database/qa/database-qa-cannot-mass-insert.html">
+            
+                    
+                    使用大量資料的方式新增時無法新增
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../database/qa/database-qa-cannot-mass-insert-with-extend-model.html">
+            
+                <a href="../database/qa/database-qa-cannot-mass-insert-with-extend-model.html">
+            
+                    
+                    使用中繼模型繼承 Eloquent 模型造成無法使用大量資料新增
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../database/postgresql/database-postgresql-README.html">
+            
+                <a href="../database/postgresql/database-postgresql-README.html">
+            
+                    
+                    PostgreSQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../database/postgresql/database-postgresql-install-odbc-driver.html">
+            
+                <a href="../database/postgresql/database-postgresql-install-odbc-driver.html">
+            
+                    
+                    安裝 PostgreSQL ODBC driver
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../database/redis/database-redis-README.html">
+            
+                <a href="../database/redis/database-redis-README.html">
+            
+                    
+                    Redis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../database/redis/database-redis-aws-cluster.html">
+            
+                <a href="../database/redis/database-redis-aws-cluster.html">
+            
+                    
+                    AWS Cluster
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../http/http-README.html">
+            
+                <a href="../http/http-README.html">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="../http/request/http-request-README.html">
+            
+                <a href="../http/request/http-request-README.html">
+            
+                    
+                    請求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="../http/request/http-request-cookie-README.html">
+            
+                <a href="../http/request/http-request-cookie-README.html">
+            
+                    
+                    Cookie
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../http/route/http-route-README.html">
+            
+                <a href="../http/route/http-route-README.html">
+            
+                    
+                    路由 (Route)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.7.1" data-path="../http/route/http-sub-domain-route.html">
+            
+                <a href="../http/route/http-sub-domain-route.html">
+            
+                    
+                    子網域路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../http/middleware/http-middleware-README.html">
+            
+                <a href="../http/middleware/http-middleware-README.html">
+            
+                    
+                    中介層 (Middleware)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.8.1" data-path="../http/middleware/http-middleware-etag-middleware.html">
+            
+                <a href="../http/middleware/http-middleware-etag-middleware.html">
+            
+                    
+                    ETag Middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../view/view-README.html">
+            
+                <a href="../view/view-README.html">
+            
+                    
+                    視圖 (View)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../view/view-inject-class.html">
+            
+                <a href="../view/view-inject-class.html">
+            
+                    
+                    將 Class 綁定到視圖
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../services/services-README.html">
+            
+                <a href="../services/services-README.html">
+            
+                    
+                    服務
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../services/auth/services-auth-README.html">
+            
+                <a href="../services/auth/services-auth-README.html">
+            
+                    
+                    認證登入（Auth）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../services/mail/services-mail-README.html">
+            
+                <a href="../services/mail/services-mail-README.html">
+            
+                    
+                    郵件（Mail）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../services/mail/services-mail-gmail.html">
+            
+                <a href="../services/mail/services-mail-gmail.html">
+            
+                    
+                    使用 Gmail 寄信
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../services/mail/services-mail-mailgun.html">
+            
+                <a href="../services/mail/services-mail-mailgun.html">
+            
+                    
+                    使用 Mailgun 寄信
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../services/queue/services-queue-README.html">
+            
+                <a href="../services/queue/services-queue-README.html">
+            
+                    
+                    隊列（Queue）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../services/queue/services-queue-database.html">
+            
+                <a href="../services/queue/services-queue-database.html">
+            
+                    
+                    database
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../services/queue/services-queue-async.html">
+            
+                <a href="../services/queue/services-queue-async.html">
+            
+                    
+                    非同步（async）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.3" data-path="../services/queue/services-queue-supervisor.html">
+            
+                <a href="../services/queue/services-queue-supervisor.html">
+            
+                    
+                    Supervisor 啟動 queue
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../services/helpers/services-helpers-README.html">
+            
+                <a href="../services/helpers/services-helpers-README.html">
+            
+                    
+                    輔助方法 (Helpers)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.4.1" data-path="../services/helpers/services-custom-helpers-README.html">
+            
+                <a href="../services/helpers/services-custom-helpers-README.html">
+            
+                    
+                    自定義輔助方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.2" data-path="../services/helpers/services-request-helpers-README.html">
+            
+                <a href="../services/helpers/services-request-helpers-README.html">
+            
+                    
+                    請求資訊
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../services/unit-test/services-unit-test-README.html">
+            
+                <a href="../services/unit-test/services-unit-test-README.html">
+            
+                    
+                    單元測試 (Unit Test)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.5.1" data-path="../services/unit-test/services-unit-test-post-csrf.html">
+            
+                <a href="../services/unit-test/services-unit-test-post-csrf.html">
+            
+                    
+                    Post CSRF 錯誤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.2" data-path="../services/unit-test/services-unit-test-ajax-request-json-response.html">
+            
+                <a href="../services/unit-test/services-unit-test-ajax-request-json-response.html">
+            
+                    
+                    Ajax Request & JSON Response
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.3" data-path="../services/unit-test/services-unit-test-assert.html">
+            
+                <a href="../services/unit-test/services-unit-test-assert.html">
+            
+                    
+                    Assert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.4" data-path="../services/unit-test/services-unit-test-login-and-upload-file.html">
+            
+                <a href="../services/unit-test/services-unit-test-login-and-upload-file.html">
+            
+                    
+                    登入使用者上傳檔案
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../services/errors/services-errors-README.html">
+            
+                <a href="../services/errors/services-errors-README.html">
+            
+                    
+                    錯誤與日誌 Log
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.6.1" data-path="../services/errors/services-errors-show-exception-in-cli.html">
+            
+                <a href="../services/errors/services-errors-show-exception-in-cli.html">
+            
+                    
+                    在單元測試顯示例外
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6.2" data-path="../services/errors/services-errors-log-level.html">
+            
+                <a href="../services/errors/services-errors-log-level.html">
+            
+                    
+                    日誌記錄層級
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6.3" data-path="../services/errors/services-errors-log-macro.html">
+            
+                <a href="../services/errors/services-errors-log-macro.html">
+            
+                    
+                    日誌巨集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6.4" data-path="../services/errors/services-errors-log-packages.html">
+            
+                <a href="../services/errors/services-errors-log-packages.html">
+            
+                    
+                    日誌套件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.6.4.1" data-path="../services/errors/services-errors-log-packages-log-viewer.html">
+            
+                <a href="../services/errors/services-errors-log-packages-log-viewer.html">
+            
+                    
+                    Log Viewer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6.4.2" data-path="../services/errors/services-errors-log-packages-slack-log.html">
+            
+                <a href="../services/errors/services-errors-log-packages-slack-log.html">
+            
+                    
+                    Slack Log
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6.5" data-path="../services/errors/services-errors-log-service.html">
+            
+                <a href="../services/errors/services-errors-log-service.html">
+            
+                    
+                    日誌服務
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.6.5.1" data-path="../services/errors/services-errors-log-service-understand-io.html">
+            
+                <a href="../services/errors/services-errors-log-service-understand-io.html">
+            
+                    
+                    Understand.io
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6.5.2" data-path="../services/errors/services-errors-log-service-sentry-io.html">
+            
+                <a href="../services/errors/services-errors-log-service-sentry-io.html">
+            
+                    
+                    Sentry.io
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6.5.3" data-path="../services/errors/services-errors-log-service-bugsnag.html">
+            
+                <a href="../services/errors/services-errors-log-service-bugsnag.html">
+            
+                    
+                    Bugsnag
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6.5.4" data-path="../services/errors/services-errors-log-service-rollbar.html">
+            
+                <a href="../services/errors/services-errors-log-service-rollbar.html">
+            
+                    
+                    Rollbar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6.5.5" data-path="../services/errors/services-errors-log-service-cloudwatch.html">
+            
+                <a href="../services/errors/services-errors-log-service-cloudwatch.html">
+            
+                    
+                    CloudWatch Log
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../services/encryption/services-encryption-README.html">
+            
+                <a href="../services/encryption/services-encryption-README.html">
+            
+                    
+                    加密
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../services/hashing/services-hashing-README.html">
+            
+                <a href="../services/hashing/services-hashing-README.html">
+            
+                    
+                    雜湊
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../services/scheduling/services-scheduling-README.html">
+            
+                <a href="../services/scheduling/services-scheduling-README.html">
+            
+                    
+                    任務排程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../services/elixir/services-elixir-README.html">
+            
+                <a href="../services/elixir/services-elixir-README.html">
+            
+                    
+                    Elixir
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.10.1" data-path="../services/elixir/services-elixir-combine-css-and-js.html">
+            
+                <a href="../services/elixir/services-elixir-combine-css-and-js.html">
+            
+                    
+                    使用 Elixir 合併 CSS 與 JS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../services/compass/services-compass-README.html">
+            
+                <a href="../services/compass/services-compass-README.html">
+            
+                    
+                    Compass
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../api/api-README.html">
+            
+                <a href="../api/api-README.html">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../design-pattern/design-pattern-README.html">
+            
+                <a href="../design-pattern/design-pattern-README.html">
+            
+                    
+                    設計模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../design-pattern/design-pattern-service-container.html">
+            
+                <a href="../design-pattern/design-pattern-service-container.html">
+            
+                    
+                    服務容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../design-pattern/design-pattern-psr.html">
+            
+                <a href="../design-pattern/design-pattern-psr.html">
+            
+                    
+                    PSR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../design-pattern/design-pattern-model.html">
+            
+                <a href="../design-pattern/design-pattern-model.html">
+            
+                    
+                    Model 模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.3.1" data-path="../design-pattern/design-pattern-model-coding-structure-principle.html">
+            
+                <a href="../design-pattern/design-pattern-model-coding-structure-principle.html">
+            
+                    
+                    架構設計準則
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../design-pattern/design-pattern-learning-resource.html">
+            
+                <a href="../design-pattern/design-pattern-learning-resource.html">
+            
+                    
+                    學習資源
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="structure-README.html">
+            
+                <a href="structure-README.html">
+            
+                    
+                    程式架構規範
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.8.1" data-path="structure-service-repository-structure-principle.html">
+            
+                <a href="structure-service-repository-structure-principle.html">
+            
+                    
+                    Service & Repository
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="structure-combination-cache-manager-structure-principle.html">
+            
+                <a href="structure-combination-cache-manager-structure-principle.html">
+            
+                    
+                    Combination & CacheManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../package/package-README.html">
+            
+                <a href="../package/package-README.html">
+            
+                    
+                    套件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../package/development/package-development-README.html">
+            
+                <a href="../package/development/package-development-README.html">
+            
+                    
+                    套件開發
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../package/image/package-image-README.html">
+            
+                <a href="../package/image/package-image-README.html">
+            
+                    
+                    圖片
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.2.1" data-path="../package/image/intervention/package-image-intervention.html">
+            
+                <a href="../package/image/intervention/package-image-intervention.html">
+            
+                    
+                    intervention
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.2.1.1" data-path="../package/image/intervention/package-image-intervention-process.html">
+            
+                <a href="../package/image/intervention/package-image-intervention-process.html">
+            
+                    
+                    圖片處理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.1.2" data-path="../package/image/intervention/package-image-intervention-other.html">
+            
+                <a href="../package/image/intervention/package-image-intervention-other.html">
+            
+                    
+                    其他圖片處理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../package/chart/package-chart-README.html">
+            
+                <a href="../package/chart/package-chart-README.html">
+            
+                    
+                    圖表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../package/debug/package-debug-README.html">
+            
+                <a href="../package/debug/package-debug-README.html">
+            
+                    
+                    Debug
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.4.1" data-path="../package/debug/package-debug-artisan-tail.html">
+            
+                <a href="../package/debug/package-debug-artisan-tail.html">
+            
+                    
+                    Artisan tail
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../package/tool/package-tool-README.html">
+            
+                <a href="../package/tool/package-tool-README.html">
+            
+                    
+                    工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.5.1" data-path="../package/tool/package-tool-carbon.html">
+            
+                <a href="../package/tool/package-tool-carbon.html">
+            
+                    
+                    Carbon
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../package/design-pattern/package-design-pattern-README.html">
+            
+                <a href="../package/design-pattern/package-design-pattern-README.html">
+            
+                    
+                    設計模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../package/text/package-text-README.html">
+            
+                <a href="../package/text/package-text-README.html">
+            
+                    
+                    文字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../package/view/package-view-README.html">
+            
+                <a href="../package/view/package-view-README.html">
+            
+                    
+                    視圖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="../package/mail/package-mail-README.html">
+            
+                <a href="../package/mail/package-mail-README.html">
+            
+                    
+                    郵件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.9.1" data-path="../package/mail/package-mail-mailchimp.html">
+            
+                <a href="../package/mail/package-mail-mailchimp.html">
+            
+                    
+                    Mailchimp
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10" data-path="../package/dashboard/package-dashboard-README.html">
+            
+                <a href="../package/dashboard/package-dashboard-README.html">
+            
+                    
+                    Dashboard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.11" data-path="../package/platform/package-platform-README.html">
+            
+                <a href="../package/platform/package-platform-README.html">
+            
+                    
+                    平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.12" data-path="../package/auth/package-auth-README.html">
+            
+                <a href="../package/auth/package-auth-README.html">
+            
+                    
+                    認證
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.12.1" data-path="../package/auth/oauth2/package-auth-oauth2-README.html">
+            
+                <a href="../package/auth/oauth2/package-auth-oauth2-README.html">
+            
+                    
+                    OAuth2
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.12.1.1" data-path="../package/auth/oauth2/package-auth-oauth2-client-credentials.html">
+            
+                <a href="../package/auth/oauth2/package-auth-oauth2-client-credentials.html">
+            
+                    
+                    Client Credentials
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.12.1.2" data-path="../package/auth/oauth2/package-auth-oauth2-password-grant.html">
+            
+                <a href="../package/auth/oauth2/package-auth-oauth2-password-grant.html">
+            
+                    
+                    Password Grant
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.12.1.3" data-path="../package/auth/oauth2/package-auth-oauth2-refresh-token.html">
+            
+                <a href="../package/auth/oauth2/package-auth-oauth2-refresh-token.html">
+            
+                    
+                    Refresh Token
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.12.1.4" data-path="../package/auth/oauth2/package-auth-oauth2-password-grant-with-scope.html">
+            
+                <a href="../package/auth/oauth2/package-auth-oauth2-password-grant-with-scope.html">
+            
+                    
+                    Password Grant with Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.12.1.5" data-path="../package/auth/oauth2/package-auth-oauth2-access-token-authentication.html">
+            
+                <a href="../package/auth/oauth2/package-auth-oauth2-access-token-authentication.html">
+            
+                    
+                    驗證 Access Token
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.12.2" data-path="../package/auth/jwt/package-auth-jwt-README.html">
+            
+                <a href="../package/auth/jwt/package-auth-jwt-README.html">
+            
+                    
+                    JWT
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../software/software-README.md">
+            
+                <span>
+            
+                    
+                    軟體
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../software/software-redis.html">
+            
+                <a href="../software/software-redis.html">
+            
+                    
+                    Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../hosting/Hosting-README.html">
+            
+                <a href="../hosting/Hosting-README.html">
+            
+                    
+                    正式主機環境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../hosting/hosting-install-nginx.html">
+            
+                <a href="../hosting/hosting-install-nginx.html">
+            
+                    
+                    安裝 Nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../hosting/hosting-install-php7.html">
+            
+                <a href="../hosting/hosting-install-php7.html">
+            
+                    
+                    安裝 php 7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../hosting/hosting-install-composer.html">
+            
+                <a href="../hosting/hosting-install-composer.html">
+            
+                    
+                    安裝 composer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../hosting/hosting-install-mysql57.html">
+            
+                <a href="../hosting/hosting-install-mysql57.html">
+            
+                    
+                    安裝 MySQL 5.7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../hosting/hosting-install-memcached.html">
+            
+                <a href="../hosting/hosting-install-memcached.html">
+            
+                    
+                    安裝 Memcached
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../hosting/hosting-install-redis.html">
+            
+                <a href="../hosting/hosting-install-redis.html">
+            
+                    
+                    安裝 Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../hosting/hosting-install-lets-encrypt.html">
+            
+                <a href="../hosting/hosting-install-lets-encrypt.html">
+            
+                    
+                    安裝 Let's Encrypt
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../qa/qa-README.html">
+            
+                <a href="../qa/qa-README.html">
+            
+                    
+                    其他常見問題
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../qa/qa-call-undefined-method-getCachedCompilePath.html">
+            
+                <a href="../qa/qa-call-undefined-method-getCachedCompilePath.html">
+            
+                    
+                    Call to undefined method getCachedCompilePath()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../qa/qa-change-app-directory-name-cause-view-can-not-readable.html">
+            
+                <a href="../qa/qa-change-app-directory-name-cause-view-can-not-readable.html">
+            
+                    
+                    變更專案目錄名稱導致 View 無法讀取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../qa/qa-laravel-5.1-folder-structure.html">
+            
+                <a href="../qa/qa-laravel-5.1-folder-structure.html">
+            
+                    
+                    Laravel 5.1 目錄結構異動
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../qa/qa-segmentation-fault-11-when-seeding.html">
+            
+                <a href="../qa/qa-segmentation-fault-11-when-seeding.html">
+            
+                    
+                    Segmentation fault: 11 when seeding
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../editor/editor-README.html">
+            
+                <a href="../editor/editor-README.html">
+            
+                    
+                    編輯器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../editor/editor-recognize-facade-class.html">
+            
+                <a href="../editor/editor-recognize-facade-class.html">
+            
+                    
+                    讓編輯器識別 Facade 類別
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../resource/Resource-README.html">
+            
+                <a href="../resource/Resource-README.html">
+            
+                    
+                    學習資源
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../resource/Resource-Official.html">
+            
+                <a href="../resource/Resource-Official.html">
+            
+                    
+                    官方
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../resource/Resource-Community.html">
+            
+                <a href="../resource/Resource-Community.html">
+            
+                    
+                    社群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="../resource/Resource-Conference.html">
+            
+                <a href="../resource/Resource-Conference.html">
+            
+                    
+                    會議議程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.4" data-path="../resource/Resource-Jobs.html">
+            
+                <a href="../resource/Resource-Jobs.html">
+            
+                    
+                    工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.5" data-path="../resource/Resource-Document.html">
+            
+                <a href="../resource/Resource-Document.html">
+            
+                    
+                    文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.6" data-path="../resource/Resource-Article.html">
+            
+                <a href="../resource/Resource-Article.html">
+            
+                    
+                    文章
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.7" data-path="../resource/Resource-Packages.html">
+            
+                <a href="../resource/Resource-Packages.html">
+            
+                    
+                    套件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.8" data-path="../resource/Resource-Laravel-Service.html">
+            
+                <a href="../resource/Resource-Laravel-Service.html">
+            
+                    
+                    服務工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.9" data-path="../resource/Resource-Learning-Video.html">
+            
+                <a href="../resource/Resource-Learning-Video.html">
+            
+                    
+                    教學影片
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.10" data-path="../resource/Resource-Learning-Sites.html">
+            
+                <a href="../resource/Resource-Learning-Sites.html">
+            
+                    
+                    教學網站
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.11" data-path="../resource/Resource-Editor-Tool.html">
+            
+                <a href="../resource/Resource-Editor-Tool.html">
+            
+                    
+                    編輯開發
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.12" data-path="../resource/Resource-Hosting.html">
+            
+                <a href="../resource/Resource-Hosting.html">
+            
+                    
+                    主機
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.13" data-path="../resource/Resource-Laravel-Case.html">
+            
+                <a href="../resource/Resource-Laravel-Case.html">
+            
+                    
+                    成功案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Service & Repository</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="service--repository-&#x67B6;&#x69CB;&#x8A2D;&#x8A08;&#x6E96;&#x5247;&#xFF08;2017-&#x5E74;&#x7248;&#x672C;&#xFF09;">Service &amp; Repository &#x67B6;&#x69CB;&#x8A2D;&#x8A08;&#x6E96;&#x5247;&#xFF08;2017 &#x5E74;&#x7248;&#x672C;&#xFF09;</h1>
+<p>&#x50B3;&#x7D71;&#x7684; MVC&#xFF08;Model, View, Controller&#xFF09; &#x6846;&#x67B6;&#xFF0C;&#x7576; Controller &#x6536;&#x5230;&#x8ACB;&#x6C42;&#x4E4B;&#x5F8C;&#xFF0C;&#x6211;&#x5011;&#x6703;&#x5728; Controller &#x5167;&#x76F4;&#x63A5;&#x900F;&#x904E; Model &#x53BB;&#x6488;&#x53D6;&#x8CC7;&#x6599;&#x5EAB;&#x7684;&#x8CC7;&#x6599;&#xFF0C;&#x4E26;&#x5728; Controller &#x505A;&#x8CC7;&#x6599;&#x9A57;&#x8B49;&#x3001;&#x6574;&#x5408;&#x3001;&#x5FEB;&#x53D6;&#x3001;&#x5546;&#x696D;&#x908F;&#x8F2F;&#x5224;&#x65B7;...&#x7B49;&#x7B49;&#x7684;&#x5DE5;&#x4F5C;&#x3002;</p>
+<p>&#x7576;&#x7CFB;&#x7D71;&#x8D8A;&#x4F86;&#x8D8A;&#x5927;&#xFF0C;&#x6703;&#x767C;&#x73FE;&#x5F88;&#x591A;&#x985E;&#x4F3C;&#x7684;&#x5546;&#x696D;&#x908F;&#x8F2F;&#x7684;&#x7A0B;&#x5F0F;&#x90FD;&#x6563;&#x5728;&#x5404;&#x5730;&#xFF0C;&#x6C92;&#x6709;&#x8FA6;&#x6CD5;&#x91CD;&#x8907;&#x518D;&#x5229;&#x7528;&#xFF0C;&#x7576;&#x7A0B;&#x5F0F;&#x9700;&#x8981;&#x7570;&#x52D5;&#x6216;&#x4FEE;&#x6539;&#x7684;&#x6642;&#x5019;&#xFF0C;&#x5C31;&#x8981;&#x53BB;&#x641C;&#x5C0B;&#x6240;&#x6709;&#x7A0B;&#x5F0F;&#x78BC;&#xFF0C;&#x628A;&#x8A31;&#x591A;&#x76F8;&#x540C;&#x5546;&#x696D;&#x908F;&#x8F2F;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#x53BB;&#x505A;&#x7570;&#x52D5;&#xFF0C;&#x4F46;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x7684;&#x5730;&#x65B9;&#x82E5;&#x592A;&#x591A;&#xFF0C;&#x5F80;&#x5F80;&#x6703;&#x6771;&#x6F0F;&#x897F;&#x6F0F;&#xFF0C;&#x5C0E;&#x81F4;&#x7CFB;&#x7D71;&#x51FA;&#x73FE;&#x932F;&#x8AA4;&#xFF0C;&#x4E26;&#x9020;&#x6210;&#x5F80;&#x5F8C;&#x958B;&#x767C;&#x7684;&#x6642;&#x9593;&#x6210;&#x672C;&#x589E;&#x52A0;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#x6211;&#x5011;&#x6703;&#x60F3;&#x8981;&#x505A;&#x5230; <code>&#x6E1B;&#x5C11;&#x91CD;&#x8907;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;</code>&#x3001;<code>&#x63D0;&#x9AD8;&#x7DAD;&#x8B77;&#x958B;&#x767C;&#x7684;&#x6548;&#x7387;</code>&#xFF0C;&#x6240;&#x4EE5;&#x5C07;&#x7A0B;&#x5F0F;&#x78BC;&#x4F9D;&#x7167;<code>&#x5206;&#x985E;</code>&#x53CA;<code>&#x5206;&#x5C64;</code>&#x62BD;&#x51FA;&#x7368;&#x7ACB;&#x63A7;&#x7BA1;&#xFF0C;&#x8B93;&#x4E0D;&#x540C;&#x985E;&#x578B;&#x7684;&#x7A0B;&#x5F0F;&#x5C08;&#x5FC3;&#x8655;&#x7406;&#x81EA;&#x5DF1;&#x76F8;&#x95DC;&#x7684;&#x5546;&#x696D;&#x908F;&#x8F2F;&#xFF0C;&#x8B93;&#x958B;&#x767C;&#x7DAD;&#x8B77;&#x66F4;&#x5BB9;&#x6613;&#x3002;</p>
+<p>&#x96A8;&#x8457;&#x7A0B;&#x5F0F;&#x67B6;&#x69CB;&#x7684;&#x6F14;&#x9032;&#x6703;&#x767C;&#x5C55;&#x51FA;&#x66F4;&#x591A;&#x4E0D;&#x540C;&#x7684;&#x67B6;&#x69CB;&#xFF0C;&#x6240;&#x4EE5;&#x9019;&#x500B;&#x8A2D;&#x8A08;&#x67B6;&#x69CB;&#x6E96;&#x5247;&#x4E5F;&#x662F;&#x6703;&#x96A8;&#x8457;&#x6642;&#x9593;&#x505A;&#x6F14;&#x9032;&#x7684;&#x3002;</p>
+<h2 id="&#x8CC7;&#x6599;&#x5C64;&#x7D1A;&#x9700;&#x6C42;&#x5206;&#x6790;">&#x8CC7;&#x6599;&#x5C64;&#x7D1A;&#x9700;&#x6C42;&#x5206;&#x6790;</h2>
+<p><strong><em>Service (&#x670D;&#x52D9;)</em></strong></p>
+<p>&#x6211;&#x5011;&#x539F;&#x672C;&#x5728; Controller &#x8655;&#x7406;&#x8ACB;&#x6C42;&#x6642;&#xFF0C;&#x6703;&#x91DD;&#x5C0D;&#x4F7F;&#x7528;&#x8005;&#x7684;&#x8ACB;&#x6C42;&#xFF0C;&#x505A;&#x4E0D;&#x540C;&#x5546;&#x696D;&#x908F;&#x8F2F;&#x7684;&#x8655;&#x7406;&#xFF0C;&#x800C;&#x540C;&#x6A23;&#x7684;&#x5546;&#x696D;&#x908F;&#x8F2F;&#x53EF;&#x80FD;&#x6703;&#x88AB;&#x4E0D;&#x540C;&#x7684; Controller &#x5B58;&#x53D6;&#xFF0C;&#x70BA;&#x4E86;&#x8B93;&#x540C;&#x500B;&#x5546;&#x696D;&#x908F;&#x8F2F;&#x7A0B;&#x5F0F;&#x80FD;&#x5920;&#x91CD;&#x8907;&#x4F7F;&#x7528;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x6703;&#x5206;&#x51FA;&#x4E00;&#x5C64; <code>Service (&#x670D;&#x52D9;)</code> &#xFF0C;&#x5C07;&#x9019;&#x4E9B;&#x5546;&#x696D;&#x908F;&#x8F2F;&#x653E;&#x5728;&#x88E1;&#x9762;&#xFF0C;&#x4F9B;&#x4E0D;&#x540C;&#x7684; Controller &#x5B58;&#x53D6;&#x3002;</p>
+<p>&#x5728; <code>Service</code> &#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;&#x6703;&#x91DD;&#x5C0D;&#x76EE;&#x524D;&#x5546;&#x696D;&#x908F;&#x8F2F;&#x7684;&#x8CC7;&#x6599;&#x9032;&#x884C;&#x8490;&#x96C6;&#x8207;&#x5F59;&#x6574;&#xFF0C;&#x8655;&#x7406;&#x904E;&#x5F8C;&#x518D;&#x56DE;&#x50B3;&#x7D66; <code>Controller</code></p>
+<p><strong><em>Repository (&#x8CC7;&#x6E90;&#x5EAB;)</em></strong></p>
+<p>&#x5728;&#x4E0D;&#x540C; <code>Service</code> &#x53EF;&#x80FD;&#x6703;&#x9700;&#x8981;&#x5C0D;&#x8CC7;&#x6599;&#x5EAB;&#x6488;&#x53D6;&#x540C;&#x6A23;&#x7684;&#x8CC7;&#x6599;&#xFF0C;&#x70BA;&#x4E86;&#x907F;&#x514D;&#x6488;&#x53D6;&#x8CC7;&#x6599;&#x7684;&#x908F;&#x8F2F;&#x91CD;&#x8907;&#x51FA;&#x73FE;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x6211;&#x5011;&#x6703;&#x5206;&#x51FA;&#x4E00;&#x5C64; <code>Repository (&#x8CC7;&#x6E90;&#x5EAB;)</code>&#xFF0C;&#x5C07;&#x540C;&#x6A23;&#x6488;&#x53D6; <code>Model (&#x6A21;&#x578B;)</code> &#x8CC7;&#x6599;&#x7684;&#x908F;&#x8F2F;&#x90FD;&#x5BEB;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x4F9B;&#x4E0D;&#x540C;&#x7684; <code>Service</code> &#x5B58;&#x53D6;&#x3002;</p>
+<p>&#x5728; <code>Repository</code> &#x4E2D;&#xFF0C;&#x6703;&#x5728; function &#x540D;&#x7A31;&#x4E2D;&#x6307;&#x51FA;&#x9019;&#x500B;&#x65B9;&#x6CD5;&#x662F;&#x8981;&#x6488;&#x4EC0;&#x9EBC;&#x6A23;&#x7684;&#x8CC7;&#x6599;&#xFF0C;&#x9019;&#x6A23;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x91CD;&#x7528;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x8B93;&#x7A0B;&#x5F0F;&#x6709;&#x53EF;&#x8B80;&#x6027;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x518D;&#x53BB;&#x770B; <code>Model</code> sql &#x689D;&#x4EF6;&#x7684;&#x908F;&#x8F2F;&#xFF0C;&#x5224;&#x65B7;&#x662F;&#x5728;&#x505A;&#x4EC0;&#x9EBC;&#x6A23;&#x7684;&#x8655;&#x7406;</p>
+<blockquote>
+<p>e.g. PostRepository-&gt;getWeekTopPosts();  // &#x53D6;&#x5F97;&#x672C;&#x9031;&#x71B1;&#x9580;&#x6587;&#x7AE0;</p>
+</blockquote>
+<p><strong><em>Model (&#x6A21;&#x578B;)</em></strong></p>
+<p>&#x5728; Model &#x4E2D;&#x6211;&#x5011;&#x50C5;&#x6703;&#x5BEB;&#x5C0D;&#x8CC7;&#x6599;&#x8868;&#x5C0D; Eloquent &#x76F8;&#x95DC;&#x7684;&#x8A2D;&#x5B9A;&#xFF0C;&#x50CF;&#x662F; <code>primaryKey (&#x4E3B;&#x9375;&#x540D;&#x7A31;)</code> &#x6216; <code>table (&#x8CC7;&#x6599;&#x8868;&#x540D;&#x7A31;)</code>&#xFF0C;&#x8B93; Model &#x80FD;&#x5920;&#x8D8A;&#x4E7E;&#x6DE8;&#x8D8A;&#x597D;&#xFF0C;&#x5C07;&#x4E00;&#x4E9B;&#x6488;&#x53D6;&#x8CC7;&#x6599;&#x7684;&#x908F;&#x8F2F;&#x90FD;&#x5F80; <code>Repository</code> &#x96C6;&#x4E2D;&#x6574;&#x7406;&#x3002;</p>
+<p><strong><em>Presenter (&#x8CC7;&#x6599;&#x5448;&#x73FE;)</em></strong></p>
+<p>&#x5728; Model &#x6211;&#x5011;&#x6709;&#x4E00;&#x4E9B;&#x8CC7;&#x6599;&#x53EF;&#x80FD;&#x6703;&#x60F3;&#x8981;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x5448;&#x73FE;&#x65B9;&#x5F0F;&#xFF0C;&#x50CF;&#x662F;&#x6587;&#x7AE0;&#x767C;&#x5E03;&#x6642;&#x9593; <code>created_at</code> &#x6211;&#x5011;&#x53EF;&#x80FD;&#x6703;&#x60F3;&#x8981;&#x5448;&#x73FE;&#x51FA;&#x50CF;&#x662F; <code>5 &#x79D2;&#x524D;</code>&#x3001;<code>15 &#x5206;&#x9418;&#x524D;</code>&#x3001;<code>6 &#x5C0F;&#x6642;&#x524D;</code> &#x9019;&#x6A23;&#x7684;&#x8CC7;&#x6599;&#xFF0C;&#x9019;&#x4E9B;&#x8CC7;&#x6599;&#x56E0;&#x70BA;&#x662F;&#x96A8;&#x8457;&#x6642;&#x9593;&#x4E0D;&#x540C;&#x800C;&#x53BB;&#x52D5;&#x614B;&#x8B8A;&#x5316;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x7528;&#x7A0B;&#x5F0F;&#x53BB;&#x8A08;&#x7B97;&#x8207; <code>created_at</code> &#x7684;&#x6642;&#x9593;&#x5DEE;&#xFF0C;&#x518D;&#x53BB;&#x770B;&#x8981;&#x5982;&#x4F55;&#x5448;&#x73FE;&#x9019;&#x7B46;&#x8CC7;&#x6599;&#x3002;</p>
+<p>&#x70BA;&#x4E86;&#x80FD;&#x5920;&#x8B93;&#x9019;&#x4E9B;&#x4E0D;&#x540C;&#x8CC7;&#x6599;&#x5448;&#x73FE;&#x65B9;&#x5F0F;&#x7684;&#x908F;&#x8F2F;&#x80FD;&#x5920;&#x91CD;&#x8907;&#x4F7F;&#x7528;&#xFF0C;&#x4E14;&#x4E0D;&#x6C61;&#x67D3; <code>Model</code> &#x7684;&#x7A0B;&#x5F0F;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x6703;&#x5206;&#x51FA;&#x4E00;&#x5C64; <code>Presenter (&#x8CC7;&#x6599;&#x5448;&#x73FE;)</code> &#x53BB;&#x8F14;&#x52A9; <code>Model</code> &#x8CC7;&#x6599;&#x7684;&#x5448;&#x73FE;</p>
+<blockquote>
+<p>e.g. Post-&gt;presenter()-&gt;created_at_human_time;</p>
+</blockquote>
+<ul>
+<li><a href="https://github.com/laracasts/Presenter" target="_blank">laracasts/Presenter</a></li>
+</ul>
+<p><strong><em>Cache (&#x5FEB;&#x53D6;)</em></strong></p>
+<p>&#x5728;&#x4F7F;&#x7528; <code>Repositoy</code> &#x53BB;&#x5C0D; <code>Model</code> &#x505A;&#x5B58;&#x53D6;&#x5F97;&#x6642;&#x5019;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x5011;&#x8CC7;&#x6599;&#x6C92;&#x6709;&#x505A;&#x7570;&#x52D5;&#xFF0C;&#x6211;&#x5011;&#x6703;&#x5C07;&#x8CC7;&#x6599;&#x5B58;&#x653E;&#x5728;&#x5FEB;&#x53D6;&#x4E2D;&#xFF0C;&#x76F4;&#x63A5;&#x8B80;&#x53D6;&#x5FEB;&#x53D6;&#x7684;&#x8CC7;&#x6599;&#xFF0C;&#x800C;&#x6E1B;&#x5C11;&#x5C0D;&#x8CC7;&#x6599;&#x5EAB;&#x7684;&#x5B58;&#x53D6;&#xFF0C;&#x63D0;&#x9AD8;&#x8CC7;&#x6599;&#x7684;&#x5B58;&#x53D6;&#x6548;&#x7387;</p>
+<p>&#x800C;&#x6211;&#x5011;&#x9700;&#x8981;&#x5C0D; <code>&#x8CC7;&#x6599;&#x5FEB;&#x53D6;&#x7684;&#x8A2D;&#x5B9A;&#x3001;&#x6E05;&#x9664;</code> &#x53CA; <code>&#x5FEB;&#x53D6;&#x9375;&#x503C;</code> &#x53BB;&#x505A;&#x7BA1;&#x7406;&#xFF0C;&#x5FEB;&#x53D6;&#x50CF;&#x662F;&#x5354;&#x52A9; <code>Repository</code> &#x505A;&#x8CC7;&#x6599;&#x7684;&#x5B58;&#x53D6;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x6703;&#x5206;&#x51FA;&#x4E00;&#x5C64; <code>Cache (&#x5FEB;&#x53D6;)</code> &#x53BB;&#x8F14;&#x52A9; <code>Repository</code> &#x505A;&#x5FEB;&#x53D6;&#x7684;&#x8655;&#x7406;</p>
+<p><strong><em>Checker (&#x6AA2;&#x67E5;&#x5668;)</em></strong></p>
+<p>&#x800C;&#x6BCF;&#x500B;&#x5546;&#x696D;&#x908F;&#x8F2F;&#x9700;&#x8981;&#x9A57;&#x8B49;&#x7684;&#x8CC7;&#x6599;&#x4E0D;&#x540C;&#xFF0C;&#x6709;&#x4E9B;&#x6B04;&#x4F4D;&#x5728;&#x4E0D;&#x540C;&#x5546;&#x696D;&#x908F;&#x8F2F;&#x6703;&#x6709;&#x5FC5;&#x586B;&#x8207;&#x975E;&#x5FC5;&#x586B;&#x4E0D;&#x540C;&#x7684;&#x5DEE;&#x7570;&#xFF0C;&#x50CF;&#x662F;&#x5728;&#x505A;&#x4F7F;&#x7528;&#x8005;&#x8EAB;&#x4EFD;&#x9A57;&#x8B49;&#x6642;&#xFF0C;&#x82E5;&#x6709; Email &#x9A57;&#x8B49;&#x53CA;&#x624B;&#x6A5F;&#x9A57;&#x8B49;&#xFF0C;&#x5728; Email &#x9A57;&#x8B49;&#x6642;&#xFF0C;&#x624B;&#x6A5F;&#x6B04;&#x4F4D;&#x70BA;&#x975E;&#x5FC5;&#x586B;&#x6B04;&#x4F4D;&#xFF0C;&#x5728;&#x505A;&#x624B;&#x6A5F;&#x9A57;&#x8B49;&#x6642;&#xFF0C; Email &#x70BA;&#x975E;&#x5FC5;&#x586B;&#x6B04;&#x4F4D;&#xFF0C;&#x4F46;&#x5169;&#x8005;&#x7686;&#x70BA;&#x4F7F;&#x7528;&#x8005;&#x7684;&#x8CC7;&#x6599;&#xFF0C;&#x7121;&#x6CD5;&#x5F37;&#x5236;&#x4F7F;&#x7528;&#x8005;&#x5169;&#x500B;&#x6B04;&#x4F4D;&#x8CC7;&#x6599;&#x7686;&#x70BA;&#x5FC5;&#x586B;&#xFF0C;&#x4F46;&#x5728;&#x67D0;&#x4E9B;&#x5546;&#x696D;&#x9801;&#x908F;&#x8F2F;&#x662F;&#x5FC5;&#x8981;&#x7684;&#xFF0C;&#x4F46;&#x57FA;&#x672C;&#x7684;&#x8CC7;&#x6599;&#x9A57;&#x8B49;&#x898F;&#x5247;&#x9084;&#x662F;&#x4E00;&#x6A23;&#xFF0C;&#x50CF;&#x662F;&#x8CC7;&#x6599;&#x6700;&#x9577;&#x9577;&#x5EA6;&#x3001;email &#x683C;&#x5F0F;...&#x7B49;&#x7B49;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#x70BA;&#x4E86;&#x80FD;&#x5920;&#x91CD;&#x8907;&#x4F7F;&#x7528;&#x5171;&#x7528;&#x7684;&#x9A57;&#x8B49;&#x5668;&#x898F;&#x5247;&#xFF0C;&#x6240;&#x4EE5;&#x5EFA;&#x69CB;&#x4E86;&#x4E00;&#x500B; <code>Checker&#xFF08;&#x6AA2;&#x67E5;&#x5668;&#xFF09;</code> &#x7684;&#x7D50;&#x69CB;&#xFF0C;&#x53BB;&#x547C;&#x53EB;&#x4E0D;&#x540C;&#x7684; <code>Validator</code> &#x53BB;&#x6AA2;&#x67E5;&#x8CC7;&#x6599;&#xFF0C;&#x50CF;&#x662F;&#x540C;&#x4E00;&#x500B; Controller &#x8655;&#x7406;&#x7684;&#x8CC7;&#x6599;&#x53EF;&#x80FD;&#x542B;&#x6709;&#x300C;&#x6703;&#x54E1;&#x300D;&#x3001;&#x300C;&#x5546;&#x54C1;&#x300D;&#x8CC7;&#x6599;&#xFF0C;&#x6240;&#x4EE5;&#x540C;&#x6642;&#x9700;&#x8981;&#x547C;&#x53EB; <code>&#x6703;&#x54E1;&#x9A57;&#x8B49;&#x5668;&#xFF08;UserValidator&#xFF09;</code> &#x53CA; <code>&#x5546;&#x54C1;&#x9A57;&#x8B49;&#x5668;&#xFF08;GoodsValidator&#xFF09;</code> &#x7684;&#x9A57;&#x8B49;&#x898F;&#x5247;&#x53BB;&#x9A57;&#x8B49;&#x8CC7;&#x6599;&#xFF0C;&#x6240;&#x4EE5;&#x5C31;&#x900F;&#x904E; <code>Checker&#xFF08;&#x6AA2;&#x67E5;&#x5668;&#xFF09;</code> &#x53BB;&#x547C;&#x53EB;&#x4E0D;&#x540C;&#x7684;&#x9A57;&#x8B49;&#x5668;&#xFF0C;&#x4F86;&#x9054;&#x5230;&#x9A57;&#x8B49;&#x4E0D;&#x540C;&#x8CC7;&#x6599;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x8F14;&#x52A9; Controller &#x505A;&#x8CC7;&#x6599;&#x9A57;&#x8B49;&#x3002;</p>
+<p><strong><em>Validator (&#x9A57;&#x8B49;&#x5668;)</em></strong></p>
+<p>&#x70BA;&#x4E86;&#x8B93;&#x8CC7;&#x6599;&#x9A57;&#x8B49;&#x65B9;&#x6CD5;&#x80FD;&#x5920;&#x91CD;&#x8907;&#x4F7F;&#x7528;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x5730;&#x65B9;&#x53BB;&#x9A57;&#x8B49;&#x76F8;&#x540C;&#x7684;&#x6771;&#x897F;&#xFF0C;&#x9019;&#x6A23;&#x6703;&#x9020;&#x6210;&#x9A57;&#x8B49;&#x908F;&#x8F2F;&#x91CD;&#x8907;&#x51FA;&#x73FE;&#xFF0C;&#x82E5;&#x6709;&#x9700;&#x8981;&#x7570;&#x52D5;&#x9A57;&#x8B49;&#x898F;&#x5247;&#x6642;&#xFF0C;&#x6703;&#x96E3;&#x4EE5;&#x7DAD;&#x8B77;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#x6211;&#x6C92;&#x6709;&#x9078;&#x64C7;&#x5C07;&#x9019;&#x4E9B;&#x9A57;&#x8B49;&#x7684;&#x908F;&#x8F2F;&#x5BEB;&#x5728; <code>Services</code>&#x3001;<code>Repository</code> &#x6216; <code>Model</code> &#x4E2D;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#x6211;&#x6703;&#x5206;&#x51FA;&#x4E00;&#x5C64; <code>Validator (&#x9A57;&#x8B49;&#x5668;)</code> &#x8F14;&#x52A9; <code>Checker&#xFF08;&#x6AA2;&#x67E5;&#x5668;&#xFF09;</code> &#x505A;&#x8CC7;&#x6599;&#x9A57;&#x8B49;&#x3002;</p>
+<p><strong><em>Concrete (&#x670D;&#x52D9;&#x7D44;&#x5408;)</em></strong></p>
+<p>&#x6211;&#x5011;&#x6703;&#x5728; <code>Controller</code> &#x53BB;&#x547C;&#x53EB;&#x5404;&#x500B;&#x4E0D;&#x540C;&#x7684; <code>Service</code> &#x53BB;&#x505A;&#x8CC7;&#x6599;&#x7684;&#x5224;&#x65B7;&#x8655;&#x7406;&#xFF0C;&#x6709;&#x6642;&#x5019;&#x4E0D;&#x540C;&#x7684; <code>Controller</code> &#x6703;&#x6709;&#x76F8;&#x540C;&#x547C;&#x53EB; <code>Service</code> &#x7684;&#x908F;&#x8F2F;&#x9806;&#x5E8F;&#x53CA;&#x7D44;&#x5408;&#x7684;&#x8CC7;&#x6599;&#xFF0C;&#x70BA;&#x4E86;&#x6E1B;&#x5C11;&#x91CD;&#x8907;&#x7A0B;&#x5F0F;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x6703;&#x5206;&#x51FA;&#x4E00;&#x5C64; <code>Concrete (&#x670D;&#x52D9;&#x7D44;&#x5408;)</code> &#x53BB;&#x5354;&#x52A9; <code>Controller</code> &#x53BB;&#x505A;&#x4E0D;&#x540C; <code>Service</code> &#x8CC7;&#x6599;&#x7684;&#x6574;&#x5408;&#x6488;&#x53D6;</p>
+<p>&#x50CF;&#x662F;&#x6211;&#x5011;&#x5728;&#x8A31;&#x591A; <code>Controller</code> &#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;&#x6211;&#x5011;&#x90FD;&#x8981;&#x4F7F;&#x7528; <code>$PostService-&gt;find($post_id);</code> &#x53BB;&#x627E;&#x6587;&#x7AE0;&#x8CC7;&#x6599;&#xFF0C;&#x4E26;&#x7528; <code>$UserService-&gt;find($post_user_id);</code> &#x53BB;&#x627E;&#x6587;&#x7AE0;&#x4F5C;&#x8005;&#x76F8;&#x95DC;&#x8CC7;&#x8A0A;&#xFF0C;&#x9019;&#x4E9B;&#x5728; <code>Controller</code> &#x91CD;&#x8907;&#x51FA;&#x73FE;&#x7684;&#x547C;&#x53EB; <code>Service</code> &#x908F;&#x8F2F;&#x6211;&#x5011;&#x5C31;&#x53EF;&#x4EE5;&#x5BEB;&#x5728; <code>Concrete</code> &#x4E2D;&#x53BB;&#x505A;&#x547C;&#x53EB;</p>
+<p><strong><em>Constant (&#x5E38;&#x6578;)</em></strong></p>
+<p>&#x6211;&#x5011;&#x5728;&#x505A; <code>Model</code> &#x8CC7;&#x6599;&#x7684;&#x6488;&#x53D6;&#x6216;&#x662F;&#x689D;&#x4EF6;&#x5224;&#x65B7;&#x6642;&#xFF0C;&#x53EF;&#x80FD;&#x6703;&#x9700;&#x8981;&#x7528; <code>Post::where(&apos;status&apos;, 1)-&gt;get()</code> &#x6216; <code>$Post-&gt;status == 1</code> &#x53BB;&#x505A;&#x8CC7;&#x6599;&#x7684;&#x5B58;&#x53D6;&#xFF0C;&#x4F46;&#x50CF; <code>status &#x70BA; 1</code> &#x9019;&#x7A2E;&#x8CC7;&#x6599;&#x5C0D;&#x6211;&#x5011;&#x662F;&#x96E3;&#x4EE5;&#x505A;&#x95B1;&#x8B80;&#x7684;&#xFF0C;&#x9700;&#x8981;&#x77E5;&#x9053; 1 &#x4EE3;&#x8868;&#x662F;&#x4EC0;&#x9EBC;&#x610F;&#x601D;&#x624D;&#x77E5;&#x9053;&#x6B64;&#x6BB5;&#x7A0B;&#x5F0F;&#x7684;&#x908F;&#x8F2F;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#x6211;&#x6703;&#x5206;&#x51FA;&#x4E00;&#x5C64; <code>Constant (&#x5E38;&#x6578;)</code> &#x8F14;&#x52A9;&#x505A;&#x8CC7;&#x6599;&#x7684;&#x8B58;&#x5225;&#xFF0C;&#x6211;&#x6703;&#x5C07;&#x72C0;&#x614B;&#x8A2D;&#x70BA;&#x53EF;&#x8B58;&#x5225;&#x7684;&#x975C;&#x614B;&#x8B8A;&#x6578;&#xFF0C;&#x50CF;&#x662F; <code>PostConstant::STATUS_PUBLISH = 1;</code>&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x505A;&#x7A0B;&#x5F0F;&#x5224;&#x65B7;&#x6642;&#xFF0C;&#x53EF;&#x4EE5;&#x7528; <code>Post::where(&apos;status&apos;, PostConstant::STATUS_PUBLISH)-&gt;get()</code> &#x6216; <code>$Post-&gt;status == PostConstant::STATUS_PUBLISH</code> &#x53BB;&#x505A;&#x5224;&#x65B7;&#x3002;</p>
+<blockquote>
+<p>&#x5728; <code>Constant</code> &#x7684;&#x8B8A;&#x6578;&#x7686;&#x70BA;<code>&#x975C;&#x614B;&#x8B8A;&#x6578;</code>&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x4F9B;&#x4EFB;&#x4F55;&#x985E;&#x5225;&#x53BB;&#x505A;&#x5B58;&#x53D6;&#x3002;</p>
+</blockquote>
+<p><strong><em>Support (&#x652F;&#x63F4;)</em></strong></p>
+<p>&#x6211;&#x53EF;&#x80FD;&#x6703;&#x5C0D;&#x4E00;&#x8CC7;&#x6E90;&#x7684;&#x8CC7;&#x6599;&#x505A;&#x7C21;&#x55AE;&#x7684;&#x908F;&#x8F2F;&#x5224;&#x65B7;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x4F9D;&#x8CF4;&#x4EFB;&#x4F55;&#x7684; <code>&#x8CC7;&#x6599;&#x63A7;&#x5236;&#x7D50;&#x69CB;</code>&#xFF0C;&#x50CF;&#x662F; <code>Service</code>&#x3001;<code>Repository</code> &#x6216; <code>Model</code>&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x6703;&#x5206;&#x51FA;&#x4E00;&#x5C64; <code>Support (&#x5E38;&#x6578;)</code> &#x53BB;&#x505A;&#x5171;&#x7528;&#x7684;&#x8F14;&#x52A9;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x50CF;&#x662F;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x7528; <code>PostSupport::getAllPostStatus()</code> &#x53BB;&#x6488;&#x53D6;&#x6587;&#x7AE0;&#x7684;&#x6240;&#x6709;&#x72C0;&#x614B;&#xFF0C;&#x6216;&#x8005;&#x7528; <code>GoogleAnalyticSupport::api()</code> &#x53BB;&#x5C0D; GA &#x7684; API &#x505A;&#x5B58;&#x53D6;&#x3002;</p>
+<blockquote>
+<p>&#x5728; <code>Support</code> &#x7684;&#x65B9;&#x6CD5;&#x7686;&#x70BA;<code>&#x975C;&#x614B;&#x65B9;&#x6CD5;</code>&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x4F9B;&#x4EFB;&#x4F55;&#x985E;&#x5225;&#x53BB;&#x505A;&#x5B58;&#x53D6;&#x3002;</p>
+</blockquote>
+<p><strong><em>ExceptionCode (&#x4F8B;&#x5916;&#x4EE3;&#x78BC;)</em></strong></p>
+<p>&#x6211;&#x5011;&#x5728;&#x505A; API &#x7684;&#x8CC7;&#x6599;&#x5B58;&#x53D6;&#x6642;&#xFF0C;&#x6703;&#x91DD;&#x5C0D;&#x4E0D;&#x540C;&#x7684;&#x4F8B;&#x5916;&#x72C0;&#x6CC1;&#x56DE;&#x50B3;&#x4E0D;&#x540C;&#x7684; <code>&#x932F;&#x8AA4;&#x4EE3;&#x78BC; (error_code)</code>&#xFF0C;&#x800C;&#x540C;&#x4E00;&#x500B;&#x932F;&#x8AA4;&#x4EE3;&#x78BC;&#x53EF;&#x80FD;&#x5728;&#x4E0D;&#x540C;&#x7684; <code>Controller</code> &#x6216; <code>Service</code> &#x88AB;&#x56DE;&#x50B3;&#xFF0C;&#x50CF;&#x662F;&#x6587;&#x7AE0;&#x627E;&#x4E0D;&#x5230;&#x6211;&#x5011;&#x6703;&#x56DE;&#x50B3;&#x932F;&#x8AA4;&#x4EE3;&#x78BC; <code>10000001</code>&#xFF0C;&#x70BA;&#x4E86;&#x7BA1;&#x7406;&#x53CA;&#x95B1;&#x8B80;&#x6027;&#x65B9;&#x4FBF;&#xFF0C;&#x6211;&#x6703;&#x5206;&#x51FA;&#x4E00;&#x5C64; <code>ExceptionCode (&#x4F8B;&#x5916;&#x4EE3;&#x78BC;)</code> &#x53BB;&#x505A;&#x5171;&#x7528;&#x7684;&#x4F8B;&#x5916;&#x4EE3;&#x78BC;&#x7BA1;&#x7406;&#x3002;</p>
+<p>&#x50CF;&#x662F;&#x627E;&#x4E0D;&#x5230;&#x6587;&#x7AE0;&#x7684;&#x4EE3;&#x78BC;&#x6211;&#x6703;&#x8A2D;&#x70BA; <code>PostExceptionCode::POST_NOT_FOUND = 10000001;</code>&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x7A0B;&#x5F0F;&#x4E2D;&#x53EA;&#x8981;&#x770B;&#x5230; <code>PostExceptionCode::POST_NOT_FOUND</code> &#x5C31;&#x53EF;&#x4EE5;&#x99AC;&#x4E0A;&#x77E5;&#x9053;&#x9019;&#x500B;&#x662F;&#x627E;&#x4E0D;&#x5230;&#x6587;&#x7AE0;&#x7684;&#x932F;&#x8AA4;&#x4EE3;&#x78BC;&#x3002;</p>
+<blockquote>
+<p>&#x5728; <code>ExceptionCode</code> &#x7684;&#x8B8A;&#x6578;&#x7686;&#x70BA;<code>&#x975C;&#x614B;&#x8B8A;&#x6578;</code>&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x4F9B;&#x4EFB;&#x4F55;&#x985E;&#x5225;&#x53BB;&#x505A;&#x5B58;&#x53D6;&#x3002;</p>
+</blockquote>
+<h2 id="&#x8CC7;&#x6599;&#x5C64;&#x7D1A;&#x7D50;&#x69CB;">&#x8CC7;&#x6599;&#x5C64;&#x7D1A;&#x7D50;&#x69CB;</h2>
+<h3 id="&#x8CC7;&#x6599;&#x63A7;&#x5236;&#x7D50;&#x69CB;"><strong><em>&#x8CC7;&#x6599;&#x63A7;&#x5236;&#x7D50;&#x69CB;</em></strong></h3>
+<ul>
+<li>Controller (&#x63A7;&#x5236;&#x5668;)<ul>
+<li>Concrete (&#x670D;&#x52D9;&#x7D44;&#x5408;)<ul>
+<li>Service (&#x670D;&#x52D9;)<ul>
+<li>Repository (&#x8CC7;&#x6E90;&#x5EAB;)<ul>
+<li>Model (&#x6A21;&#x578B;)</li>
+<li>Presenter (&#x8CC7;&#x6599;&#x5448;&#x73FE;)</li>
+</ul>
+</li>
+<li>Cache (&#x5FEB;&#x53D6;)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Checker (&#x6AA2;&#x67E5;&#x5668;)<ul>
+<li>Validator (&#x9A57;&#x8B49;&#x5668;)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x7368;&#x7ACB;&#x7D50;&#x69CB;"><strong><em>&#x7368;&#x7ACB;&#x7D50;&#x69CB;</em></strong></h3>
+<ul>
+<li>Constant (&#x5E38;&#x6578;)</li>
+<li>Support (&#x652F;&#x63F4;)</li>
+<li>ExceptionCode (&#x4F8B;&#x5916;&#x4EE3;&#x78BC;)</li>
+</ul>
+<h3 id="&#x67B6;&#x69CB;&#x5716;"><strong><em>&#x67B6;&#x69CB;&#x5716;</em></strong></h3>
+<p><img src="images/access-structure.png" alt="&#x67B6;&#x69CB;&#x5716;"></p>
+<h2 id="&#x7D50;&#x69CB;&#x8AAA;&#x660E;">&#x7D50;&#x69CB;&#x8AAA;&#x660E;</h2>
+<p><strong><em>&#x8CC7;&#x6599;&#x63A7;&#x5236;&#x7D50;&#x69CB;</em></strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x7D50;&#x69CB;&#x540D;&#x7A31;</th>
+<th>&#x8AAA;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Controller (&#x63A7;&#x5236;&#x5668;)</td>
+<td>&#x63A7;&#x5236;&#x8981;&#x4F7F;&#x7528;&#x54EA;&#x4E9B; Service &#x6216; Concrete &#x7684;&#x5546;&#x696D;&#x908F;&#x8F2F;&#xFF0C;&#x53BB;&#x7D44;&#x5408;&#x51FA;&#x4F7F;&#x7528;&#x8005;&#x8ACB;&#x6C42;&#x9700;&#x8981;&#x7684;&#x8CC7;&#x6599;&#xFF0C;&#x4E26;&#x505A;&#x8CC7;&#x6599;&#x7684;&#x8CC7;&#x6599;&#x4EA4;&#x6613;&#x63A7;&#x5236; (transaction) &#xFF0C;&#x4E26;&#x4F7F;&#x7528; Checker &#x53BB;&#x6AA2;&#x67E5;&#x4EFB;&#x4F55;&#x4F7F;&#x7528;&#x8005;&#x50B3;&#x9032;&#x4F86;&#x7684;&#x8CC7;&#x6599;&#xFF0C;&#x78BA;&#x4FDD;&#x8CC7;&#x6599;&#x7684;&#x6B63;&#x78BA;&#x6027;</td>
+</tr>
+<tr>
+<td>Service (&#x670D;&#x52D9;)</td>
+<td>&#x505A;&#x8CC7;&#x6599;&#x7684;&#x9A57;&#x8B49;&#xFF0C;&#x4E26;&#x7D44;&#x5408;&#x4E0D;&#x540C;&#x7684; Repository &#x8CC7;&#x6599;&#x6210;&#x5546;&#x696D;&#x908F;&#x8F2F;&#xFF0C;&#x4F9B; Controller &#x6216; Concrete &#x5B58;&#x53D6;</td>
+</tr>
+<tr>
+<td>Repository (&#x8CC7;&#x6E90;&#x5EAB;)</td>
+<td>&#x6488;&#x53D6;&#x5C6C;&#x65BC;&#x81EA;&#x5DF1; Model &#x4E0D;&#x540C;&#x689D;&#x4EF6;&#x4E0B;&#x7684;&#x8CC7;&#x6599;&#xFF0C;&#x4E26;&#x505A;&#x5FEB;&#x53D6;&#x63A7;&#x5236;&#xFF0C;&#x4F9B; Service &#x5B58;&#x53D6;</td>
+</tr>
+<tr>
+<td>Model (&#x6A21;&#x578B;)</td>
+<td>&#x8CC7;&#x6599;&#x8868;&#x5B58;&#x53D6;&#x76F8;&#x95DC;&#x8A2D;&#x5B9A;</td>
+</tr>
+<tr>
+<td>Presenter (&#x8CC7;&#x6599;&#x5448;&#x73FE;)</td>
+<td>&#x5354;&#x52A9; Model &#x505A;&#x8CC7;&#x6599;&#x5448;&#x73FE;&#x8655;&#x7406;</td>
+</tr>
+<tr>
+<td>Cache (&#x5FEB;&#x53D6;)</td>
+<td>&#x5354;&#x52A9; Repository &#x505A;&#x5FEB;&#x53D6;&#x8CC7;&#x6599;&#x7684;&#x63A7;&#x5236;</td>
+</tr>
+<tr>
+<td>Checker (&#x6AA2;&#x67E5;&#x5668;)</td>
+<td>&#x5354;&#x52A9; Controller &#x505A;&#x8CC7;&#x6599;&#x9A57;&#x8B49;</td>
+</tr>
+<tr>
+<td>Validator (&#x9A57;&#x8B49;&#x5668;)</td>
+<td>&#x5354;&#x52A9; Checker &#x505A;&#x8CC7;&#x6599;&#x9A57;&#x8B49;</td>
+</tr>
+<tr>
+<td>Concrete (&#x670D;&#x52D9;&#x7D44;&#x5408;)</td>
+<td>&#x5354;&#x52A9; Controller &#x7D44;&#x5408;&#x4E0D;&#x540C; Service &#x7684;&#x8CC7;&#x6599;&#x6210;&#x5546;&#x696D;&#x908F;&#x8F2F;</td>
+</tr>
+</tbody>
+</table>
+<p><strong><em>&#x7368;&#x7ACB;&#x7D50;&#x69CB;</em></strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x7D50;&#x69CB;&#x540D;&#x7A31;</th>
+<th>&#x8AAA;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Constant (&#x5E38;&#x6578;)</td>
+<td>&#x5171;&#x7528;&#x8B8A;&#x6578;&#x540D;&#x7A31;&#x8A2D;&#x5B9A;</td>
+</tr>
+<tr>
+<td>Support (&#x652F;&#x63F4;)</td>
+<td>&#x5171;&#x7528;&#x65B9;&#x6CD5;</td>
+</tr>
+<tr>
+<td>ExceptionCode (&#x4F8B;&#x5916;&#x4EE3;&#x78BC;)</td>
+<td>&#x5171;&#x7528;&#x4F8B;&#x5916;&#x4EE3;&#x78BC;&#x8A2D;&#x5B9A;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x67B6;&#x69CB;&#x4F7F;&#x7528;&#x539F;&#x5247;">&#x67B6;&#x69CB;&#x4F7F;&#x7528;&#x539F;&#x5247;</h2>
+<h3 id="&#x8CC7;&#x6599;&#x63A7;&#x5236;&#x7D50;&#x69CB;">&#x8CC7;&#x6599;&#x63A7;&#x5236;&#x7D50;&#x69CB;</h3>
+<h4 id="&#x5B58;&#x53D6;&#x9650;&#x5236;"><strong><em>&#x5B58;&#x53D6;&#x9650;&#x5236;</em></strong></h4>
+<p><strong><em>&#x4E0D;&#x80FD;&#x8DE8; 2 &#x968E;&#x5C64;&#x4EE5;&#x4E0A;&#x5B58;&#x53D6;</em></strong></p>
+<ul>
+<li>Controller &#x4E0D;&#x80FD;&#x5B58;&#x53D6; Repository</li>
+<li>Controller &#x4E0D;&#x80FD;&#x5B58;&#x53D6; Validator</li>
+<li>Service &#x4E0D;&#x80FD;&#x5B58;&#x53D6; Model</li>
+</ul>
+<p><strong><em>&#x4F4E;&#x968E;&#x5C64;&#x7684;&#x4E0D;&#x80FD;&#x5B58;&#x53D6;&#x9AD8;&#x968E;&#x5C64;&#x7684;&#x8CC7;&#x6599;</em></strong></p>
+<ul>
+<li>Model &#x4E0D;&#x80FD;&#x5B58;&#x53D6; Repository</li>
+<li>Repository &#x4E0D;&#x80FD;&#x5B58;&#x53D6; Service</li>
+<li>Validator &#x4E0D;&#x80FD;&#x5B58;&#x53D6; Checker</li>
+</ul>
+<p><strong><em>&#x540C;&#x4E00;&#x500B;&#x8CC7;&#x6599;&#x985E;&#x578B;&#xFF0C;&#x4E0D;&#x80FD;&#x4E92;&#x76F8;&#x547C;&#x53EB;</em></strong></p>
+<p>&#x907F;&#x514D;&#x540C;&#x4E00;&#x985E;&#x578B;&#x985E;&#x5225;&#x547C;&#x53EB;&#xFF0C;&#x9020;&#x6210; new &#x7269;&#x4EF6;&#x7684;&#x6642;&#x5019;&#x6709;&#x7121;&#x7AAE;&#x8FF4;&#x5708;</p>
+<p>PostService &#x5B58;&#x53D6; UserService&#xFF0C;UserService &#x5B58;&#x53D6; PostsService &#x9020;&#x6210;&#x7121;&#x7AAE;&#x8FF4;&#x5708;</p>
+<ul>
+<li>Concrete &#x4E0D;&#x80FD;&#x547C;&#x53EB; Concrete</li>
+<li>Service &#x4E0D;&#x80FD;&#x547C;&#x53EB; Service</li>
+<li>Checker &#x4E0D;&#x80FD;&#x547C;&#x53EB; Checker</li>
+<li>Validator &#x4E0D;&#x80FD;&#x547C;&#x53EB; Validator</li>
+<li>Repository &#x4E0D;&#x80FD;&#x547C;&#x53EB; Repository</li>
+<li>Cache &#x4E0D;&#x80FD;&#x547C;&#x53EB; Cache</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>&#x7D50;&#x69CB;&#x540D;&#x7A31;</th>
+<th>&#x53EF;&#x5B58;&#x53D6;</th>
+<th>&#x53EF;&#x88AB;&#x5B58;&#x53D6;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Controller (&#x63A7;&#x5236;&#x5668;)</td>
+<td>Checker&#x3001;Concrete&#x3001;Service&#x3001;DB transaction</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Concrete (&#x670D;&#x52D9;&#x7D44;&#x5408;)</td>
+<td>Service</td>
+<td>Controller</td>
+</tr>
+<tr>
+<td>Service (&#x670D;&#x52D9;)</td>
+<td>Repository&#x3001;Validator</td>
+<td>Controller&#x3001;Concrete</td>
+</tr>
+<tr>
+<td>Checker (&#x6AA2;&#x67E5;&#x5668;)</td>
+<td>Validator</td>
+<td>Controller</td>
+</tr>
+<tr>
+<td>Validator (&#x9A57;&#x8B49;&#x5668;)</td>
+<td>-</td>
+<td>Checker</td>
+</tr>
+<tr>
+<td>Repository (&#x8CC7;&#x6E90;&#x5EAB;)</td>
+<td>&#x81EA;&#x5DF1;&#x7684; Model&#x3001;&#x81EA;&#x5DF1;&#x7684; Cache</td>
+<td>Service</td>
+</tr>
+<tr>
+<td>Cache (&#x670D;&#x52D9;)</td>
+<td>-</td>
+<td>Repository</td>
+</tr>
+<tr>
+<td>Model (&#x6A21;&#x578B;)</td>
+<td>&#x81EA;&#x5DF1;&#x7684; Presenter</td>
+<td>Repository</td>
+</tr>
+<tr>
+<td>Presenter (&#x8CC7;&#x6599;&#x5448;&#x73FE;)</td>
+<td>-</td>
+<td>Model</td>
+</tr>
+</tbody>
+</table>
+<h3 id="view-&#x8996;&#x5716;-&#x4F7F;&#x7528;&#x9650;&#x5236;">View (&#x8996;&#x5716;) &#x4F7F;&#x7528;&#x9650;&#x5236;</h3>
+<p><code>View</code> &#x7684;&#x8077;&#x8CAC;&#x662F;&#x8CA0;&#x8CAC;&#x986F;&#x793A;&#x8CC7;&#x6599;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x8CC7;&#x6599;&#x61C9;&#x7531; <code>Controller</code> &#x6E96;&#x5099;&#x597D;&#x518D;&#x50B3;&#x7D66; <code>View</code>&#xFF0C;&#x6240;&#x4EE5;<code>&#x4E0D;&#x8981;</code>&#x5728; <code>View</code> &#x5167;&#x6709;&#x8907;&#x96DC;&#x7684;&#x7A0B;&#x5F0F;&#x5224;&#x65B7;&#x908F;&#x8F2F;&#xFF0C;&#x5728; <code>View</code> &#x88E1;&#x9762;&#x53EA;&#x6709; <code>if</code>, <code>for</code>, <code>foreach</code> &#x8DDF; <code>echo &#x5217;&#x5370;</code> &#x7684;&#x7A0B;&#x5F0F;&#xFF0C;&#x50C5;&#x9700;&#x8981;&#x5C07;&#x8CC7;&#x6599;&#x5448;&#x73FE;&#x5728;&#x5C0D;&#x7684; HTML &#x88E1;&#x9762;&#xFF0C;&#x4E0D;&#x8981;&#x518D;&#x5C0D;&#x8CC7;&#x6599;&#x91CD;&#x8907;&#x8655;&#x7406;&#x904E;&#x3002;</p>
+<p>&#x50CF;&#x662F;&#x6587;&#x7AE0;&#x7684;&#x7DB2;&#x5740;&#x53EF;&#x80FD;&#x6703;&#x56E0;&#x70BA;&#x985E;&#x578B;&#x4E0D;&#x540C;&#x6703;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x7DB2;&#x5740;&#xFF0C;&#x50CF;&#x662F;&#x4E00;&#x822C;&#x6587;&#x7AE0;&#x7DB2;&#x5740;&#x53EF;&#x80FD;&#x70BA; <code>http://kejyun.com/post/1</code>&#xFF0C;&#x800C;&#x5F71;&#x97F3;&#x6587;&#x7AE0;&#x7DB2;&#x5740;&#x53EF;&#x80FD;&#x70BA; <code>http://kejyun.com/video/2</code>&#xFF0C;&#x5169;&#x8005;&#x7684;&#x8CC7;&#x6599;&#x7686;&#x70BA; Post &#x8CC7;&#x6599;&#x8868;&#x7684;&#x8CC7;&#x6599;&#xFF0C;&#x5728; <code>View</code> &#x4E2D;&#x8981;&#x986F;&#x793A;&#x7DB2;&#x5740;&#x61C9;&#x70BA; <code>echo $Post-&gt;post_url;</code> &#x5C07;&#x7DB2;&#x5740;&#x5370;&#x51FA;&#xFF0C;<code>post_url</code> &#x5247;&#x662F;&#x5728;&#x50B3;&#x7D66; <code>View</code> &#x4E4B;&#x524D;&#x5C31;&#x7D93;&#x904E;&#x908F;&#x8F2F;&#x5224;&#x65B7;&#x7684;&#x8CC7;&#x6599;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5728; <code>View</code> &#x4E2D;&#x5224;&#x65B7;&#x4E0D;&#x540C;&#x6587;&#x7AE0;&#x985E;&#x578B;&#xFF08;<code>PostConstant::POST_TYPE_NORMAL</code>, <code>PostConstant::POST_TYPE_VIDEO</code>&#xFF09;&#x5728; View &#x4E2D;&#x986F;&#x793A;&#x4E0D;&#x540C;&#x7684;&#x7DB2;&#x5740;&#x8CC7;&#x6599;&#x3002;</p>
+<p>&#x4E4B;&#x5F8C;&#x82E5;&#x6587;&#x7AE0;&#x7DB2;&#x5740;&#x908F;&#x8F2F;&#x9700;&#x8981;&#x4FEE;&#x6539;&#xFF0C;&#x5247;&#x9700;&#x8981;&#x5230;&#x5404;&#x500B; View &#x4E2D;&#x53BB;&#x4FEE;&#x6539;&#xFF0C;&#x5F88;&#x5BB9;&#x6613;&#x6F0F;&#x6539;&#x9053;&#x9020;&#x6210;&#x7CFB;&#x7D71;&#x7A0B;&#x5F0F;&#x51FA;&#x932F;</p>
+<pre><code class="lang-php">&lt;a href=<span class="hljs-string">&quot;{{ $Post-&gt;post_url }}&quot;</span>&gt; {{ $Post-&gt;Title }}&lt;/a&gt;
+</code></pre>
+<h2 id="&#x7D50;&#x69CB;&#x7BC4;&#x4F8B;&#x8AAA;&#x660E;">&#x7D50;&#x69CB;&#x7BC4;&#x4F8B;&#x8AAA;&#x660E;</h2>
+<h3 id="controller-&#x63A7;&#x5236;&#x5668;">Controller (&#x63A7;&#x5236;&#x5668;)</h3>
+<blockquote>
+<p>&#x53EF;&#x4EE5;&#x5B58;&#x53D6;&#x7D50;&#x69CB;&#xFF1A;<code>Checker</code>&#x3001;<code>Concrete</code>&#x3001;<code>Service</code>&#x3001;<code>DB transaction</code></p>
+<p>&#x53EF;&#x4EE5;&#x88AB;&#x5B58;&#x53D6;&#x7D50;&#x69CB;&#xFF1A;&#x7121;</p>
+</blockquote>
+<p>&#x8655;&#x7406; HTTP &#x8ACB;&#x6C42;&#x7684;&#x5165;&#x53E3;&#xFF0C;&#x4F9D;&#x7167;&#x9700;&#x6C42;&#x547C;&#x53EB; Concrete &#x6216; Service &#x53BB;&#x505A;&#x8CC7;&#x6599;&#x7684;&#x5B58;&#x53D6;&#xFF0C;&#x5927;&#x90E8;&#x5206;&#x60C5;&#x6CC1;&#x547C;&#x53EB; Service &#x53BB;&#x7D44;&#x5408;&#x9700;&#x8981;&#x7684;&#x8CC7;&#x6599;&#x5C31;&#x597D;&#xFF0C;&#x82E5;&#x76F8;&#x540C;&#x7684;&#x7D44;&#x5408;&#x908F;&#x8F2F;&#x5728;&#x4E0D;&#x540C;&#x7684; Controller &#x90FD;&#x6709;&#x7528;&#x5230;&#xFF0C;&#x90A3;&#x5C31;&#x4F7F;&#x7528; Concrete &#x53BB;&#x7D44;&#x5408;&#x4E0D;&#x540C;&#x7684; Service</p>
+<p>&#x8981;&#x78BA;&#x4FDD;&#x6240;&#x6709; Service &#x5546;&#x696D;&#x908F;&#x8F2F;&#x90FD;&#x6B63;&#x78BA;&#x8DD1;&#x5B8C;&#x624D;&#x5141;&#x8A31;&#x5C0D;&#x8CC7;&#x6599;&#x505A;&#x7570;&#x52D5;&#xFF0C;&#x4E26;&#x907F;&#x514D; Transaction &#x5728; Controller &#x53CA; Service &#x88AB;&#x91CD;&#x8907;&#x547C;&#x53EB;&#xFF0C;&#x5C0E;&#x81F4;&#x7121;&#x6CD5;&#x6B63;&#x78BA;&#x9396;&#x5B9A;&#x8CC7;&#x6599;&#x72C0;&#x614B;&#xFF0C;&#x6240;&#x4EE5;&#x4F7F;&#x7528; Controller &#x7576;&#x4F5C;&#x8CC7;&#x6599;&#x4EA4;&#x6613;&#xFF08;Transaction&#xFF09;&#x7684;&#x63A7;&#x5236;&#x9EDE;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PostController</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Controller</span>
+</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__construct</span><span class="hljs-params">(
+        PostConcrete $PostConcrete,
+        PostService $PostService,
+        CommentService $CommentService,
+        PostChecker $PostChecker
+    )</span>
+    </span>{
+        $this-&gt;PostConcrete = $PostConcrete;
+        $this-&gt;PostService = $PostService;
+        $this-&gt;CommentService = $CommentService;
+        $this-&gt;PostChecker = $PostChecker;
+    }
+
+    <span class="hljs-comment">// &#x986F;&#x793A;&#x6587;&#x7AE0;</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">show</span><span class="hljs-params">($post_id)</span> </span>{
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-comment">// &#x9A57;&#x8B49;&#x8CC7;&#x6599;</span>
+            $input = [
+                <span class="hljs-string">&apos;post_id&apos;</span> =&gt; $post_id
+            ];
+            $this-&gt;PostChecker-&gt;checkShow($input);
+
+            <span class="hljs-comment">// &#x6488;&#x53D6;&#x6587;&#x7AE0;</span>
+            $Post = $this-&gt;PostConcrete-&gt;findPost($post_id);
+
+            <span class="hljs-comment">// &#x6488;&#x53D6;&#x6587;&#x7AE0;&#x7559;&#x8A00;</span>
+            $Comment = $this-&gt;CommentService-&gt;getCommentByPostId(post_id);
+        } <span class="hljs-keyword">catch</span> (<span class="hljs-keyword">Exception</span> $exception) {
+            <span class="hljs-keyword">throw</span> $exception
+        }
+    }
+
+    <span class="hljs-comment">// &#x66F4;&#x65B0;&#x6587;&#x7AE0;</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">update</span><span class="hljs-params">($post_id)</span> </span>{
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-comment">// &#x9A57;&#x8B49;&#x8CC7;&#x6599;</span>
+            $input = request()-&gt;all();
+            $input[<span class="hljs-string">&apos;post_id&apos;</span>] = $post_id;
+            $this-&gt;PostChecker-&gt;checkUpdate($input);
+
+            <span class="hljs-comment">// &#x4EA4;&#x6613;&#x958B;&#x59CB;</span>
+            DB::beginTransaction();
+
+            <span class="hljs-comment">// &#x66F4;&#x65B0;&#x6587;&#x7AE0;</span>
+            $Post = $this-&gt;PostService-&gt;update($post_id, $input);
+
+            <span class="hljs-comment">// &#x4EA4;&#x6613;&#x7D50;&#x675F;</span>
+            DB::commit();
+        } <span class="hljs-keyword">catch</span> (<span class="hljs-keyword">Exception</span> $exception) {
+            <span class="hljs-comment">// &#x4EA4;&#x6613;&#x5931;&#x6557;</span>
+            DB::rollBack();
+            <span class="hljs-keyword">throw</span> $exception
+        }
+    }
+}
+</code></pre>
+<h3 id="concrete-&#x670D;&#x52D9;&#x7D44;&#x5408;">Concrete (&#x670D;&#x52D9;&#x7D44;&#x5408;)</h3>
+<blockquote>
+<p>&#x53EF;&#x4EE5;&#x5B58;&#x53D6;&#x7D50;&#x69CB;&#xFF1A;<code>Service</code></p>
+<p>&#x53EF;&#x4EE5;&#x88AB;&#x5B58;&#x53D6;&#x7D50;&#x69CB;&#xFF1A;<code>Controller</code></p>
+</blockquote>
+<p>&#x4F7F;&#x7528;&#x4E0D;&#x540C; Service &#x6488;&#x53D6;&#x8CC7;&#x6599;&#xFF0C;&#x5C07;&#x4E0D;&#x540C;&#x8CC7;&#x6599;&#x7D44;&#x5408;&#x6210;&#x5546;&#x696D;&#x908F;&#x8F2F;&#xFF0C;&#x4F9B; Controller &#x505A;&#x5B58;&#x53D6;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PostConcrete</span> </span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__construct</span><span class="hljs-params">(
+        PostService $PostService,
+        UserService $UserService
+    )</span>
+    </span>{
+        $this-&gt;PostService = $PostService;
+        $this-&gt;UserService = $UserService;
+    }
+
+    <span class="hljs-comment">// &#x6488;&#x53D6;&#x6587;&#x7AE0;&#x8CC7;&#x6599;</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">findPost</span><span class="hljs-params">($post_id)</span></span>{
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-comment">// &#x6488;&#x53D6;&#x6587;&#x7AE0;</span>
+            $Post = $this-&gt;PostService-&gt;findPost($post_id);
+            <span class="hljs-comment">// &#x6488;&#x53D6;&#x6587;&#x7AE0;&#x4F5C;&#x8005;&#x8CC7;&#x6599;</span>
+            $user_id = $Post-&gt;user_id;
+            $Post-&gt;user = $this-&gt;UserService-&gt;findUser($user_id);
+
+            <span class="hljs-keyword">return</span> $Post;
+        } <span class="hljs-keyword">catch</span> (<span class="hljs-keyword">Exception</span> $exception) {
+            <span class="hljs-keyword">throw</span> $exception
+        }
+    }
+}
+</code></pre>
+<h3 id="service-&#x670D;&#x52D9;">Service (&#x670D;&#x52D9;)</h3>
+<blockquote>
+<p>&#x53EF;&#x4EE5;&#x5B58;&#x53D6;&#x7D50;&#x69CB;&#xFF1A;<code>Repository</code></p>
+<p>&#x53EF;&#x4EE5;&#x88AB;&#x5B58;&#x53D6;&#x7D50;&#x69CB;&#xFF1A;<code>Controller</code>&#x3001;<code>Concrete</code></p>
+</blockquote>
+<p>&#x900F;&#x904E; Validator &#x9A57;&#x8B49;&#x50B3;&#x5165;&#x7684;&#x8CC7;&#x6599;&#xFF0C;&#x4E26;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684; Repository &#x6488;&#x53D6;&#x8CC7;&#x6599;&#xFF0C;&#x5C07;&#x4E0D;&#x540C;&#x8CC7;&#x6599;&#x7D44;&#x5408;&#x6210;&#x5546;&#x696D;&#x908F;&#x8F2F;
+&#x4F7F;&#x7528; Repository &#x7684; Cache &#x6E05;&#x9664; Service &#x4E2D;&#x6488;&#x53D6;&#x8CC7;&#x6599;&#x7684;&#x5FEB;&#x53D6;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PostService</span> </span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__construct</span><span class="hljs-params">(
+        PostRepository $PostRepository,
+        PostTagRepository $PostTagRepository
+    )</span>
+    </span>{
+        $this-&gt;PostRepository = $PostRepository;
+        $this-&gt;PostTagRepository = $PostTagRepository;
+    }
+
+    <span class="hljs-comment">// &#x6488;&#x53D6;&#x6587;&#x7AE0;</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">findPost</span><span class="hljs-params">($post_id)</span> </span>{
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-comment">// &#x6488;&#x53D6;&#x6587;&#x7AE0;</span>
+            $Post = $this-&gt;PostRepository-&gt;find($post_id);
+            <span class="hljs-comment">// &#x6488;&#x53D6;&#x6587;&#x7AE0;&#x6A19;&#x7C64;</span>
+            $Post-&gt;tag = $this-&gt;PostTagRepository-&gt;getByPostId($post_id);
+
+            <span class="hljs-keyword">return</span> $Post;
+        } <span class="hljs-keyword">catch</span> (<span class="hljs-keyword">Exception</span> $exception) {
+            <span class="hljs-keyword">throw</span> $exception
+        }
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">clearPostCache</span><span class="hljs-params">($post_id)</span> </span>{
+        <span class="hljs-keyword">try</span> {
+            $Post = $this-&gt;findPost($post_id);
+            <span class="hljs-comment">// &#x6E05;&#x9664;&#x6587;&#x7AE0;&#x5FEB;&#x53D6;</span>
+            $this-&gt;PostRepository-&gt;cache()-&gt;clearPostCache($Post);
+            <span class="hljs-comment">// &#x6E05;&#x9664;&#x6587;&#x7AE0;&#x6A19;&#x7C64;&#x5FEB;&#x53D6;</span>
+            $this-&gt;PostTagCache-&gt;clearPostTagCache($Post-&gt;tag);
+        } <span class="hljs-keyword">catch</span> (<span class="hljs-keyword">Exception</span> $exception) {
+            <span class="hljs-keyword">throw</span> $exception
+        }
+    }
+}
+</code></pre>
+<h3 id="checker-&#x6AA2;&#x67E5;&#x5668;">Checker (&#x6AA2;&#x67E5;&#x5668;)</h3>
+<blockquote>
+<p>&#x53EF;&#x4EE5;&#x5B58;&#x53D6;&#x7D50;&#x69CB;&#xFF1A;<code>Validator</code></p>
+<p>&#x53EF;&#x4EE5;&#x88AB;&#x5B58;&#x53D6;&#x7D50;&#x69CB;&#xFF1A;<code>Controller</code></p>
+</blockquote>
+<p>&#x5354;&#x52A9; Controller &#x9A57;&#x8B49;&#x8CC7;&#x6599;&#x7684;&#x6B63;&#x78BA;&#x6027;&#xFF0C;&#x82E5;&#x9A57;&#x8B49;&#x932F;&#x8AA4;&#x5247;&#x4E1F;&#x8655;&#x4F8B;&#x5916;&#xFF0C;Controller &#x6839;&#x64DA;&#x4F8B;&#x5916;&#x4EE3;&#x78BC;&#x53BB;&#x505A;&#x8655;&#x7406;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PostValidator</span> </span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">checkFindPost</span><span class="hljs-params">($input)</span></span>{
+        <span class="hljs-comment">// &#x9A57;&#x8B49;&#x6587;&#x7AE0;&#x8CC7;&#x6599;</span>
+        $this-&gt;PostValidator-&gt;validatePostId($input);
+        $this-&gt;PostValidator-&gt;validatePostContent($input);
+
+        <span class="hljs-comment">// &#x9A57;&#x8B49;&#x6703;&#x54E1;&#x8CC7;&#x6599;</span>
+        $this-&gt;MemberValidator-&gt;validateMemberId($input);
+    }
+}
+</code></pre>
+<h3 id="validator-&#x9A57;&#x8B49;&#x5668;">Validator (&#x9A57;&#x8B49;&#x5668;)</h3>
+<blockquote>
+<p>&#x53EF;&#x4EE5;&#x5B58;&#x53D6;&#x7D50;&#x69CB;&#xFF1A;&#x7121;</p>
+<p>&#x53EF;&#x4EE5;&#x88AB;&#x5B58;&#x53D6;&#x7D50;&#x69CB;&#xFF1A;<code>Checker</code></p>
+</blockquote>
+<p>&#x5354;&#x52A9; Checker &#x9A57;&#x8B49;&#x8CC7;&#x6599;&#x7684;&#x6B63;&#x78BA;&#x6027;&#xFF0C;&#x82E5;&#x9A57;&#x8B49;&#x932F;&#x8AA4;&#x5247;&#x4E1F;&#x8655;&#x4F8B;&#x5916;&#xFF0C;Checker &#x6839;&#x64DA;&#x4F8B;&#x5916;&#x4EE3;&#x78BC;&#x53BB;&#x505A;&#x8655;&#x7406;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PostValidator</span> </span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">validatePostId</span><span class="hljs-params">($input)</span></span>{
+        <span class="hljs-comment">// &#x8A2D;&#x5B9A;&#x9A57;&#x8B49;&#x898F;&#x5247;</span>
+        $rules = [
+            <span class="hljs-string">&apos;post_id&apos;</span> =&gt; [
+                <span class="hljs-string">&apos;required&apos;</span>,
+                <span class="hljs-string">&apos;max:20&apos;</span>,
+            ],
+        ];
+
+        <span class="hljs-comment">// &#x958B;&#x59CB;&#x9A57;&#x8B49;</span>
+        $this-&gt;validator = Validator::make($input, $rules);
+
+        <span class="hljs-keyword">if</span> ($this-&gt;validator-&gt;fails()) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-keyword">Exception</span>(
+                <span class="hljs-string">&apos;&#x6587;&#x7AE0;&#x7DE8;&#x865F;&#x683C;&#x5F0F;&#x932F;&#x8AA4;&apos;</span>,
+                PostExceptionCode::POST_ID_FORMAT_ERROR
+            );
+        }
+    }
+}
+</code></pre>
+<h3 id="repository-&#x8CC7;&#x6E90;&#x5EAB;">Repository (&#x8CC7;&#x6E90;&#x5EAB;)</h3>
+<blockquote>
+<p>&#x53EF;&#x4EE5;&#x5B58;&#x53D6;&#x7D50;&#x69CB;&#xFF1A;&#x81EA;&#x5DF1;&#x7684; Model&#x3001;&#x81EA;&#x5DF1;&#x7684; Cache</p>
+<p>&#x53EF;&#x4EE5;&#x88AB;&#x5B58;&#x53D6;&#x7D50;&#x69CB;&#xFF1A;<code>Service</code></p>
+</blockquote>
+<p>&#x50C5;&#x80FD;&#x6488;&#x53D6;&#x5C6C;&#x65BC;&#x81EA;&#x5DF1;&#x7684; Model &#x8CC7;&#x6599;&#xFF0C;&#x50CF; <code>PostRepository</code> &#x50C5;&#x80FD;&#x5B58;&#x53D6; <code>Post</code> Model (&#x6A21;&#x578B;) &#x7684;&#x8CC7;&#x6599;&#xFF0C;&#x4E26;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x689D;&#x4EF6;&#x6488;&#x53D6; Model &#x7684;&#x8CC7;&#x6599;&#xFF0C;&#x4F9B; Service &#x505A;&#x5B58;&#x53D6;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PostRepository</span> </span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__construct</span><span class="hljs-params">(
+        Post $Post,
+        PostCache $PostCache
+    )</span>
+    </span>{
+        $this-&gt;Post = $Post;
+        $this-&gt;PostCache = $PostCache;
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">cache</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> $this-&gt;PostCache;
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">find</span><span class="hljs-params">($post_id)</span> </span>{
+        <span class="hljs-keyword">try</span> {
+            $cache_key = $this-&gt;cache()-&gt;getPostCacheKey($post_id);
+            <span class="hljs-keyword">if</span> (Cache::has($cache_key)) {
+                <span class="hljs-comment">// &#x6709;&#x5FEB;&#x53D6;&#x8CC7;&#x6599;</span>
+                $Post = Cache::get($cache_key);
+                <span class="hljs-keyword">return</span> $Post;
+            }
+
+            <span class="hljs-comment">// &#x6488;&#x53D6;&#x8CC7;&#x6599;&#x5EAB;&#x6587;&#x7AE0;&#x8CC7;&#x6599;</span>
+            $Post = $this-&gt;Post-&gt;find($post_id);
+
+            <span class="hljs-keyword">if</span>(!is_null($Post)) {
+                <span class="hljs-comment">// &#x7D00;&#x9304;&#x5FEB;&#x53D6;</span>
+                $this-&gt;cache()-&gt;putPost($Post);
+            }
+
+            <span class="hljs-keyword">return</span> $Post;
+        } <span class="hljs-keyword">catch</span> (<span class="hljs-keyword">Exception</span> $exception) {
+            <span class="hljs-keyword">throw</span> $exception
+        }
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">findLatestPost</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">try</span> {
+            $cache_key = $this-&gt;cache()-&gt;getLatestPostCacheKey($post_id);
+            <span class="hljs-keyword">if</span> (Cache::has($cache_key)) {
+                <span class="hljs-comment">// &#x6709;&#x5FEB;&#x53D6;&#x8CC7;&#x6599;</span>
+                $$Posts = Cache::get($cache_key);
+                <span class="hljs-keyword">return</span> $Post;
+            }
+
+            <span class="hljs-comment">// &#x6488;&#x53D6;&#x8CC7;&#x6599;&#x5EAB;&#x6587;&#x7AE0;&#x8CC7;&#x6599;</span>
+            $Post = $this-&gt;Post
+                -&gt;order(<span class="hljs-string">&apos;created_at&apos;</span>, <span class="hljs-string">&apos;desc&apos;</span>)
+                -&gt;first();
+
+            <span class="hljs-keyword">if</span>(!is_null($Post)) {
+                <span class="hljs-comment">// &#x7D00;&#x9304;&#x5FEB;&#x53D6;</span>
+                $this-&gt;cache()-&gt;putLatestPost($Post);
+            }
+
+            <span class="hljs-keyword">return</span> $Post;
+        } <span class="hljs-keyword">catch</span> (<span class="hljs-keyword">Exception</span> $exception) {
+            <span class="hljs-keyword">throw</span> $exception
+        }
+    }
+}
+</code></pre>
+<h3 id="cache-&#x5FEB;&#x53D6;">Cache (&#x5FEB;&#x53D6;)</h3>
+<blockquote>
+<p>&#x53EF;&#x4EE5;&#x5B58;&#x53D6;&#x7D50;&#x69CB;&#xFF1A;&#x7121;</p>
+<p>&#x53EF;&#x4EE5;&#x88AB;&#x5B58;&#x53D6;&#x7D50;&#x69CB;&#xFF1A;<code>Repository</code></p>
+</blockquote>
+<p>&#x5354;&#x52A9; Repository &#x505A;&#x5FEB;&#x53D6;&#x8CC7;&#x6599;&#x7684;&#x63A7;&#x5236;&#xFF0C;&#x5FEB;&#x53D6;&#x9375;&#x503C;&#x7684;&#x7BA1;&#x7406;&#x3001;&#x8CC7;&#x6599;&#x8B80;&#x53D6;&#x53CA;&#x6E05;&#x9664;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PostCache</span> </span>{
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getPostCacheKey</span><span class="hljs-params">($post_id)</span> </span>{
+        <span class="hljs-comment">// &#x6488;&#x53D6;&#x6587;&#x7AE0;&#x5FEB;&#x53D6;&#x9375;&#x503C;</span>
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">putPost</span><span class="hljs-params">(Post $Post)</span> </span>{
+        <span class="hljs-comment">// &#x7D00;&#x9304;&#x6587;&#x7AE0;&#x5FEB;&#x53D6;</span>
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">clearPostCache</span><span class="hljs-params">(Post $Post)</span> </span>{
+        <span class="hljs-comment">// &#x6E05;&#x9664;&#x6587;&#x7AE0;&#x5FEB;&#x53D6;</span>
+    }
+}
+</code></pre>
+<h3 id="model-&#x6A21;&#x578B;">Model (&#x6A21;&#x578B;)</h3>
+<blockquote>
+<p>&#x53EF;&#x4EE5;&#x5B58;&#x53D6;&#x7D50;&#x69CB;&#xFF1A;&#x7121;</p>
+<p>&#x53EF;&#x4EE5;&#x88AB;&#x5B58;&#x53D6;&#x7D50;&#x69CB;&#xFF1A;<code>Repository</code></p>
+</blockquote>
+<p>Eloquent &#x5B58;&#x53D6;&#x8CC7;&#x6599;&#x8868;&#x76F8;&#x95DC;&#x8A2D;&#x5B9A;&#xFF0C;&#x4F7F;&#x7528; Eloquent &#x76F4;&#x63A5;&#x5B58;&#x53D6;&#x8CC7;&#x6599;&#x8868;&#x8CC7;&#x6599;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Post</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Model</span>
+</span>{
+    <span class="hljs-keyword">protected</span> $table = <span class="hljs-string">&apos;post&apos;</span>;
+
+    <span class="hljs-keyword">protected</span> $fillable = [];
+
+    <span class="hljs-keyword">protected</span> $primaryKey = <span class="hljs-string">&apos;id&apos;</span>;
+
+    <span class="hljs-keyword">protected</span> $dates = [<span class="hljs-string">&apos;created_at&apos;</span>, <span class="hljs-string">&apos;updated_at&apos;</span>];
+
+    <span class="hljs-keyword">protected</span> $presenter = <span class="hljs-string">&apos;PostPresenter&apos;</span>;
+}
+</code></pre>
+<h3 id="presenter-&#x8CC7;&#x6599;&#x5448;&#x73FE;">Presenter (&#x8CC7;&#x6599;&#x5448;&#x73FE;)</h3>
+<blockquote>
+<p>&#x53EF;&#x4EE5;&#x5B58;&#x53D6;&#x7D50;&#x69CB;&#xFF1A;&#x7121;</p>
+<p>&#x53EF;&#x4EE5;&#x88AB;&#x5B58;&#x53D6;&#x7D50;&#x69CB;&#xFF1A;<code>Model</code></p>
+</blockquote>
+<p>&#x63D0;&#x4F9B; Model &#x7684;&#x8CC7;&#x6599;&#x7528;&#x5176;&#x4ED6;&#x65B9;&#x5F0F;&#x5448;&#x73FE;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PostPresenter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Presenter</span>
+</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">created_at_human_time</span><span class="hljs-params">()</span>
+    </span>{
+        <span class="hljs-keyword">return</span> $this-&gt;created_at-&gt;diffForHumans();
+    }
+}
+</code></pre>
+<h3 id="constant-&#x5E38;&#x6578;">Constant (&#x5E38;&#x6578;)</h3>
+<blockquote>
+<p>&#x53EF;&#x4EE5;&#x5B58;&#x53D6;&#x7D50;&#x69CB;&#xFF1A;&#x7121;</p>
+<p>&#x53EF;&#x4EE5;&#x88AB;&#x5B58;&#x53D6;&#x7D50;&#x69CB;&#xFF1A;&#x7121;&#x9650;&#x5236;</p>
+</blockquote>
+<p>&#x8CC7;&#x6599;&#x7686;&#x70BA;&#x975C;&#x614B;&#x8B8A;&#x6578;&#xFF0C;&#x53EF;&#x4EE5;&#x4F9B;&#x6240;&#x6709;&#x8CC7;&#x6599;&#x5C64;&#x7D1A; (e.g. Controller&#x3001;Service&#x3001;Repository) &#x505A;&#x5B58;&#x53D6;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PostConstant</span> </span>{
+    <span class="hljs-keyword">const</span> POST_TYPE_PUBLIC = <span class="hljs-string">&apos;P&apos;</span>;
+    <span class="hljs-keyword">const</span> POST_TYPE_DELETE = <span class="hljs-string">&apos;D&apos;</span>;
+}
+</code></pre>
+<h3 id="support-&#x652F;&#x63F4;">Support (&#x652F;&#x63F4;)</h3>
+<blockquote>
+<p>&#x53EF;&#x4EE5;&#x5B58;&#x53D6;&#x7D50;&#x69CB;&#xFF1A;&#x7121;</p>
+<p>&#x53EF;&#x4EE5;&#x88AB;&#x5B58;&#x53D6;&#x7D50;&#x69CB;&#xFF1A;&#x7121;&#x9650;&#x5236;</p>
+</blockquote>
+<p>&#x65B9;&#x6CD5;&#x7686;&#x70BA;&#x975C;&#x614B;&#x8B8A;&#x6578;&#xFF0C;&#x53EF;&#x4EE5;&#x4F9B;&#x6240;&#x6709;&#x8CC7;&#x6599;&#x5C64;&#x7D1A; (e.g. Controller&#x3001;Service&#x3001;Repository) &#x505A;&#x5B58;&#x53D6;</p>
+<p>&#x82E5;&#x6709;&#x5176;&#x4ED6;&#x53EF;&#x4F9B;&#x5168;&#x57DF;&#x5171;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x7686;&#x5BEB;&#x5728; Support &#x975C;&#x614B;&#x65B9;&#x6CD5;&#x4F9B;&#x5927;&#x5BB6;&#x5B58;&#x53D6;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PostSupport</span> </span>{
+    <span class="hljs-comment">// &#x6488;&#x53D6;&#x6240;&#x6709;&#x6587;&#x7AE0;&#x985E;&#x578B;</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getAllPostType</span><span class="hljs-params">()</span> </span>{
+        $all_post_type = [
+            PostConstant::POST_TYPE_PUBLIC,
+            PostConstant::POST_TYPE_DELETE,
+        ];
+        <span class="hljs-keyword">return</span> $all_post_type;
+    }
+}
+</code></pre>
+<h3 id="exceptioncode-&#x4F8B;&#x5916;&#x4EE3;&#x78BC;">ExceptionCode (&#x4F8B;&#x5916;&#x4EE3;&#x78BC;)</h3>
+<blockquote>
+<p>&#x53EF;&#x4EE5;&#x5B58;&#x53D6;&#x7D50;&#x69CB;&#xFF1A;&#x7121;</p>
+<p>&#x53EF;&#x4EE5;&#x88AB;&#x5B58;&#x53D6;&#x7D50;&#x69CB;&#xFF1A;&#x7121;&#x9650;&#x5236;</p>
+</blockquote>
+<p>&#x8CC7;&#x6599;&#x7686;&#x70BA;&#x975C;&#x614B;&#x8B8A;&#x6578;&#xFF0C;&#x53EF;&#x4EE5;&#x4F9B;&#x6240;&#x6709;&#x8CC7;&#x6599;&#x5C64;&#x7D1A; (e.g. Controller&#x3001;Service&#x3001;Repository) &#x505A;&#x5B58;&#x53D6;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PostExceptionCode</span> </span>{
+    <span class="hljs-keyword">const</span> POST_ID_FORMAT_ERROR = <span class="hljs-number">10000001</span>;
+    <span class="hljs-keyword">const</span> POST_NOT_FOUND = <span class="hljs-number">10000002</span>;
+    <span class="hljs-keyword">const</span> POST_TAG_NOT_FOUND = <span class="hljs-number">10000003</span>;
+}
+</code></pre>
+<table>
+    <tr>
+        <th colspan="2">
+            <h2 style="font-size:22px;" id="
+----------------kejyun-&#x6700;&#x65B0;&#x65B0;&#x66F8;&#x63A8;&#x85A6;laravel-5-for-beginner-&#x65B0;&#x624B;&#x9053;&#x5834;&#xFF1A;&#x512A;&#x96C5;&#x904B;&#x7528;&#x6846;&#x67B6;&#x5FEB;&#x901F;&#x958B;&#x767C;-php-&#x7DB2;&#x7AD9;
+----------------
+----------------laravel&#x6846;&#x67B6;&#x5F00;&#x53D1;&#x8BE6;&#x89E3;&#xFF1A;&#x4ECE;&#x96F6;&#x57FA;&#x7840;&#x5230;&#x8FD0;&#x7528;&#x6846;&#x67B6;&#x5FEB;&#x901F;&#x5F00;&#x53D1;php&#x7F51;&#x7AD9;
+------------">
+                KeJyun &#x6700;&#x65B0;&#x65B0;&#x66F8;&#x63A8;&#x85A6;<br>Laravel 5 for beginner &#x65B0;&#x624B;&#x9053;&#x5834;&#xFF1A;&#x512A;&#x96C5;&#x904B;&#x7528;&#x6846;&#x67B6;&#x5FEB;&#x901F;&#x958B;&#x767C; PHP &#x7DB2;&#x7AD9;
+                <br>
+                Laravel&#x6846;&#x67B6;&#x5F00;&#x53D1;&#x8BE6;&#x89E3;&#xFF1A;&#x4ECE;&#x96F6;&#x57FA;&#x7840;&#x5230;&#x8FD0;&#x7528;&#x6846;&#x67B6;&#x5FEB;&#x901F;&#x5F00;&#x53D1;PHP&#x7F51;&#x7AD9;
+            </h2>
+        </th>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <p>Laravel &#x662F; PHP &#x7684;&#x6846;&#x67B6;&#xFF08;Framework&#xFF09;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x5F88;&#x591A;&#x958B;&#x767C;&#x7DB2;&#x7AD9;&#x6216; API &#x6240;&#x9700;&#x7684;&#x5DE5;&#x5177;&#x53CA;&#x74B0;&#x5883;&#xFF0C;&#x7D93;&#x904E;&#x7C21;&#x55AE;&#x7684;&#x8A2D;&#x5B9A;&#x5C31;&#x53EF;&#x4EE5;&#x5B8C;&#x6210;&#x8CC7;&#x6599;&#x7684;&#x8655;&#x7406;&#x53CA;&#x986F;&#x793A;&#xFF0C;&#x4F7F;&#x958B;&#x767C;&#x8005;&#x53EF;&#x4EE5;&#x5F88;&#x512A;&#x96C5;&#x4E14;&#x5FEB;&#x901F;&#x7684;&#x958B;&#x767C;&#x51FA;&#x5404;&#x500B;&#x4E0D;&#x540C;&#x7684;&#x7522;&#x54C1;&#x3002;&#x672C;&#x66F8;&#x9069;&#x5408;&#x6709;
+                PHP &#x57FA;&#x790E;&#x7684;&#x4EBA;&#xFF0C;&#x4F46;&#x4E0D;&#x77E5;&#x9053;&#x8981;&#x600E;&#x9EBC;&#x9078;&#x64C7;&#x6846;&#x67B6;&#xFF0C;&#x6216;&#x8005;&#x4E0D;&#x7528;&#x6846;&#x67B6;&#x7684;&#x4EBA;&#x4E5F;&#x80FD;&#x5920;&#x660E;&#x767D;&#x5B83;&#x7684;&#x597D;&#x8655;&#x3002;</p>
+            <p>&#x96D6;&#x7136; WordPress &#x4E5F;&#x80FD;&#x5920;&#x67B6;&#x7AD9;&#xFF0C;&#x4F46;&#x5982;&#x679C;&#x6709;&#x5BA2;&#x88FD;&#x5316;&#x9700;&#x6C42;&#xFF0C;&#x8981;&#x958B;&#x767C;&#x5404;&#x5F0F;&#x5404;&#x6A23;&#x7684;&#x7DB2;&#x7AD9;&#xFF0C;&#x6216;&#x63D0;&#x4F9B; App &#x4F7F;&#x7528;&#x7684; API&#xFF0C;&#x5982;&#x6B64;&#x4E00;&#x4F86;&#x4F60;&#x53EA;&#x80FD;&#x9078;&#x64C7;&#x7528;&#x6846;&#x67B6;&#xFF0C;&#x800C; Laravel &#x662F;&#x76EE;&#x524D;&#x6700;&#x53D7;&#x6B61;&#x8FCE;&#x7684;&#x3002;</p>
+            <p>&#x672C;&#x66F8;&#x5C07;&#x89E3;&#x8AAA;&#x70BA;&#x4EC0;&#x9EBC;&#x8981;&#x4F7F;&#x7528;&#x6846;&#x67B6;&#xFF0C;&#x4EE5;&#x53CA;&#x7406;&#x89E3;&#x6846;&#x67B6;&#x7684;&#x512A;&#x7F3A;&#x9EDE;&#x5F8C;&#xFF0C;&#x8981;&#x600E;&#x9EBC;&#x9078;&#x64C7;&#x6846;&#x67B6;&#xFF0C;&#x4E26;&#x7528;&#x6846;&#x67B6;&#x5FEB;&#x901F;&#x5EFA;&#x69CB;&#x4E00;&#x500B;&#x7DB2;&#x7AD9;&#x3002;&#x9664;&#x975E;&#x5FC5;&#x8981;&#xFF0C;&#x5426;&#x5247;&#x66F8;&#x4E2D;&#x6703;&#x907F;&#x514D;&#x5C08;&#x696D;&#x6280;&#x8853;&#x7528;&#x8A9E;&#xFF0C;&#x76E1;&#x91CF;&#x4F7F;&#x7528;&#x6700;&#x751F;&#x6D3B;&#x5316;&#x6613;&#x61C2;&#x7684;&#x4F8B;&#x5B50;&#x53CA;&#x8A9E;&#x6C23;&#xFF0C;&#x8B93;&#x5927;&#x5BB6;&#x66F4;&#x5BB9;&#x6613;&#x9032;&#x5165; Laravel &#x7684;&#x4E16;&#x754C;&#x3002;</p>
+        </td>
+    </tr>
+    <tr>
+        <td style="width:30%;">
+            <img 5="" src="https://i.imgur.com/RYcmwgY.png" alt"laravel="" for="" beginner="" 新手道場：優雅運用框架快速開發="" php="" 網站"="">
+        </td>
+        <td>
+            <h3 style="font-size:16px;" id="
+----------------&#x8CFC;&#x66F8;&#x9023;&#x7D50;
+------------">
+                &#x8CFC;&#x66F8;&#x9023;&#x7D50;
+            </h3>
+            <ul>
+                <li>
+                    <a href="https://goo.gl/Juv97M" target="_blank" alt="&#x535A;&#x5BA2;&#x4F86;-Laravel 5 for beginner &#x65B0;&#x624B;&#x9053;&#x5834;&#xFF1A;&#x512A;&#x96C5;&#x904B;&#x7528;&#x6846;&#x67B6;&#x5FEB;&#x901F;&#x958B;&#x767C; PHP &#x7DB2;&#x7AD9;">
+                        &#x535A;&#x5BA2;&#x4F86;
+                    </a>
+                </li>
+                <li>
+                    <a href="https://goo.gl/fa5dWf" target="_blank" alt="&#x5929;&#x74CF;&#x7DB2;&#x8DEF;&#x66F8;&#x5E97;-Laravel 5 for beginner &#x65B0;&#x624B;&#x9053;&#x5834;&#xFF1A;&#x512A;&#x96C5;&#x904B;&#x7528;&#x6846;&#x67B6;&#x5FEB;&#x901F;&#x958B;&#x767C; PHP &#x7DB2;&#x7AD9;">
+                        &#x5929;&#x74CF;&#x7DB2;&#x8DEF;&#x66F8;&#x5E97;
+                    </a>
+                </li>
+                <li>
+                    <a href="https://goo.gl/Ym73kH" target="_blank" alt="Laravel 5 for beginner &#x65B0;&#x624B;&#x9053;&#x5834;&#xFF1A;&#x512A;&#x96C5;&#x904B;&#x7528;&#x6846;&#x67B6;&#x5FEB;&#x901F;&#x958B;&#x767C; PHP &#x7DB2;&#x7AD9;-&#x91D1;&#x77F3;&#x5802;&#x7DB2;&#x8DEF;&#x66F8;&#x5E97;">
+                        &#x91D1;&#x77F3;&#x5802;&#x7DB2;&#x8DEF;&#x66F8;&#x5E97;
+                    </a>
+                </li>
+                <li>
+                    <a href="https://goo.gl/hMnBCs" target="_blank" alt="Laravel 5 for beginner &#x65B0;&#x624B;&#x9053;&#x5834;&#xFF1A;&#x512A;&#x96C5;&#x904B;&#x7528;&#x6846;&#x67B6;&#x5FEB;&#x901F;&#x958B;&#x767C; PHP &#x7DB2;&#x7AD9;- TAAZE &#x8B80;&#x518A;&#x751F;&#x6D3B;">
+                        TAAZE &#x8B80;&#x518A;&#x751F;&#x6D3B;
+                    </a>
+                </li>
+                <li>
+                    <a href="https://goo.gl/QiRqXo" target="_blank" alt="Laravel 5 for beginner &#x65B0;&#x624B;&#x9053;&#x5834;&#xFF1A;&#x512A;&#x96C5;&#x904B;&#x7528;&#x6846;&#x67B6;&#x5FEB;&#x901F;&#x958B;&#x767C; PHP &#x7DB2;&#x7AD9; - PChome 24h&#x66F8;&#x5E97;">
+                        PCHome 24h&#x66F8;&#x5E97;
+                    </a>
+                </li>
+                <li>
+                    <a href="https://goo.gl/nGhPnU" target="_blank" alt="Laravel 5 for beginner &#x65B0;&#x624B;&#x9053;&#x5834;&#xFF0D;&#xFF0D;&#x512A;&#x96C5;&#x904B;&#x7528;&#x6846;&#x67B6;&#x5FEB;&#x901F;&#x958B;&#x767C; PHP &#x7DB2;&#x7AD9;">
+                        &#x5546;&#x52D9;&#x5370;&#x66F8;&#x9928;&#x7DB2;&#x4E0A;&#x66F8;&#x5E97;
+                    </a>
+                </li>
+                <li>
+                    <a href="https://goo.gl/RptkyY" target="_blank" alt="Laravel 5 for beginner &#x65B0;&#x624B;&#x9053;&#x5834;&#xFF1A;&#x512A;&#x96C5;&#x904B;&#x7528;&#x6846;&#x67B6;&#x5FEB;&#x901F;&#x958B;&#x767C; PHP &#x7DB2;&#x7AD9;-&#x6D2A;&#x53EF;&#x90E1; - &#x4E09;&#x6C11;&#x7DB2;&#x8DEF;&#x66F8;&#x5E97;">
+                        &#x4E09;&#x6C11;&#x7DB2;&#x8DEF;&#x66F8;&#x5E97;
+                    </a>
+                </li>
+                <li>
+                    <a href="https://goo.gl/5dXGQ8" target="_blank" alt="Laravel 5 for beginner &#x65B0;&#x624B;&#x9053;&#x5834;&#xFF1A;&#x512A;&#x96C5;&#x904B;&#x7528;&#x6846;&#x67B6;&#x5FEB;&#x901F;&#x958B;&#x767C; PHP &#x7DB2;&#x7AD9;, &#x57CE;&#x90A6;&#x9605;&#x8BFB;&#x82B1;&#x56ED; - &#x9A6C;&#x6765;&#x897F;&#x4E9A;&#x6700;&#x5927;&#x7F51;&#x8DEF;&#x4E66;&#x5E97;">
+                        &#x57CE;&#x90A6;&#x9605;&#x8BFB;&#x82B1;&#x56ED;
+                    </a>
+                </li>
+                <li>
+                    <a href="https://goo.gl/6Zy8yK" target="_blank" alt="&#x83EF;&#x6587;&#x7DB2;&#x7DB2;&#x8DEF;&#x66F8;&#x5E97;&#xFF1A;Laravel 5 for beginner &#x65B0;&#x624B;&#x9053;&#x5834;&#xFF1A;&#x512A;&#x96C5;&#x904B;&#x7528;&#x6846;&#x67B6;&#x5FEB;&#x901F;&#x958B;&#x767C; PHP &#x7DB2;&#x7AD9;&#xFF0E;&#x96FB;&#x8166;&#x8207;&#x7DB2;&#x8DEF;/&#x7A0B;&#x5F0F;&#x8A9E;&#x8A00;&#x25CE;&#x77E5;&#xFF0E;&#x8B58;&#xFF0E;&#x670D;&#xFF0E;&#x52D9;&#xFF0E;&#x65B0;&#xFF0E;&#x601D;&#xFF0E;&#x8DEF;&#x25CE;">
+                        &#x83EF;&#x6587;&#x7DB2;&#x7DB2;&#x8DEF;&#x66F8;&#x5E97;
+                    </a>
+                </li>
+                <li>
+                    <a href="https://goo.gl/o9msPz" target="_blank" alt="&#x65B0;&#x7D72;&#x8DEF;&#x7DB2;&#x8DEF;&#x66F8;&#x5E97;-Laravel 5 for beginner &#x65B0;&#x624B;&#x9053;&#x5834;&#xFF1A;&#x512A;&#x96C5;&#x904B;&#x7528;&#x6846;&#x67B6;&#x5FEB;&#x901F;&#x958B;&#x767C; PHP &#x7DB2;&#x7AD9;&#xFF0E;&#x96FB;&#x8166;&#x8207;&#x7DB2;&#x8DEF;/&#x7A0B;&#x5F0F;&#x8A9E;&#x8A00;">
+                        &#x65B0;&#x7D72;&#x8DEF;&#x7DB2;&#x8DEF;&#x66F8;&#x5E97;
+                    </a>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td style="width:30%;">
+            <img src="https://i.imgur.com/CurSW2g.jpg" alt"laravel框架开发详解：从零基础到运用框架快速开发php网站"="">
+        </td>
+        <td>
+            <h3 style="font-size:16px;" id="
+----------------&#x8CFC;&#x66F8;&#x9023;&#x7D50;
+------------">
+                &#x8CFC;&#x66F8;&#x9023;&#x7D50;
+            </h3>
+            <ul>
+                <li>
+                    <a href="http://bit.ly/2EneIxw" target="_blank" alt="&#x300A;Laravel&#x6846;&#x67B6;&#x5F00;&#x53D1;&#x8BE6;&#x89E3;&#xFF1A;&#x4ECE;&#x96F6;&#x57FA;&#x7840;&#x5230;&#x8FD0;&#x7528;&#x6846;&#x67B6;&#x5FEB;&#x901F;&#x5F00;&#x53D1;PHP&#x7F51;&#x7AD9;&#x300B;(&#x6D2A;&#x53EF;&#x90E1;&#xFF08;KeJyun&#xFF09;)&#x3010;&#x6458;&#x8981; &#x4E66;&#x8BC4; &#x8BD5;&#x8BFB;&#x3011;- &#x4EAC;&#x4E1C;&#x56FE;&#x4E66;">
+                        &#x5317;&#x4EAC;&#x5927;&#x5B66;&#x51FA;&#x7248;&#x793E;
+                    </a>
+                </li>
+                <li>
+                    <a href="http://bit.ly/2zSxOI2" target="_blank" alt="&#x5929;&#x74CF;&#x7DB2;&#x8DEF;&#x66F8;&#x5E97;-Laravel&#x6846;&#x67B6;&#x958B;&#x767C;&#x8A73;&#x89E3;&#xFF1A;&#x5F9E;&#x96F6;&#x57FA;&#x790E;&#x5230;&#x904B;&#x7528;&#x6846;&#x67B6;&#x5FEB;&#x901F;&#x958B;&#x767C;PHP&#x7DB2;&#x7AD9;">
+                        &#x5929;&#x74CF;&#x7DB2;&#x8DEF;&#x66F8;&#x5E97;
+                    </a>
+                </li>
+                <li>
+                    <a href="https://amzn.to/2RKeN1y" target="_blank" alt="&#x300A;Laravel&#x6846;&#x67B6;&#x5F00;&#x53D1;&#x8BE6;&#x89E3;:&#x4ECE;&#x96F6;&#x57FA;&#x7840;&#x5230;&#x8FD0;&#x7528;&#x6846;&#x67B6;&#x5FEB;&#x901F;&#x5F00;&#x53D1;PHP&#x7F51;&#x7AD9;&#x300B; &#x6D2A;&#x53EF;&#x90E1; (KeJyun)&#x3010;&#x6458;&#x8981; &#x4E66;&#x8BC4; &#x8BD5;&#x8BFB;&#x3011;&#x56FE;&#x4E66;">
+                        Amazon
+                    </a>
+                </li>
+                <li>
+                    <a href="http://bit.ly/2ru0qmu" target="_blank" alt="&#x300A;&#x6B63;&#x7248;&#x5168;&#x65B0; Laravel&#x6846;&#x67B6;&#x5F00;&#x53D1;&#x8BE6;&#x89E3;&#xFF1A;&#x4ECE;&#x96F6;&#x57FA;&#x7840;&#x5230;&#x8FD0;&#x7528;&#x6846;&#x67B6;&#x5FEB;&#x901F;&#x5F00;&#x53D1;PHP&#x7F51;&#x7AD9; &#x6D2A;&#x53EF;&#x90E1; &#x5317;&#x4EAC;&#x5927;&#x5B66;&#x51FA;&#x7248;&#x793E;&#x300B;&#x3010;&#x6458;&#x8981; &#x4E66;&#x8BC4; &#x8BD5;&#x8BFB;&#x3011;- &#x4EAC;&#x4E1C;&#x56FE;&#x4E66;">
+                        &#x84DD;&#x58A8;&#x6C34;&#x56FE;&#x4E66;&#x4E13;&#x8425;&#x5E97;
+                    </a>
+                </li>
+                <li>
+                    <a href="http://bit.ly/2Qnrjao" target="_blank" alt="&#x6B63;&#x7248; Laravel&#x6846;&#x67B6;&#x5F00;&#x53D1;&#x8BE6;&#x89E3;&#xFF1A;&#x4ECE;&#x96F6;&#x57FA;&#x7840;&#x5230;&#x8FD0;&#x7528;&#x6846;&#x67B6;&#x5FEB;&#x901F;&#x5F00;&#x53D1;PHP&#x7F51;&#x7AD9; &#x8BA1;&#x7B97;&#x673A;&#x4E0E;&#x4E92;&#x8054;&#x7F51; &#x7F51;&#x9875;&#x5236;&#x4F5C; Web&#x6280;&#x672F; &#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1; &#x6D2A;&#x53EF;&#x90E1;-tmall.com&#x5929;&#x732B;">
+                        &#x5929;&#x732B;
+                    </a>
+                </li>
+                <li>
+                    <a href="http://bit.ly/2PstkNn" target="_blank" alt="Laravel&#x6846;&#x67B6;&#x958B;&#x767C;&#x8A73;&#x89E3;&#xFF1A;&#x5F9E;&#x96F6;&#x57FA;&#x790E;&#x5230;&#x904B;&#x7528;&#x6846;&#x67B6;&#x5FEB;&#x901F;&#x958B;&#x767C;PHP&#x7DB2;&#x7AD9;&#xFF08;&#x7C21;&#x9AD4;&#x66F8;&#xFF09;-&#x6D2A;&#x53EF;&#x90E1; - &#x4E09;&#x6C11;&#x7DB2;&#x8DEF;&#x66F8;&#x5E97;">
+                        &#x4E09;&#x6C11;&#x7DB2;&#x8DEF;&#x66F8;&#x5E97;
+                    </a>
+                </li>
+                <li>
+                    <a href="http://bit.ly/2E7jbnk" target="_blank" alt="&#x535A;&#x5BA2;&#x4F86;-Laravel&#x6846;&#x67B6;&#x958B;&#x767C;&#x8A73;&#x89E3;&#xFF1A;&#x5F9E;&#x96F6;&#x57FA;&#x790E;&#x5230;&#x904B;&#x7528;&#x6846;&#x67B6;&#x5FEB;&#x901F;&#x958B;&#x767C;PHP&#x7DB2;&#x7AD9;">
+                        &#x535A;&#x5BA2;&#x4F86;
+                    </a>
+                </li>
+            </ul>
+        </td>
+    </tr>
+</table>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="structure-README.html" class="navigation navigation-prev " aria-label="Previous page: 程式架構規範">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="structure-combination-cache-manager-structure-principle.html" class="navigation navigation-next " aria-label="Next page: Combination & CacheManager">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Service & Repository","level":"1.8.1","depth":2,"next":{"title":"Combination & CacheManager","level":"1.8.2","depth":2,"path":"structure/structure-combination-cache-manager-structure-principle.md","ref":"structure/structure-combination-cache-manager-structure-principle.md","articles":[]},"previous":{"title":"程式架構規範","level":"1.8","depth":1,"path":"structure/structure-README.md","ref":"structure/structure-README.md","articles":[{"title":"Service & Repository","level":"1.8.1","depth":2,"path":"structure/structure-service-repository-structure-principle.md","ref":"structure/structure-service-repository-structure-principle.md","articles":[]},{"title":"Combination & CacheManager","level":"1.8.2","depth":2,"path":"structure/structure-combination-cache-manager-structure-principle.md","ref":"structure/structure-combination-cache-manager-structure-principle.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["disqus","ga","adsense","include","livereload"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"kejyun-laravel5-book"},"livereload":{},"include":{},"search":{},"adsense":{"client":"ca-pub-1990193713845546","slot":"8019552255","format":"auto","element":".page-inner section","position":"top"},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-31063691-12"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"structure/structure-service-repository-structure-principle.md","mtime":"2019-03-21T04:18:25.656Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2019-03-21T04:18:30.686Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-adsense/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
