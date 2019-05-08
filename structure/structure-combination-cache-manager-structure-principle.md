@@ -711,3 +711,5 @@ class PostExceptionCode {
 ```php
 <a href="{{ $Post->info->post_url }}"> {{ $Post->Title }}</a>
 ```
+
+!INCLUDE "../kejyun/book/laravel-5-for-beginner.md"
