@@ -208,6 +208,28 @@ vagrant reload
 ```
 
 
+### VT-x is disabled in the BIOS for all CPU modes
+
+在使用 `vagrant up` 的時候，若出現 `VT-x is disabled in the BIOS for all CPU modes` 表示你的 BIOS 沒有開啟虛擬化功能
+
+```
+There was an error while executing VBoxManage, a CLI used by Vagrant
+for controlling VirtualBox. The command and stderr is shown below.
+
+Command: ["startvm", "4316329f-815b-4088-b04f-e7ff0c224c4a", "--type", "headless"]
+
+Stderr: VBoxManage.exe: error: Not in a hypervisor partition (HVP=0) (VERR_NEM_NOT_AVAILABLE).
+VBoxManage.exe: error: VT-x is disabled in the BIOS for all CPU modes (VERR_VMX_MSR_ALL_VMX_DISABLED)
+VBoxManage.exe: error: Details: code E_FAIL (0x80004005), component ConsoleWrap, interface IConsole
+```
+
+此時只需要到 BIOS 將虛擬化功能開啟即可
+
+> 虛擬化功能名稱可能會像是：“Intel VT-x,” “Intel Virtualization Technology,” “Virtualization Extensions,” “Vanderpool”，並且放在 “Chipset,” “Northbridge,” “Advanced Chipset Control,” or “Advanced CPU Configuration” 的選單上
+
+開啟後重新使用 `vagrant up` 即可順利開啟虛擬機器
+
+
 ## 參考資料
 * [Say Hello to Laravel Homestead 2.0](https://laracasts.com/lessons/say-hello-to-laravel-homestead-two)
 * [Laravel - Homestead](http://laravel.com/docs/5.2/homestead)
@@ -217,5 +239,8 @@ vagrant reload
 * [SSL read: error · Issue #401 · Varying-Vagrant-Vagrants/VVV](https://github.com/Varying-Vagrant-Vagrants/VVV/issues/401)
 * [Vagrant: Fix for error 60 / SSL read - Slick](http://slick.pl/kb/software/vagrant-fix-for-error-60-ssl-read/)
 * [Change ip homestead](https://laracasts.com/discuss/channels/servers/change-ip-homestead)
+* [Vagrant error on Windows 10 · Issue \#195 · scotch-io/scotch-box · GitHub](https://github.com/scotch-io/scotch-box/issues/195?fbclid=IwAR0I127rys30qvVd4vT8Qm_JeZevvviKrfTSYAZyBRGLKXPNscZlA0pR-wY)
+* [VBoxManage: error: VT-x is disabled in the BIOS for all CPU modes · Issue \#1301 · openebs/openebs · GitHub](https://github.com/openebs/openebs/issues/1301?fbclid=IwAR2CTJwTBckEVtqzxm9XamF64Uh2w-IXSTJe0gTkAQyAbn-NU9DFe-F1XC8)
+* [How to Enable Intel VT-x in Your Computer’s BIOS or UEFI Firmware](https://www.howtogeek.com/213795/how-to-enable-intel-vt-x-in-your-computers-bios-or-uefi-firmware/?fbclid=IwAR1BLo6_7V3r4C4PFfs4yT3raGSx7TnYH7XOIjOeGf5a9mUeFxpXUlLqMdY)
 
 !INCLUDE "../kejyun/book/laravel-5-for-beginner.md"
