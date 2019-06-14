@@ -94,5 +94,32 @@ Cookie::get('cookie_name');
 
 在設定完 Cookie 後，不可以預先在回傳 response 之前就使用 `echo`、`var_dump` 把資料印出來，因為這樣會預先送 header，導致 Cookie 無法正常設定。
 
+> 在 `Symfony\Component\HttpFoundation\Response` 檔案中，可以看到 `sendHeaders() 函數` 有定義在使用者有送 Header 後，Laravel 會停送自己的 Header 去設定 Cookie
+
+
+```php
+namespace Symfony\Component\HttpFoundation;
+
+/**
+ * Response represents an HTTP response.
+ *
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+class Response
+{
+    /**
+     * Sends HTTP headers.
+     *
+     * @return $this
+     */
+    public function sendHeaders()
+    {
+        // headers have already been sent by the developer
+        if (headers_sent()) {
+            return $this;
+        }
+    }
+}
+```
 
 !INCLUDE "../../kejyun/book/laravel-5-for-beginner.md"
