@@ -35,6 +35,7 @@
     * [將 Class 綁定到視圖](view/view-inject-class.md)
 * [服務](services/services-README.md)
     * [認證登入（Auth）](services/auth/services-auth-README.md)
+        * [認證支援 Laravel 4 Session](services/auth/services-auth-support-laravel-4.md)
     * [郵件（Mail）](services/mail/services-mail-README.md)
         * [使用 Gmail 寄信](services/mail/services-mail-gmail.md)
         * [使用 Mailgun 寄信](services/mail/services-mail-mailgun.md)
