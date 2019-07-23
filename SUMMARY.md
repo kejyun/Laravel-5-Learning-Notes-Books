@@ -5,7 +5,7 @@
     * [.env 檔案](environment/Environment-Dot-Env-File.md)
     * [Homestead](environment/Environment-Homestead-README.md)
     * [Laradock](environment/Environment-Laradock-README.md)
-    * [Composer](environment/Environment-Composer-README.md)
+    * [Composer 安裝](environment/Environment-Composer-README.md)
     * [除錯](environment/Environment-Debug-README.md)
 * [資料庫](database/database-README.md)
     * [Migration (遷移)](database/migration/database-migration-README.md)
