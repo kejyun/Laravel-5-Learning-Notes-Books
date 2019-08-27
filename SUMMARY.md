@@ -70,6 +70,8 @@
     * [Elixir](services/elixir/services-elixir-README.md)
         * [使用 Elixir 合併 CSS 與 JS](services/elixir/services-elixir-combine-css-and-js.md)
     * [Laravel Mix](services/laravel-mix/services-laravel-mix-README.md)
+        * [LiveReload](services/laravel-mix/services-laravel-mix-live-reload.md)
+        * [BrowserSync](services/laravel-mix/services-laravel-mix-browser-sync.md)
     * [Compass](services/compass/services-compass-README.md)
 * [API](api/api-README.md)
 * [設計模式](design-pattern/design-pattern-README.md)
