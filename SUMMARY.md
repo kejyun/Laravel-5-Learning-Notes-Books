@@ -16,6 +16,7 @@
         * [使用 Eloquent](database/model/database-model-eloquent-apply.md)
         * [鎖定資料 Lock](database/model/database-model-eloquent-lock.md)
         * [小技巧](database/model/database-model-eloquent-tips.md)
+        * [子查詢](database/model/database-model-eloquent-sub-query.md)
     * [常見問題](database/qa/database-qa-README.md)
         * [無法取得查詢 Log](database/qa/database-qa-cannot-get-querylog.md)
         * [使用大量資料的方式新增時無法新增](database/qa/database-qa-cannot-mass-insert.md)
