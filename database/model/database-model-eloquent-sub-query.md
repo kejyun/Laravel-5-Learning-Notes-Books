@@ -6,7 +6,7 @@
 SELECT count(*)
 FROM (
     SELECT UID
-    FROM `Posts`
+    FROM `posts`
     WHERE `status` = 1
     GROUP BY `user_id`
 ) sub
@@ -36,6 +36,18 @@ $count = DB::table( DB::raw("({$SubQuery->toSql()}) as sub") )
     ->count();
 ```
 
+Laravel v5.6.12 (2018-03-14) 之後，加入了 `fromSub()` 及 `fromRaw()` 的方法可以直接產生子查詢語法
+
+```php
+<?php
+DB::query()->fromSub(function ($query) {
+    $query->from('posts')
+        ->where('status', 1)
+        ->groupBy('user_id');
+}, 'sub')->count();
+
+// select count(*) as aggregate from (select * from `abc` group by `col1`) as `a`
+```
 
 
 # 參考資料
