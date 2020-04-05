@@ -279,6 +279,15 @@ vagrant@homestead:~/Code/test$
 
 發現自己的 VirtualBox 版本為 `5.x`，立即去官網將 VirtualBox 更新至 `6.x` 就可以順利安裝了，安裝過程中完全沒有提到跟 VirtualBox 有關的錯誤訊息，導致我鬼打牆了好久 QQ
 
+也有人遇到的問題是因為 composer cache 的問題，也可以用這個方式移除 compser cache 來解決安裝問題
+
+```shell
+composer clear-cache
+cd project/
+rm -rf vendor
+composer install
+```
+
 
 ## 參考資料
 * [Say Hello to Laravel Homestead 2.0](https://laracasts.com/lessons/say-hello-to-laravel-homestead-two)
@@ -294,5 +303,6 @@ vagrant@homestead:~/Code/test$
 * [How to Enable Intel VT-x in Your Computer’s BIOS or UEFI Firmware](https://www.howtogeek.com/213795/how-to-enable-intel-vt-x-in-your-computers-bios-or-uefi-firmware/?fbclid=IwAR1BLo6_7V3r4C4PFfs4yT3raGSx7TnYH7XOIjOeGf5a9mUeFxpXUlLqMdY)
 * [Homestead 9新盒子建立一个新的Laravel專案作曲家無法掃描裏面的類/ vendor / phpunit / php-code-coverage / src / - laravel - Codebug](https://t.codebug.vip/questions-97396.htm)
 * [Unable to load the "app" configuration file. · Issue #1219 · laravel/homestead](https://github.com/laravel/homestead/issues/1219)
+* [Fresh install laravel 5.3 on Homestead 3.0.2 fail "/vendor/phpunit/php-code-coverage/src/" · Issue #15105 · laravel/framework](https://github.com/laravel/framework/issues/15105)
 
 !INCLUDE "../kejyun/book/laravel-5-for-beginner.md"
