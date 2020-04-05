@@ -230,6 +230,56 @@ VBoxManage.exe: error: Details: code E_FAIL (0x80004005), component ConsoleWrap,
 開啟後重新使用 `vagrant up` 即可順利開啟虛擬機器
 
 
+## 除錯
+
+### 安裝 Laravel 過程出現 `Could not scan for classes inside "/home/vagrant/Code/blog/vendor/phpunit/php-code-coverage/src/"` 訊息
+
+2020/04/05 時在安裝新版 Homestead 時，發現一直出現以下錯誤訊息，一直無法順利安裝 Laravel
+
+安裝過程是用官網的步驟直接安裝
+
+```
+vagrant box add laravel/homestead
+git clone https://github.com/laravel/homestead.git ~/Homestead
+cd ~/Homestead
+git checkout release
+```
+
+當前的 Homestead 版本是 `release v10.7.0`，然後使用標準 composer 指令去安裝 Laravel
+
+```
+composer create-project --prefer-dist laravel/laravel blog
+```
+
+安裝過程最後不斷出現 `Could not scan for classes inside "/home/vagrant/Code/blog/vendor/phpunit/php-code-coverage/src/"` 的訊息
+
+```shell
+Package jakub-onderka/php-console-color is abandoned, you should avoid using it. Use php-parallel-lint/php-console-color instead.
+Package jakub-onderka/php-console-highlighter is abandoned, you should avoid using it. Use php-parallel-lint/php-console-highlighter instead.
+Generating optimized autoload files
+
+
+  [RuntimeException]
+  Could not scan for classes inside "/home/vagrant/Code/blog/vendor/phpunit/php-code-coverage/src/" which does not appear to
+   be a file nor a folder
+
+
+install [--prefer-source] [--prefer-dist] [--dry-run] [--dev] [--no-dev] [--no-custom-installers] [--no-autoloader] [--no-scripts] [--no-progress] [--no-suggest] [-v|vv|vvv|--verbose] [-o|--optimize-autoloader] [-a|--classmap-authoritative] [--apcu-autoloader] [--ignore-platform-reqs] [--] [<packages>]...
+
+vagrant@homestead:~/Code/test$
+```
+
+在搜尋了許久發現 [Homestead 9新盒子建立一个新的Laravel專案作曲家無法掃描裏面的類/ vendor / phpunit / php-code-coverage / src / - laravel - Codebug](https://t.codebug.vip/questions-97396.htm) 文章中提到了一個關鍵字
+
+> 將 `VirtualBox` 更新為 `v6`。
+
+> 在GitHub上查看此問题：https://github.com/laravel/homestead/issues/1219
+
+> [Unable to load the "app" configuration file. · Issue #1219 · laravel/homestead](https://github.com/laravel/homestead/issues/1219)
+
+發現自己的 VirtualBox 版本為 `5.x`，立即去官網將 VirtualBox 更新至 `6.x` 就可以順利安裝了，安裝過程中完全沒有提到跟 VirtualBox 有關的錯誤訊息，導致我鬼打牆了好久 QQ
+
+
 ## 參考資料
 * [Say Hello to Laravel Homestead 2.0](https://laracasts.com/lessons/say-hello-to-laravel-homestead-two)
 * [Laravel - Homestead](http://laravel.com/docs/5.2/homestead)
@@ -242,5 +292,7 @@ VBoxManage.exe: error: Details: code E_FAIL (0x80004005), component ConsoleWrap,
 * [Vagrant error on Windows 10 · Issue \#195 · scotch-io/scotch-box · GitHub](https://github.com/scotch-io/scotch-box/issues/195?fbclid=IwAR0I127rys30qvVd4vT8Qm_JeZevvviKrfTSYAZyBRGLKXPNscZlA0pR-wY)
 * [VBoxManage: error: VT-x is disabled in the BIOS for all CPU modes · Issue \#1301 · openebs/openebs · GitHub](https://github.com/openebs/openebs/issues/1301?fbclid=IwAR2CTJwTBckEVtqzxm9XamF64Uh2w-IXSTJe0gTkAQyAbn-NU9DFe-F1XC8)
 * [How to Enable Intel VT-x in Your Computer’s BIOS or UEFI Firmware](https://www.howtogeek.com/213795/how-to-enable-intel-vt-x-in-your-computers-bios-or-uefi-firmware/?fbclid=IwAR1BLo6_7V3r4C4PFfs4yT3raGSx7TnYH7XOIjOeGf5a9mUeFxpXUlLqMdY)
+* [Homestead 9新盒子建立一个新的Laravel專案作曲家無法掃描裏面的類/ vendor / phpunit / php-code-coverage / src / - laravel - Codebug](https://t.codebug.vip/questions-97396.htm)
+* [Unable to load the "app" configuration file. · Issue #1219 · laravel/homestead](https://github.com/laravel/homestead/issues/1219)
 
 !INCLUDE "../kejyun/book/laravel-5-for-beginner.md"
