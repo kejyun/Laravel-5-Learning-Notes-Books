@@ -103,6 +103,7 @@
     * [視圖](package/view/package-view-README.md)
     * [郵件](package/mail/package-mail-README.md)
         * [Mailchimp](package/mail/package-mail-mailchimp.md)
+    * [社群](package/social/package-social-README.md)
     * [Dashboard](package/dashboard/package-dashboard-README.md)
     * [平台](package/platform/package-platform-README.md)
     * [認證](package/auth/package-auth-README.md)
