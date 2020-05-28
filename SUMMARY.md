@@ -92,6 +92,7 @@
         * [intervention](package/image/intervention/package-image-intervention.md)
             * [圖片處理](package/image/intervention/package-image-intervention-process.md)
             * [其他圖片處理](package/image/intervention/package-image-intervention-other.md)
+        * [screenshot 截圖](package/image/screenshot/package-image-screenshot-other.md)
     * [圖表](package/chart/package-chart-README.md)
     * [Line Bot](package/content/line-bot/package-content-line-bot-README.md)
     * [Debug](package/debug/package-debug-README.md)
